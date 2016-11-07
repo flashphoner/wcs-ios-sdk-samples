@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "53cf3753-f6d7-4d5a-9ba0-aea683481ae5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "53cf3753-f6d7-4d5a-9ba0-aea683481ae5" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "53cf3753-f6d7-4d5a-9ba0-aea683481ae5" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "73D4B7C1-3FDA-40DD-A05C-37286FE52B4C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "53cf3753-f6d7-4d5a-9ba0-aea683481ae5" : "wcs_ios_sdk\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "WCSExample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "fp_wcs_api2\/WCSExample\/WCSExample.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/svn.flashphoner.com\/wcs_ios_sdk",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "53cf3753-f6d7-4d5a-9ba0-aea683481ae5"
+    }
+  ]
+}

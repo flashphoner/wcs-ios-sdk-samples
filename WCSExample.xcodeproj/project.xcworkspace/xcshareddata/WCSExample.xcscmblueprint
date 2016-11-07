@@ -1,0 +1,39 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "53cf3753-f6d7-4d5a-9ba0-aea683481ae5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "53cf3753-f6d7-4d5a-9ba0-aea683481ae5" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "ABB939127996C66F7E852A780552ADEEF03C6B13" : 0,
+    "53cf3753-f6d7-4d5a-9ba0-aea683481ae5" : 0,
+    "2454A7C0A4BC2A09472718EB55354F320600B245" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C215287E-7D1F-4BF7-B7F9-6BFED5B0CCD8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "ABB939127996C66F7E852A780552ADEEF03C6B13" : "wcs_ios_sdk\/fp_wcs_api2\/WCSExample\/third_party\/SocketRocket\/",
+    "53cf3753-f6d7-4d5a-9ba0-aea683481ae5" : "wcs_ios_sdk\/",
+    "2454A7C0A4BC2A09472718EB55354F320600B245" : "wcs_ios_sdk\/fp_wcs_api2\/WCSExample\/third_party\/JSONModel\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "WCSExample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "fp_wcs_api2\/WCSExample\/WCSExample.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/icanzilb\/JSONModel.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2454A7C0A4BC2A09472718EB55354F320600B245"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/svn.flashphoner.com\/wcs_ios_sdk",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "53cf3753-f6d7-4d5a-9ba0-aea683481ae5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/square\/SocketRocket.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ABB939127996C66F7E852A780552ADEEF03C6B13"
+    }
+  ]
+}
