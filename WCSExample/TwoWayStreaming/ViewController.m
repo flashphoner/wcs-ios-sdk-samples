@@ -305,11 +305,13 @@
     _connectButton = [self createButton:@"CONNECT"];
     [_connectButton addTarget:self action:@selector(connectButton:) forControlEvents:UIControlEventTouchUpInside];
     
+    _publishStreamLabel = [self createInfoLabel:@"Publish Stream"];
     _localStreamName = [self createTextField];
     _localStreamStatus = [self createLabelView];
     _publishButton = [self createButton:@"PUBLISH"];
     [_publishButton addTarget:self action:@selector(publishButton:) forControlEvents:UIControlEventTouchUpInside];
     
+    _playStreamLabel = [self createInfoLabel:@"Play Stream"];
     _remoteStreamName = [self createTextField];
     _remoteStreamStatus = [self createLabelView];
     _playButton = [self createButton:@"PLAY"];
@@ -322,10 +324,12 @@
     [self.contentView addSubview:_connectionStatus];
     [self.contentView addSubview:_connectButton];
     
+    [self.contentView addSubview:_publishStreamLabel];
     [self.contentView addSubview:_localStreamName];
     [self.contentView addSubview:_localStreamStatus];
     [self.contentView addSubview:_publishButton];
     
+    [self.contentView addSubview:_playStreamLabel];
     [self.contentView addSubview:_remoteStreamName];
     [self.contentView addSubview:_remoteStreamStatus];
     [self.contentView addSubview:_playButton];
@@ -372,6 +376,15 @@
     return textView;
 }
 
+- (UILabel *)createInfoLabel:(NSString *)infoText {
+    UILabel *label = [[UILabel alloc] init];
+    [label setFont:[UIFont boldSystemFontOfSize:12]];
+    label.translatesAutoresizingMaskIntoConstraints = NO;
+    label.textAlignment = NSTextAlignmentLeft;
+    label.text = infoText;
+    return label;
+}
+
 - (UIButton *)createButton:(NSString *)title {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setBackgroundColor:[UIColor lightGrayColor]];
@@ -387,9 +400,11 @@
                             @"connectUrl": _connectUrl,
                             @"connectionStatus": _connectionStatus,
                             @"connectButton": _connectButton,
+                            @"publishStreamLabel": _publishStreamLabel,
                             @"localStreamName": _localStreamName,
                             @"localStreamStatus": _localStreamStatus,
                             @"publishButton": _publishButton,
+                            @"playStreamLabel": _playStreamLabel,
                             @"remoteStreamName": _remoteStreamName,
                             @"remoteStreamStatus": _remoteStreamStatus,
                             @"playButton": _playButton,
@@ -411,9 +426,10 @@
     NSDictionary *metrics = @{
                               @"buttonHeight": @30,
                               @"statusHeight": @30,
+                              @"labelHeight": @20,
                               @"inputFieldHeight": @30,
                               @"videoHeight": videoHeight,
-                              @"vSpacing": @20,
+                              @"vSpacing": @15,
                               @"hSpacing": @30
                               };
    
@@ -434,6 +450,8 @@
     
     //set height size
     setConstraint(_connectUrl, @"V:[connectUrl(inputFieldHeight)]", 0);
+    setConstraint(_publishStreamLabel, @"V:[publishStreamLabel(labelHeight)]", 0);
+    setConstraint(_playStreamLabel, @"V:[playStreamLabel(labelHeight)]", 0);
     setConstraint(_localStreamName, @"V:[localStreamName(inputFieldHeight)]", 0);
     setConstraint(_remoteStreamName, @"V:[remoteStreamName(inputFieldHeight)]", 0);
     setConstraint(_connectionStatus, @"V:[connectionStatus(statusHeight)]", 0);
@@ -446,6 +464,8 @@
     
     //set width related to super view
     setConstraint(_contentView, @"H:|-hSpacing-[connectUrl]-hSpacing-|", 0);
+    setConstraint(_contentView, @"H:|-hSpacing-[publishStreamLabel]-hSpacing-|", 0);
+    setConstraint(_contentView, @"H:|-hSpacing-[playStreamLabel]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[localStreamName]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[remoteStreamName]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[connectionStatus]-hSpacing-|", 0);
@@ -476,7 +496,7 @@
     setConstraint(_videoContainer, @"H:|[localDisplay][remoteDisplay]|", NSLayoutFormatAlignAllTop);
     setConstraint(_videoContainer, @"V:|[localDisplay]", 0);
     
-    setConstraint(self.contentView, @"V:|-50-[connectUrl]-vSpacing-[connectionStatus]-vSpacing-[connectButton]-vSpacing-[localStreamName]-vSpacing-[localStreamStatus]-vSpacing-[publishButton]-vSpacing-[remoteStreamName]-vSpacing-[remoteStreamStatus]-vSpacing-[playButton]-vSpacing-[videoContainer]-vSpacing-|", 0);
+    setConstraint(self.contentView, @"V:|-50-[connectUrl]-vSpacing-[connectionStatus]-vSpacing-[connectButton]-vSpacing-[publishStreamLabel]-vSpacing-[localStreamName]-vSpacing-[localStreamStatus]-vSpacing-[publishButton]-vSpacing-[playStreamLabel]-vSpacing-[remoteStreamName]-vSpacing-[remoteStreamStatus]-vSpacing-[playButton]-vSpacing-[videoContainer]-vSpacing-|", 0);
     
     //content view width
     setConstraintWithItem(self.view, _contentView, self.view, NSLayoutAttributeWidth, NSLayoutRelationEqual, NSLayoutAttributeWidth, 1.0, 0);

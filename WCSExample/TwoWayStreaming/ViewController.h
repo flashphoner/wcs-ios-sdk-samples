@@ -18,10 +18,12 @@
 @property UILabel *connectionStatus;
 @property UIButton *connectButton;
 
+@property UILabel *publishStreamLabel;
 @property UITextField *localStreamName;
 @property UILabel *localStreamStatus;
 @property UIButton *publishButton;
 
+@property UILabel *playStreamLabel;
 @property UITextField *remoteStreamName;
 @property UILabel *remoteStreamStatus;
 @property UIButton *playButton;
