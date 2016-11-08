@@ -337,8 +337,8 @@
     
     //set default values
     _connectUrl.text = @"ws://192.168.88.234:8080/";
-    _localStreamName.text = @"test_stream";
-    _remoteStreamName.text = @"test_stream";
+    _localStreamName.text = @"streamName";
+    _remoteStreamName.text = @"streamName";
 }
 
 - (UITextField *)createTextField {
