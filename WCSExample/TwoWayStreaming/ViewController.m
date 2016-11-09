@@ -54,6 +54,10 @@
     FPWCSApi2StreamOptions *options = [[FPWCSApi2StreamOptions alloc] init];
     options.name = _localStreamName.text;
     options.display = _localDisplay;
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ) {
+        options.constraints = [[FPWCSApi2MediaConstraints alloc] initWithAudio:YES videoWidth:640 videoHeight:480 videoFps:15];
+    }
+
     FPWCSApi2Stream *stream = [session createStream:options error:nil];
     [stream on:kFPWCSStreamStatusPublishing callback:^(FPWCSApi2Stream *rStream){
         [self changeStreamStatus:rStream];
@@ -417,8 +421,7 @@
     
     NSNumber *videoHeight = @320;
     //custom videoHeight for pads
-    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
-    {
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ) {
         NSLog(@"Set video container height for pads");
         videoHeight = @640;
     }
