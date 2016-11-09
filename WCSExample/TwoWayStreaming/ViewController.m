@@ -54,7 +54,7 @@
     FPWCSApi2StreamOptions *options = [[FPWCSApi2StreamOptions alloc] init];
     options.name = _localStreamName.text;
     options.display = _localDisplay;
-    FPWCSApi2Stream *stream = [session createStream:options];
+    FPWCSApi2Stream *stream = [session createStream:options error:nil];
     [stream on:kFPWCSStreamStatusPublishing callback:^(FPWCSApi2Stream *rStream){
         [self changeStreamStatus:rStream];
         [self onPublishing:rStream];
@@ -78,7 +78,7 @@
     FPWCSApi2StreamOptions *options = [[FPWCSApi2StreamOptions alloc] init];
     options.name = _remoteStreamName.text;
     options.display = _remoteDisplay;
-    FPWCSApi2Stream *stream = [session createStream:options];
+    FPWCSApi2Stream *stream = [session createStream:options error:nil];
     [stream on:kFPWCSStreamStatusPlaying callback:^(FPWCSApi2Stream *rStream){
         [self changeStreamStatus:rStream];
         [self onPlaying:rStream];
@@ -340,7 +340,7 @@
     [self.view addSubview:_scrollView];
     
     //set default values
-    _connectUrl.text = @"ws://192.168.88.234:8080/";
+    _connectUrl.text = @"wss://wcs5-eu.flashphoner.com:8443/";
     _localStreamName.text = @"streamName";
     _remoteStreamName.text = @"streamName";
 }
