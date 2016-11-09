@@ -20,7 +20,7 @@ pod install
 
 #build and export
 xcodebuild -workspace 'WCSExample.xcworkspace' -scheme "TwoWayStreaming" -configuration="Release" clean archive OBJROOT=$(PWD)/out-build/TwoWayStreaming -archivePath out-build/TwoWayStreaming
-xcodebuild -exportArchive -exportFormat ipa -archivePath out-build/TwoWayStreaming.xcarchive -exportPath out-build/TwoWayStreaming.ipa -exportProvisioningProfile "$PROVISIONING_PROFILE"
+xcodebuild -exportArchive -exportOptionsPlist Info.plist -archivePath out-build/TwoWayStreaming.xcarchive -exportPath out-build
 
 echo "Build complete"
 
