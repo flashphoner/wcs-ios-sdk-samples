@@ -29,7 +29,25 @@
     FPWCSApi2SessionOptions *options = [[FPWCSApi2SessionOptions alloc] init];
     options.urlServer = _connectUrl.text;
     options.appKey = @"defaultApp";
-    FPWCSApi2Session *session = [FPWCSApi2 createSession:options error:nil];
+    NSError *error;
+    FPWCSApi2Session *session = [FPWCSApi2 createSession:options error:&error];
+    if (!session) {
+        UIAlertController * alert = [UIAlertController
+                                     alertControllerWithTitle:@"Failed to connect"
+                                     message:error.localizedDescription
+                                     preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* okButton = [UIAlertAction
+                                   actionWithTitle:@"Ok"
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction * action) {
+                                       [self onDisconnected];
+                                   }];
+        
+        [alert addAction:okButton];
+        [self presentViewController:alert animated:YES completion:nil];
+        return nil;
+    }
     
     [session on:kFPWCSSessionStatusEstablished callback:^(FPWCSApi2Session *rSession){
         [self changeConnectionStatus:[rSession getStatus]];
@@ -57,8 +75,25 @@
     if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ) {
         options.constraints = [[FPWCSApi2MediaConstraints alloc] initWithAudio:YES videoWidth:640 videoHeight:480 videoFps:15];
     }
-
-    FPWCSApi2Stream *stream = [session createStream:options error:nil];
+    NSError *error;
+    FPWCSApi2Stream *stream = [session createStream:options error:&error];
+    if (!stream) {
+        UIAlertController * alert = [UIAlertController
+                                     alertControllerWithTitle:@"Failed to publish"
+                                     message:error.localizedDescription
+                                     preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* okButton = [UIAlertAction
+                                   actionWithTitle:@"Ok"
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction * action) {
+                                       [self onUnpublished];
+                                   }];
+        
+        [alert addAction:okButton];
+        [self presentViewController:alert animated:YES completion:nil];
+        return nil;
+    }
     [stream on:kFPWCSStreamStatusPublishing callback:^(FPWCSApi2Stream *rStream){
         [self changeStreamStatus:rStream];
         [self onPublishing:rStream];
@@ -73,7 +108,22 @@
         [self changeStreamStatus:rStream];
         [self onUnpublished];
     }];
-    [stream publish];
+    if(![stream publish:&error]) {
+        UIAlertController * alert = [UIAlertController
+                                     alertControllerWithTitle:@"Failed to publish"
+                                     message:error.localizedDescription
+                                     preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* okButton = [UIAlertAction
+                                    actionWithTitle:@"Ok"
+                                    style:UIAlertActionStyleDefault
+                                    handler:^(UIAlertAction * action) {
+                                        [self onUnpublished];
+                                    }];
+        
+        [alert addAction:okButton];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
     return stream;
 }
 
@@ -82,7 +132,25 @@
     FPWCSApi2StreamOptions *options = [[FPWCSApi2StreamOptions alloc] init];
     options.name = _remoteStreamName.text;
     options.display = _remoteDisplay;
+    NSError *error;
     FPWCSApi2Stream *stream = [session createStream:options error:nil];
+    if (!stream) {
+        UIAlertController * alert = [UIAlertController
+                                     alertControllerWithTitle:@"Failed to play"
+                                     message:error.localizedDescription
+                                     preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* okButton = [UIAlertAction
+                                   actionWithTitle:@"Ok"
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction * action) {
+                                       [self onStopped];
+                                   }];
+        
+        [alert addAction:okButton];
+        [self presentViewController:alert animated:YES completion:nil];
+        return nil;
+    }
     [stream on:kFPWCSStreamStatusPlaying callback:^(FPWCSApi2Stream *rStream){
         [self changeStreamStatus:rStream];
         [self onPlaying:rStream];
@@ -96,7 +164,22 @@
         [self changeStreamStatus:rStream];
         [self onStopped];
     }];
-    [stream play];
+    if(![stream play:&error]) {
+        UIAlertController * alert = [UIAlertController
+                                     alertControllerWithTitle:@"Failed to play"
+                                     message:error.localizedDescription
+                                     preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* okButton = [UIAlertAction
+                                   actionWithTitle:@"Ok"
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction * action) {
+                                       
+                                   }];
+        
+        [alert addAction:okButton];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
     return stream;
 }
 
@@ -187,7 +270,8 @@
                 [self onUnpublished];
                 return;
             }
-            [stream stop];
+            NSError *error;
+            [stream stop:&error];
         } else {
             NSLog(@"Stop publishing, no session");
             [self onUnpublished];
@@ -219,7 +303,8 @@
                 [self onStopped];
                 return;
             }
-            [stream stop];
+            NSError *error;
+            [stream stop:&error];
         } else {
             NSLog(@"Stop playing, no session");
             [self onStopped];
