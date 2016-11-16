@@ -1,5 +1,6 @@
 
 #import "WCSViews.h"
+#import <FPWCSApi2/FPWCSApi2.h>
 
 @interface  WCSLocalVideoControlView : WCSSlidingView<UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
 
@@ -15,6 +16,7 @@
 @property WCSPickerInputView *fpsSelector;
 @property WCSTextInputView *bitrate;
 @property WCSTextInputView *quality;
+@property WCSSwitchView *muteVideo;
 
 - (void)muteAudioInputs:(BOOL)mute;
 

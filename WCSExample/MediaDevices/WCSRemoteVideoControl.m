@@ -12,6 +12,8 @@
         _hideButton = [WCSViewUtil createButton:@"Hide"];
         [_hideButton addTarget:self action:@selector(onHideButton:) forControlEvents:UIControlEventTouchUpInside];
         _playVideo = [[WCSSwitchView alloc] initWithLabelText:@"Play Video"];
+        [_playVideo.control addTarget:self action:@selector(controlValueChanged:) forControlEvents:UIControlEventValueChanged];
+        [_playVideo.control setOn:YES];
         _videoResolution = [[WCSVideoResolutionInputWithDefaultView alloc] initWithLabelText:@"Size"];
         _bitrate = [[WCSTextInputWithDefaultView alloc] initWithLabelText:@"Bitrate"];
         _quality = [[WCSTextInputWithDefaultView alloc] initWithLabelText:@"Quality"];
@@ -52,11 +54,28 @@
 }
 
 - (void)onHideButton:(UIButton *)button {
+    [_videoResolution.width resignFirstResponder];
+    [_videoResolution.height resignFirstResponder];
+    [_bitrate.input resignFirstResponder];
+    [_quality.input resignFirstResponder];
     [self hide];
 }
 
+- (void)controlValueChanged:(id)sender {
+    if (sender == _playVideo.control) {
+        if (_playVideo.control.isOn) {
+            [self muteVideoInputs:NO];
+        } else {
+            [self muteVideoInputs:YES];
+        }
+    }
+}
+
 - (void)muteVideoInputs:(BOOL)mute {
-    
+    BOOL enabled = !mute;
+    _videoResolution.userInteractionEnabled = enabled;
+    _bitrate.userInteractionEnabled = enabled;
+    _quality.userInteractionEnabled = enabled;
 }
 
 @end

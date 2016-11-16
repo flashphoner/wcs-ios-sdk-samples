@@ -350,8 +350,8 @@
     if (self) {
         self.translatesAutoresizingMaskIntoConstraints = NO;
         _label = [WCSViewUtil createInfoLabel:text];
-        _width = [WCSViewUtil createTextField:nil];
-        _height = [WCSViewUtil createTextField:nil];
+        _width = [WCSViewUtil createTextField:self];
+        _height = [WCSViewUtil createTextField:self];
         [self addSubview:_label];
         [self addSubview:_width];
         [self addSubview:_height];
@@ -377,6 +377,32 @@
 }
 
 + (BOOL)requiresConstraintBasedLayout {
+    return YES;
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    if (!string.length) {
+        return YES;
+    }
+    
+
+    NSString *newString = [textField.text stringByReplacingCharactersInRange:range withString:string];
+    NSString *expression = @"^([0-9]+)?(\\.([0-9]{1,2})?)?$";
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:expression
+                                                                               options:NSRegularExpressionCaseInsensitive
+                                                                                 error:nil];
+    NSUInteger numberOfMatches = [regex numberOfMatchesInString:newString
+                                                            options:0
+                                                              range:NSMakeRange(0, [newString length])];
+    if (numberOfMatches == 0) {
+            return NO;
+    }
+    return YES;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
     return YES;
 }
 
