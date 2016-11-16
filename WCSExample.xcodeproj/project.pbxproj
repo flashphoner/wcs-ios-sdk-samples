@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		007FCEA027937F1705D714B2 /* Pods_TwoWayStreaming.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657FE6304944E7B0E86B981B /* Pods_TwoWayStreaming.framework */; };
+		C97D933619155A45FB5509E3 /* Pods_MediaDevices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C024AB174E6997F2530E38C6 /* Pods_MediaDevices.framework */; };
 		CE29B5921DC036AE0081CD37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
 		CE29B5951DC036AE0081CD37 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
 		CE29B5961DC036AE0081CD37 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
@@ -29,11 +30,40 @@
 		CE29B5A71DC036AE0081CD37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB681C75ABA4002FDF16 /* LaunchScreen.storyboard */; };
 		CE29B5B51DC038BF0081CD37 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29B5AF1DC038AE0081CD37 /* ViewController.m */; };
 		CE29B5B61DC038BF0081CD37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29B5B11DC038AE0081CD37 /* AppDelegate.m */; };
+		CE7534361DD9713600D7DF80 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
+		CE7534451DDADA3800D7DF80 /* WCSViews.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534441DDADA3800D7DF80 /* WCSViews.m */; };
+		CE7534481DDB0CDB00D7DF80 /* WCSLocalVideoControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534471DDB0CDB00D7DF80 /* WCSLocalVideoControl.m */; };
+		CE75344B1DDB39A100D7DF80 /* WCSRemoteVideoControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CE75344A1DDB39A100D7DF80 /* WCSRemoteVideoControl.m */; };
+		CE988A241DD5534400742423 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
+		CE988A261DD5534400742423 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
+		CE988A271DD5534400742423 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F021C0D93DD00EAEC55 /* libstdc++.6.0.9.tbd */; };
+		CE988A281DD5534400742423 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */; };
+		CE988A291DD5534400742423 /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFE1C0D93C300EAEC55 /* libc.tbd */; };
+		CE988A2A1DD5534400742423 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFC1C0D93BC00EAEC55 /* libsqlite3.tbd */; };
+		CE988A2B1DD5534400742423 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFA1C0D93AC00EAEC55 /* Foundation.framework */; };
+		CE988A2C1DD5534400742423 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF81C0D93A200EAEC55 /* AVFoundation.framework */; };
+		CE988A2D1DD5534400742423 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF61C0D939800EAEC55 /* UIKit.framework */; };
+		CE988A2E1DD5534400742423 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF41C0D939000EAEC55 /* GLKit.framework */; };
+		CE988A2F1DD5534400742423 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF21C0D938100EAEC55 /* CoreMedia.framework */; };
+		CE988A301DD5534400742423 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */; };
+		CE988A311DD5534400742423 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */; };
+		CE988A331DD5534400742423 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
+		CE988A351DD5534400742423 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE23106A1C0D718100918455 /* LaunchScreen.storyboard */; };
+		CE988A361DD5534400742423 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2310681C0D718100918455 /* Assets.xcassets */; };
+		CE988A371DD5534400742423 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2310651C0D718100918455 /* Main.storyboard */; };
+		CE988A381DD5534400742423 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB6A1C75ABA4002FDF16 /* Main.storyboard */; };
+		CE988A391DD5534400742423 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB681C75ABA4002FDF16 /* LaunchScreen.storyboard */; };
+		CE988A431DD5548500742423 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE988A421DD5548500742423 /* Info.plist */; };
+		CE988A4A1DD554DD00742423 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE988A451DD554C900742423 /* ViewController.m */; };
+		CE988A4B1DD554DD00742423 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE988A461DD554C900742423 /* AppDelegate.m */; };
+		E3A16F99E869011CB95D85BD /* Pods_TwoWayStreaming.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657FE6304944E7B0E86B981B /* Pods_TwoWayStreaming.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		251625D1C68BDE4F9EA1E79A /* Pods-MediaDevices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaDevices.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MediaDevices/Pods-MediaDevices.debug.xcconfig"; sourceTree = "<group>"; };
 		657FE6304944E7B0E86B981B /* Pods_TwoWayStreaming.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwoWayStreaming.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		67CBF864F2F5FEFF671729B1 /* Pods-TwoWayStreaming.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoWayStreaming.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwoWayStreaming/Pods-TwoWayStreaming.debug.xcconfig"; sourceTree = "<group>"; };
+		C024AB174E6997F2530E38C6 /* Pods_MediaDevices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaDevices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2DDB1571337A4A0E150A71D /* Pods-MediaDevices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaDevices.release.xcconfig"; path = "Pods/Target Support Files/Pods-MediaDevices/Pods-MediaDevices.release.xcconfig"; sourceTree = "<group>"; };
 		CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CE133EF21C0D938100EAEC55 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -57,9 +87,25 @@
 		CE29B5B11DC038AE0081CD37 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = TwoWayStreaming/AppDelegate.m; sourceTree = "<group>"; };
 		CE29B5B21DC038AE0081CD37 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TwoWayStreaming/AppDelegate.h; sourceTree = "<group>"; };
 		CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPWCSApi2.framework; sourceTree = "<group>"; };
+		CE7534341DD9708400D7DF80 /* WCSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCSUtil.h; path = common/WCSUtil.h; sourceTree = "<group>"; };
+		CE7534351DD9713600D7DF80 /* WCSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCSUtil.m; path = common/WCSUtil.m; sourceTree = "<group>"; };
+		CE7534431DDAD95200D7DF80 /* WCSViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCSViews.h; path = common/WCSViews.h; sourceTree = "<group>"; };
+		CE7534441DDADA3800D7DF80 /* WCSViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCSViews.m; path = common/WCSViews.m; sourceTree = "<group>"; };
+		CE7534461DDB0CC500D7DF80 /* WCSLocalVideoControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCSLocalVideoControl.h; path = MediaDevices/WCSLocalVideoControl.h; sourceTree = "<group>"; };
+		CE7534471DDB0CDB00D7DF80 /* WCSLocalVideoControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCSLocalVideoControl.m; path = MediaDevices/WCSLocalVideoControl.m; sourceTree = "<group>"; };
+		CE7534491DDB398A00D7DF80 /* WCSRemoteVideoControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCSRemoteVideoControl.h; path = MediaDevices/WCSRemoteVideoControl.h; sourceTree = "<group>"; };
+		CE75344A1DDB39A100D7DF80 /* WCSRemoteVideoControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCSRemoteVideoControl.m; path = MediaDevices/WCSRemoteVideoControl.m; sourceTree = "<group>"; };
+		CE75344D1DDC11EA00D7DF80 /* Pods_TwoWayStreaming.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_TwoWayStreaming.framework; path = "Pods/../build/Debug-iphoneos/Pods_TwoWayStreaming.framework"; sourceTree = "<group>"; };
+		CE988A3F1DD5534400742423 /* MediaDevices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaDevices.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE988A421DD5548500742423 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MediaDevices/Info.plist; sourceTree = "<group>"; };
+		CE988A441DD554C900742423 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = MediaDevices/ViewController.h; sourceTree = "<group>"; };
+		CE988A451DD554C900742423 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = MediaDevices/ViewController.m; sourceTree = "<group>"; };
+		CE988A461DD554C900742423 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MediaDevices/AppDelegate.m; sourceTree = "<group>"; };
+		CE988A471DD554C900742423 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MediaDevices/AppDelegate.h; sourceTree = "<group>"; };
 		CEF3EB691C75ABA4002FDF16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEF3EB6B1C75ABA4002FDF16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
-		F63EBB88C2E4F9B1CDD1085A /* Pods-TwoWayStreaming.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoWayStreaming.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwoWayStreaming/Pods-TwoWayStreaming.release.xcconfig"; sourceTree = "<group>"; };
+		DCB73F0D95AC5C28060A24E5 /* Pods-TwoWayStreaming.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoWayStreaming.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwoWayStreaming/Pods-TwoWayStreaming.release.xcconfig"; sourceTree = "<group>"; };
+		E09018DB4496D32FF344EAE3 /* Pods-TwoWayStreaming.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoWayStreaming.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwoWayStreaming/Pods-TwoWayStreaming.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +127,28 @@
 				CE29B5A11DC036AE0081CD37 /* VideoToolbox.framework in Frameworks */,
 				007FCEA027937F1705D714B2 /* Pods_TwoWayStreaming.framework in Frameworks */,
 				CE29B5951DC036AE0081CD37 /* FPWCSApi2.framework in Frameworks */,
+				E3A16F99E869011CB95D85BD /* Pods_TwoWayStreaming.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE988A251DD5534400742423 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE988A261DD5534400742423 /* libicucore.tbd in Frameworks */,
+				CE988A271DD5534400742423 /* libstdc++.6.0.9.tbd in Frameworks */,
+				CE988A281DD5534400742423 /* libstdc++.tbd in Frameworks */,
+				CE988A291DD5534400742423 /* libc.tbd in Frameworks */,
+				CE988A2A1DD5534400742423 /* libsqlite3.tbd in Frameworks */,
+				CE988A2B1DD5534400742423 /* Foundation.framework in Frameworks */,
+				CE988A2C1DD5534400742423 /* AVFoundation.framework in Frameworks */,
+				CE988A2D1DD5534400742423 /* UIKit.framework in Frameworks */,
+				CE988A2E1DD5534400742423 /* GLKit.framework in Frameworks */,
+				CE988A2F1DD5534400742423 /* CoreMedia.framework in Frameworks */,
+				CE988A301DD5534400742423 /* CoreGraphics.framework in Frameworks */,
+				CE988A311DD5534400742423 /* VideoToolbox.framework in Frameworks */,
+				CE988A331DD5534400742423 /* FPWCSApi2.framework in Frameworks */,
+				C97D933619155A45FB5509E3 /* Pods_MediaDevices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,8 +158,10 @@
 		4D0B06C788C9EEF230372597 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				67CBF864F2F5FEFF671729B1 /* Pods-TwoWayStreaming.debug.xcconfig */,
-				F63EBB88C2E4F9B1CDD1085A /* Pods-TwoWayStreaming.release.xcconfig */,
+				E09018DB4496D32FF344EAE3 /* Pods-TwoWayStreaming.debug.xcconfig */,
+				DCB73F0D95AC5C28060A24E5 /* Pods-TwoWayStreaming.release.xcconfig */,
+				251625D1C68BDE4F9EA1E79A /* Pods-MediaDevices.debug.xcconfig */,
+				C2DDB1571337A4A0E150A71D /* Pods-MediaDevices.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -99,6 +169,7 @@
 		CE1BE62D1C0D8BA400A4970E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE75344D1DDC11EA00D7DF80 /* Pods_TwoWayStreaming.framework */,
 				CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */,
 				CE133F041C0D93E800EAEC55 /* libicucore.tbd */,
 				CE133F021C0D93DD00EAEC55 /* libstdc++.6.0.9.tbd */,
@@ -113,6 +184,7 @@
 				CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */,
 				CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */,
 				657FE6304944E7B0E86B981B /* Pods_TwoWayStreaming.framework */,
+				C024AB174E6997F2530E38C6 /* Pods_MediaDevices.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -131,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				CE29B5AB1DC036AE0081CD37 /* TwoWayStreaming.app */,
+				CE988A3F1DD5534400742423 /* MediaDevices.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,6 +211,8 @@
 		CE23105B1C0D718100918455 /* WCSExample */ = {
 			isa = PBXGroup;
 			children = (
+				CE7534331DD9703700D7DF80 /* common */,
+				CE988A411DD5546D00742423 /* MediaDevices */,
 				CE29B5AC1DC037E40081CD37 /* TwoWayStreaming */,
 				CE2310651C0D718100918455 /* Main.storyboard */,
 				CE2310681C0D718100918455 /* Assets.xcassets */,
@@ -166,6 +241,33 @@
 				CE29B5AD1DC038020081CD37 /* Info.plist */,
 			);
 			name = TwoWayStreaming;
+			sourceTree = "<group>";
+		};
+		CE7534331DD9703700D7DF80 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				CE7534341DD9708400D7DF80 /* WCSUtil.h */,
+				CE7534351DD9713600D7DF80 /* WCSUtil.m */,
+				CE7534431DDAD95200D7DF80 /* WCSViews.h */,
+				CE7534441DDADA3800D7DF80 /* WCSViews.m */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		CE988A411DD5546D00742423 /* MediaDevices */ = {
+			isa = PBXGroup;
+			children = (
+				CE988A441DD554C900742423 /* ViewController.h */,
+				CE988A451DD554C900742423 /* ViewController.m */,
+				CE988A461DD554C900742423 /* AppDelegate.m */,
+				CE988A471DD554C900742423 /* AppDelegate.h */,
+				CE988A421DD5548500742423 /* Info.plist */,
+				CE7534461DDB0CC500D7DF80 /* WCSLocalVideoControl.h */,
+				CE7534471DDB0CDB00D7DF80 /* WCSLocalVideoControl.m */,
+				CE7534491DDB398A00D7DF80 /* WCSRemoteVideoControl.h */,
+				CE75344A1DDB39A100D7DF80 /* WCSRemoteVideoControl.m */,
+			);
+			name = MediaDevices;
 			sourceTree = "<group>";
 		};
 		CEF3EB671C75ABA4002FDF16 /* Base.lproj */ = {
@@ -198,6 +300,26 @@
 			name = TwoWayStreaming;
 			productName = WCSExample;
 			productReference = CE29B5AB1DC036AE0081CD37 /* TwoWayStreaming.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE988A1F1DD5534400742423 /* MediaDevices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE988A3C1DD5534400742423 /* Build configuration list for PBXNativeTarget "MediaDevices" */;
+			buildPhases = (
+				8E680B36AB66F1F4FE5C2C5F /* [CP] Check Pods Manifest.lock */,
+				CE988A211DD5534400742423 /* Sources */,
+				CE988A251DD5534400742423 /* Frameworks */,
+				CE988A341DD5534400742423 /* Resources */,
+				5C4D4FF7694FE2B75D457075 /* [CP] Embed Pods Frameworks */,
+				1F873536BB1623536B2AA07C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MediaDevices;
+			productName = WCSExample;
+			productReference = CE988A3F1DD5534400742423 /* MediaDevices.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -233,6 +355,7 @@
 			projectRoot = "";
 			targets = (
 				CE29B5881DC036AE0081CD37 /* TwoWayStreaming */,
+				CE988A1F1DD5534400742423 /* MediaDevices */,
 			);
 		};
 /* End PBXProject section */
@@ -244,15 +367,43 @@
 			files = (
 				CE29B5A31DC036AE0081CD37 /* LaunchScreen.storyboard in Resources */,
 				CE29B5A41DC036AE0081CD37 /* Assets.xcassets in Resources */,
+				CE988A431DD5548500742423 /* Info.plist in Resources */,
 				CE29B5A51DC036AE0081CD37 /* Main.storyboard in Resources */,
 				CE29B5A61DC036AE0081CD37 /* Main.storyboard in Resources */,
 				CE29B5A71DC036AE0081CD37 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE988A341DD5534400742423 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE988A351DD5534400742423 /* LaunchScreen.storyboard in Resources */,
+				CE988A361DD5534400742423 /* Assets.xcassets in Resources */,
+				CE988A371DD5534400742423 /* Main.storyboard in Resources */,
+				CE988A381DD5534400742423 /* Main.storyboard in Resources */,
+				CE988A391DD5534400742423 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1F873536BB1623536B2AA07C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MediaDevices/Pods-MediaDevices-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2DB236D19223181E8CFAD1FC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -283,7 +434,37 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwoWayStreaming/Pods-TwoWayStreaming-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5C4D4FF7694FE2B75D457075 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MediaDevices/Pods-MediaDevices-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		844393695E4BE0D09F545A4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E680B36AB66F1F4FE5C2C5F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -308,6 +489,20 @@
 				CE29B5B51DC038BF0081CD37 /* ViewController.m in Sources */,
 				CE29B5B61DC038BF0081CD37 /* AppDelegate.m in Sources */,
 				CE29B5921DC036AE0081CD37 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE988A211DD5534400742423 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE988A4A1DD554DD00742423 /* ViewController.m in Sources */,
+				CE7534481DDB0CDB00D7DF80 /* WCSLocalVideoControl.m in Sources */,
+				CE988A4B1DD554DD00742423 /* AppDelegate.m in Sources */,
+				CE75344B1DDB39A100D7DF80 /* WCSRemoteVideoControl.m in Sources */,
+				CE7534361DD9713600D7DF80 /* WCSUtil.m in Sources */,
+				CE988A241DD5534400742423 /* main.m in Sources */,
+				CE7534451DDADA3800D7DF80 /* WCSViews.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +629,7 @@
 		};
 		CE29B5A91DC036AE0081CD37 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67CBF864F2F5FEFF671729B1 /* Pods-TwoWayStreaming.debug.xcconfig */;
+			baseConfigurationReference = E09018DB4496D32FF344EAE3 /* Pods-TwoWayStreaming.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = (
 					arm64,
@@ -457,7 +652,7 @@
 		};
 		CE29B5AA1DC036AE0081CD37 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F63EBB88C2E4F9B1CDD1085A /* Pods-TwoWayStreaming.release.xcconfig */;
+			baseConfigurationReference = DCB73F0D95AC5C28060A24E5 /* Pods-TwoWayStreaming.release.xcconfig */;
 			buildSettings = {
 				ARCHS = (
 					arm64,
@@ -474,6 +669,54 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.TwoWayStreaming;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CE988A3D1DD5534400742423 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 251625D1C68BDE4F9EA1E79A /* Pods-MediaDevices.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					armv7,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/MediaDevices/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.MediaDevices;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CE988A3E1DD5534400742423 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2DDB1571337A4A0E150A71D /* Pods-MediaDevices.release.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					armv7,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/MediaDevices/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.MediaDevices;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -495,6 +738,15 @@
 			buildConfigurations = (
 				CE29B5A91DC036AE0081CD37 /* Debug */,
 				CE29B5AA1DC036AE0081CD37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE988A3C1DD5534400742423 /* Build configuration list for PBXNativeTarget "MediaDevices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE988A3D1DD5534400742423 /* Debug */,
+				CE988A3E1DD5534400742423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

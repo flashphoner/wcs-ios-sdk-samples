@@ -22,5 +22,8 @@ pod install
 xcodebuild -workspace 'WCSExample.xcworkspace' -scheme "TwoWayStreaming" -configuration="Release" clean archive OBJROOT=$(PWD)/out-build/TwoWayStreaming -archivePath out-build/TwoWayStreaming
 xcodebuild -exportArchive -exportOptionsPlist Info.plist -archivePath out-build/TwoWayStreaming.xcarchive -exportPath out-build
 
+xcodebuild -workspace 'WCSExample.xcworkspace' -scheme "MediaDevices" -configuration="Release" clean archive OBJROOT=$(PWD)/out-build/MediaDevices -archivePath out-build/MediaDevices
+xcodebuild -exportArchive -exportOptionsPlist Info.plist -archivePath out-build/MediaDevices.xcarchive -exportPath out-build
+
 echo "Build complete"
 

@@ -5,3 +5,8 @@ target 'TwoWayStreaming' do
   pod 'SocketRocket'
   pod 'JSONModel'
 end
+
+target 'MediaDevices' do
+  pod 'SocketRocket'
+  pod 'JSONModel'
+end
