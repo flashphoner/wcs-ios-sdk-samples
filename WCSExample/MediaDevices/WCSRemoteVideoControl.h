@@ -1,5 +1,6 @@
 
 #import "WCSViews.h"
+#import <FPWCSApi2/FPWCSApi2.h>
 
 @interface  WCSRemoteVideoControlView : WCSSlidingView<UITextFieldDelegate>
 
@@ -10,5 +11,7 @@
 @property WCSTextInputWithDefaultView *quality;
 
 - (void)muteVideoInputs:(BOOL)mute;
+
+- (FPWCSApi2MediaConstraints *)toMediaConstraints;
 
 @end

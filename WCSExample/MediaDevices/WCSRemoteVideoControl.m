@@ -1,6 +1,5 @@
 
 
-#import <FPWCSApi2/FPWCSApi2.h>
 #import "WCSRemoteVideoControl.h"
 #import "WCSUtil.h"
 
@@ -77,5 +76,20 @@
     _bitrate.userInteractionEnabled = enabled;
     _quality.userInteractionEnabled = enabled;
 }
+
+- (FPWCSApi2MediaConstraints *)toMediaConstraints {
+    FPWCSApi2MediaConstraints *ret = [[FPWCSApi2MediaConstraints alloc] init];
+    ret.audio = YES;
+    if ([_playVideo.control isOn]) {
+        FPWCSApi2VideoConstraints *video = [[FPWCSApi2VideoConstraints alloc] init];
+        video.minWidth = video.maxWidth = [_videoResolution.width.text integerValue];
+        video.minHeight = video.maxHeight = [_videoResolution.height.text integerValue];
+        video.bitrate = [_bitrate.input.text integerValue];
+        video.quality = [_quality.input.text integerValue];
+        ret.video = video;
+    }
+    return ret;
+}
+
 
 @end

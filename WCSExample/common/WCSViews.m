@@ -219,19 +219,28 @@
 @implementation WCSDoubleVideoView {
     NSMutableArray *localConstraints;
     NSMutableArray *remoteConstraints;
+    UILabel *_localLabel;
+    UILabel *_remoteLabel;
 }
 
 - (instancetype)init {
     self = [super init];
     if (self) {
+        localConstraints = [[NSMutableArray alloc] init];
+        remoteConstraints = [[NSMutableArray alloc] init];
         self.translatesAutoresizingMaskIntoConstraints = NO;
         _local = [[RTCEAGLVideoView alloc] init];
         _remote = [[RTCEAGLVideoView alloc] init];
         _local.translatesAutoresizingMaskIntoConstraints = NO;
         _remote.translatesAutoresizingMaskIntoConstraints = NO;
-        
+        _localLabel = [WCSViewUtil createLabelView];
+        _localLabel.text = @"0x0";
+        _remoteLabel = [WCSViewUtil createLabelView];
+        _remoteLabel.text = @"0x0";
         [self addSubview:_local];
         [self addSubview:_remote];
+        [self addSubview:_localLabel];
+        [self addSubview:_remoteLabel];
         NSDictionary *views = @{
                                 @"local": _local,
                                 @"remote": _remote,
@@ -246,7 +255,10 @@
         [self addConstraint:[NSLayoutConstraint constraintWithItem:_remote attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.0 constant:0]];
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[local]" options:0 metrics:metrics views:views]];
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[remote]" options:0 metrics:metrics views:views]];
-        
+        [self addConstraint:[NSLayoutConstraint constraintWithItem:_localLabel attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:_local attribute:NSLayoutAttributeBottom multiplier:1.0 constant:20]];
+        [self addConstraint:[NSLayoutConstraint constraintWithItem:_remoteLabel attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:_remote attribute:NSLayoutAttributeBottom multiplier:1.0 constant:20]];
+        [self addConstraint:[NSLayoutConstraint constraintWithItem:_localLabel attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:_local attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0]];
+        [self addConstraint:[NSLayoutConstraint constraintWithItem:_remoteLabel attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:_remote attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0]];
         //aspect ratio
         NSLayoutConstraint *localARConstraint = [NSLayoutConstraint constraintWithItem:_local attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:_local attribute:NSLayoutAttributeHeight multiplier:640.0/480.0 constant:0];
         [localConstraints addObject:localARConstraint];
@@ -274,6 +286,8 @@
         NSLayoutConstraint *remoteHeight = [NSLayoutConstraint constraintWithItem:_remote attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeHeight multiplier:1.0 constant:0];
         remoteHeight.priority = 999;
         [self addConstraint:remoteHeight];
+        _local.delegate = self;
+        _remote.delegate = self;
         
     }
     return self;
@@ -286,7 +300,7 @@
 
 - (void)videoView:(RTCEAGLVideoView*)videoView didChangeVideoSize:(CGSize)size {
     if (videoView == _local) {
-        NSLog(@"Size of local video %fx%f", size.width, size.height);
+        _localLabel.text = [NSString stringWithFormat:@"%fx%f", size.width, size.height];
         [_local removeConstraints:localConstraints];
         [localConstraints removeAllObjects];
         NSLayoutConstraint *constraint =[NSLayoutConstraint
@@ -299,8 +313,9 @@
                                          constant:0.0f];
         [localConstraints addObject:constraint];
         [_local addConstraints:localConstraints];
+        _localLabel.text = [NSString stringWithFormat:@"%dx%d", (int)size.width, (int)size.height];
     } else {
-        NSLog(@"Size of remote video %fx%f", size.width, size.height);
+        _remoteLabel.text = [NSString stringWithFormat:@"%dx%d", (int)size.width, (int)size.height];
         [_remote removeConstraints:remoteConstraints];
         [remoteConstraints removeAllObjects];
         NSLayoutConstraint *constraint =[NSLayoutConstraint

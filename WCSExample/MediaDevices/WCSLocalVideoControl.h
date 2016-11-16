@@ -4,6 +4,8 @@
 
 @interface  WCSLocalVideoControlView : WCSSlidingView<UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
 
+@property UIView *scrollView;
+@property UIView *contentView;
 @property UIButton *hideButton;
 @property WCSSwitchView *sendAudio;
 @property WCSPickerInputView *micSelector;
@@ -21,5 +23,7 @@
 - (void)muteAudioInputs:(BOOL)mute;
 
 - (void)muteVideoInputs:(BOOL)mute;
+
+- (FPWCSApi2MediaConstraints *)toMediaConstraints;
 
 @end

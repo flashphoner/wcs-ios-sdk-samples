@@ -10,6 +10,10 @@
     self = [super initWithPosition:NSLayoutAttributeLeft];
     if (self) {
         localDevices = [FPWCSApi2 getMediaDevices];
+        _scrollView = [[UIView alloc] init];
+        _scrollView.translatesAutoresizingMaskIntoConstraints = NO;
+        _contentView = [[UIView alloc] init];
+        _contentView.translatesAutoresizingMaskIntoConstraints = NO;
         _hideButton = [WCSViewUtil createButton:@"Hide"];
         [_hideButton addTarget:self action:@selector(onHideButton:) forControlEvents:UIControlEventTouchUpInside];
         _sendAudio = [[WCSSwitchView alloc] initWithLabelText:@"Send Audio"];
@@ -33,24 +37,28 @@
             _camSelector.input.text = ((FPWCSApi2MediaDevice *)(localDevices.video[0])).label;
         }
         _videoResolution = [[WCSVideoResolutionInputView alloc] initWithLabelText:@"Size"];
+        _videoResolution.width.text = @"640";
+        _videoResolution.height.text = @"480";
         _fpsSelector = [[WCSPickerInputView alloc] initWithLabelText:@"FPS" pickerDelegate:self];
         //set default fps
         _fpsSelector.input.text = @"30";
         _bitrate = [[WCSTextInputView alloc] initWithLabelText:@"Bitrate"];
         _quality = [[WCSTextInputView alloc] initWithLabelText:@"Quality"];
         _muteVideo = [[WCSSwitchView alloc] initWithLabelText:@"Mute Video"];
+        [_contentView addSubview:_sendAudio];
+        [_contentView addSubview:_micSelector];
+        [_contentView addSubview:_muteAudio];
+        [_contentView addSubview:_border];
+        [_contentView addSubview:_sendVideo];
+        [_contentView addSubview:_camSelector];
+        [_contentView addSubview:_videoResolution];
+        [_contentView addSubview:_fpsSelector];
+        [_contentView addSubview:_bitrate];
+        [_contentView addSubview:_quality];
+        [_contentView addSubview:_muteVideo];
+        [_scrollView addSubview:_contentView];
         [self addSubview:_hideButton];
-        [self addSubview:_sendAudio];
-        [self addSubview:_micSelector];
-        [self addSubview:_muteAudio];
-        [self addSubview:_border];
-        [self addSubview:_sendVideo];
-        [self addSubview:_camSelector];
-        [self addSubview:_videoResolution];
-        [self addSubview:_fpsSelector];
-        [self addSubview:_bitrate];
-        [self addSubview:_quality];
-        [self addSubview:_muteVideo];
+        [self addSubview:_scrollView];
         
         NSDictionary *views = @{
                                 @"hideButton": _hideButton,
@@ -65,6 +73,8 @@
                                 @"bitrate": _bitrate,
                                 @"quality": _quality,
                                 @"muteVideo": _muteVideo,
+                                @"content": _contentView,
+                                @"scroll": _scrollView,
                                 @"container": self
                                 };
         NSDictionary *metrics = @{
@@ -72,21 +82,25 @@
                                   @"vSpacing": @10,
                                   @"hSpacing": @20
                                   };
+        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[sendAudio]|" options:0 metrics:metrics views:views]];
+        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[micSelector]|" options:0 metrics:metrics views:views]];
+        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[muteAudio]|" options:0 metrics:metrics views:views]];
+        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[border]|" options:0 metrics:metrics views:views]];
+        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[sendVideo]|" options:0 metrics:metrics views:views]];
+        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[camSelector]|" options:0 metrics:metrics views:views]];
+        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[videoResolution]|" options:0 metrics:metrics views:views]];
+        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[fpsSelector]|" options:0 metrics:metrics views:views]];
+        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[bitrate]|" options:0 metrics:metrics views:views]];
+        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[quality]|" options:0 metrics:metrics views:views]];
+        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[muteVideo]|" options:0 metrics:metrics views:views]];
         
+        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-vSpacing-[sendAudio]-vSpacing-[micSelector]-vSpacing-[muteAudio]-vSpacing-[border]-vSpacing-[sendVideo]-vSpacing-[camSelector]-vSpacing-[videoResolution]-vSpacing-[fpsSelector]-vSpacing-[bitrate]-vSpacing-[quality]-vSpacing-[muteVideo]" options:0 metrics:metrics views:views]];
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-hSpacing-[hideButton]-hSpacing-|" options:0 metrics:metrics views:views]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-hSpacing-[sendAudio]-hSpacing-|" options:0 metrics:metrics views:views]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-hSpacing-[micSelector]-hSpacing-|" options:0 metrics:metrics views:views]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-hSpacing-[muteAudio]-hSpacing-|" options:0 metrics:metrics views:views]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-hSpacing-[border]-hSpacing-|" options:0 metrics:metrics views:views]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-hSpacing-[sendVideo]-hSpacing-|" options:0 metrics:metrics views:views]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-hSpacing-[camSelector]-hSpacing-|" options:0 metrics:metrics views:views]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-hSpacing-[videoResolution]-hSpacing-|" options:0 metrics:metrics views:views]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-hSpacing-[fpsSelector]-hSpacing-|" options:0 metrics:metrics views:views]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-hSpacing-[bitrate]-hSpacing-|" options:0 metrics:metrics views:views]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-hSpacing-[quality]-hSpacing-|" options:0 metrics:metrics views:views]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-hSpacing-[muteVideo]-hSpacing-|" options:0 metrics:metrics views:views]];
-        
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-vSpacing-[hideButton]-vSpacing-[sendAudio]-vSpacing-[micSelector]-vSpacing-[muteAudio]-vSpacing-[border]-vSpacing-[sendVideo]-vSpacing-[camSelector]-vSpacing-[videoResolution]-vSpacing-[fpsSelector]-vSpacing-[bitrate]-vSpacing-[quality]-vSpacing-[muteVideo]" options:0 metrics:metrics views:views]];
+        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[scroll]|" options:0 metrics:metrics views:views]];
+        [_scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-hSpacing-[content]-hSpacing-|" options:0 metrics:metrics views:views]];
+        [_scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[content]|" options:0 metrics:metrics views:views]];
+        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-vSpacing-[hideButton][scroll]|" options:0 metrics:metrics views:views]];
+
     }
     return self;
 }
@@ -187,6 +201,26 @@
     _bitrate.input.userInteractionEnabled = enabled;
     _quality.input.userInteractionEnabled = enabled;
     _muteVideo.control.userInteractionEnabled = enabled;
+}
+
+- (FPWCSApi2MediaConstraints *)toMediaConstraints {
+    FPWCSApi2MediaConstraints *ret = [[FPWCSApi2MediaConstraints alloc] init];
+    ret.audio = [_sendAudio.control isOn];
+    if ([_sendVideo.control isOn]) {
+        FPWCSApi2VideoConstraints *video = [[FPWCSApi2VideoConstraints alloc] init];
+        for (FPWCSApi2MediaDevice *device in localDevices.video) {
+            if ([device.label isEqualToString:_camSelector.input.text]) {
+                video.deviceID = device.deviceID;
+            }
+        }
+        video.minWidth = video.maxWidth = [_videoResolution.width.text integerValue];
+        video.minHeight = video.maxHeight = [_videoResolution.height.text integerValue];
+        video.minFrameRate = video.maxFrameRate = [_fpsSelector.input.text integerValue];
+        video.bitrate = [_bitrate.input.text integerValue];
+        video.quality = [_quality.input.text integerValue];
+        ret.video = video;
+    }
+    return ret;
 }
 
 @end
