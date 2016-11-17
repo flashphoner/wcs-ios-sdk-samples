@@ -99,6 +99,13 @@
         [self presentViewController:alert animated:YES completion:nil];
         return;
     }
+    //initial mute
+    if (_localControl.muteAudio.control.isOn) {
+        [_localStream muteAudio];
+    }
+    if (_localControl.muteVideo.control.isOn) {
+        [_localStream muteVideo];
+    }
     [_localStream on:kFPWCSStreamStatusPublishing callback:^(FPWCSApi2Stream *stream){
         [self startPlaying];
     }];
@@ -132,6 +139,7 @@
     FPWCSApi2StreamOptions *options = [[FPWCSApi2StreamOptions alloc] init];
     options.name = [self getStreamName];
     options.display = _videoView.remote;
+    options.constraints = [_remoteControl toMediaConstraints];
     NSError *error;
     _remoteStream = [_session createStream:options error:&error];
     if (!_remoteStream) {
@@ -223,8 +231,31 @@
     [_remoteControl show];
 }
 
+- (void)controlValueChanged:(id)sender {
+    if (sender == _localControl.muteAudio.control) {
+        if (_localStream) {
+            if (_localControl.muteAudio.control.isOn) {
+                [_localStream muteAudio];
+            } else {
+                [_localStream unmuteAudio];
+            }
+        }
+    } else if (sender == _localControl.muteVideo.control) {
+        if (_localStream) {
+            if (_localControl.muteVideo.control.isOn) {
+                [_localStream muteVideo];
+            } else {
+                [_localStream unmuteVideo];
+            }
+        }
+    }
+}
+
 //user interface views and layout
 - (void)setupViews {
+    _scrollView = [[UIScrollView alloc] init];
+    _scrollView.translatesAutoresizingMaskIntoConstraints = NO;
+    _scrollView.scrollEnabled = YES;
     _startButton = [WCSViewUtil createButton:@"Start"];
     [_startButton addTarget:self action:@selector(startButton:) forControlEvents:UIControlEventTouchUpInside];
     _localSettingsButton = [WCSViewUtil createButton:@"Local settings"];
@@ -237,6 +268,8 @@
     _urlInput.text = @"ws://192.168.88.234:8080";
     _videoView = [[WCSDoubleVideoView alloc] init];
     _localControl = [[WCSLocalVideoControlView alloc] init];
+    [_localControl.muteAudio.control addTarget:self action:@selector(controlValueChanged:) forControlEvents:UIControlEventValueChanged];
+    [_localControl.muteVideo.control addTarget:self action:@selector(controlValueChanged:) forControlEvents:UIControlEventValueChanged];
     _remoteControl = [[WCSRemoteVideoControlView alloc] init];
     _contentView = [[UIView alloc] init];
     _contentView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -246,7 +279,8 @@
     [_contentView addSubview:_settingsButtonContainer];
     [_contentView addSubview:_urlInput];
     [_contentView addSubview:_videoView];
-    [self.view addSubview:_contentView];
+    [_scrollView addSubview:_contentView];
+    [self.view addSubview:_scrollView];
     [self.view addSubview:_localControl];
     [self.view addSubview:_remoteControl];
 }
@@ -262,12 +296,13 @@
                             @"videoView": _videoView,
                             @"content": _contentView,
                             @"localControl": _localControl,
-                            @"remoteControl": _remoteControl
+                            @"remoteControl": _remoteControl,
+                            @"scroll": _scrollView
                             };
     NSDictionary *metrics = @{
                               @"height": @30,
                               @"vSpacing": @30,
-                              @"hSpacing": @30
+                              @"hSpacing": @10
                               };
 
     void (^setConstraint)(UIView*, NSString*, NSLayoutFormatOptions) = ^(UIView *view, NSString *constraint, NSLayoutFormatOptions options) {
@@ -317,13 +352,17 @@
     setConstraint(_urlInput, @"V:[urlInput(height)]", 0);
     setConstraint(_contentView, @"H:|[urlInput]|", 0);
     setConstraint(_contentView, @"H:|[videoView]|", 0);
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:_videoView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationGreaterThanOrEqual toItem:self.view attribute:NSLayoutAttributeHeight multiplier:0.5 constant:0]];
     
-    setConstraint(_contentView, @"V:|-vSpacing-[videoView]-[settings]-vSpacing-[urlInput]-vSpacing-[start]-vSpacing-|", 0);
+    setConstraint(_contentView, @"V:|[videoView]-[settings]-vSpacing-[urlInput]-vSpacing-[start]-vSpacing-|", 0);
+    setConstraint(_scrollView, @"V:|[content]|", 0);
+    setConstraint(self.view, @"H:|[scroll]|", 0);
+    setConstraint(self.view, @"H:|-hSpacing-[content]-hSpacing-|", 0);
     
-    setConstraint(self.view, @"H:|[content]|", 0);
-    setConstraint(self.view, @"V:|[content]|", 0);
-    setConstraint(self.view, @"V:|-vSpacing-[localControl]-vSpacing-|", 0);
-    setConstraint(self.view, @"V:|-vSpacing-[remoteControl]-vSpacing-|", 0);
+    setConstraint(self.view, @"V:|-vSpacing-[scroll]|", 0);
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:_contentView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeWidth multiplier:1 constant:-20]];
+    setConstraint(self.view, @"V:|-vSpacing-[localControl]|", 0);
+    setConstraint(self.view, @"V:|-vSpacing-[remoteControl]|", 0);
 }
 
 - (void)didReceiveMemoryWarning {

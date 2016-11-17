@@ -2,6 +2,8 @@
 
 #import <FPWCSApi2/FPWCSApi2.h>
 
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
 @interface WCSViewUtil : NSObject
 
 + (UITextField *)createTextField:(id)delegate;

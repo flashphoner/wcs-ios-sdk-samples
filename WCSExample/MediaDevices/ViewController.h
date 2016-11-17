@@ -14,6 +14,7 @@
 
 @interface ViewController : UIViewController
 
+@property UIScrollView *scrollView;
 @property UIView *contentView;
 @property UIButton *startButton;
 @property UIView *settingsButtonContainer;

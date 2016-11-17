@@ -157,11 +157,17 @@
         [self addSubview:_input];
         [_label addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[label(height)]" options:0 metrics:metrics views:views]];
         [_input addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[textInput(height)]" options:0 metrics:metrics views:views]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[label][textInput]|" options:NSLayoutFormatAlignAllTop metrics:metrics views:views]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[label]" options:0 metrics:metrics views:views]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[container(height)]" options:0 metrics:metrics views:views]];
-        //width boundaries
-        [self addConstraint:[NSLayoutConstraint constraintWithItem:_input attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeWidth multiplier:0.5 constant:0]];
+        if (IS_IPAD) {
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[label][textInput]|" options:NSLayoutFormatAlignAllTop metrics:metrics views:views]];
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[label]" options:0 metrics:metrics views:views]];
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[container(height)]" options:0 metrics:metrics views:views]];
+            //width boundaries
+            [self addConstraint:[NSLayoutConstraint constraintWithItem:_input attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeWidth multiplier:0.5 constant:0]];
+        } else {
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[label]|" options:NSLayoutFormatAlignAllTop metrics:metrics views:views]];
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[textInput]|" options:NSLayoutFormatAlignAllTop metrics:metrics views:views]];
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[label]-2-[textInput]|" options:0 metrics:metrics views:views]];
+        }
 
     }
     return self;
@@ -195,14 +201,20 @@
                                   };
         [_control addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[control(height)]" options:0 metrics:metrics views:views]];
         [self removeConstraints:[self constraints]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[label]|" options:0 metrics:metrics views:views]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[textInput]|" options:0 metrics:metrics views:views]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[control]|" options:0 metrics:metrics views:views]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[container(height)]" options:0 metrics:metrics views:views]];
-        [self addConstraint:[NSLayoutConstraint constraintWithItem:super.input attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeWidth multiplier:0.5 constant:0]];
-        [self addConstraint:[NSLayoutConstraint constraintWithItem:super.input attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
-        [self addConstraint:[NSLayoutConstraint constraintWithItem:super.label attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1 constant:0]];
-        [self addConstraint:[NSLayoutConstraint constraintWithItem:_control attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1 constant:0]];
+        if (IS_IPAD) {
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[label]|" options:0 metrics:metrics views:views]];
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[textInput]|" options:0 metrics:metrics views:views]];
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[control]|" options:0 metrics:metrics views:views]];
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[container(height)]" options:0 metrics:metrics views:views]];
+            [self addConstraint:[NSLayoutConstraint constraintWithItem:super.input attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeWidth multiplier:0.5 constant:0]];
+            [self addConstraint:[NSLayoutConstraint constraintWithItem:super.input attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
+            [self addConstraint:[NSLayoutConstraint constraintWithItem:super.label attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1 constant:0]];
+            [self addConstraint:[NSLayoutConstraint constraintWithItem:_control attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1 constant:0]];
+        } else {
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[label][control]|" options:NSLayoutFormatAlignAllTop metrics:metrics views:views]];
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[textInput]|" options:0 metrics:metrics views:views]];
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[label]-2-[textInput]|" options:0 metrics:metrics views:views]];
+        }
 
 
     }
@@ -244,11 +256,15 @@
         NSDictionary *views = @{
                                 @"local": _local,
                                 @"remote": _remote,
+                                @"localLabel": _localLabel,
+                                @"remoteLabel": _remoteLabel,
                                 @"container": self
                                 };
         NSDictionary *metrics = @{
                                   @"height": @30
                                   };
+        [_localLabel addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[localLabel(height)]" options:0 metrics:metrics views:views]];
+        [_remoteLabel addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[remoteLabel(height)]" options:0 metrics:metrics views:views]];
         [self addConstraint:[NSLayoutConstraint constraintWithItem:_local attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0]];
         [self addConstraint:[NSLayoutConstraint constraintWithItem:_remote attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1.0 constant:0]];
         [self addConstraint:[NSLayoutConstraint constraintWithItem:_local attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.0 constant:0]];
@@ -259,6 +275,8 @@
         [self addConstraint:[NSLayoutConstraint constraintWithItem:_remoteLabel attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:_remote attribute:NSLayoutAttributeBottom multiplier:1.0 constant:20]];
         [self addConstraint:[NSLayoutConstraint constraintWithItem:_localLabel attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:_local attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0]];
         [self addConstraint:[NSLayoutConstraint constraintWithItem:_remoteLabel attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:_remote attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0]];
+        [self addConstraint:[NSLayoutConstraint constraintWithItem:_localLabel attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationLessThanOrEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0]];
+        [self addConstraint:[NSLayoutConstraint constraintWithItem:_remoteLabel attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationLessThanOrEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0]];
         //aspect ratio
         NSLayoutConstraint *localARConstraint = [NSLayoutConstraint constraintWithItem:_local attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:_local attribute:NSLayoutAttributeHeight multiplier:640.0/480.0 constant:0];
         [localConstraints addObject:localARConstraint];
@@ -366,7 +384,9 @@
         self.translatesAutoresizingMaskIntoConstraints = NO;
         _label = [WCSViewUtil createInfoLabel:text];
         _width = [WCSViewUtil createTextField:self];
+        _width.textAlignment = NSTextAlignmentCenter;
         _height = [WCSViewUtil createTextField:self];
+        _height.textAlignment = NSTextAlignmentCenter;
         [self addSubview:_label];
         [self addSubview:_width];
         [self addSubview:_height];
@@ -383,9 +403,15 @@
         [_label addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[label(height)]" options:0 metrics:metrics views:views]];
         [_width addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[widthInput(height)]" options:0 metrics:metrics views:views]];
         [_height addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[heightInput(height)]" options:0 metrics:metrics views:views]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[label][widthInput][heightInput]|" options:NSLayoutFormatAlignAllTop metrics:metrics views:views]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[label]" options:0 metrics:metrics views:views]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[container(height)]" options:0 metrics:metrics views:views]];
+        if (IS_IPAD) {
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[label][widthInput][heightInput(==widthInput)]|" options:NSLayoutFormatAlignAllTop metrics:metrics views:views]];
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[label]" options:0 metrics:metrics views:views]];
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[container(height)]" options:0 metrics:metrics views:views]];
+        } else {
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[label]|" options:0 metrics:metrics views:views]];
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[widthInput][heightInput(==widthInput)]|" options:NSLayoutFormatAlignAllTop metrics:metrics views:views]];
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[label]-2-[widthInput]|" options:0 metrics:metrics views:views]];
+        }
 
     }
     return self;
@@ -446,9 +472,15 @@
                                   };
         [_control addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[control(height)]" options:0 metrics:metrics views:views]];
         [self removeConstraints:[self constraints]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[label][widthInput][heightInput][control]|" options:NSLayoutFormatAlignAllTop metrics:metrics views:views]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[label]" options:0 metrics:metrics views:views]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[container(height)]" options:0 metrics:metrics views:views]];
+        if (IS_IPAD) {
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[label][widthInput][heightInput][control]|" options:NSLayoutFormatAlignAllTop metrics:metrics views:views]];
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[label]" options:0 metrics:metrics views:views]];
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[container(height)]" options:0 metrics:metrics views:views]];
+        } else {
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[label][control]|" options:NSLayoutFormatAlignAllTop metrics:metrics views:views]];
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[widthInput][heightInput(==widthInput)]|" options:NSLayoutFormatAlignAllTop metrics:metrics views:views]];
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[label]-2-[widthInput]|" options:0 metrics:metrics views:views]];
+        }
 
         
     }

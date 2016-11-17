@@ -4,6 +4,8 @@
 
 @interface  WCSRemoteVideoControlView : WCSSlidingView<UITextFieldDelegate>
 
+@property UIScrollView *scrollView;
+@property UIView *contentView;
 @property UIButton *hideButton;
 @property WCSSwitchView *playVideo;
 @property WCSVideoResolutionInputWithDefaultView *videoResolution;

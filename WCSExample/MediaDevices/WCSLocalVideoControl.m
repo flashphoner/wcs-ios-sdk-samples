@@ -10,8 +10,9 @@
     self = [super initWithPosition:NSLayoutAttributeLeft];
     if (self) {
         localDevices = [FPWCSApi2 getMediaDevices];
-        _scrollView = [[UIView alloc] init];
+        _scrollView = [[UIScrollView alloc] init];
         _scrollView.translatesAutoresizingMaskIntoConstraints = NO;
+        _scrollView.scrollEnabled = YES;
         _contentView = [[UIView alloc] init];
         _contentView.translatesAutoresizingMaskIntoConstraints = NO;
         _hideButton = [WCSViewUtil createButton:@"Hide"];
@@ -80,7 +81,7 @@
         NSDictionary *metrics = @{
                                   @"height": @30,
                                   @"vSpacing": @10,
-                                  @"hSpacing": @20
+                                  @"hSpacing": @10
                                   };
         [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[sendAudio]|" options:0 metrics:metrics views:views]];
         [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[micSelector]|" options:0 metrics:metrics views:views]];
@@ -94,12 +95,13 @@
         [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[quality]|" options:0 metrics:metrics views:views]];
         [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[muteVideo]|" options:0 metrics:metrics views:views]];
         
-        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-vSpacing-[sendAudio]-vSpacing-[micSelector]-vSpacing-[muteAudio]-vSpacing-[border]-vSpacing-[sendVideo]-vSpacing-[camSelector]-vSpacing-[videoResolution]-vSpacing-[fpsSelector]-vSpacing-[bitrate]-vSpacing-[quality]-vSpacing-[muteVideo]" options:0 metrics:metrics views:views]];
+        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-vSpacing-[sendAudio]-vSpacing-[micSelector]-vSpacing-[muteAudio]-vSpacing-[border]-vSpacing-[sendVideo]-vSpacing-[camSelector]-vSpacing-[videoResolution]-vSpacing-[fpsSelector]-vSpacing-[bitrate]-vSpacing-[quality]-vSpacing-[muteVideo]-vSpacing-|" options:0 metrics:metrics views:views]];
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-hSpacing-[hideButton]-hSpacing-|" options:0 metrics:metrics views:views]];
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[scroll]|" options:0 metrics:metrics views:views]];
-        [_scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-hSpacing-[content]-hSpacing-|" options:0 metrics:metrics views:views]];
-        [_scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[content]|" options:0 metrics:metrics views:views]];
+        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-hSpacing-[content]-hSpacing-|" options:0 metrics:metrics views:views]];
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-vSpacing-[hideButton][scroll]|" options:0 metrics:metrics views:views]];
+        [_scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[content]|" options:0 metrics:metrics views:views]];
+        [self addConstraint:[NSLayoutConstraint constraintWithItem:_contentView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeWidth multiplier:1 constant:-20]];
 
     }
     return self;

@@ -4,7 +4,7 @@
 
 @interface  WCSLocalVideoControlView : WCSSlidingView<UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
 
-@property UIView *scrollView;
+@property UIScrollView *scrollView;
 @property UIView *contentView;
 @property UIButton *hideButton;
 @property WCSSwitchView *sendAudio;
