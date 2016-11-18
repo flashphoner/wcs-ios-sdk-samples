@@ -25,5 +25,9 @@ xcodebuild -exportArchive -exportOptionsPlist Info.plist -archivePath out-build/
 xcodebuild -workspace 'WCSExample.xcworkspace' -scheme "MediaDevices" -configuration="Release" clean archive OBJROOT=$(PWD)/out-build/MediaDevices -archivePath out-build/MediaDevices
 xcodebuild -exportArchive -exportOptionsPlist Info.plist -archivePath out-build/MediaDevices.xcarchive -exportPath out-build
 
+xcodebuild -workspace 'WCSExample.xcworkspace' -scheme "Player" -configuration="Release" clean archive OBJROOT=$(PWD)/out-build/Player -archivePath out-build/Player
+xcodebuild -exportArchive -exportOptionsPlist Info.plist -archivePath out-build/Player.xcarchive -exportPath out-build
+
+
 echo "Build complete"
 

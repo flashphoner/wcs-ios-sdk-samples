@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE988A1F1DD5534400742423"
-               BuildableName = "MediaDevices.app"
-               BlueprintName = "MediaDevices"
+               BlueprintIdentifier = "55C3EEAB1DDD6B240004F538"
+               BuildableName = "Player.app"
+               BlueprintName = "Player"
                ReferencedContainer = "container:WCSExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE988A1F1DD5534400742423"
-            BuildableName = "MediaDevices.app"
-            BlueprintName = "MediaDevices"
+            BlueprintIdentifier = "55C3EEAB1DDD6B240004F538"
+            BuildableName = "Player.app"
+            BlueprintName = "Player"
             ReferencedContainer = "container:WCSExample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE988A1F1DD5534400742423"
-            BuildableName = "MediaDevices.app"
-            BlueprintName = "MediaDevices"
+            BlueprintIdentifier = "55C3EEAB1DDD6B240004F538"
+            BuildableName = "Player.app"
+            BlueprintName = "Player"
             ReferencedContainer = "container:WCSExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -74,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE988A1F1DD5534400742423"
-            BuildableName = "MediaDevices.app"
-            BlueprintName = "MediaDevices"
+            BlueprintIdentifier = "55C3EEAB1DDD6B240004F538"
+            BuildableName = "Player.app"
+            BlueprintName = "Player"
             ReferencedContainer = "container:WCSExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
