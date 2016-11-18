@@ -2,6 +2,15 @@
 #import <UIKit/UIKit.h>
 #import <FPWCSApi2/FPWCSApi2.h>
 
+@interface WCSKeyboardTracker : NSObject
+
++ (instancetype)sharedInstance;
+
+- (void)update:(UITextField *)field;
+- (void)update;
+
+@end
+
 @interface WCSSlidingView : UIView
 
 @property NSLayoutConstraint *padding;
@@ -24,7 +33,7 @@
 
 @end
 
-@interface WCSTextInputView : UIView
+@interface WCSTextInputView : UIView<UITextFieldDelegate>
 
 @property UILabel *label;
 @property UITextField *input;
@@ -57,7 +66,7 @@
 
 @end
 
-@interface WCSVideoResolutionInputView : UIView
+@interface WCSVideoResolutionInputView : UIView<UITextFieldDelegate>
 
 @property UILabel *label;
 @property UITextField *width;

@@ -43,6 +43,7 @@
         _fpsSelector = [[WCSPickerInputView alloc] initWithLabelText:@"FPS" pickerDelegate:self];
         //set default fps
         _fpsSelector.input.text = @"30";
+        [_fpsSelector.picker selectRow:[_fpsSelector.picker numberOfRowsInComponent:0] - 1 inComponent:0 animated:NO];
         _bitrate = [[WCSTextInputView alloc] initWithLabelText:@"Bitrate"];
         _quality = [[WCSTextInputView alloc] initWithLabelText:@"Quality"];
         _muteVideo = [[WCSSwitchView alloc] initWithLabelText:@"Mute Video"];

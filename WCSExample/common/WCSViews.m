@@ -3,6 +3,87 @@
 #import "WCSViews.h"
 #import "WCSUtil.h"
 
+@implementation WCSKeyboardTracker {
+    UITextField *_activeField;
+    UIScrollView *_activeScroll;
+}
+
++ (instancetype)sharedInstance
+{
+    static WCSKeyboardTracker *sharedInstance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedInstance = [[WCSKeyboardTracker alloc] init];
+        [sharedInstance registerForKeyboardNotifications];
+    });
+    return sharedInstance;
+}
+
+- (void)update:(UITextField *)field {
+    if (_activeField) {
+        [self keyboardWillBeHidden:nil];
+    }
+    _activeField = field;
+    _activeScroll = [self findParentScroll:field];
+}
+
+- (UIScrollView *)findParentScroll:(UIView *)child {
+    if (child && child.superview) {
+        if ([child.superview isKindOfClass:[UIScrollView class]]) {
+            return (UIScrollView *)child.superview;
+        } else {
+            return [self findParentScroll:child.superview];
+        }
+    }
+    return nil;
+}
+
+- (void)update {
+    [self update:nil];
+}
+
+- (void)registerForKeyboardNotifications {
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWasShown:)
+                                                 name:UIKeyboardDidShowNotification object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillBeHidden:)
+                                                 name:UIKeyboardWillHideNotification object:nil];
+    
+}
+
+
+- (void)keyboardWasShown:(NSNotification*)aNotification {
+    if (_activeField && _activeScroll) {
+        NSDictionary* info = [aNotification userInfo];
+        CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+        
+        UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, kbSize.height, 0.0);
+        _activeScroll.contentInset = contentInsets;
+        _activeScroll.scrollIndicatorInsets = contentInsets;
+        
+        // If active text field is hidden by keyboard, scroll it so it's visible
+        // Your app might not need or want this behavior.
+        CGRect aRect = _activeScroll.superview.frame;
+        aRect.size.height -= kbSize.height;
+        if (!CGRectContainsPoint(aRect, _activeField.frame.origin) ) {
+            [_activeScroll scrollRectToVisible:_activeField.frame animated:YES];
+        }
+    }
+}
+
+- (void)keyboardWillBeHidden:(NSNotification*)aNotification {
+    if (_activeField && _activeScroll) {
+        UIEdgeInsets contentInsets = UIEdgeInsetsZero;
+        _activeScroll.contentInset = contentInsets;
+        _activeScroll.scrollIndicatorInsets = contentInsets;
+    }
+}
+
+
+@end
+
 @implementation WCSSlidingView {
     NSLayoutAttribute position;
     CGFloat paddingHide;
@@ -142,7 +223,7 @@
     if (self) {
         self.translatesAutoresizingMaskIntoConstraints = NO;
         _label = [WCSViewUtil createInfoLabel:text];
-        _input = [WCSViewUtil createTextField:nil];
+        _input = [WCSViewUtil createTextField:self];
         //add constraints
         NSDictionary *views = @{
                                 @"label": _label,
@@ -171,6 +252,19 @@
 
     }
     return self;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    [[WCSKeyboardTracker sharedInstance] update:textField];
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    [[WCSKeyboardTracker sharedInstance] update];
 }
 
 + (BOOL)requiresConstraintBasedLayout {
@@ -446,6 +540,15 @@
     [textField resignFirstResponder];
     return YES;
 }
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    [[WCSKeyboardTracker sharedInstance] update:textField];
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    [[WCSKeyboardTracker sharedInstance] update];
+}
+
 
 @end
 

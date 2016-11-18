@@ -137,7 +137,7 @@
 
 - (void)startPlaying {
     FPWCSApi2StreamOptions *options = [[FPWCSApi2StreamOptions alloc] init];
-    options.name = [self getStreamName];
+    options.name = [_localStream getName];
     options.display = _videoView.remote;
     options.constraints = [_remoteControl toMediaConstraints];
     NSError *error;
@@ -375,12 +375,21 @@
     return YES;
 }
 
-- (NSString *)getStreamName {
-    /*NSArray *split = [_urlInput.text componentsSeparatedByString:@"/"];
-    if (split.count > 3) {
-        NSLog(@"Split is %@", split[3]);
-        return split[3];
-    }*/
-    return @"MEDIA_DEVICES_TEST";
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    [[WCSKeyboardTracker sharedInstance] update:textField];
 }
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    [[WCSKeyboardTracker sharedInstance] update];
+}
+
+
+- (NSString *)getStreamName {
+    NSArray *split = [_urlInput.text componentsSeparatedByString:@"/"];
+    if (split.count > 3 && ((NSString *)(split[3])).length > 0) {
+        return split[3];
+    }
+    return [[[NSUUID UUID] UUIDString] substringToIndex:8];
+}
+
 @end
