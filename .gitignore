@@ -2,3 +2,4 @@ out-build
 Pods
 sdk
 FPWCSApi2.framework
+.DS_Store
