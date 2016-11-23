@@ -6,6 +6,7 @@
 //  Copyright © 2015 user. All rights reserved.
 //
 
+#import "WCSUtil.h"
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import <FPWCSApi2/FPWCSApi2.h>

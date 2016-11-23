@@ -407,13 +407,11 @@
     _connectButton = [WCSViewUtil createButton:@"CONNECT"];
     [_connectButton addTarget:self action:@selector(connectButton:) forControlEvents:UIControlEventTouchUpInside];
     
-    _player1StreamLabel = [WCSViewUtil createInfoLabel:@"Player 1 Stream"];
     _player1StreamName = [WCSViewUtil createTextField:self];
     _player1Status = [WCSViewUtil createLabelView];
     _player1Button = [WCSViewUtil createButton:@"PLAY"];
     [_player1Button addTarget:self action:@selector(player1Button:) forControlEvents:UIControlEventTouchUpInside];
     
-    _player2StreamLabel = [WCSViewUtil createInfoLabel:@"Player 2 Stream"];
     _player2StreamName = [WCSViewUtil createTextField:self];
     _player2Status = [WCSViewUtil createLabelView];
     _player2Button = [WCSViewUtil createButton:@"PLAY"];
@@ -424,13 +422,11 @@
     
     [self.contentView addSubview:_videoContainer];
     
-    [self.player1Container addSubview:_player1StreamLabel];
     [self.player1Container addSubview:_player1StreamName];
     [self.player1Container addSubview:_player1Status];
     [self.player1Container addSubview:_player1Button];
     [self.contentView addSubview:_player1Container];
-    
-    [self.player2Container addSubview:_player2StreamLabel];
+
     [self.player2Container addSubview:_player2StreamName];
     [self.player2Container addSubview:_player2Status];
     [self.player2Container addSubview:_player2Button];
@@ -444,7 +440,7 @@
     [self.view addSubview:_scrollView];
     
     //set default values
-    _connectUrl.text = @"wss://87.226.225.59:8443/";
+    _connectUrl.text = @"wss://wcs5-eu.flashphoner.com:8443/";
     _player1StreamName.text = @"streamName";
     _player2StreamName.text = @"streamName";
 }
@@ -455,12 +451,10 @@
                             @"connectionStatus": _connectionStatus,
                             @"connectButton": _connectButton,
                             @"player1Container": _player1Container,
-                            @"player1StreamLabel": _player1StreamLabel,
                             @"player1StreamName": _player1StreamName,
                             @"player1Status": _player1Status,
                             @"player1Button": _player1Button,
                             @"player2Container": _player2Container,
-                            @"player2StreamLabel": _player2StreamLabel,
                             @"player2StreamName": _player2StreamName,
                             @"player2Status": _player2Status,
                             @"player2Button": _player2Button,
@@ -471,7 +465,7 @@
                             @"scrollView": _scrollView
                             };
     
-    NSNumber *videoHeight = @160;
+    NSNumber *videoHeight = @100;
     //custom videoHeight for pads
     if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ) {
         NSLog(@"Set video container height for pads");
@@ -502,11 +496,9 @@
     
     //set height size
     setConstraint(_videoContainer, @"V:[videoContainer(videoHeight)]", 0);
-    setConstraint(_player1StreamLabel, @"V:[player1StreamLabel(labelHeight)]", 0);
     setConstraint(_player1StreamName, @"V:[player1StreamName(inputFieldHeight)]", 0);
     setConstraint(_player1Status, @"V:[player1Status(statusHeight)]", 0);
     setConstraint(_player1Button, @"V:[player1Button(buttonHeight)]", 0);
-    setConstraint(_player2StreamLabel, @"V:[player2StreamLabel(labelHeight)]", 0);
     setConstraint(_player2StreamName, @"V:[player2StreamName(inputFieldHeight)]", 0);
     setConstraint(_player2Status, @"V:[player2Status(statusHeight)]", 0);
     setConstraint(_player2Button, @"V:[player2Button(buttonHeight)]", 0);
@@ -516,7 +508,6 @@
     
     //set width related to super view
     setConstraint(_contentView, @"H:|-hSpacing-[videoContainer]-hSpacing-|", 0);
-    setConstraint(_player1Container, @"H:|-hSpacing-[player1StreamLabel]-hSpacing-|", 0);
     setConstraint(_player1Container, @"H:|-hSpacing-[player1StreamName]-hSpacing-|", 0);
     setConstraint(_player1Container, @"H:|-hSpacing-[player1Status]-hSpacing-|", 0);
     setConstraint(_player1Container, @"H:|-hSpacing-[player1Button]-hSpacing-|", 0);
@@ -524,16 +515,15 @@
     setConstraintWithItem(_contentView, _player1Container, _contentView, NSLayoutAttributeHeight, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeHeight, 1.0, 0);
     setConstraintWithItem(_contentView, _player1Container, _contentView, NSLayoutAttributeWidth, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeWidth, 0.48, 0);
     
-    setConstraint(_player1Container, @"V:|-vSpacing-[player1StreamLabel]-vSpacing-[player1StreamName]-vSpacing-[player1Status]-vSpacing-[player1Button]-vSpacing-|", 0);
+    setConstraint(_player1Container, @"V:|-vSpacing-[player1StreamName]-vSpacing-[player1Status]-vSpacing-[player1Button]-vSpacing-|", 0);
 
     
-    setConstraint(_player2Container, @"H:|-hSpacing-[player2StreamLabel]-hSpacing-|", 0);
     setConstraint(_player2Container, @"H:|-hSpacing-[player2StreamName]-hSpacing-|", 0);
     setConstraint(_player2Container, @"H:|-hSpacing-[player2Status]-hSpacing-|", 0);
     setConstraint(_player2Container, @"H:|-hSpacing-[player2Button]-hSpacing-|", 0);
     setConstraintWithItem(_contentView, _player2Container, _contentView, NSLayoutAttributeHeight, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeHeight, 1.0, 0);
     setConstraintWithItem(_contentView, _player2Container, _contentView, NSLayoutAttributeWidth, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeWidth, 0.48, 0);
-    setConstraint(_player2Container, @"V:|-vSpacing-[player2StreamLabel]-vSpacing-[player2StreamName]-vSpacing-[player2Status]-vSpacing-[player2Button]-vSpacing-|", 0);
+    setConstraint(_player2Container, @"V:|-vSpacing-[player2StreamName]-vSpacing-[player2Status]-vSpacing-[player2Button]-vSpacing-|", 0);
     
     setConstraint(_contentView, @"H:|-hSpacing-[player1Container][player2Container]-hSpacing-|", NSLayoutFormatAlignAllTop);
     setConstraint(_contentView, @"H:|-hSpacing-[connectionStatus]-hSpacing-|", 0);

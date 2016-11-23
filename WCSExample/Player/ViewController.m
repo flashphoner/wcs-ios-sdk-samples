@@ -6,6 +6,7 @@
 //  Copyright © 2015 user. All rights reserved.
 //
 
+#import "WCSUtil.h"
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import <FPWCSApi2/FPWCSApi2.h>
@@ -246,59 +247,10 @@
     [self.view addSubview:_scrollView];
     
     //set default values
-    _connectUrl.text = @"wss://87.226.225.59:8443/";
+    _connectUrl.text = @"wss://wcs5-eu.flashphoner.com:8443/";
     _remoteStreamName.text = @"streamName";
 }
 
-- (UITextField *)createTextField {
-    UITextField *textField = [[UITextField alloc] init];
-    textField.borderStyle = UITextBorderStyleRoundedRect;
-    textField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
-    [textField setFont:[UIFont boldSystemFontOfSize:12]];
-    textField.translatesAutoresizingMaskIntoConstraints = NO;
-    [textField setReturnKeyType:UIReturnKeyDone];
-    textField.delegate = self;
-    return textField;
-    
-}
-
-- (UITextView *)createTextView {
-    UITextView *textView = [[UITextView alloc] init];
-    [textView setFont:[UIFont boldSystemFontOfSize:12]];
-    textView.translatesAutoresizingMaskIntoConstraints = NO;
-    textView.textAlignment = NSTextAlignmentCenter;
-    textView.editable = NO;
-    textView.text = @"NO STATUS";
-    return textView;
-}
-
-- (UILabel *)createLabelView {
-    UILabel *textView = [[UILabel alloc] init];
-    [textView setFont:[UIFont boldSystemFontOfSize:12]];
-    textView.translatesAutoresizingMaskIntoConstraints = NO;
-    textView.textAlignment = NSTextAlignmentCenter;
-    textView.text = @"NO STATUS";
-    return textView;
-}
-
-- (UILabel *)createInfoLabel:(NSString *)infoText {
-    UILabel *label = [[UILabel alloc] init];
-    [label setFont:[UIFont boldSystemFontOfSize:12]];
-    label.translatesAutoresizingMaskIntoConstraints = NO;
-    label.textAlignment = NSTextAlignmentLeft;
-    label.text = infoText;
-    return label;
-}
-
-- (UIButton *)createButton:(NSString *)title {
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setBackgroundColor:[UIColor lightGrayColor]];
-    [button.layer setBorderWidth:2.0];
-    [button.layer setCornerRadius:6.0];
-    [button setTitle:title forState:UIControlStateNormal];
-    button.translatesAutoresizingMaskIntoConstraints = NO;
-    return button;
-}
 
 - (void)setupLayout {
     NSDictionary *views = @{

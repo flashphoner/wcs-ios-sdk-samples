@@ -19,13 +19,11 @@
 @property UIButton *connectButton;
 
 @property UIView *player1Container;
-@property UILabel *player1StreamLabel;
 @property UITextField *player1StreamName;
 @property UILabel *player1Status;
 @property UIButton *player1Button;
 
 @property UIView *player2Container;
-@property UILabel *player2StreamLabel;
 @property UITextField *player2StreamName;
 @property UILabel *player2Status;
 @property UIButton *player2Button;

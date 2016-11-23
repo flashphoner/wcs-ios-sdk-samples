@@ -20,3 +20,8 @@ target 'TwoPlayers' do
     pod 'SocketRocket'
     pod 'JSONModel'
 end
+
+target 'Streamer' do
+    pod 'SocketRocket'
+    pod 'JSONModel'
+end
