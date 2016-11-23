@@ -14,7 +14,7 @@
 @property UIView *border;
 @property WCSSwitchView *sendVideo;
 @property WCSPickerInputView *camSelector;
-@property WCSVideoResolutionInputView *videoResolution;
+@property WCSPickerInputView *videoResolutionSelector;
 @property WCSPickerInputView *fpsSelector;
 @property WCSTextInputView *bitrate;
 @property WCSTextInputView *quality;

@@ -1,15 +1,18 @@
 
 #import "WCSLocalVideoControl.h"
 #import "WCSUtil.h"
+#import <AVFoundation/AVFoundation.h>
 
 @implementation WCSLocalVideoControlView {
     FPWCSApi2MediaDeviceList *localDevices;
+    NSArray *supportedResolutions;
 }
 
 - (instancetype)init {
     self = [super initWithPosition:NSLayoutAttributeLeft];
     if (self) {
         localDevices = [FPWCSApi2 getMediaDevices];
+        supportedResolutions = [self getSupportedResolutionsAsText];
         _scrollView = [[UIScrollView alloc] init];
         _scrollView.translatesAutoresizingMaskIntoConstraints = NO;
         _scrollView.scrollEnabled = YES;
@@ -37,9 +40,8 @@
         if (localDevices.video.count > 0) {
             _camSelector.input.text = ((FPWCSApi2MediaDevice *)(localDevices.video[0])).label;
         }
-        _videoResolution = [[WCSVideoResolutionInputView alloc] initWithLabelText:@"Size"];
-        _videoResolution.width.text = @"640";
-        _videoResolution.height.text = @"480";
+        _videoResolutionSelector = [[WCSPickerInputView alloc] initWithLabelText:@"Size" pickerDelegate:self];
+        _videoResolutionSelector.input.text = supportedResolutions[0];
         _fpsSelector = [[WCSPickerInputView alloc] initWithLabelText:@"FPS" pickerDelegate:self];
         //set default fps
         _fpsSelector.input.text = @"30";
@@ -53,7 +55,7 @@
         [_contentView addSubview:_border];
         [_contentView addSubview:_sendVideo];
         [_contentView addSubview:_camSelector];
-        [_contentView addSubview:_videoResolution];
+        [_contentView addSubview:_videoResolutionSelector];
         [_contentView addSubview:_fpsSelector];
         [_contentView addSubview:_bitrate];
         [_contentView addSubview:_quality];
@@ -70,7 +72,7 @@
                                 @"border": _border,
                                 @"sendVideo": _sendVideo,
                                 @"camSelector": _camSelector,
-                                @"videoResolution": _videoResolution,
+                                @"videoResolution": _videoResolutionSelector,
                                 @"fpsSelector": _fpsSelector,
                                 @"bitrate": _bitrate,
                                 @"quality": _quality,
@@ -127,6 +129,9 @@
     } else if (pickerView == _fpsSelector.picker) {
         _fpsSelector.input.text = [NSString stringWithFormat:@"%d", (int)(row + 5)];
         [_fpsSelector.input resignFirstResponder];
+    } else if (pickerView == _videoResolutionSelector.picker) {
+        _videoResolutionSelector.input.text = supportedResolutions[row];
+        [_videoResolutionSelector.input resignFirstResponder];
     }
 }
 
@@ -143,6 +148,8 @@
         return localDevices.video.count;
     } else if (pickerView == _fpsSelector.picker) {
         return 26;
+    } else if (pickerView == _videoResolutionSelector.picker) {
+        return supportedResolutions.count;
     }
     return 0;
 }
@@ -158,6 +165,8 @@
         return device.label;
     } else if (pickerView == _fpsSelector.picker) {
         return [NSString stringWithFormat:@"%d", (int)(row + 5)];
+    } else if (pickerView == _videoResolutionSelector.picker) {
+        return supportedResolutions[row];
     }
     return 0;
 }
@@ -165,8 +174,7 @@
 - (void)onHideButton:(UIButton *)button {
     [_micSelector.input resignFirstResponder];
     [_camSelector.input resignFirstResponder];
-    [_videoResolution.width resignFirstResponder];
-    [_videoResolution.height resignFirstResponder];
+    [_videoResolutionSelector.input resignFirstResponder];
     [_fpsSelector.input resignFirstResponder];
     [_bitrate.input resignFirstResponder];
     [_quality.input resignFirstResponder];
@@ -199,7 +207,7 @@
 - (void)muteVideoInputs:(BOOL)mute {
     BOOL enabled = !mute;
     _camSelector.input.userInteractionEnabled = enabled;
-    _videoResolution.userInteractionEnabled = enabled;
+    _videoResolutionSelector.userInteractionEnabled = enabled;
     _fpsSelector.input.userInteractionEnabled = enabled;
     _bitrate.input.userInteractionEnabled = enabled;
     _quality.input.userInteractionEnabled = enabled;
@@ -216,12 +224,30 @@
                 video.deviceID = device.deviceID;
             }
         }
-        video.minWidth = video.maxWidth = [_videoResolution.width.text integerValue];
-        video.minHeight = video.maxHeight = [_videoResolution.height.text integerValue];
+        NSArray *res = [_videoResolutionSelector.input.text componentsSeparatedByString:@"x"];
+        video.minWidth = video.maxWidth = [res[0] integerValue];
+        video.minHeight = video.maxHeight = [res[1] integerValue];
         video.minFrameRate = video.maxFrameRate = [_fpsSelector.input.text integerValue];
         video.bitrate = [_bitrate.input.text integerValue];
         video.quality = [_quality.input.text integerValue];
         ret.video = video;
+    }
+    return ret;
+}
+
+- (NSArray *)getSupportedResolutionsAsText {
+    NSMutableArray *ret = [[NSMutableArray alloc] init];
+    NSArray *res = [FPWCSApi2 getSupportedVideoResolutions];
+    for (id preset in res) {
+        if (preset == AVCaptureSessionPreset352x288) {
+            [ret addObject:@"352x288"];
+        } else if (preset == AVCaptureSessionPreset640x480) {
+            [ret addObject:@"640x480"];
+        } else if (preset == AVCaptureSessionPreset1280x720) {
+            [ret addObject:@"1280x720"];
+        } else if (preset == AVCaptureSessionPreset1920x1080) {
+            [ret addObject:@"1920x1080"];
+        }
     }
     return ret;
 }

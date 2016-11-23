@@ -28,6 +28,11 @@ xcodebuild -exportArchive -exportOptionsPlist Info.plist -archivePath out-build/
 xcodebuild -workspace 'WCSExample.xcworkspace' -scheme "Player" -configuration="Release" clean archive OBJROOT=$(PWD)/out-build/Player -archivePath out-build/Player
 xcodebuild -exportArchive -exportOptionsPlist Info.plist -archivePath out-build/Player.xcarchive -exportPath out-build
 
+xcodebuild -workspace 'WCSExample.xcworkspace' -scheme "TwoPlayers" -configuration="Release" clean archive OBJROOT=$(PWD)/out-build/TwoPlayers -archivePath out-build/TwoPlayers
+xcodebuild -exportArchive -exportOptionsPlist Info.plist -archivePath out-build/TwoPlayers.xcarchive -exportPath out-build
+
+xcodebuild -workspace 'WCSExample.xcworkspace' -scheme "Streamer" -configuration="Release" clean archive OBJROOT=$(PWD)/out-build/Streamer -archivePath out-build/Streamer
+xcodebuild -exportArchive -exportOptionsPlist Info.plist -archivePath out-build/Streamer.xcarchive -exportPath out-build
 
 echo "Build complete"
 
