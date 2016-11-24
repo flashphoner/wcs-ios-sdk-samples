@@ -17,6 +17,9 @@
 
 @implementation ViewController
 
+FPWCSApi2Stream *player1Stream;
+FPWCSApi2Stream *player2Stream;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupViews];
@@ -74,8 +77,8 @@
     options.name = _player1StreamName.text;
     options.display = _player1Display;
     NSError *error;
-    FPWCSApi2Stream *stream = [session createStream:options error:nil];
-    if (!stream) {
+    player1Stream = [session createStream:options error:nil];
+    if (!player1Stream) {
         UIAlertController * alert = [UIAlertController
                                      alertControllerWithTitle:@"Failed to play"
                                      message:error.localizedDescription
@@ -92,20 +95,20 @@
         [self presentViewController:alert animated:YES completion:nil];
         return nil;
     }
-    [stream on:kFPWCSStreamStatusPlaying callback:^(FPWCSApi2Stream *rStream){
+    [player1Stream on:kFPWCSStreamStatusPlaying callback:^(FPWCSApi2Stream *rStream){
         [self changeStream1Status:rStream];
         [self onPlaying1:rStream];
     }];
     
-    [stream on:kFPWCSStreamStatusStopped callback:^(FPWCSApi2Stream *rStream){
+    [player1Stream on:kFPWCSStreamStatusStopped callback:^(FPWCSApi2Stream *rStream){
         [self changeStream1Status:rStream];
         [self onStopped1];
     }];
-    [stream on:kFPWCSStreamStatusFailed callback:^(FPWCSApi2Stream *rStream){
+    [player1Stream on:kFPWCSStreamStatusFailed callback:^(FPWCSApi2Stream *rStream){
         [self changeStream1Status:rStream];
         [self onStopped1];
     }];
-    if(![stream play:&error]) {
+    if(![player1Stream play:&error]) {
         UIAlertController * alert = [UIAlertController
                                      alertControllerWithTitle:@"Failed to play"
                                      message:error.localizedDescription
@@ -121,7 +124,7 @@
         [alert addAction:okButton];
         [self presentViewController:alert animated:YES completion:nil];
     }
-    return stream;
+    return player1Stream;
 }
 
 - (FPWCSApi2Stream *)play2Stream {
@@ -130,8 +133,8 @@
     options.name = _player2StreamName.text;
     options.display = _player2Display;
     NSError *error;
-    FPWCSApi2Stream *stream = [session createStream:options error:nil];
-    if (!stream) {
+    player2Stream = [session createStream:options error:nil];
+    if (!player2Stream) {
         UIAlertController * alert = [UIAlertController
                                      alertControllerWithTitle:@"Failed to play"
                                      message:error.localizedDescription
@@ -148,20 +151,20 @@
         [self presentViewController:alert animated:YES completion:nil];
         return nil;
     }
-    [stream on:kFPWCSStreamStatusPlaying callback:^(FPWCSApi2Stream *rStream){
+    [player2Stream on:kFPWCSStreamStatusPlaying callback:^(FPWCSApi2Stream *rStream){
         [self changeStream2Status:rStream];
         [self onPlaying2:rStream];
     }];
     
-    [stream on:kFPWCSStreamStatusStopped callback:^(FPWCSApi2Stream *rStream){
+    [player2Stream on:kFPWCSStreamStatusStopped callback:^(FPWCSApi2Stream *rStream){
         [self changeStream2Status:rStream];
         [self onStopped2];
     }];
-    [stream on:kFPWCSStreamStatusFailed callback:^(FPWCSApi2Stream *rStream){
+    [player2Stream on:kFPWCSStreamStatusFailed callback:^(FPWCSApi2Stream *rStream){
         [self changeStream2Status:rStream];
         [self onStopped2];
     }];
-    if(![stream play:&error]) {
+    if(![player2Stream play:&error]) {
         UIAlertController * alert = [UIAlertController
                                      alertControllerWithTitle:@"Failed to play"
                                      message:error.localizedDescription
@@ -177,7 +180,7 @@
         [alert addAction:okButton];
         [self presentViewController:alert animated:YES completion:nil];
     }
-    return stream;
+    return player2Stream;
 }
 
 
@@ -255,20 +258,8 @@
     [self changeViewState:button enabled:NO];
     if ([button.titleLabel.text isEqualToString:@"STOP"]) {
         if ([FPWCSApi2 getSessions].count) {
-            FPWCSApi2Stream *stream;
-            for (FPWCSApi2Stream *s in [[FPWCSApi2 getSessions][0] getStreams]) {
-                if ([[s getName] isEqualToString:_player1StreamName.text]) {
-                    stream = s;
-                    break;
-                }
-            }
-            if (!stream) {
-                NSLog(@"Stop playing, nothing to stop");
-                [self onStopped1];
-                return;
-            }
             NSError *error;
-            [stream stop:&error];
+            [player1Stream stop:&error];
         } else {
             NSLog(@"Stop playing, no session");
             [self onStopped1];
@@ -288,20 +279,8 @@
     [self changeViewState:button enabled:NO];
     if ([button.titleLabel.text isEqualToString:@"STOP"]) {
         if ([FPWCSApi2 getSessions].count) {
-            FPWCSApi2Stream *stream;
-            for (FPWCSApi2Stream *s in [[FPWCSApi2 getSessions][0] getStreams]) {
-                if ([[s getName] isEqualToString:_player2StreamName.text]) {
-                    stream = s;
-                    break;
-                }
-            }
-            if (!stream) {
-                NSLog(@"Stop playing, nothing to stop");
-                [self onStopped2];
-                return;
-            }
             NSError *error;
-            [stream stop:&error];
+            [player2Stream stop:&error];
         } else {
             NSLog(@"Stop playing, no session");
             [self onStopped2];
