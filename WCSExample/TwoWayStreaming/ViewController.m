@@ -390,21 +390,21 @@
     _remoteDisplay.delegate = self;
     _remoteDisplay.translatesAutoresizingMaskIntoConstraints = NO;
     
-    _connectUrl = [self createTextField];
-    _connectionStatus = [self createLabelView];
-    _connectButton = [self createButton:@"CONNECT"];
+    _connectUrl = [WCSViewUtil createTextField:self];
+    _connectionStatus = [WCSViewUtil createLabelView];
+    _connectButton = [WCSViewUtil createButton:@"CONNECT"];
     [_connectButton addTarget:self action:@selector(connectButton:) forControlEvents:UIControlEventTouchUpInside];
     
-    _publishStreamLabel = [self createInfoLabel:@"Publish Stream"];
-    _localStreamName = [self createTextField];
-    _localStreamStatus = [self createLabelView];
-    _publishButton = [self createButton:@"PUBLISH"];
+    _publishStreamLabel = [WCSViewUtil createInfoLabel:@"Publish Stream"];
+    _localStreamName = [WCSViewUtil createTextField:self];
+    _localStreamStatus = [WCSViewUtil createLabelView];
+    _publishButton = [WCSViewUtil createButton:@"PUBLISH"];
     [_publishButton addTarget:self action:@selector(publishButton:) forControlEvents:UIControlEventTouchUpInside];
     
-    _playStreamLabel = [self createInfoLabel:@"Play Stream"];
-    _remoteStreamName = [self createTextField];
-    _remoteStreamStatus = [self createLabelView];
-    _playButton = [self createButton:@"PLAY"];
+    _playStreamLabel = [WCSViewUtil createInfoLabel:@"Play Stream"];
+    _remoteStreamName = [WCSViewUtil createTextField:self];
+    _remoteStreamStatus = [WCSViewUtil createLabelView];
+    _playButton = [WCSViewUtil createButton:@"PLAY"];
     [_playButton addTarget:self action:@selector(playButton:) forControlEvents:UIControlEventTouchUpInside];
     
     [self.videoContainer addSubview:_localDisplay];

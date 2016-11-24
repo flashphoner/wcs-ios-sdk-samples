@@ -225,12 +225,12 @@
     _remoteDisplay.delegate = self;
     _remoteDisplay.translatesAutoresizingMaskIntoConstraints = NO;
     
-    _connectUrl = [self createTextField];
+    _connectUrl = [WCSViewUtil createTextField:self];
     
-    _playStreamLabel = [self createInfoLabel:@"Play Stream"];
-    _remoteStreamName = [self createTextField];
-    _status = [self createLabelView];
-    _startButton = [self createButton:@"PLAY"];
+    _playStreamLabel = [WCSViewUtil createInfoLabel:@"Play Stream"];
+    _remoteStreamName = [WCSViewUtil createTextField:self];
+    _status = [WCSViewUtil createLabelView];
+    _startButton = [WCSViewUtil createButton:@"PLAY"];
     [_startButton addTarget:self action:@selector(startButton:) forControlEvents:UIControlEventTouchUpInside];
     
     [self.videoContainer addSubview:_remoteDisplay];
