@@ -81,6 +81,29 @@
 		55F8AEFE1DE55944002F5DFC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55C3EF071DE2A5470004F538 /* Info.plist */; };
 		55F8AEFF1DE55944002F5DFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2310651C0D718100918455 /* Main.storyboard */; };
 		55F8AF071DE57DAA002F5DFC /* WCSViews.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534441DDADA3800D7DF80 /* WCSViews.m */; };
+		55F8AF101DE7FD32002F5DFC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55F8AF0C1DE7FD32002F5DFC /* Info.plist */; };
+		55F8AF151DE7FD3F002F5DFC /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
+		55F8AF181DE7FD3F002F5DFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
+		55F8AF1A1DE7FD3F002F5DFC /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
+		55F8AF1B1DE7FD3F002F5DFC /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F021C0D93DD00EAEC55 /* libstdc++.6.0.9.tbd */; };
+		55F8AF1C1DE7FD3F002F5DFC /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */; };
+		55F8AF1D1DE7FD3F002F5DFC /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFE1C0D93C300EAEC55 /* libc.tbd */; };
+		55F8AF1E1DE7FD3F002F5DFC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFC1C0D93BC00EAEC55 /* libsqlite3.tbd */; };
+		55F8AF1F1DE7FD3F002F5DFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFA1C0D93AC00EAEC55 /* Foundation.framework */; };
+		55F8AF201DE7FD3F002F5DFC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF81C0D93A200EAEC55 /* AVFoundation.framework */; };
+		55F8AF211DE7FD3F002F5DFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF61C0D939800EAEC55 /* UIKit.framework */; };
+		55F8AF221DE7FD3F002F5DFC /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF41C0D939000EAEC55 /* GLKit.framework */; };
+		55F8AF231DE7FD3F002F5DFC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF21C0D938100EAEC55 /* CoreMedia.framework */; };
+		55F8AF241DE7FD3F002F5DFC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */; };
+		55F8AF251DE7FD3F002F5DFC /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */; };
+		55F8AF261DE7FD3F002F5DFC /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
+		55F8AF271DE7FD3F002F5DFC /* Pods_Player.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8745492A7BF846C9479B539C /* Pods_Player.framework */; };
+		55F8AF291DE7FD3F002F5DFC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55C3EED31DDD98D80004F538 /* Info.plist */; };
+		55F8AF2A1DE7FD3F002F5DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2310681C0D718100918455 /* Assets.xcassets */; };
+		55F8AF2B1DE7FD3F002F5DFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB6A1C75ABA4002FDF16 /* Main.storyboard */; };
+		55F8AF2C1DE7FD3F002F5DFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB681C75ABA4002FDF16 /* LaunchScreen.storyboard */; };
+		55F8AF341DE7FDA0002F5DFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F8AF0B1DE7FD32002F5DFC /* AppDelegate.m */; };
+		55F8AF351DE7FDA0002F5DFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F8AF0E1DE7FD32002F5DFC /* ViewController.m */; };
 		85458A1A4E20148A6AA67C8F /* Pods_MediaDevices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A58904727550EF62D7BF75 /* Pods_MediaDevices.framework */; };
 		CE29B5921DC036AE0081CD37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
 		CE29B5951DC036AE0081CD37 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
@@ -150,6 +173,12 @@
 		55F8AEDC1DE55895002F5DFC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Streamer/ViewController.h; sourceTree = "<group>"; };
 		55F8AEDD1DE55895002F5DFC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Streamer/ViewController.m; sourceTree = "<group>"; };
 		55F8AF051DE55944002F5DFC /* Streamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Streamer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55F8AF0A1DE7FD32002F5DFC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = StreamRecording/AppDelegate.h; sourceTree = "<group>"; };
+		55F8AF0B1DE7FD32002F5DFC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = StreamRecording/AppDelegate.m; sourceTree = "<group>"; };
+		55F8AF0C1DE7FD32002F5DFC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = StreamRecording/Info.plist; sourceTree = "<group>"; };
+		55F8AF0D1DE7FD32002F5DFC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = StreamRecording/ViewController.h; sourceTree = "<group>"; };
+		55F8AF0E1DE7FD32002F5DFC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = StreamRecording/ViewController.m; sourceTree = "<group>"; };
+		55F8AF321DE7FD3F002F5DFC /* StreamRecording.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreamRecording.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		657FE6304944E7B0E86B981B /* Pods_TwoWayStreaming.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwoWayStreaming.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68EBD96E5E0DFFC406FCC540 /* Pods-TwoPlayers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoPlayers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwoPlayers/Pods-TwoPlayers.debug.xcconfig"; sourceTree = "<group>"; };
 		846E3A66B3858038D2B5AC8F /* Pods-Player.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Player.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Player/Pods-Player.debug.xcconfig"; sourceTree = "<group>"; };
@@ -267,6 +296,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55F8AF191DE7FD3F002F5DFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55F8AF1A1DE7FD3F002F5DFC /* libicucore.tbd in Frameworks */,
+				55F8AF1B1DE7FD3F002F5DFC /* libstdc++.6.0.9.tbd in Frameworks */,
+				55F8AF1C1DE7FD3F002F5DFC /* libstdc++.tbd in Frameworks */,
+				55F8AF1D1DE7FD3F002F5DFC /* libc.tbd in Frameworks */,
+				55F8AF1E1DE7FD3F002F5DFC /* libsqlite3.tbd in Frameworks */,
+				55F8AF1F1DE7FD3F002F5DFC /* Foundation.framework in Frameworks */,
+				55F8AF201DE7FD3F002F5DFC /* AVFoundation.framework in Frameworks */,
+				55F8AF211DE7FD3F002F5DFC /* UIKit.framework in Frameworks */,
+				55F8AF221DE7FD3F002F5DFC /* GLKit.framework in Frameworks */,
+				55F8AF231DE7FD3F002F5DFC /* CoreMedia.framework in Frameworks */,
+				55F8AF241DE7FD3F002F5DFC /* CoreGraphics.framework in Frameworks */,
+				55F8AF251DE7FD3F002F5DFC /* VideoToolbox.framework in Frameworks */,
+				55F8AF261DE7FD3F002F5DFC /* FPWCSApi2.framework in Frameworks */,
+				55F8AF271DE7FD3F002F5DFC /* Pods_Player.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE29B5941DC036AE0081CD37 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -365,6 +415,18 @@
 			name = Streamer;
 			sourceTree = "<group>";
 		};
+		55F8AF081DE7F5FD002F5DFC /* StreamRecording */ = {
+			isa = PBXGroup;
+			children = (
+				55F8AF0A1DE7FD32002F5DFC /* AppDelegate.h */,
+				55F8AF0B1DE7FD32002F5DFC /* AppDelegate.m */,
+				55F8AF0C1DE7FD32002F5DFC /* Info.plist */,
+				55F8AF0D1DE7FD32002F5DFC /* ViewController.h */,
+				55F8AF0E1DE7FD32002F5DFC /* ViewController.m */,
+			);
+			name = StreamRecording;
+			sourceTree = "<group>";
+		};
 		CE1BE62D1C0D8BA400A4970E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -408,6 +470,7 @@
 				55C3EECF1DDD6B240004F538 /* Player.app */,
 				55C3EF021DE29F220004F538 /* TwoPlayers.app */,
 				55F8AF051DE55944002F5DFC /* Streamer.app */,
+				55F8AF321DE7FD3F002F5DFC /* StreamRecording.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -415,6 +478,7 @@
 		CE23105B1C0D718100918455 /* WCSExample */ = {
 			isa = PBXGroup;
 			children = (
+				55F8AF081DE7F5FD002F5DFC /* StreamRecording */,
 				55F8AED81DE55886002F5DFC /* Streamer */,
 				55C3EF041DE29F8E0004F538 /* TwoPlayers */,
 				55C3EED91DDD98E90004F538 /* Player */,
@@ -549,6 +613,26 @@
 			productReference = 55F8AF051DE55944002F5DFC /* Streamer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		55F8AF121DE7FD3F002F5DFC /* StreamRecording */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55F8AF2F1DE7FD3F002F5DFC /* Build configuration list for PBXNativeTarget "StreamRecording" */;
+			buildPhases = (
+				55F8AF131DE7FD3F002F5DFC /* [CP] Check Pods Manifest.lock */,
+				55F8AF141DE7FD3F002F5DFC /* Sources */,
+				55F8AF191DE7FD3F002F5DFC /* Frameworks */,
+				55F8AF281DE7FD3F002F5DFC /* Resources */,
+				55F8AF2D1DE7FD3F002F5DFC /* [CP] Embed Pods Frameworks */,
+				55F8AF2E1DE7FD3F002F5DFC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StreamRecording;
+			productName = WCSExample;
+			productReference = 55F8AF321DE7FD3F002F5DFC /* StreamRecording.app */;
+			productType = "com.apple.product-type.application";
+		};
 		CE29B5881DC036AE0081CD37 /* TwoWayStreaming */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE29B5A81DC036AE0081CD37 /* Build configuration list for PBXNativeTarget "TwoWayStreaming" */;
@@ -608,6 +692,9 @@
 					55F8AEE11DE55944002F5DFC = {
 						DevelopmentTeam = SXWV5Z47NK;
 					};
+					55F8AF121DE7FD3F002F5DFC = {
+						DevelopmentTeam = SXWV5Z47NK;
+					};
 					CE29B5881DC036AE0081CD37 = {
 						DevelopmentTeam = SXWV5Z47NK;
 						ProvisioningStyle = Automatic;
@@ -640,6 +727,7 @@
 				55C3EEAB1DDD6B240004F538 /* Player */,
 				55C3EEE31DE29F220004F538 /* TwoPlayers */,
 				55F8AEE11DE55944002F5DFC /* Streamer */,
+				55F8AF121DE7FD3F002F5DFC /* StreamRecording */,
 			);
 		};
 /* End PBXProject section */
@@ -680,6 +768,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55F8AF281DE7FD3F002F5DFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55F8AF291DE7FD3F002F5DFC /* Info.plist in Resources */,
+				55F8AF2A1DE7FD3F002F5DFC /* Assets.xcassets in Resources */,
+				55F8AF2B1DE7FD3F002F5DFC /* Main.storyboard in Resources */,
+				55F8AF2C1DE7FD3F002F5DFC /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE29B5A21DC036AE0081CD37 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -690,6 +789,7 @@
 				CE29B5A41DC036AE0081CD37 /* Assets.xcassets in Resources */,
 				55C3EF0B1DE2A5470004F538 /* Info.plist in Resources */,
 				CE29B5A51DC036AE0081CD37 /* Main.storyboard in Resources */,
+				55F8AF101DE7FD32002F5DFC /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -888,6 +988,51 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Streamer/Pods-Streamer-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		55F8AF131DE7FD3F002F5DFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		55F8AF2D1DE7FD3F002F5DFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Player/Pods-Player-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55F8AF2E1DE7FD3F002F5DFC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Player/Pods-Player-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5C4D4FF7694FE2B75D457075 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -967,6 +1112,17 @@
 				55F8AEE51DE55944002F5DFC /* WCSUtil.m in Sources */,
 				55F8AEE81DE55944002F5DFC /* main.m in Sources */,
 				55F8AEE91DE55944002F5DFC /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55F8AF141DE7FD3F002F5DFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55F8AF341DE7FDA0002F5DFC /* AppDelegate.m in Sources */,
+				55F8AF351DE7FDA0002F5DFC /* ViewController.m in Sources */,
+				55F8AF151DE7FD3F002F5DFC /* WCSUtil.m in Sources */,
+				55F8AF181DE7FD3F002F5DFC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1159,6 +1315,48 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.Streamer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		55F8AF301DE7FD3F002F5DFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 846E3A66B3858038D2B5AC8F /* Pods-Player.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = SXWV5Z47NK;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/StreamRecording/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.StreamRecording;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		55F8AF311DE7FD3F002F5DFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0063D10D113946F372D9269 /* Pods-Player.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = SXWV5Z47NK;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/StreamRecording/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.StreamRecording;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1364,6 +1562,15 @@
 			buildConfigurations = (
 				55F8AF031DE55944002F5DFC /* Debug */,
 				55F8AF041DE55944002F5DFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55F8AF2F1DE7FD3F002F5DFC /* Build configuration list for PBXNativeTarget "StreamRecording" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55F8AF301DE7FD3F002F5DFC /* Debug */,
+				55F8AF311DE7FD3F002F5DFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
