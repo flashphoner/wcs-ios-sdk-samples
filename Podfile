@@ -25,3 +25,8 @@ target 'Streamer' do
     pod 'SocketRocket'
     pod 'JSONModel'
 end
+
+target 'StreamRecording' do
+    pod 'SocketRocket'
+    pod 'JSONModel'
+end

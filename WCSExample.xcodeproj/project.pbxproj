@@ -97,7 +97,6 @@
 		55F8AF241DE7FD3F002F5DFC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */; };
 		55F8AF251DE7FD3F002F5DFC /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */; };
 		55F8AF261DE7FD3F002F5DFC /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
-		55F8AF271DE7FD3F002F5DFC /* Pods_Player.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8745492A7BF846C9479B539C /* Pods_Player.framework */; };
 		55F8AF291DE7FD3F002F5DFC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55C3EED31DDD98D80004F538 /* Info.plist */; };
 		55F8AF2A1DE7FD3F002F5DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2310681C0D718100918455 /* Assets.xcassets */; };
 		55F8AF2B1DE7FD3F002F5DFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB6A1C75ABA4002FDF16 /* Main.storyboard */; };
@@ -105,6 +104,7 @@
 		55F8AF341DE7FDA0002F5DFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F8AF0B1DE7FD32002F5DFC /* AppDelegate.m */; };
 		55F8AF351DE7FDA0002F5DFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F8AF0E1DE7FD32002F5DFC /* ViewController.m */; };
 		85458A1A4E20148A6AA67C8F /* Pods_MediaDevices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A58904727550EF62D7BF75 /* Pods_MediaDevices.framework */; };
+		AB70810F411954F98ECB0E4E /* Pods_StreamRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75098741D8433C8055082D8D /* Pods_StreamRecording.framework */; };
 		CE29B5921DC036AE0081CD37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
 		CE29B5951DC036AE0081CD37 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
 		CE29B5961DC036AE0081CD37 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
@@ -179,8 +179,10 @@
 		55F8AF0D1DE7FD32002F5DFC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = StreamRecording/ViewController.h; sourceTree = "<group>"; };
 		55F8AF0E1DE7FD32002F5DFC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = StreamRecording/ViewController.m; sourceTree = "<group>"; };
 		55F8AF321DE7FD3F002F5DFC /* StreamRecording.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreamRecording.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C8F2CB9B54362118F8B9C3A /* Pods-StreamRecording.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamRecording.release.xcconfig"; path = "Pods/Target Support Files/Pods-StreamRecording/Pods-StreamRecording.release.xcconfig"; sourceTree = "<group>"; };
 		657FE6304944E7B0E86B981B /* Pods_TwoWayStreaming.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwoWayStreaming.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68EBD96E5E0DFFC406FCC540 /* Pods-TwoPlayers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoPlayers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwoPlayers/Pods-TwoPlayers.debug.xcconfig"; sourceTree = "<group>"; };
+		75098741D8433C8055082D8D /* Pods_StreamRecording.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreamRecording.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		846E3A66B3858038D2B5AC8F /* Pods-Player.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Player.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Player/Pods-Player.debug.xcconfig"; sourceTree = "<group>"; };
 		8745492A7BF846C9479B539C /* Pods_Player.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Player.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B31005716A70F1B337799F1 /* Pods_TwoPlayers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwoPlayers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -229,6 +231,7 @@
 		CEF3EB6B1C75ABA4002FDF16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		DCB73F0D95AC5C28060A24E5 /* Pods-TwoWayStreaming.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoWayStreaming.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwoWayStreaming/Pods-TwoWayStreaming.release.xcconfig"; sourceTree = "<group>"; };
 		E09018DB4496D32FF344EAE3 /* Pods-TwoWayStreaming.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoWayStreaming.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwoWayStreaming/Pods-TwoWayStreaming.debug.xcconfig"; sourceTree = "<group>"; };
+		F8923D117764EE08F498B30A /* Pods-StreamRecording.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamRecording.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StreamRecording/Pods-StreamRecording.debug.xcconfig"; sourceTree = "<group>"; };
 		FA2746768B91B1FC7D438ACE /* Pods-Streamer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Streamer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Streamer/Pods-Streamer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -313,7 +316,7 @@
 				55F8AF241DE7FD3F002F5DFC /* CoreGraphics.framework in Frameworks */,
 				55F8AF251DE7FD3F002F5DFC /* VideoToolbox.framework in Frameworks */,
 				55F8AF261DE7FD3F002F5DFC /* FPWCSApi2.framework in Frameworks */,
-				55F8AF271DE7FD3F002F5DFC /* Pods_Player.framework in Frameworks */,
+				AB70810F411954F98ECB0E4E /* Pods_StreamRecording.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +378,8 @@
 				A2E17542E1DE12F0286A5CB0 /* Pods-TwoPlayers.release.xcconfig */,
 				FA2746768B91B1FC7D438ACE /* Pods-Streamer.debug.xcconfig */,
 				B900BCE0A039E397F83E1A7B /* Pods-Streamer.release.xcconfig */,
+				F8923D117764EE08F498B30A /* Pods-StreamRecording.debug.xcconfig */,
+				5C8F2CB9B54362118F8B9C3A /* Pods-StreamRecording.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -448,6 +453,7 @@
 				8B31005716A70F1B337799F1 /* Pods_TwoPlayers.framework */,
 				02A58904727550EF62D7BF75 /* Pods_MediaDevices.framework */,
 				0C845B85743847299215C220 /* Pods_Streamer.framework */,
+				75098741D8433C8055082D8D /* Pods_StreamRecording.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1015,7 +1021,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Player/Pods-Player-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StreamRecording/Pods-StreamRecording-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		55F8AF2E1DE7FD3F002F5DFC /* [CP] Copy Pods Resources */ = {
@@ -1030,7 +1036,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Player/Pods-Player-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StreamRecording/Pods-StreamRecording-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5C4D4FF7694FE2B75D457075 /* [CP] Embed Pods Frameworks */ = {
@@ -1321,7 +1327,7 @@
 		};
 		55F8AF301DE7FD3F002F5DFC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 846E3A66B3858038D2B5AC8F /* Pods-Player.debug.xcconfig */;
+			baseConfigurationReference = F8923D117764EE08F498B30A /* Pods-StreamRecording.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1342,7 +1348,7 @@
 		};
 		55F8AF311DE7FD3F002F5DFC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0063D10D113946F372D9269 /* Pods-Player.release.xcconfig */;
+			baseConfigurationReference = 5C8F2CB9B54362118F8B9C3A /* Pods-StreamRecording.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
