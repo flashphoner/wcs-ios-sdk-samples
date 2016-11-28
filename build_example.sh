@@ -34,5 +34,8 @@ xcodebuild -exportArchive -exportOptionsPlist Info.plist -archivePath out-build/
 xcodebuild -workspace 'WCSExample.xcworkspace' -scheme "Streamer" -configuration="Release" clean archive OBJROOT=$(PWD)/out-build/Streamer -archivePath out-build/Streamer
 xcodebuild -exportArchive -exportOptionsPlist Info.plist -archivePath out-build/Streamer.xcarchive -exportPath out-build
 
+xcodebuild -workspace 'WCSExample.xcworkspace' -scheme "StreamRecording" -configuration="Release" clean archive OBJROOT=$(PWD)/out-build/StreamRecording -archivePath out-build/StreamRecording
+xcodebuild -exportArchive -exportOptionsPlist Info.plist -archivePath out-build/StreamRecording.xcarchive -exportPath out-build
+
 echo "Build complete"
 
