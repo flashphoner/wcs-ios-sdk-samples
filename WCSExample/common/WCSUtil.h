@@ -16,3 +16,13 @@
 + (UIView *)createBorder:(NSNumber *)thickness;
 
 @end
+
+@interface WCSStack : NSObject
+@property (assign,readonly) long count;
+
+-(void)push:(id)anObject;
+-(id)pop;
+-(void)clear;
+-(id)lastObject;
+
+@end

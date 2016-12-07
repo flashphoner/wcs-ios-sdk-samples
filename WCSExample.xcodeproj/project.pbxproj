@@ -11,6 +11,28 @@
 		2C9EA6B7826D4E9D53C22823 /* Pods_Player.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8745492A7BF846C9479B539C /* Pods_Player.framework */; };
 		3F2A9FFC5A5A59E6CFD7FE70 /* Pods_TwoPlayers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31005716A70F1B337799F1 /* Pods_TwoPlayers.framework */; };
 		4CECE292C777F06FCE1291B5 /* Pods_Streamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C845B85743847299215C220 /* Pods_Streamer.framework */; };
+		5503A81F1DEEE961003A50AF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5503A81B1DEEE961003A50AF /* Info.plist */; };
+		5503A8241DEEE96C003A50AF /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
+		5503A8271DEEE96C003A50AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
+		5503A8291DEEE96C003A50AF /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
+		5503A82A1DEEE96C003A50AF /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F021C0D93DD00EAEC55 /* libstdc++.6.0.9.tbd */; };
+		5503A82B1DEEE96C003A50AF /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */; };
+		5503A82C1DEEE96C003A50AF /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFE1C0D93C300EAEC55 /* libc.tbd */; };
+		5503A82D1DEEE96C003A50AF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFC1C0D93BC00EAEC55 /* libsqlite3.tbd */; };
+		5503A82E1DEEE96C003A50AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFA1C0D93AC00EAEC55 /* Foundation.framework */; };
+		5503A82F1DEEE96C003A50AF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF81C0D93A200EAEC55 /* AVFoundation.framework */; };
+		5503A8301DEEE96C003A50AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF61C0D939800EAEC55 /* UIKit.framework */; };
+		5503A8311DEEE96C003A50AF /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF41C0D939000EAEC55 /* GLKit.framework */; };
+		5503A8321DEEE96C003A50AF /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF21C0D938100EAEC55 /* CoreMedia.framework */; };
+		5503A8331DEEE96C003A50AF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */; };
+		5503A8341DEEE96C003A50AF /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */; };
+		5503A8351DEEE96C003A50AF /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
+		5503A8381DEEE96C003A50AF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55C3EED31DDD98D80004F538 /* Info.plist */; };
+		5503A8391DEEE96C003A50AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2310681C0D718100918455 /* Assets.xcassets */; };
+		5503A83A1DEEE96C003A50AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB6A1C75ABA4002FDF16 /* Main.storyboard */; };
+		5503A83B1DEEE96C003A50AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB681C75ABA4002FDF16 /* LaunchScreen.storyboard */; };
+		5503A8431DEEE9E6003A50AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503A81A1DEEE961003A50AF /* AppDelegate.m */; };
+		5503A8441DEEE9E6003A50AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503A81D1DEEE961003A50AF /* ViewController.m */; };
 		555260911DE418FA00AED0F1 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		555260921DE45C6B00AED0F1 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		555260931DE45CAD00AED0F1 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
@@ -56,6 +78,7 @@
 		55C3EF0B1DE2A5470004F538 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55C3EF071DE2A5470004F538 /* Info.plist */; };
 		55C3EF0D1DE2A5B80004F538 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C3EF061DE2A5470004F538 /* AppDelegate.m */; };
 		55C3EF0E1DE2A5B80004F538 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C3EF091DE2A5470004F538 /* ViewController.m */; };
+		55EC5EC11DF52C9000CEFD12 /* WCSViews.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534441DDADA3800D7DF80 /* WCSViews.m */; };
 		55F8AEDF1DE55895002F5DFC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55F8AEDB1DE55895002F5DFC /* Info.plist */; };
 		55F8AEE41DE55944002F5DFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F8AEDD1DE55895002F5DFC /* ViewController.m */; };
 		55F8AEE51DE55944002F5DFC /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
@@ -149,12 +172,20 @@
 		CE988A391DD5534400742423 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB681C75ABA4002FDF16 /* LaunchScreen.storyboard */; };
 		CE988A4A1DD554DD00742423 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE988A451DD554C900742423 /* ViewController.m */; };
 		CE988A4B1DD554DD00742423 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE988A461DD554C900742423 /* AppDelegate.m */; };
+		F3A08259C38DCA0EEE53C091 /* Pods_Conference.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE75AB247F8E5C824B9E42F /* Pods_Conference.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		02A58904727550EF62D7BF75 /* Pods_MediaDevices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaDevices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C845B85743847299215C220 /* Pods_Streamer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Streamer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D638A5574E01255F80E5B79 /* Pods-Conference.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conference.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Conference/Pods-Conference.debug.xcconfig"; sourceTree = "<group>"; };
 		251625D1C68BDE4F9EA1E79A /* Pods-MediaDevices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaDevices.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MediaDevices/Pods-MediaDevices.debug.xcconfig"; sourceTree = "<group>"; };
+		5503A8191DEEE961003A50AF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Conference/AppDelegate.h; sourceTree = "<group>"; };
+		5503A81A1DEEE961003A50AF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Conference/AppDelegate.m; sourceTree = "<group>"; };
+		5503A81B1DEEE961003A50AF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Conference/Info.plist; sourceTree = "<group>"; };
+		5503A81C1DEEE961003A50AF /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Conference/ViewController.h; sourceTree = "<group>"; };
+		5503A81D1DEEE961003A50AF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Conference/ViewController.m; sourceTree = "<group>"; };
+		5503A8411DEEE96C003A50AF /* Conference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Conference.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C3EECF1DDD6B240004F538 /* Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Player.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C3EED11DDD98D80004F538 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Player/AppDelegate.h; sourceTree = "<group>"; };
 		55C3EED21DDD98D80004F538 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Player/AppDelegate.m; sourceTree = "<group>"; };
@@ -186,6 +217,8 @@
 		846E3A66B3858038D2B5AC8F /* Pods-Player.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Player.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Player/Pods-Player.debug.xcconfig"; sourceTree = "<group>"; };
 		8745492A7BF846C9479B539C /* Pods_Player.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Player.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B31005716A70F1B337799F1 /* Pods_TwoPlayers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwoPlayers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C7745018D6298F1D431D19C /* Pods-Conference.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conference.release.xcconfig"; path = "Pods/Target Support Files/Pods-Conference/Pods-Conference.release.xcconfig"; sourceTree = "<group>"; };
+		9BE75AB247F8E5C824B9E42F /* Pods_Conference.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Conference.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0063D10D113946F372D9269 /* Pods-Player.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Player.release.xcconfig"; path = "Pods/Target Support Files/Pods-Player/Pods-Player.release.xcconfig"; sourceTree = "<group>"; };
 		A2E17542E1DE12F0286A5CB0 /* Pods-TwoPlayers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoPlayers.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwoPlayers/Pods-TwoPlayers.release.xcconfig"; sourceTree = "<group>"; };
 		B900BCE0A039E397F83E1A7B /* Pods-Streamer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Streamer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Streamer/Pods-Streamer.release.xcconfig"; sourceTree = "<group>"; };
@@ -236,6 +269,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5503A8281DEEE96C003A50AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5503A8291DEEE96C003A50AF /* libicucore.tbd in Frameworks */,
+				5503A82A1DEEE96C003A50AF /* libstdc++.6.0.9.tbd in Frameworks */,
+				5503A82B1DEEE96C003A50AF /* libstdc++.tbd in Frameworks */,
+				5503A82C1DEEE96C003A50AF /* libc.tbd in Frameworks */,
+				5503A82D1DEEE96C003A50AF /* libsqlite3.tbd in Frameworks */,
+				5503A82E1DEEE96C003A50AF /* Foundation.framework in Frameworks */,
+				5503A82F1DEEE96C003A50AF /* AVFoundation.framework in Frameworks */,
+				5503A8301DEEE96C003A50AF /* UIKit.framework in Frameworks */,
+				5503A8311DEEE96C003A50AF /* GLKit.framework in Frameworks */,
+				5503A8321DEEE96C003A50AF /* CoreMedia.framework in Frameworks */,
+				5503A8331DEEE96C003A50AF /* CoreGraphics.framework in Frameworks */,
+				5503A8341DEEE96C003A50AF /* VideoToolbox.framework in Frameworks */,
+				5503A8351DEEE96C003A50AF /* FPWCSApi2.framework in Frameworks */,
+				F3A08259C38DCA0EEE53C091 /* Pods_Conference.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55C3EEB51DDD6B240004F538 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -380,8 +434,22 @@
 				B900BCE0A039E397F83E1A7B /* Pods-Streamer.release.xcconfig */,
 				F8923D117764EE08F498B30A /* Pods-StreamRecording.debug.xcconfig */,
 				5C8F2CB9B54362118F8B9C3A /* Pods-StreamRecording.release.xcconfig */,
+				1D638A5574E01255F80E5B79 /* Pods-Conference.debug.xcconfig */,
+				8C7745018D6298F1D431D19C /* Pods-Conference.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		5503A8181DEEE857003A50AF /* Conference */ = {
+			isa = PBXGroup;
+			children = (
+				5503A8191DEEE961003A50AF /* AppDelegate.h */,
+				5503A81A1DEEE961003A50AF /* AppDelegate.m */,
+				5503A81B1DEEE961003A50AF /* Info.plist */,
+				5503A81C1DEEE961003A50AF /* ViewController.h */,
+				5503A81D1DEEE961003A50AF /* ViewController.m */,
+			);
+			name = Conference;
 			sourceTree = "<group>";
 		};
 		55C3EED91DDD98E90004F538 /* Player */ = {
@@ -454,6 +522,7 @@
 				02A58904727550EF62D7BF75 /* Pods_MediaDevices.framework */,
 				0C845B85743847299215C220 /* Pods_Streamer.framework */,
 				75098741D8433C8055082D8D /* Pods_StreamRecording.framework */,
+				9BE75AB247F8E5C824B9E42F /* Pods_Conference.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -477,6 +546,7 @@
 				55C3EF021DE29F220004F538 /* TwoPlayers.app */,
 				55F8AF051DE55944002F5DFC /* Streamer.app */,
 				55F8AF321DE7FD3F002F5DFC /* StreamRecording.app */,
+				5503A8411DEEE96C003A50AF /* Conference.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -484,6 +554,7 @@
 		CE23105B1C0D718100918455 /* WCSExample */ = {
 			isa = PBXGroup;
 			children = (
+				5503A8181DEEE857003A50AF /* Conference */,
 				55F8AF081DE7F5FD002F5DFC /* StreamRecording */,
 				55F8AED81DE55886002F5DFC /* Streamer */,
 				55C3EF041DE29F8E0004F538 /* TwoPlayers */,
@@ -559,6 +630,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5503A8211DEEE96C003A50AF /* Conference */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5503A83E1DEEE96C003A50AF /* Build configuration list for PBXNativeTarget "Conference" */;
+			buildPhases = (
+				5503A8221DEEE96C003A50AF /* [CP] Check Pods Manifest.lock */,
+				5503A8231DEEE96C003A50AF /* Sources */,
+				5503A8281DEEE96C003A50AF /* Frameworks */,
+				5503A8371DEEE96C003A50AF /* Resources */,
+				5503A83C1DEEE96C003A50AF /* [CP] Embed Pods Frameworks */,
+				5503A83D1DEEE96C003A50AF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Conference;
+			productName = WCSExample;
+			productReference = 5503A8411DEEE96C003A50AF /* Conference.app */;
+			productType = "com.apple.product-type.application";
+		};
 		55C3EEAB1DDD6B240004F538 /* Player */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55C3EECC1DDD6B240004F538 /* Build configuration list for PBXNativeTarget "Player" */;
@@ -688,6 +779,9 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = flashphoner;
 				TargetAttributes = {
+					5503A8211DEEE96C003A50AF = {
+						DevelopmentTeam = SXWV5Z47NK;
+					};
 					55C3EEAB1DDD6B240004F538 = {
 						DevelopmentTeam = SXWV5Z47NK;
 					};
@@ -734,11 +828,23 @@
 				55C3EEE31DE29F220004F538 /* TwoPlayers */,
 				55F8AEE11DE55944002F5DFC /* Streamer */,
 				55F8AF121DE7FD3F002F5DFC /* StreamRecording */,
+				5503A8211DEEE96C003A50AF /* Conference */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5503A8371DEEE96C003A50AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5503A8381DEEE96C003A50AF /* Info.plist in Resources */,
+				5503A8391DEEE96C003A50AF /* Assets.xcassets in Resources */,
+				5503A83A1DEEE96C003A50AF /* Main.storyboard in Resources */,
+				5503A83B1DEEE96C003A50AF /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55C3EEC41DDD6B240004F538 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -789,6 +895,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5503A81F1DEEE961003A50AF /* Info.plist in Resources */,
 				55C3EEE21DDEC1CF0004F538 /* Info.plist in Resources */,
 				CE29B5A31DC036AE0081CD37 /* LaunchScreen.storyboard in Resources */,
 				55F8AEDF1DE55895002F5DFC /* Info.plist in Resources */,
@@ -857,6 +964,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwoWayStreaming/Pods-TwoWayStreaming-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5503A8221DEEE96C003A50AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5503A83C1DEEE96C003A50AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Conference/Pods-Conference-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5503A83D1DEEE96C003A50AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Conference/Pods-Conference-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		55C3EEAC1DDD6B240004F538 /* [CP] Check Pods Manifest.lock */ = {
@@ -1087,6 +1239,18 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5503A8231DEEE96C003A50AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55EC5EC11DF52C9000CEFD12 /* WCSViews.m in Sources */,
+				5503A8431DEEE9E6003A50AF /* AppDelegate.m in Sources */,
+				5503A8441DEEE9E6003A50AF /* ViewController.m in Sources */,
+				5503A8241DEEE96C003A50AF /* WCSUtil.m in Sources */,
+				5503A8271DEEE96C003A50AF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55C3EEAD1DDD6B240004F538 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1195,6 +1359,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5503A83F1DEEE96C003A50AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D638A5574E01255F80E5B79 /* Pods-Conference.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Alexey Trunov (UDA328ES3S)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = SXWV5Z47NK;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/Conference/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.Conference;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5503A8401DEEE96C003A50AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C7745018D6298F1D431D19C /* Pods-Conference.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Alexey Trunov (UDA328ES3S)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = SXWV5Z47NK;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/Conference/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.Conference;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		55C3EECD1DDD6B240004F538 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 846E3A66B3858038D2B5AC8F /* Pods-Player.debug.xcconfig */;
@@ -1545,6 +1753,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5503A83E1DEEE96C003A50AF /* Build configuration list for PBXNativeTarget "Conference" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5503A83F1DEEE96C003A50AF /* Debug */,
+				5503A8401DEEE96C003A50AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		55C3EECC1DDD6B240004F538 /* Build configuration list for PBXNativeTarget "Player" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

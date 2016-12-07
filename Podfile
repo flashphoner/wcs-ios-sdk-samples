@@ -30,3 +30,8 @@ target 'StreamRecording' do
     pod 'SocketRocket'
     pod 'JSONModel'
 end
+
+target 'Conference' do
+    pod 'SocketRocket'
+    pod 'JSONModel'
+end
