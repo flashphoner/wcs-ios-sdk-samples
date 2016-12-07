@@ -44,6 +44,7 @@ NSMutableDictionary *busyViews;
     [freeViews push:pv2];
     busyViews = [[NSMutableDictionary alloc] init];
     
+    [self onUnpublished];
     [self onLeaved];
     [self onDisconnected];
     NSLog(@"Did load views");
@@ -80,6 +81,7 @@ NSMutableDictionary *busyViews;
     
     [roomManager on:kFPWCSRoomManagerEventDisconnected callback:^(FPWCSApi2RoomManager *rManager){
         [self changeConnectionStatus:kFPWCSRoomManagerEventDisconnected];
+        [self onUnpublished];
         [self onLeaved];
         [self onDisconnected];
     }];
@@ -90,6 +92,14 @@ NSMutableDictionary *busyViews;
     [_connectButton setTitle:@"DISCONNECT" forState:UIControlStateNormal];
     [self changeViewState:_connectButton enabled:YES];
     [self changeViewState:_joinButton enabled:YES];
+}
+
+- (void)onUnpublished {
+    publishStream = nil;
+    [self changeViewState:_publishButton enabled:YES];
+    [_publishButton setTitle:@"PUBLISH" forState:UIControlStateNormal];
+    [self changeViewState:_muteAudio enabled:NO];
+    [self changeViewState:_muteVideo enabled:NO];
 }
 
 - (void)onLeaved {
@@ -202,8 +212,26 @@ NSMutableDictionary *busyViews;
         [room onMessageCallback:^(FPWCSApi2Room *room, FPWCSApi2RoomMessage *message) {
             _messageHistory.text = [NSString stringWithFormat:@"%@\n%@ - %@", _messageHistory.text, message.from, message.text];
         }];
+    }
+}
 
+- (void)muteAudioChanged:(id)sender {
+    if (publishStream) {
+        if (_muteAudio.control.isOn) {
+            [publishStream muteAudio];
+        } else {
+            [publishStream unmuteAudio];
+        }
+    }
+}
 
+- (void)muteVideoChanged:(id)sender {
+    if (publishStream) {
+        if (_muteVideo.control.isOn) {
+            [publishStream muteVideo];
+        } else {
+            [publishStream unmuteVideo];
+        }
     }
 }
 
@@ -217,20 +245,19 @@ NSMutableDictionary *busyViews;
             [self changeViewState:_publishButton enabled:YES];
             [self changeLocalStatus:rStream];
             [_publishButton setTitle:@"STOP" forState:UIControlStateNormal];
+            [self changeViewState:_muteAudio enabled:YES];
+            [self changeViewState:_muteVideo enabled:YES];
         }];
         
         [publishStream on:kFPWCSStreamStatusUnpublished callback:^(FPWCSApi2Stream *rStream){
-            publishStream = nil;
-            [self changeViewState:_publishButton enabled:YES];
+            [self onUnpublished];
             [self changeLocalStatus:rStream];
-            [_publishButton setTitle:@"PUBLISH" forState:UIControlStateNormal];
         }];
         
         [publishStream on:kFPWCSStreamStatusFailed callback:^(FPWCSApi2Stream *rStream){
-            publishStream = nil;
-            [self changeViewState:_publishButton enabled:YES];
+            [self onUnpublished];
             [self changeLocalStatus:rStream];
-            [_publishButton setTitle:@"PUBLISH" forState:UIControlStateNormal];
+    
         }];
 
     }
@@ -342,6 +369,12 @@ NSMutableDictionary *busyViews;
     _localDisplay.translatesAutoresizingMaskIntoConstraints = NO;
     _localStatus = [WCSViewUtil createLabelView];
     _localStatus.translatesAutoresizingMaskIntoConstraints = NO;
+    _muteAudio = [[WCSSwitchView alloc] initWithLabelText:@"Mute Audio"];
+    _muteAudio.translatesAutoresizingMaskIntoConstraints = NO;
+    [_muteAudio.control addTarget:self action:@selector(muteAudioChanged:) forControlEvents:UIControlEventValueChanged];
+    _muteVideo = [[WCSSwitchView alloc] initWithLabelText:@"Mute Audio"];
+    _muteVideo.translatesAutoresizingMaskIntoConstraints = NO;
+    [_muteVideo.control addTarget:self action:@selector(muteVideoChanged:) forControlEvents:UIControlEventValueChanged];
     _publishButton = [WCSViewUtil createButton:@"PUBLISH"];
     _publishButton.translatesAutoresizingMaskIntoConstraints = NO;
     [_publishButton addTarget:self action:@selector(publishButton:) forControlEvents:UIControlEventTouchUpInside];
@@ -374,6 +407,8 @@ NSMutableDictionary *busyViews;
     [self.localVideoContainer addSubview:_localDisplay];
     [self.contentView addSubview:_localVideoContainer];
     [self.contentView addSubview:_localStatus];
+    [self.contentView addSubview:_muteAudio];
+    [self.contentView addSubview:_muteVideo];
     [self.contentView addSubview:_publishButton];
     
     [self.contentView addSubview:_messageHistory];
@@ -384,7 +419,7 @@ NSMutableDictionary *busyViews;
     [self.view addSubview:_scrollView];
     
     //set default values
-    _connectUrl.text = @"wss://87.226.225.59:8443/";
+    _connectUrl.text = @"wss://wcs5-eu.flashphoner.com:8443/";
 }
 
 - (void)setupLayout {
@@ -405,6 +440,8 @@ NSMutableDictionary *busyViews;
                             @"localVideoContainer": _localVideoContainer,
                             @"localDisplay": _localDisplay,
                             @"localStatus": _localStatus,
+                            @"muteAudio":_muteAudio,
+                            @"muteVideo":_muteVideo,
                             @"publishButton": _publishButton,
                             @"messageHistory": _messageHistory,
                             @"messageBody":_messageBody,
@@ -454,8 +491,10 @@ NSMutableDictionary *busyViews;
     setConstraint(_player2Login, @"V:[player2Login(statusHeight)]", 0);
     setConstraint(_localDisplay, @"V:[localDisplay(videoHeight)]", 0);
     setConstraint(_localStatus, @"V:[localStatus(statusHeight)]", 0);
+    setConstraint(_muteAudio, @"V:[muteAudio(statusHeight)]", 0);
+    setConstraint(_muteVideo, @"V:[muteVideo(statusHeight)]", 0);
     setConstraint(_publishButton, @"V:[publishButton(buttonHeight)]", 0);
-    setConstraint(_messageHistory, @"V:[messageHistory(100)]", 0);
+    setConstraint(_messageHistory, @"V:[messageHistory(150)]", 0);
     setConstraint(_messageBody, @"V:[messageBody(inputFieldHeight)]", 0);
     setConstraint(_sendButton, @"V:[sendButton(buttonHeight)]", 0);
     
@@ -483,6 +522,8 @@ NSMutableDictionary *busyViews;
     setConstraint(_contentView, @"H:|[player1Container][player2Container]|", NSLayoutFormatAlignAllTop);
     setConstraint(_contentView, @"H:|-hSpacing-[localVideoContainer]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[localStatus]-hSpacing-|", 0);
+    setConstraint(_contentView, @"H:|-hSpacing-[muteAudio]-hSpacing-|", 0);
+    setConstraint(_contentView, @"H:|-hSpacing-[muteVideo]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[publishButton]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[messageHistory]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[messageBody]-hSpacing-|", 0);
@@ -498,7 +539,7 @@ NSMutableDictionary *busyViews;
     setConstraint(_localVideoContainer, @"H:|[localDisplay]|", NSLayoutFormatAlignAllTop);
     setConstraint(_localVideoContainer, @"V:|[localDisplay]|", 0);
 
-    setConstraint(_contentView, @"V:|-50-[connectUrl]-vSpacing-[connectLogin]-vSpacing-[connectionStatus]-vSpacing-[connectButton]-vSpacing-[joinRoomName]-vSpacing-[joinStatus]-vSpacing-[joinButton]-vSpacing-[player1Container]-vSpacing-[localVideoContainer]-vSpacing-[localStatus]-vSpacing-[publishButton]-vSpacing-[messageHistory]-vSpacing-[messageBody]-vSpacing-[sendButton]-vSpacing-|", 0);
+    setConstraint(_contentView, @"V:|-50-[connectUrl]-vSpacing-[connectLogin]-vSpacing-[connectionStatus]-vSpacing-[connectButton]-vSpacing-[joinRoomName]-vSpacing-[joinStatus]-vSpacing-[joinButton]-vSpacing-[player1Container]-vSpacing-[localVideoContainer]-vSpacing-[localStatus]-vSpacing-[muteAudio]-vSpacing-[muteVideo]-vSpacing-[publishButton]-vSpacing-[messageHistory]-vSpacing-[messageBody]-vSpacing-[sendButton]-vSpacing-|", 0);
     
     //content view width
     setConstraintWithItem(self.view, _contentView, self.view, NSLayoutAttributeWidth, NSLayoutRelationEqual, NSLayoutAttributeWidth, 1.0, 0);

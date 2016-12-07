@@ -39,6 +39,8 @@
 @property(nonatomic) RTCEAGLVideoView *localDisplay;
 @property NSMutableArray *localDisplayConstraints;
 @property UILabel *localStatus;
+@property WCSSwitchView *muteAudio;
+@property WCSSwitchView *muteVideo;
 @property UIButton *publishButton;
 
 @property UITextView  *messageHistory;

@@ -265,7 +265,7 @@
     _settingsButtonContainer = [[UIView alloc] init];
     _settingsButtonContainer.translatesAutoresizingMaskIntoConstraints = NO;
     _urlInput = [WCSViewUtil createTextField:self];
-    _urlInput.text = @"ws://192.168.88.234:8080";
+    _urlInput.text = @"wss://wcs5-eu.flashphoner.com:8443";
     _videoView = [[WCSDoubleVideoView alloc] init];
     _localControl = [[WCSLocalVideoControlView alloc] init];
     [_localControl.muteAudio.control addTarget:self action:@selector(controlValueChanged:) forControlEvents:UIControlEventValueChanged];
