@@ -265,11 +265,11 @@
                             @"scrollView": _scrollView
                             };
     
-    NSNumber *videoHeight = @320;
+    NSNumber *videoHeight = @240;
     //custom videoHeight for pads
     if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ) {
         NSLog(@"Set video container height for pads");
-        videoHeight = @640;
+        videoHeight = @480;
     }
     
     NSDictionary *metrics = @{

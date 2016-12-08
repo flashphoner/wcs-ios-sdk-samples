@@ -59,14 +59,17 @@
         }
         
         [_session on:kFPWCSSessionStatusEstablished callback:^(FPWCSApi2Session *session){
+            [self changeConnectionStatus:[session getStatus]];
             [self startStreaming];
         }];
         
         [_session on:kFPWCSSessionStatusDisconnected callback:^(FPWCSApi2Session *session){
+            [self changeConnectionStatus:[session getStatus]];
             [self onStopped];
         }];
         
         [_session on:kFPWCSSessionStatusFailed callback:^(FPWCSApi2Session *session){
+            [self changeConnectionStatus:[session getStatus]];
             [self onStopped];
         }];
         [_session connect];
@@ -107,14 +110,17 @@
         [_localStream muteVideo];
     }
     [_localStream on:kFPWCSStreamStatusPublishing callback:^(FPWCSApi2Stream *stream){
+        [self changeStreamStatus:stream];
         [self startPlaying];
     }];
     
     [_localStream on:kFPWCSStreamStatusUnpublished callback:^(FPWCSApi2Stream *stream){
+        [self changeStreamStatus:stream];
         [self onStopped];
     }];
     
     [_localStream on:kFPWCSStreamStatusFailed callback:^(FPWCSApi2Stream *stream){
+        [self changeStreamStatus:stream];
         [self onStopped];
     }];
     if(![_localStream publish:&error]) {
@@ -160,13 +166,16 @@
         return;
     }
     [_remoteStream on:kFPWCSStreamStatusPlaying callback:^(FPWCSApi2Stream *stream){
+        [self changeStreamStatus:stream];
         [self onStarted];
     }];
     
     [_remoteStream on:kFPWCSStreamStatusStopped callback:^(FPWCSApi2Stream *rStream){
+        [self changeStreamStatus:rStream];
         [_localStream stop:nil];
     }];
     [_remoteStream on:kFPWCSStreamStatusFailed callback:^(FPWCSApi2Stream *rStream){
+        [self changeStreamStatus:rStream];
         if (_localStream && [_localStream getStatus] == kFPWCSStreamStatusPublishing) {
             [_localStream stop:nil];
         }
@@ -251,6 +260,37 @@
     }
 }
 
+- (void)changeConnectionStatus:(kFPWCSSessionStatus)status {
+    _connectStatus.text = [FPWCSApi2Model sessionStatusToString:status];
+    switch (status) {
+        case kFPWCSSessionStatusFailed:
+            _connectStatus.textColor = [UIColor redColor];
+            break;
+        case kFPWCSSessionStatusEstablished:
+            _connectStatus.textColor = [UIColor greenColor];
+            break;
+        default:
+            _connectStatus.textColor = [UIColor darkTextColor];
+            break;
+    }
+}
+
+- (void)changeStreamStatus:(FPWCSApi2Stream *)stream {
+    _connectStatus.text = [FPWCSApi2Model streamStatusToString:[stream getStatus]];
+    switch ([stream getStatus]) {
+        case kFPWCSStreamStatusFailed:
+            _connectStatus.textColor = [UIColor redColor];
+            break;
+        case kFPWCSStreamStatusPlaying:
+        case kFPWCSStreamStatusPublishing:
+            _connectStatus.textColor = [UIColor greenColor];
+            break;
+        default:
+            _connectStatus.textColor = [UIColor darkTextColor];
+            break;
+    }
+}
+
 //user interface views and layout
 - (void)setupViews {
     _scrollView = [[UIScrollView alloc] init];
@@ -266,6 +306,7 @@
     _settingsButtonContainer.translatesAutoresizingMaskIntoConstraints = NO;
     _urlInput = [WCSViewUtil createTextField:self];
     _urlInput.text = @"wss://wcs5-eu.flashphoner.com:8443";
+    _connectStatus = [WCSViewUtil createLabelView];
     _videoView = [[WCSDoubleVideoView alloc] init];
     _localControl = [[WCSLocalVideoControlView alloc] init];
     [_localControl.muteAudio.control addTarget:self action:@selector(controlValueChanged:) forControlEvents:UIControlEventValueChanged];
@@ -278,6 +319,7 @@
     [_settingsButtonContainer addSubview:_remoteSettingsButton];
     [_contentView addSubview:_settingsButtonContainer];
     [_contentView addSubview:_urlInput];
+    [_contentView addSubview:_connectStatus];
     [_contentView addSubview:_videoView];
     [_scrollView addSubview:_contentView];
     [self.view addSubview:_scrollView];
@@ -293,6 +335,7 @@
                             @"remoteSettings": _remoteSettingsButton,
                             @"settings": _settingsButtonContainer,
                             @"urlInput": _urlInput,
+                            @"connectStatus": _connectStatus,
                             @"videoView": _videoView,
                             @"content": _contentView,
                             @"localControl": _localControl,
@@ -351,10 +394,11 @@
     setConstraint(_contentView, @"H:|[settings]|", 0);
     setConstraint(_urlInput, @"V:[urlInput(height)]", 0);
     setConstraint(_contentView, @"H:|[urlInput]|", 0);
+    setConstraint(_contentView, @"H:|[connectStatus]|", 0);
     setConstraint(_contentView, @"H:|[videoView]|", 0);
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:_videoView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationGreaterThanOrEqual toItem:self.view attribute:NSLayoutAttributeHeight multiplier:0.5 constant:0]];
     
-    setConstraint(_contentView, @"V:|[videoView]-[settings]-vSpacing-[urlInput]-vSpacing-[start]-vSpacing-|", 0);
+    setConstraint(_contentView, @"V:|[videoView]-[settings]-vSpacing-[urlInput]-vSpacing-[connectStatus]-vSpacing-[start]-vSpacing-|", 0);
     setConstraint(_scrollView, @"V:|[content]|", 0);
     setConstraint(self.view, @"H:|[scroll]|", 0);
     setConstraint(self.view, @"H:|-hSpacing-[content]-hSpacing-|", 0);

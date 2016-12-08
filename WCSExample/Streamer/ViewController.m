@@ -40,7 +40,7 @@ FPWCSApi2Stream *playStream;
     options.appKey = @"defaultApp";
     NSError *error;
     session = [FPWCSApi2 createSession:options error:&error];
-    if (!session) {
+    if (error) {
         UIAlertController * alert = [UIAlertController
                                      alertControllerWithTitle:@"Failed to connect"
                                      message:error.localizedDescription
@@ -330,11 +330,11 @@ FPWCSApi2Stream *playStream;
                             @"scrollView": _scrollView
                             };
     
-    NSNumber *videoHeight = @320;
+    NSNumber *videoHeight = @240;
     //custom videoHeight for pads
     if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ) {
         NSLog(@"Set video container height for pads");
-        videoHeight = @640;
+        videoHeight = @480;
     }
     
     NSDictionary *metrics = @{
@@ -386,6 +386,11 @@ FPWCSApi2Stream *playStream;
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(BOOL) textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
 }
 
 @end

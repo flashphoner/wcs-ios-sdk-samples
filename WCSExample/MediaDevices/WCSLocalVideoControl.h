@@ -17,7 +17,6 @@
 @property WCSPickerInputView *videoResolutionSelector;
 @property WCSPickerInputView *fpsSelector;
 @property WCSTextInputView *bitrate;
-@property WCSTextInputView *quality;
 @property WCSSwitchView *muteVideo;
 
 - (void)muteAudioInputs:(BOOL)mute;

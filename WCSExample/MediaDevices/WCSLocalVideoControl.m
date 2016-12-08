@@ -47,7 +47,6 @@
         _fpsSelector.input.text = @"30";
         [_fpsSelector.picker selectRow:[_fpsSelector.picker numberOfRowsInComponent:0] - 1 inComponent:0 animated:NO];
         _bitrate = [[WCSTextInputView alloc] initWithLabelText:@"Bitrate"];
-        _quality = [[WCSTextInputView alloc] initWithLabelText:@"Quality"];
         _muteVideo = [[WCSSwitchView alloc] initWithLabelText:@"Mute Video"];
         [_contentView addSubview:_sendAudio];
         [_contentView addSubview:_micSelector];
@@ -58,7 +57,6 @@
         [_contentView addSubview:_videoResolutionSelector];
         [_contentView addSubview:_fpsSelector];
         [_contentView addSubview:_bitrate];
-        [_contentView addSubview:_quality];
         [_contentView addSubview:_muteVideo];
         [_scrollView addSubview:_contentView];
         [self addSubview:_hideButton];
@@ -75,7 +73,6 @@
                                 @"videoResolution": _videoResolutionSelector,
                                 @"fpsSelector": _fpsSelector,
                                 @"bitrate": _bitrate,
-                                @"quality": _quality,
                                 @"muteVideo": _muteVideo,
                                 @"content": _contentView,
                                 @"scroll": _scrollView,
@@ -95,10 +92,9 @@
         [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[videoResolution]|" options:0 metrics:metrics views:views]];
         [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[fpsSelector]|" options:0 metrics:metrics views:views]];
         [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[bitrate]|" options:0 metrics:metrics views:views]];
-        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[quality]|" options:0 metrics:metrics views:views]];
         [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[muteVideo]|" options:0 metrics:metrics views:views]];
         
-        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-vSpacing-[sendAudio]-vSpacing-[micSelector]-vSpacing-[muteAudio]-vSpacing-[border]-vSpacing-[sendVideo]-vSpacing-[camSelector]-vSpacing-[videoResolution]-vSpacing-[fpsSelector]-vSpacing-[bitrate]-vSpacing-[quality]-vSpacing-[muteVideo]-vSpacing-|" options:0 metrics:metrics views:views]];
+        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-vSpacing-[sendAudio]-vSpacing-[micSelector]-vSpacing-[muteAudio]-vSpacing-[border]-vSpacing-[sendVideo]-vSpacing-[camSelector]-vSpacing-[videoResolution]-vSpacing-[fpsSelector]-vSpacing-[bitrate]-vSpacing-[muteVideo]-vSpacing-|" options:0 metrics:metrics views:views]];
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-hSpacing-[hideButton]-hSpacing-|" options:0 metrics:metrics views:views]];
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[scroll]|" options:0 metrics:metrics views:views]];
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-hSpacing-[content]-hSpacing-|" options:0 metrics:metrics views:views]];
@@ -177,7 +173,6 @@
     [_videoResolutionSelector.input resignFirstResponder];
     [_fpsSelector.input resignFirstResponder];
     [_bitrate.input resignFirstResponder];
-    [_quality.input resignFirstResponder];
     [self hide];
 }
 
@@ -210,7 +205,6 @@
     _videoResolutionSelector.userInteractionEnabled = enabled;
     _fpsSelector.input.userInteractionEnabled = enabled;
     _bitrate.input.userInteractionEnabled = enabled;
-    _quality.input.userInteractionEnabled = enabled;
     _muteVideo.control.userInteractionEnabled = enabled;
 }
 
@@ -229,7 +223,6 @@
         video.minHeight = video.maxHeight = [res[1] integerValue];
         video.minFrameRate = video.maxFrameRate = [_fpsSelector.input.text integerValue];
         video.bitrate = [_bitrate.input.text integerValue];
-        video.quality = [_quality.input.text integerValue];
         ret.video = video;
     }
     return ret;

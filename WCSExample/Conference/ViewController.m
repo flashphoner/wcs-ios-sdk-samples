@@ -147,6 +147,7 @@ NSMutableDictionary *busyViews;
         if (room) {
             [room leave];
         }
+        [self onUnpublished];
         [self onLeaved];
     } else {
         FPWCSApi2RoomOptions * options = [[FPWCSApi2RoomOptions alloc] init];
@@ -179,7 +180,7 @@ NSMutableDictionary *busyViews;
             if ([participants count] == 0) {
                 _messageHistory.text = [NSString stringWithFormat:@"%@\n%@ - %@", _messageHistory.text, @"chat", @"room is empty"];
             } else {
-                _messageHistory.text = [NSString stringWithFormat:@"%@\n%@ - %@", _messageHistory.text, @"chat", chatState];
+                _messageHistory.text = [NSString stringWithFormat:@"%@\n%@ - %@", _messageHistory.text, @"chat", [chatState substringToIndex:MAX((int)[chatState length]-2, 0)]];
             }
         }];
         
@@ -450,11 +451,11 @@ NSMutableDictionary *busyViews;
                             @"scrollView": _scrollView
                             };
     
-    NSNumber *videoHeight = @100;
+    NSNumber *videoHeight = @120;
     //custom videoHeight for pads
     if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ) {
         NSLog(@"Set video container height for pads");
-        videoHeight = @200;
+        videoHeight = @320;
     }
     
     NSDictionary *metrics = @{
@@ -462,7 +463,8 @@ NSMutableDictionary *busyViews;
                               @"statusHeight": @30,
                               @"labelHeight": @20,
                               @"inputFieldHeight": @30,
-                              @"videoHeight": videoHeight,
+                              @"smallVideoHeight": videoHeight,
+                              @"videoHeight": [NSNumber numberWithInt:[videoHeight intValue] * 2],
                               @"vSpacing": @15,
                               @"hSpacing": @30
                               };
@@ -485,9 +487,9 @@ NSMutableDictionary *busyViews;
     setConstraint(_connectButton, @"V:[connectButton(buttonHeight)]", 0);
     setConstraint(_joinStatus, @"V:[joinStatus(statusHeight)]", 0);
     setConstraint(_joinButton, @"V:[joinButton(buttonHeight)]", 0);
-    setConstraint(_player1Display, @"V:[player1Display(videoHeight)]", 0);
+    setConstraint(_player1Display, @"V:[player1Display(smallVideoHeight)]", 0);
     setConstraint(_player1Login, @"V:[player1Login(buttonHeight)]", 0);
-    setConstraint(_player2Display, @"V:[player2Display(videoHeight)]", 0);
+    setConstraint(_player2Display, @"V:[player2Display(smallVideoHeight)]", 0);
     setConstraint(_player2Login, @"V:[player2Login(statusHeight)]", 0);
     setConstraint(_localDisplay, @"V:[localDisplay(videoHeight)]", 0);
     setConstraint(_localStatus, @"V:[localStatus(statusHeight)]", 0);
@@ -501,14 +503,14 @@ NSMutableDictionary *busyViews;
     //set width related to super view
     setConstraint(_player1Container, @"H:|-hSpacing-[player1Display]-hSpacing-|", 0);
     setConstraint(_player1Container, @"H:|-hSpacing-[player1Login]-hSpacing-|", 0);
-//    setConstraintWithItem(_contentView, _player1Container, _contentView, NSLayoutAttributeHeight, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeHeight, 1.0, 0);
+    setConstraintWithItem(_contentView, _player1Container, _contentView, NSLayoutAttributeHeight, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeHeight, 1.0, 0);
     setConstraintWithItem(_contentView, _player1Container, _contentView, NSLayoutAttributeWidth, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeWidth, 0.48, 0);
     setConstraint(_player1Container, @"V:|-vSpacing-[player1Display]-vSpacing-[player1Login]-vSpacing-|", 0);
 
     
     setConstraint(_player2Container, @"H:|-hSpacing-[player2Display]-hSpacing-|", 0);
     setConstraint(_player2Container, @"H:|-hSpacing-[player2Login]-hSpacing-|", 0);
-//    setConstraintWithItem(_contentView, _player2Container, _contentView, NSLayoutAttributeHeight, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeHeight, 1.0, 0);
+    setConstraintWithItem(_contentView, _player2Container, _contentView, NSLayoutAttributeHeight, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeHeight, 1.0, 0);
     setConstraintWithItem(_contentView, _player2Container, _contentView, NSLayoutAttributeWidth, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeWidth, 0.48, 0);
     setConstraint(_player2Container, @"V:|-vSpacing-[player2Display]-vSpacing-[player2Login]-vSpacing-|", 0);
     
@@ -533,6 +535,7 @@ NSMutableDictionary *busyViews;
     setConstraintWithItem(_localVideoContainer, _localDisplay, _localVideoContainer, NSLayoutAttributeHeight, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeHeight, 1.0, 0);
     setConstraintWithItem(_localVideoContainer, _localDisplay, _localVideoContainer, NSLayoutAttributeWidth, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeWidth, 1.0, 0);
     
+    _localDisplayConstraints = [[NSMutableArray alloc] init];
     [_localDisplayConstraints addObject:setConstraintWithItem(_localDisplay, _localDisplay, _localDisplay, NSLayoutAttributeWidth, NSLayoutRelationEqual, NSLayoutAttributeHeight, 640.0/480.0, 0)];
     
     //position video views inside video container
@@ -587,7 +590,7 @@ NSMutableDictionary *busyViews;
                                          constant:0.0f];
         [_player1DisplayConstraints addObject:constraint];
         [_player1Display addConstraints:_player1DisplayConstraints];
-    } else {
+    } else if (videoView == _player2Display) {
         [_player2Display removeConstraints:_player2DisplayConstraints];
         [_player2DisplayConstraints removeAllObjects];
         NSLayoutConstraint *constraint =[NSLayoutConstraint
@@ -600,6 +603,19 @@ NSMutableDictionary *busyViews;
                                          constant:0.0f];
         [_player2DisplayConstraints addObject:constraint];
         [_player2Display addConstraints:_player2DisplayConstraints];
+    } else if (videoView == _localDisplay) {
+        [_localDisplay removeConstraints:_localDisplayConstraints];
+        [_localDisplayConstraints removeAllObjects];
+        NSLayoutConstraint *constraint =[NSLayoutConstraint
+                                         constraintWithItem:_localDisplay
+                                         attribute:NSLayoutAttributeWidth
+                                         relatedBy:NSLayoutRelationEqual
+                                         toItem:_localDisplay
+                                         attribute:NSLayoutAttributeHeight
+                                         multiplier:size.width/size.height
+                                         constant:0.0f];
+        [_localDisplayConstraints addObject:constraint];
+        [_localDisplay addConstraints:_localDisplayConstraints];
     }
 }
 

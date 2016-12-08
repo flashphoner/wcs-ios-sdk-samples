@@ -16,6 +16,7 @@
 
 @property UIScrollView *scrollView;
 @property UIView *contentView;
+@property UILabel *connectStatus;
 @property UIButton *startButton;
 @property UIView *settingsButtonContainer;
 @property UIButton *localSettingsButton;
