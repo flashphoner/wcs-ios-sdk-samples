@@ -272,7 +272,7 @@ NSString *recordName;
     [self.view addSubview:_scrollView];
     
     //set default values
-    _connectUrl.text = @"wss://87.226.225.59:8443/test";
+    _connectUrl.text = @"wss://wcs5-eu.flashphoner.com:8443/test";
 }
 
 

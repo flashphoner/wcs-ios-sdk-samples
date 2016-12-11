@@ -35,3 +35,8 @@ target 'Conference' do
     pod 'SocketRocket'
     pod 'JSONModel'
 end
+
+target 'VideoChat' do
+    pod 'SocketRocket'
+    pod 'JSONModel'
+end

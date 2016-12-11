@@ -38,10 +38,6 @@ NSMutableDictionary *busyViews;
     pv1.display = _player1Display;
     pv1.login = _player1Login;
     [freeViews push:pv1];
-    ParticipantView *pv2 = [[ParticipantView alloc] init];
-    pv2.display = _player2Display;
-    pv2.login = _player2Login;
-    [freeViews push:pv2];
     busyViews = [[NSMutableDictionary alloc] init];
     
     [self onUnpublished];
@@ -168,7 +164,7 @@ NSMutableDictionary *busyViews;
         
         [room onStateCallback:^(FPWCSApi2Room *room) {
             NSDictionary *participants = [room getParticipants];
-            if ([participants count] >= 3) {
+            if ([participants count] >= 2) {
                 [room leave];
                 _joinStatus.text = @"Room is full";
                 [self changeViewState:_joinButton enabled:YES];
@@ -369,14 +365,6 @@ NSMutableDictionary *busyViews;
     _player1Login.translatesAutoresizingMaskIntoConstraints = NO;
     _player1Login.text = @"NONE";
     
-    _player2Container = [[UIView alloc] init];
-    _player2Container.translatesAutoresizingMaskIntoConstraints = NO;
-    _player2Display = [[RTCEAGLVideoView alloc] init];
-    _player2Display.delegate = self;
-    _player2Display.translatesAutoresizingMaskIntoConstraints = NO;
-    _player2Login = [WCSViewUtil createLabelView];
-    _player2Login.translatesAutoresizingMaskIntoConstraints = NO;
-    _player2Login.text = @"NONE";
     
     _localVideoContainer = [[UIView alloc] init];
     _localVideoContainer.translatesAutoresizingMaskIntoConstraints = NO;
@@ -416,10 +404,6 @@ NSMutableDictionary *busyViews;
     [self.player1Container addSubview:_player1Login];
     [self.contentView addSubview:_player1Container];
     
-    [self.player2Container addSubview:_player2Display];
-    [self.player2Container addSubview:_player2Login];
-    [self.contentView addSubview:_player2Container];
-    
     [self.localVideoContainer addSubview:_localDisplay];
     [self.contentView addSubview:_localVideoContainer];
     [self.contentView addSubview:_localStatus];
@@ -435,7 +419,7 @@ NSMutableDictionary *busyViews;
     [self.view addSubview:_scrollView];
     
     //set default values
-    _connectUrl.text = @"wss://87.226.225.59:8443/";
+    _connectUrl.text = @"wss://wcs5-eu.flashphoner.com:8443/";
 }
 
 - (void)setupLayout {
@@ -450,9 +434,6 @@ NSMutableDictionary *busyViews;
                             @"player1Container": _player1Container,
                             @"player1Display": _player1Display,
                             @"player1Login": _player1Login,
-                            @"player2Container": _player2Container,
-                            @"player2Display": _player2Display,
-                            @"player2Login": _player2Login,
                             @"localVideoContainer": _localVideoContainer,
                             @"localDisplay": _localDisplay,
                             @"localStatus": _localStatus,
@@ -504,8 +485,6 @@ NSMutableDictionary *busyViews;
     setConstraint(_joinButton, @"V:[joinButton(buttonHeight)]", 0);
     setConstraint(_player1Display, @"V:[player1Display(smallVideoHeight)]", 0);
     setConstraint(_player1Login, @"V:[player1Login(buttonHeight)]", 0);
-    setConstraint(_player2Display, @"V:[player2Display(smallVideoHeight)]", 0);
-    setConstraint(_player2Login, @"V:[player2Login(statusHeight)]", 0);
     setConstraint(_localDisplay, @"V:[localDisplay(videoHeight)]", 0);
     setConstraint(_localStatus, @"V:[localStatus(statusHeight)]", 0);
     setConstraint(_muteAudio, @"V:[muteAudio(statusHeight)]", 0);
@@ -519,15 +498,9 @@ NSMutableDictionary *busyViews;
     setConstraint(_player1Container, @"H:|-hSpacing-[player1Display]-hSpacing-|", 0);
     setConstraint(_player1Container, @"H:|-hSpacing-[player1Login]-hSpacing-|", 0);
     setConstraintWithItem(_contentView, _player1Container, _contentView, NSLayoutAttributeHeight, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeHeight, 1.0, 0);
-    setConstraintWithItem(_contentView, _player1Container, _contentView, NSLayoutAttributeWidth, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeWidth, 0.48, 0);
+    setConstraintWithItem(_contentView, _player1Container, _contentView, NSLayoutAttributeWidth, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeWidth, 1.0, 0);
     setConstraint(_player1Container, @"V:|-vSpacing-[player1Display]-vSpacing-[player1Login]-vSpacing-|", 0);
 
-    
-    setConstraint(_player2Container, @"H:|-hSpacing-[player2Display]-hSpacing-|", 0);
-    setConstraint(_player2Container, @"H:|-hSpacing-[player2Login]-hSpacing-|", 0);
-    setConstraintWithItem(_contentView, _player2Container, _contentView, NSLayoutAttributeHeight, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeHeight, 1.0, 0);
-    setConstraintWithItem(_contentView, _player2Container, _contentView, NSLayoutAttributeWidth, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeWidth, 0.48, 0);
-    setConstraint(_player2Container, @"V:|-vSpacing-[player2Display]-vSpacing-[player2Login]-vSpacing-|", 0);
     
     setConstraint(_contentView, @"H:|-hSpacing-[connectUrl]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[connectionStatus]-hSpacing-|", 0);
@@ -536,7 +509,7 @@ NSMutableDictionary *busyViews;
     setConstraint(_contentView, @"H:|-hSpacing-[joinRoomName]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[joinStatus]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[joinButton]-hSpacing-|", 0);
-    setConstraint(_contentView, @"H:|[player1Container][player2Container]|", NSLayoutFormatAlignAllTop);
+    setConstraint(_contentView, @"H:|[player1Container]|", NSLayoutFormatAlignAllTop);
     setConstraint(_contentView, @"H:|-hSpacing-[localVideoContainer]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[localStatus]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[muteAudio]-hSpacing-|", 0);
@@ -569,13 +542,9 @@ NSMutableDictionary *busyViews;
     setConstraint(self.view, @"H:|[scrollView]|", 0);
     
     _player1DisplayConstraints = [[NSMutableArray alloc] init];
-    _player2DisplayConstraints = [[NSMutableArray alloc] init];
     
     //player1 display aspect ratio
     [_player1DisplayConstraints addObject:setConstraintWithItem(_player1Display, _player1Display, _player1Display, NSLayoutAttributeWidth, NSLayoutRelationEqual, NSLayoutAttributeHeight, 640.0/480.0, 0)];
-    
-    //player2 display aspect ratio
-    [_player2DisplayConstraints addObject:setConstraintWithItem(_player2Display, _player2Display, _player2Display, NSLayoutAttributeWidth, NSLayoutRelationEqual, NSLayoutAttributeHeight, 640.0/480.0, 0)];
 
 }
 
@@ -605,19 +574,6 @@ NSMutableDictionary *busyViews;
                                          constant:0.0f];
         [_player1DisplayConstraints addObject:constraint];
         [_player1Display addConstraints:_player1DisplayConstraints];
-    } else if (videoView == _player2Display) {
-        [_player2Display removeConstraints:_player2DisplayConstraints];
-        [_player2DisplayConstraints removeAllObjects];
-        NSLayoutConstraint *constraint =[NSLayoutConstraint
-                                         constraintWithItem:_player2Display
-                                         attribute:NSLayoutAttributeWidth
-                                         relatedBy:NSLayoutRelationEqual
-                                         toItem:_player2Display
-                                         attribute:NSLayoutAttributeHeight
-                                         multiplier:size.width/size.height
-                                         constant:0.0f];
-        [_player2DisplayConstraints addObject:constraint];
-        [_player2Display addConstraints:_player2DisplayConstraints];
     } else if (videoView == _localDisplay) {
         [_localDisplay removeConstraints:_localDisplayConstraints];
         [_localDisplayConstraints removeAllObjects];

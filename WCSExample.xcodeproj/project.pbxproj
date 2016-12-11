@@ -36,6 +36,8 @@
 		555260911DE418FA00AED0F1 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		555260921DE45C6B00AED0F1 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		555260931DE45CAD00AED0F1 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
+		55B649CD1DFCFD05009D4264 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E1EC351DFCFBA0005AEE73 /* AppDelegate.m */; };
+		55B649CE1DFCFD05009D4264 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E1EC381DFCFBA0005AEE73 /* ViewController.m */; };
 		55C3EEB31DDD6B240004F538 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
 		55C3EEB61DDD6B240004F538 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
 		55C3EEB71DDD6B240004F538 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F021C0D93DD00EAEC55 /* libstdc++.6.0.9.tbd */; };
@@ -78,6 +80,27 @@
 		55C3EF0B1DE2A5470004F538 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55C3EF071DE2A5470004F538 /* Info.plist */; };
 		55C3EF0D1DE2A5B80004F538 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C3EF061DE2A5470004F538 /* AppDelegate.m */; };
 		55C3EF0E1DE2A5B80004F538 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C3EF091DE2A5470004F538 /* ViewController.m */; };
+		55E1EC3A1DFCFBA0005AEE73 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55E1EC361DFCFBA0005AEE73 /* Info.plist */; };
+		55E1EC3F1DFCFBAA005AEE73 /* WCSViews.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534441DDADA3800D7DF80 /* WCSViews.m */; };
+		55E1EC421DFCFBAA005AEE73 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
+		55E1EC431DFCFBAA005AEE73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
+		55E1EC451DFCFBAA005AEE73 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
+		55E1EC461DFCFBAA005AEE73 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F021C0D93DD00EAEC55 /* libstdc++.6.0.9.tbd */; };
+		55E1EC471DFCFBAA005AEE73 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */; };
+		55E1EC481DFCFBAA005AEE73 /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFE1C0D93C300EAEC55 /* libc.tbd */; };
+		55E1EC491DFCFBAA005AEE73 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFC1C0D93BC00EAEC55 /* libsqlite3.tbd */; };
+		55E1EC4A1DFCFBAA005AEE73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFA1C0D93AC00EAEC55 /* Foundation.framework */; };
+		55E1EC4B1DFCFBAA005AEE73 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF81C0D93A200EAEC55 /* AVFoundation.framework */; };
+		55E1EC4C1DFCFBAA005AEE73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF61C0D939800EAEC55 /* UIKit.framework */; };
+		55E1EC4D1DFCFBAA005AEE73 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF41C0D939000EAEC55 /* GLKit.framework */; };
+		55E1EC4E1DFCFBAA005AEE73 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF21C0D938100EAEC55 /* CoreMedia.framework */; };
+		55E1EC4F1DFCFBAA005AEE73 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */; };
+		55E1EC501DFCFBAA005AEE73 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */; };
+		55E1EC511DFCFBAA005AEE73 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
+		55E1EC541DFCFBAA005AEE73 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55C3EED31DDD98D80004F538 /* Info.plist */; };
+		55E1EC551DFCFBAA005AEE73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2310681C0D718100918455 /* Assets.xcassets */; };
+		55E1EC561DFCFBAA005AEE73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB6A1C75ABA4002FDF16 /* Main.storyboard */; };
+		55E1EC571DFCFBAA005AEE73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB681C75ABA4002FDF16 /* LaunchScreen.storyboard */; };
 		55EC5EC11DF52C9000CEFD12 /* WCSViews.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534441DDADA3800D7DF80 /* WCSViews.m */; };
 		55F8AEDF1DE55895002F5DFC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55F8AEDB1DE55895002F5DFC /* Info.plist */; };
 		55F8AEE41DE55944002F5DFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F8AEDD1DE55895002F5DFC /* ViewController.m */; };
@@ -127,6 +150,7 @@
 		55F8AF341DE7FDA0002F5DFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F8AF0B1DE7FD32002F5DFC /* AppDelegate.m */; };
 		55F8AF351DE7FDA0002F5DFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F8AF0E1DE7FD32002F5DFC /* ViewController.m */; };
 		85458A1A4E20148A6AA67C8F /* Pods_MediaDevices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A58904727550EF62D7BF75 /* Pods_MediaDevices.framework */; };
+		8845F0DD6AEEA05D2C8C4CB9 /* Pods_VideoChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5BB64A1ECEAAAAE4BA4D58 /* Pods_VideoChat.framework */; };
 		AB70810F411954F98ECB0E4E /* Pods_StreamRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75098741D8433C8055082D8D /* Pods_StreamRecording.framework */; };
 		CE29B5921DC036AE0081CD37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
 		CE29B5951DC036AE0081CD37 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
@@ -180,6 +204,7 @@
 		0C845B85743847299215C220 /* Pods_Streamer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Streamer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D638A5574E01255F80E5B79 /* Pods-Conference.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conference.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Conference/Pods-Conference.debug.xcconfig"; sourceTree = "<group>"; };
 		251625D1C68BDE4F9EA1E79A /* Pods-MediaDevices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaDevices.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MediaDevices/Pods-MediaDevices.debug.xcconfig"; sourceTree = "<group>"; };
+		351C7C8EFEA3BF6F067F632E /* Pods-VideoChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoChat/Pods-VideoChat.release.xcconfig"; sourceTree = "<group>"; };
 		5503A8191DEEE961003A50AF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Conference/AppDelegate.h; sourceTree = "<group>"; };
 		5503A81A1DEEE961003A50AF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Conference/AppDelegate.m; sourceTree = "<group>"; };
 		5503A81B1DEEE961003A50AF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Conference/Info.plist; sourceTree = "<group>"; };
@@ -198,6 +223,12 @@
 		55C3EF071DE2A5470004F538 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TwoPlayers/Info.plist; sourceTree = "<group>"; };
 		55C3EF081DE2A5470004F538 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = TwoPlayers/ViewController.h; sourceTree = "<group>"; };
 		55C3EF091DE2A5470004F538 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = TwoPlayers/ViewController.m; sourceTree = "<group>"; };
+		55E1EC341DFCFBA0005AEE73 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = VideoChat/AppDelegate.h; sourceTree = "<group>"; };
+		55E1EC351DFCFBA0005AEE73 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = VideoChat/AppDelegate.m; sourceTree = "<group>"; };
+		55E1EC361DFCFBA0005AEE73 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = VideoChat/Info.plist; sourceTree = "<group>"; };
+		55E1EC371DFCFBA0005AEE73 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = VideoChat/ViewController.h; sourceTree = "<group>"; };
+		55E1EC381DFCFBA0005AEE73 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = VideoChat/ViewController.m; sourceTree = "<group>"; };
+		55E1EC5D1DFCFBAA005AEE73 /* VideoChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F8AED91DE55895002F5DFC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Streamer/AppDelegate.h; sourceTree = "<group>"; };
 		55F8AEDA1DE55895002F5DFC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Streamer/AppDelegate.m; sourceTree = "<group>"; };
 		55F8AEDB1DE55895002F5DFC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Streamer/Info.plist; sourceTree = "<group>"; };
@@ -213,12 +244,14 @@
 		5C8F2CB9B54362118F8B9C3A /* Pods-StreamRecording.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamRecording.release.xcconfig"; path = "Pods/Target Support Files/Pods-StreamRecording/Pods-StreamRecording.release.xcconfig"; sourceTree = "<group>"; };
 		657FE6304944E7B0E86B981B /* Pods_TwoWayStreaming.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwoWayStreaming.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68EBD96E5E0DFFC406FCC540 /* Pods-TwoPlayers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoPlayers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwoPlayers/Pods-TwoPlayers.debug.xcconfig"; sourceTree = "<group>"; };
+		70F0D9BC4DD77EFBBCD071EB /* Pods-VideoChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoChat/Pods-VideoChat.debug.xcconfig"; sourceTree = "<group>"; };
 		75098741D8433C8055082D8D /* Pods_StreamRecording.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreamRecording.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		846E3A66B3858038D2B5AC8F /* Pods-Player.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Player.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Player/Pods-Player.debug.xcconfig"; sourceTree = "<group>"; };
 		8745492A7BF846C9479B539C /* Pods_Player.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Player.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B31005716A70F1B337799F1 /* Pods_TwoPlayers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwoPlayers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C7745018D6298F1D431D19C /* Pods-Conference.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conference.release.xcconfig"; path = "Pods/Target Support Files/Pods-Conference/Pods-Conference.release.xcconfig"; sourceTree = "<group>"; };
 		9BE75AB247F8E5C824B9E42F /* Pods_Conference.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Conference.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C5BB64A1ECEAAAAE4BA4D58 /* Pods_VideoChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0063D10D113946F372D9269 /* Pods-Player.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Player.release.xcconfig"; path = "Pods/Target Support Files/Pods-Player/Pods-Player.release.xcconfig"; sourceTree = "<group>"; };
 		A2E17542E1DE12F0286A5CB0 /* Pods-TwoPlayers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoPlayers.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwoPlayers/Pods-TwoPlayers.release.xcconfig"; sourceTree = "<group>"; };
 		B900BCE0A039E397F83E1A7B /* Pods-Streamer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Streamer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Streamer/Pods-Streamer.release.xcconfig"; sourceTree = "<group>"; };
@@ -332,6 +365,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55E1EC441DFCFBAA005AEE73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E1EC451DFCFBAA005AEE73 /* libicucore.tbd in Frameworks */,
+				55E1EC461DFCFBAA005AEE73 /* libstdc++.6.0.9.tbd in Frameworks */,
+				55E1EC471DFCFBAA005AEE73 /* libstdc++.tbd in Frameworks */,
+				55E1EC481DFCFBAA005AEE73 /* libc.tbd in Frameworks */,
+				55E1EC491DFCFBAA005AEE73 /* libsqlite3.tbd in Frameworks */,
+				55E1EC4A1DFCFBAA005AEE73 /* Foundation.framework in Frameworks */,
+				55E1EC4B1DFCFBAA005AEE73 /* AVFoundation.framework in Frameworks */,
+				55E1EC4C1DFCFBAA005AEE73 /* UIKit.framework in Frameworks */,
+				55E1EC4D1DFCFBAA005AEE73 /* GLKit.framework in Frameworks */,
+				55E1EC4E1DFCFBAA005AEE73 /* CoreMedia.framework in Frameworks */,
+				55E1EC4F1DFCFBAA005AEE73 /* CoreGraphics.framework in Frameworks */,
+				55E1EC501DFCFBAA005AEE73 /* VideoToolbox.framework in Frameworks */,
+				55E1EC511DFCFBAA005AEE73 /* FPWCSApi2.framework in Frameworks */,
+				8845F0DD6AEEA05D2C8C4CB9 /* Pods_VideoChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55F8AEEA1DE55944002F5DFC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -436,6 +490,8 @@
 				5C8F2CB9B54362118F8B9C3A /* Pods-StreamRecording.release.xcconfig */,
 				1D638A5574E01255F80E5B79 /* Pods-Conference.debug.xcconfig */,
 				8C7745018D6298F1D431D19C /* Pods-Conference.release.xcconfig */,
+				70F0D9BC4DD77EFBBCD071EB /* Pods-VideoChat.debug.xcconfig */,
+				351C7C8EFEA3BF6F067F632E /* Pods-VideoChat.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -474,6 +530,18 @@
 				55C3EF091DE2A5470004F538 /* ViewController.m */,
 			);
 			name = TwoPlayers;
+			sourceTree = "<group>";
+		};
+		55E1EC331DFCFB18005AEE73 /* VideoChat */ = {
+			isa = PBXGroup;
+			children = (
+				55E1EC341DFCFBA0005AEE73 /* AppDelegate.h */,
+				55E1EC351DFCFBA0005AEE73 /* AppDelegate.m */,
+				55E1EC361DFCFBA0005AEE73 /* Info.plist */,
+				55E1EC371DFCFBA0005AEE73 /* ViewController.h */,
+				55E1EC381DFCFBA0005AEE73 /* ViewController.m */,
+			);
+			name = VideoChat;
 			sourceTree = "<group>";
 		};
 		55F8AED81DE55886002F5DFC /* Streamer */ = {
@@ -523,6 +591,7 @@
 				0C845B85743847299215C220 /* Pods_Streamer.framework */,
 				75098741D8433C8055082D8D /* Pods_StreamRecording.framework */,
 				9BE75AB247F8E5C824B9E42F /* Pods_Conference.framework */,
+				9C5BB64A1ECEAAAAE4BA4D58 /* Pods_VideoChat.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -547,6 +616,7 @@
 				55F8AF051DE55944002F5DFC /* Streamer.app */,
 				55F8AF321DE7FD3F002F5DFC /* StreamRecording.app */,
 				5503A8411DEEE96C003A50AF /* Conference.app */,
+				55E1EC5D1DFCFBAA005AEE73 /* VideoChat.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -554,6 +624,7 @@
 		CE23105B1C0D718100918455 /* WCSExample */ = {
 			isa = PBXGroup;
 			children = (
+				55E1EC331DFCFB18005AEE73 /* VideoChat */,
 				5503A8181DEEE857003A50AF /* Conference */,
 				55F8AF081DE7F5FD002F5DFC /* StreamRecording */,
 				55F8AED81DE55886002F5DFC /* Streamer */,
@@ -690,6 +761,26 @@
 			productReference = 55C3EF021DE29F220004F538 /* TwoPlayers.app */;
 			productType = "com.apple.product-type.application";
 		};
+		55E1EC3C1DFCFBAA005AEE73 /* VideoChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55E1EC5A1DFCFBAA005AEE73 /* Build configuration list for PBXNativeTarget "VideoChat" */;
+			buildPhases = (
+				55E1EC3D1DFCFBAA005AEE73 /* [CP] Check Pods Manifest.lock */,
+				55E1EC3E1DFCFBAA005AEE73 /* Sources */,
+				55E1EC441DFCFBAA005AEE73 /* Frameworks */,
+				55E1EC531DFCFBAA005AEE73 /* Resources */,
+				55E1EC581DFCFBAA005AEE73 /* [CP] Embed Pods Frameworks */,
+				55E1EC591DFCFBAA005AEE73 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoChat;
+			productName = WCSExample;
+			productReference = 55E1EC5D1DFCFBAA005AEE73 /* VideoChat.app */;
+			productType = "com.apple.product-type.application";
+		};
 		55F8AEE11DE55944002F5DFC /* Streamer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55F8AF021DE55944002F5DFC /* Build configuration list for PBXNativeTarget "Streamer" */;
@@ -789,6 +880,9 @@
 						DevelopmentTeam = SXWV5Z47NK;
 						ProvisioningStyle = Automatic;
 					};
+					55E1EC3C1DFCFBAA005AEE73 = {
+						DevelopmentTeam = SXWV5Z47NK;
+					};
 					55F8AEE11DE55944002F5DFC = {
 						DevelopmentTeam = SXWV5Z47NK;
 					};
@@ -829,6 +923,7 @@
 				55F8AEE11DE55944002F5DFC /* Streamer */,
 				55F8AF121DE7FD3F002F5DFC /* StreamRecording */,
 				5503A8211DEEE96C003A50AF /* Conference */,
+				55E1EC3C1DFCFBAA005AEE73 /* VideoChat */,
 			);
 		};
 /* End PBXProject section */
@@ -867,6 +962,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55E1EC531DFCFBAA005AEE73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E1EC541DFCFBAA005AEE73 /* Info.plist in Resources */,
+				55E1EC551DFCFBAA005AEE73 /* Assets.xcassets in Resources */,
+				55E1EC561DFCFBAA005AEE73 /* Main.storyboard in Resources */,
+				55E1EC571DFCFBAA005AEE73 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55F8AEF91DE55944002F5DFC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -897,6 +1003,7 @@
 			files = (
 				5503A81F1DEEE961003A50AF /* Info.plist in Resources */,
 				55C3EEE21DDEC1CF0004F538 /* Info.plist in Resources */,
+				55E1EC3A1DFCFBA0005AEE73 /* Info.plist in Resources */,
 				CE29B5A31DC036AE0081CD37 /* LaunchScreen.storyboard in Resources */,
 				55F8AEDF1DE55895002F5DFC /* Info.plist in Resources */,
 				CE29B5A41DC036AE0081CD37 /* Assets.xcassets in Resources */,
@@ -1101,6 +1208,51 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwoPlayers/Pods-TwoPlayers-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		55E1EC3D1DFCFBAA005AEE73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		55E1EC581DFCFBAA005AEE73 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoChat/Pods-VideoChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55E1EC591DFCFBAA005AEE73 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoChat/Pods-VideoChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		55F8AEE21DE55944002F5DFC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1270,6 +1422,18 @@
 				55C3EF0D1DE2A5B80004F538 /* AppDelegate.m in Sources */,
 				55C3EF0E1DE2A5B80004F538 /* ViewController.m in Sources */,
 				55C3EEE81DE29F220004F538 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55E1EC3E1DFCFBAA005AEE73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55B649CD1DFCFD05009D4264 /* AppDelegate.m in Sources */,
+				55B649CE1DFCFD05009D4264 /* ViewController.m in Sources */,
+				55E1EC3F1DFCFBAA005AEE73 /* WCSViews.m in Sources */,
+				55E1EC421DFCFBAA005AEE73 /* WCSUtil.m in Sources */,
+				55E1EC431DFCFBAA005AEE73 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1485,6 +1649,50 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.TwoPlayers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		55E1EC5B1DFCFBAA005AEE73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70F0D9BC4DD77EFBBCD071EB /* Pods-VideoChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Alexey Trunov (UDA328ES3S)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = SXWV5Z47NK;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/VideoChat/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.VideoChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		55E1EC5C1DFCFBAA005AEE73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 351C7C8EFEA3BF6F067F632E /* Pods-VideoChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Alexey Trunov (UDA328ES3S)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = SXWV5Z47NK;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/VideoChat/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.VideoChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1776,6 +1984,15 @@
 			buildConfigurations = (
 				55C3EF001DE29F220004F538 /* Debug */,
 				55C3EF011DE29F220004F538 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55E1EC5A1DFCFBAA005AEE73 /* Build configuration list for PBXNativeTarget "VideoChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55E1EC5B1DFCFBAA005AEE73 /* Debug */,
+				55E1EC5C1DFCFBAA005AEE73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
