@@ -156,11 +156,18 @@ NSMutableDictionary *busyViews;
     [self changeViewState:button enabled:NO];
     if ([button.titleLabel.text isEqualToString:@"LEAVE"]) {
         if (room) {
-            [room leave];
+            FPWCSApi2DataHandler *handler = [[FPWCSApi2DataHandler alloc] init];
+            handler.onAccepted = ^(FPWCSApi2Session *session, FPWCSApi2Data *data){
+                [self onUnpublished];
+                [self onLeaved];
+            };
+            handler.onRejected = ^(FPWCSApi2Session *session, FPWCSApi2Data *data){
+                [self onUnpublished];
+                [self onLeaved];
+            };
+            [room leave:handler];
             room = nil;
         }
-        [self onUnpublished];
-        [self onLeaved];
     } else {
         FPWCSApi2RoomOptions * options = [[FPWCSApi2RoomOptions alloc] init];
         options.name = _joinRoomName.input.text;
@@ -169,7 +176,7 @@ NSMutableDictionary *busyViews;
         [room onStateCallback:^(FPWCSApi2Room *room) {
             NSDictionary *participants = [room getParticipants];
             if ([participants count] >= 3) {
-                [room leave];
+                [room leave:nil];
                 _joinStatus.text = @"Room is full";
                 [self changeViewState:_joinButton enabled:YES];
                 return;
@@ -220,6 +227,13 @@ NSMutableDictionary *busyViews;
                 [busyViews removeObjectForKey:[participant getName]];
                 [freeViews push:pv];
             }
+        }];
+        
+        [room onFailedCallback:^(FPWCSApi2Room *room, NSString *info) {
+            [room leave:nil];
+            _joinStatus.text = info;
+            [self changeViewState:_joinButton enabled:YES];
+            [_joinButton setTitle:@"JOIN" forState:UIControlStateNormal];
         }];
         
         [room onMessageCallback:^(FPWCSApi2Room *room, FPWCSApi2RoomMessage *message) {
@@ -435,7 +449,7 @@ NSMutableDictionary *busyViews;
     [self.view addSubview:_scrollView];
     
     //set default values
-    _connectUrl.text = @"wss://87.226.225.59:8443/";
+    _connectUrl.text = @"wss://wcs5-eu.flashphoner.com:8443/";
 }
 
 - (void)setupLayout {

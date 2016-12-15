@@ -95,7 +95,7 @@ NSString *recordName;
                                    actionWithTitle:@"Ok"
                                    style:UIAlertActionStyleDefault
                                    handler:^(UIAlertAction * action) {
-                                       [self onUnpublished];
+                                       [session disconnect];
                                    }];
         
         [alert addAction:okButton];
@@ -126,7 +126,7 @@ NSString *recordName;
                                    actionWithTitle:@"Ok"
                                    style:UIAlertActionStyleDefault
                                    handler:^(UIAlertAction * action) {
-                                       [self onUnpublished];
+                                       [session disconnect];
                                    }];
         
         [alert addAction:okButton];
@@ -143,7 +143,7 @@ NSString *recordName;
 - (void)onDisconnected {
     [self changeViewState:_connectUrl enabled:YES];
     [self onUnpublished];
-    if (url) {
+    if (url && recordName) {
         //NSString *urlString = @"http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4";
         NSString *urlString = [NSString stringWithFormat:@"http://%@:9091/client/records/%@", url.host, recordName];
         _recordLink.text = urlString;
