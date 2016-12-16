@@ -99,11 +99,11 @@
     
     [stream on:kFPWCSStreamStatusStopped callback:^(FPWCSApi2Stream *rStream){
         [self changeStreamStatus:rStream];
-        [self onStopped];
+        [self onDisconnected];
     }];
     [stream on:kFPWCSStreamStatusFailed callback:^(FPWCSApi2Stream *rStream){
         [self changeStreamStatus:rStream];
-        [self onStopped];
+        [self onDisconnected];
     }];
     if(![stream play:&error]) {
         UIAlertController * alert = [UIAlertController
@@ -265,19 +265,11 @@
                             @"scrollView": _scrollView
                             };
     
-    NSNumber *videoHeight = @240;
-    //custom videoHeight for pads
-    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ) {
-        NSLog(@"Set video container height for pads");
-        videoHeight = @480;
-    }
-    
     NSDictionary *metrics = @{
                               @"buttonHeight": @30,
                               @"statusHeight": @30,
                               @"labelHeight": @20,
                               @"inputFieldHeight": @30,
-                              @"videoHeight": videoHeight,
                               @"vSpacing": @15,
                               @"hSpacing": @30
                               };
@@ -302,7 +294,6 @@
     setConstraint(_remoteStreamName, @"V:[remoteStreamName(inputFieldHeight)]", 0);
     setConstraint(_status, @"V:[status(statusHeight)]", 0);
     setConstraint(_startButton, @"V:[startButton(buttonHeight)]", 0);
-    setConstraint(_videoContainer, @"V:[videoContainer(videoHeight)]", 0);
     
     //set width related to super view
     setConstraint(_contentView, @"H:|-hSpacing-[connectUrl]-hSpacing-|", 0);
@@ -313,7 +304,6 @@
     setConstraint(_contentView, @"H:|-hSpacing-[videoContainer]-hSpacing-|", 0);
     
     //remote display max width and height
-    setConstraintWithItem(_videoContainer, _remoteDisplay, _videoContainer, NSLayoutAttributeHeight, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeHeight, 1.0, 0);
     setConstraintWithItem(_videoContainer, _remoteDisplay, _videoContainer, NSLayoutAttributeWidth, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeWidth, 1.0, 0);
     
     //remote display aspect ratio

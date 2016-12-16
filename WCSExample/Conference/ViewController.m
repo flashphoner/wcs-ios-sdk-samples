@@ -493,7 +493,6 @@ NSMutableDictionary *busyViews;
                               @"labelHeight": @20,
                               @"inputFieldHeight": @30,
                               @"smallVideoHeight": videoHeight,
-                              @"videoHeight": [NSNumber numberWithInt:[videoHeight intValue] * 2],
                               @"vSpacing": @15,
                               @"hSpacing": @30
                               };
@@ -520,7 +519,6 @@ NSMutableDictionary *busyViews;
     setConstraint(_player1Login, @"V:[player1Login(buttonHeight)]", 0);
     setConstraint(_player2Display, @"V:[player2Display(smallVideoHeight)]", 0);
     setConstraint(_player2Login, @"V:[player2Login(statusHeight)]", 0);
-    setConstraint(_localDisplay, @"V:[localDisplay(videoHeight)]", 0);
     setConstraint(_localStatus, @"V:[localStatus(statusHeight)]", 0);
     setConstraint(_muteAudio, @"V:[muteAudio(statusHeight)]", 0);
     setConstraint(_muteVideo, @"V:[muteVideo(statusHeight)]", 0);
@@ -532,15 +530,15 @@ NSMutableDictionary *busyViews;
     //set width related to super view
     setConstraint(_player1Container, @"H:|-hSpacing-[player1Display]-hSpacing-|", 0);
     setConstraint(_player1Container, @"H:|-hSpacing-[player1Login]-hSpacing-|", 0);
-    setConstraintWithItem(_contentView, _player1Container, _contentView, NSLayoutAttributeHeight, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeHeight, 1.0, 0);
-    setConstraintWithItem(_contentView, _player1Container, _contentView, NSLayoutAttributeWidth, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeWidth, 0.48, 0);
+//    setConstraintWithItem(_contentView, _player1Container, _contentView, NSLayoutAttributeHeight, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeHeight, 1.0, 0);
+    setConstraintWithItem(_contentView, _player1Container, _contentView, NSLayoutAttributeWidth, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeWidth, 0.5, 0);
     setConstraint(_player1Container, @"V:|-vSpacing-[player1Display]-vSpacing-[player1Login]-vSpacing-|", 0);
 
     
     setConstraint(_player2Container, @"H:|-hSpacing-[player2Display]-hSpacing-|", 0);
     setConstraint(_player2Container, @"H:|-hSpacing-[player2Login]-hSpacing-|", 0);
-    setConstraintWithItem(_contentView, _player2Container, _contentView, NSLayoutAttributeHeight, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeHeight, 1.0, 0);
-    setConstraintWithItem(_contentView, _player2Container, _contentView, NSLayoutAttributeWidth, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeWidth, 0.48, 0);
+//    setConstraintWithItem(_contentView, _player2Container, _contentView, NSLayoutAttributeHeight, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeHeight, 1.0, 0);
+    setConstraintWithItem(_contentView, _player2Container, _contentView, NSLayoutAttributeWidth, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeWidth, 0.5, 0);
     setConstraint(_player2Container, @"V:|-vSpacing-[player2Display]-vSpacing-[player2Login]-vSpacing-|", 0);
     
     setConstraint(_contentView, @"H:|-hSpacing-[connectUrl]-hSpacing-|", 0);
@@ -560,8 +558,15 @@ NSMutableDictionary *busyViews;
     setConstraint(_contentView, @"H:|-hSpacing-[messageBody]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[sendButton]-hSpacing-|", 0);
     
+    
+    _player1DisplayConstraints = [[NSMutableArray alloc] init];
+    [_player1DisplayConstraints addObject:setConstraintWithItem(_player1Display, _player1Display, _player1Display, NSLayoutAttributeWidth, NSLayoutRelationEqual, NSLayoutAttributeHeight, 640.0/480.0, 0)];
+    
+    _player2DisplayConstraints = [[NSMutableArray alloc] init];
+    [_player2DisplayConstraints addObject:setConstraintWithItem(_player2Display, _player2Display, _player2Display, NSLayoutAttributeWidth, NSLayoutRelationEqual, NSLayoutAttributeHeight, 640.0/480.0, 0)];
+    
+    
     //remote display max width and height
-    setConstraintWithItem(_localVideoContainer, _localDisplay, _localVideoContainer, NSLayoutAttributeHeight, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeHeight, 1.0, 0);
     setConstraintWithItem(_localVideoContainer, _localDisplay, _localVideoContainer, NSLayoutAttributeWidth, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeWidth, 1.0, 0);
     
     _localDisplayConstraints = [[NSMutableArray alloc] init];
@@ -581,16 +586,6 @@ NSMutableDictionary *busyViews;
     setConstraint(self.view, @"H:|[contentView]|", 0);
     setConstraint(self.view, @"V:|[scrollView]|", 0);
     setConstraint(self.view, @"H:|[scrollView]|", 0);
-    
-    _player1DisplayConstraints = [[NSMutableArray alloc] init];
-    _player2DisplayConstraints = [[NSMutableArray alloc] init];
-    
-    //player1 display aspect ratio
-    [_player1DisplayConstraints addObject:setConstraintWithItem(_player1Display, _player1Display, _player1Display, NSLayoutAttributeWidth, NSLayoutRelationEqual, NSLayoutAttributeHeight, 640.0/480.0, 0)];
-    
-    //player2 display aspect ratio
-    [_player2DisplayConstraints addObject:setConstraintWithItem(_player2Display, _player2Display, _player2Display, NSLayoutAttributeWidth, NSLayoutRelationEqual, NSLayoutAttributeHeight, 640.0/480.0, 0)];
-
 }
 
 - (void)didReceiveMemoryWarning {
