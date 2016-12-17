@@ -289,20 +289,13 @@ NSString *recordName;
                             @"scrollView": _scrollView
                             };
     
-    NSNumber *videoHeight = @320;
-    //custom videoHeight for pads
-    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ) {
-        NSLog(@"Set video container height for pads");
-        videoHeight = @640;
-    }
-    
     NSDictionary *metrics = @{
                               @"linkHeight": @60,
                               @"buttonHeight": @30,
                               @"statusHeight": @30,
                               @"labelHeight": @20,
                               @"inputFieldHeight": @30,
-                              @"videoHeight": videoHeight,
+                              @"videoHeight": @320,
                               @"vSpacing": @15,
                               @"hSpacing": @30
                               };
@@ -322,7 +315,6 @@ NSString *recordName;
     _remoteDisplayConstraints = [[NSMutableArray alloc] init];
     
     //set height size
-    setConstraint(_videoContainer, @"V:[remoteDisplay(videoHeight)]", 0);
     setConstraint(_connectUrl, @"V:[connectUrl(inputFieldHeight)]", 0);
     setConstraint(_status, @"V:[status(statusHeight)]", 0);
     setConstraint(_startButton, @"V:[startButton(buttonHeight)]", 0);
@@ -338,7 +330,6 @@ NSString *recordName;
     //setConstraint(_contentView, @"H:|-hSpacing-[videoPlayer]-hSpacing-|", 0);
     
     //remote display max width and height
-    setConstraintWithItem(_videoContainer, _remoteDisplay, _videoContainer, NSLayoutAttributeHeight, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeHeight, 1.0, 0);
     setConstraintWithItem(_videoContainer, _remoteDisplay, _videoContainer, NSLayoutAttributeWidth, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeWidth, 1.0, 0);
     
     //remote display aspect ratio
