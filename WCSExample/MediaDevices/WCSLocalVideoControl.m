@@ -28,6 +28,9 @@
         if (localDevices.audio.count > 0) {
             _micSelector.input.text = ((FPWCSApi2MediaDevice *)(localDevices.audio[0])).label;
         }
+        _useFEC = [[WCSSwitchView alloc] initWithLabelText:@"FEC"];
+        _useStereo = [[WCSSwitchView alloc] initWithLabelText:@"Stereo"];
+        _audioBitrate = [[WCSTextInputView alloc] initWithLabelText:@"Bitrate"];
         _muteAudio = [[WCSSwitchView alloc] initWithLabelText:@"Mute Audio"];
         
         _border = [WCSViewUtil createBorder:@3];
@@ -46,17 +49,20 @@
         //set default fps
         _fpsSelector.input.text = @"30";
         [_fpsSelector.picker selectRow:[_fpsSelector.picker numberOfRowsInComponent:0] - 1 inComponent:0 animated:NO];
-        _bitrate = [[WCSTextInputView alloc] initWithLabelText:@"Bitrate"];
+        _videoBitrate = [[WCSTextInputView alloc] initWithLabelText:@"Bitrate"];
         _muteVideo = [[WCSSwitchView alloc] initWithLabelText:@"Mute Video"];
         [_contentView addSubview:_sendAudio];
         [_contentView addSubview:_micSelector];
+        [_contentView addSubview:_useFEC];
+        [_contentView addSubview:_useStereo];
+        [_contentView addSubview:_audioBitrate];
         [_contentView addSubview:_muteAudio];
         [_contentView addSubview:_border];
         [_contentView addSubview:_sendVideo];
         [_contentView addSubview:_camSelector];
         [_contentView addSubview:_videoResolutionSelector];
         [_contentView addSubview:_fpsSelector];
-        [_contentView addSubview:_bitrate];
+        [_contentView addSubview:_videoBitrate];
         [_contentView addSubview:_muteVideo];
         [_scrollView addSubview:_contentView];
         [self addSubview:_hideButton];
@@ -66,13 +72,16 @@
                                 @"hideButton": _hideButton,
                                 @"sendAudio": _sendAudio,
                                 @"micSelector": _micSelector,
+                                @"useFEC":_useFEC,
+                                @"useStereo":_useStereo,
+                                @"audioBitrate":_audioBitrate,
                                 @"muteAudio": _muteAudio,
                                 @"border": _border,
                                 @"sendVideo": _sendVideo,
                                 @"camSelector": _camSelector,
                                 @"videoResolution": _videoResolutionSelector,
                                 @"fpsSelector": _fpsSelector,
-                                @"bitrate": _bitrate,
+                                @"videoBitrate": _videoBitrate,
                                 @"muteVideo": _muteVideo,
                                 @"content": _contentView,
                                 @"scroll": _scrollView,
@@ -85,16 +94,19 @@
                                   };
         [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[sendAudio]|" options:0 metrics:metrics views:views]];
         [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[micSelector]|" options:0 metrics:metrics views:views]];
+        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[useFEC]|" options:0 metrics:metrics views:views]];
+        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[useStereo]|" options:0 metrics:metrics views:views]];
+        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[audioBitrate]|" options:0 metrics:metrics views:views]];
         [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[muteAudio]|" options:0 metrics:metrics views:views]];
         [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[border]|" options:0 metrics:metrics views:views]];
         [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[sendVideo]|" options:0 metrics:metrics views:views]];
         [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[camSelector]|" options:0 metrics:metrics views:views]];
         [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[videoResolution]|" options:0 metrics:metrics views:views]];
         [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[fpsSelector]|" options:0 metrics:metrics views:views]];
-        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[bitrate]|" options:0 metrics:metrics views:views]];
+        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[videoBitrate]|" options:0 metrics:metrics views:views]];
         [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[muteVideo]|" options:0 metrics:metrics views:views]];
         
-        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-vSpacing-[sendAudio]-vSpacing-[micSelector]-vSpacing-[muteAudio]-vSpacing-[border]-vSpacing-[sendVideo]-vSpacing-[camSelector]-vSpacing-[videoResolution]-vSpacing-[fpsSelector]-vSpacing-[bitrate]-vSpacing-[muteVideo]-vSpacing-|" options:0 metrics:metrics views:views]];
+        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-vSpacing-[sendAudio]-vSpacing-[micSelector]-vSpacing-[useFEC]-vSpacing-[useStereo]-vSpacing-[audioBitrate]-vSpacing-[muteAudio]-vSpacing-[border]-vSpacing-[sendVideo]-vSpacing-[camSelector]-vSpacing-[videoResolution]-vSpacing-[fpsSelector]-vSpacing-[videoBitrate]-vSpacing-[muteVideo]-vSpacing-|" options:0 metrics:metrics views:views]];
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-hSpacing-[hideButton]-hSpacing-|" options:0 metrics:metrics views:views]];
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[scroll]|" options:0 metrics:metrics views:views]];
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-hSpacing-[content]-hSpacing-|" options:0 metrics:metrics views:views]];
@@ -172,7 +184,7 @@
     [_camSelector.input resignFirstResponder];
     [_videoResolutionSelector.input resignFirstResponder];
     [_fpsSelector.input resignFirstResponder];
-    [_bitrate.input resignFirstResponder];
+    [_videoBitrate.input resignFirstResponder];
     [self hide];
 }
 
@@ -196,6 +208,9 @@
 - (void)muteAudioInputs:(BOOL)mute {
     BOOL enabled = !mute;
     _micSelector.input.userInteractionEnabled = enabled;
+    _useFEC.control.userInteractionEnabled = enabled;
+    _useStereo.control.userInteractionEnabled = enabled;
+    _audioBitrate.input.userInteractionEnabled = enabled;
     _muteAudio.control.userInteractionEnabled = enabled;
 }
  
@@ -204,13 +219,19 @@
     _camSelector.input.userInteractionEnabled = enabled;
     _videoResolutionSelector.userInteractionEnabled = enabled;
     _fpsSelector.input.userInteractionEnabled = enabled;
-    _bitrate.input.userInteractionEnabled = enabled;
+    _videoBitrate.input.userInteractionEnabled = enabled;
     _muteVideo.control.userInteractionEnabled = enabled;
 }
 
 - (FPWCSApi2MediaConstraints *)toMediaConstraints {
     FPWCSApi2MediaConstraints *ret = [[FPWCSApi2MediaConstraints alloc] init];
-    ret.audio = [_sendAudio.control isOn];
+    if ([_sendAudio.control isOn])  {
+        FPWCSApi2AudioConstraints *audio = [[FPWCSApi2AudioConstraints alloc] init];
+        audio.useFEC = [_useFEC.control isOn];
+        audio.useStereo = [_useStereo.control isOn];
+        audio.bitrate = [_audioBitrate.input.text integerValue];
+        ret.audio = audio;
+    }
     if ([_sendVideo.control isOn]) {
         FPWCSApi2VideoConstraints *video = [[FPWCSApi2VideoConstraints alloc] init];
         for (FPWCSApi2MediaDevice *device in localDevices.video) {
@@ -222,7 +243,7 @@
         video.minWidth = video.maxWidth = [res[0] integerValue];
         video.minHeight = video.maxHeight = [res[1] integerValue];
         video.minFrameRate = video.maxFrameRate = [_fpsSelector.input.text integerValue];
-        video.bitrate = [_bitrate.input.text integerValue];
+        video.bitrate = [_videoBitrate.input.text integerValue];
         ret.video = video;
     }
     return ret;

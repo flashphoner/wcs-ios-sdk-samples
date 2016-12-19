@@ -126,7 +126,7 @@
 
 - (FPWCSApi2MediaConstraints *)toMediaConstraints {
     FPWCSApi2MediaConstraints *ret = [[FPWCSApi2MediaConstraints alloc] init];
-    ret.audio = YES;
+    ret.audio = [[FPWCSApi2AudioConstraints alloc] init];
     if ([_playVideo.control isOn]) {
         FPWCSApi2VideoConstraints *video = [[FPWCSApi2VideoConstraints alloc] init];
         video.minWidth = video.maxWidth = [_videoResolution.width.text integerValue];

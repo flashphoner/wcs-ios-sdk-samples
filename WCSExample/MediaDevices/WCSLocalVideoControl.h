@@ -9,6 +9,9 @@
 @property UIButton *hideButton;
 @property WCSSwitchView *sendAudio;
 @property WCSPickerInputView *micSelector;
+@property WCSSwitchView *useFEC;
+@property WCSSwitchView *useStereo;
+@property WCSTextInputView *audioBitrate;
 @property WCSSwitchView *muteAudio;
 
 @property UIView *border;
@@ -16,7 +19,7 @@
 @property WCSPickerInputView *camSelector;
 @property WCSPickerInputView *videoResolutionSelector;
 @property WCSPickerInputView *fpsSelector;
-@property WCSTextInputView *bitrate;
+@property WCSTextInputView *videoBitrate;
 @property WCSSwitchView *muteVideo;
 
 - (void)muteAudioInputs:(BOOL)mute;
