@@ -46,5 +46,8 @@ xcodebuild -exportArchive -exportOptionsPlist Info.plist -archivePath out-build/
 xcodebuild -workspace 'WCSExample.xcworkspace' -scheme "PhoneMinVideo" -configuration="Release" clean archive OBJROOT=$(PWD)/out-build/PhoneMinVideo -archivePath out-build/PhoneMinVideo
 xcodebuild -exportArchive -exportOptionsPlist Info.plist -archivePath out-build/PhoneMinVideo.xcarchive -exportPath out-build
 
+xcodebuild -workspace 'WCSExample.xcworkspace' -scheme "PhoneMin" -configuration="Release" clean archive OBJROOT=$(PWD)/out-build/PhoneMin -archivePath out-build/PhoneMin
+xcodebuild -exportArchive -exportOptionsPlist Info.plist -archivePath out-build/PhoneMin.xcarchive -exportPath out-build
+
 echo "Build complete"
 

@@ -29,7 +29,5 @@
 @property UIButton *callButton;
 @property UIButton *holdButton;
 
-@property WCSDoubleVideoView *videoView;
-
 @end
 

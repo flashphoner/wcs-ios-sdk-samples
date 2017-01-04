@@ -45,3 +45,8 @@ target 'PhoneMinVideo' do
     pod 'SocketRocket'
     pod 'JSONModel'
 end
+
+target 'PhoneMin' do
+    pod 'SocketRocket'
+    pod 'JSONModel'
+end

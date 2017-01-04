@@ -129,9 +129,6 @@ UIAlertController *alert;
                                    actionWithTitle:@"Answer"
                                    style:UIAlertActionStyleDefault
                                    handler:^(UIAlertAction * action) {
-                                       [call getConstraints].video = [[FPWCSApi2VideoConstraints alloc] init];
-                                       [call setLocalDisplay:_videoView.local];
-                                       [call setRemoteDisplay:_videoView.remote];
                                        [call answer];
                                    }];
         
@@ -155,9 +152,7 @@ UIAlertController *alert;
     FPWCSApi2Session *session = [FPWCSApi2 getSessions][0];
     FPWCSApi2CallOptions *options = [[FPWCSApi2CallOptions alloc] init];
     options.callee = _callee.input.text;
-    options.localDisplay = _videoView.local;
-    options.remoteDisplay = _videoView.remote;
-    options.constraints = [[FPWCSApi2MediaConstraints alloc] initWithAudio:YES video:YES];
+    options.constraints = [[FPWCSApi2MediaConstraints alloc] initWithAudio:YES video:NO];
     NSError *error;
     call = [session createCall:options error:&error];
     if (!call) {
@@ -374,8 +369,6 @@ UIAlertController *alert;
     _connectButton = [WCSViewUtil createButton:@"START"];
     [_connectButton addTarget:self action:@selector(connectButton:) forControlEvents:UIControlEventTouchUpInside];
     
-    _videoView = [[WCSDoubleVideoView alloc] init];
-    
     _callee = [[WCSTextInputView alloc] init];
     _callee.label.text = @"Callee";
     _callStatus = [WCSViewUtil createLabelView];
@@ -395,7 +388,6 @@ UIAlertController *alert;
     [self.contentView addSubview:_sipRegRequired];
     [self.contentView addSubview:_connectionStatus];
     [self.contentView addSubview:_connectButton];
-    [self.contentView addSubview:_videoView];
     [self.contentView addSubview:_callee];
     [self.contentView addSubview:_callStatus];
     [self.contentView addSubview:_callButton];
@@ -436,7 +428,6 @@ UIAlertController *alert;
                             @"callStatus":_callStatus,
                             @"callButton":_callButton,
                             @"holdButton":_holdButton,
-                            @"videoView":_videoView,
                             @"contentView": _contentView,
                             @"scrollView": _scrollView
                             };
@@ -471,7 +462,6 @@ UIAlertController *alert;
     };
     
     //set height size
-    setConstraint(_videoView, @"V:[videoView(videoHeight)]", 0);
     setConstraint(_connectUrl, @"V:[connectUrl(inputFieldHeight)]", 0);
     setConstraint(_connectionStatus, @"V:[connectionStatus(statusHeight)]", 0);
     setConstraint(_connectButton, @"V:[connectButton(buttonHeight)]", 0);
@@ -486,13 +476,12 @@ UIAlertController *alert;
     setConstraint(_contentView, @"H:|-hSpacing-[sipRegRequired]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[connectionStatus]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[connectButton]-hSpacing-|",0);
-    setConstraint(_contentView, @"H:|-hSpacing-[videoView]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[callee]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[callStatus]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[callButton]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[holdButton]-hSpacing-|",0);
     
-    setConstraint(self.contentView, @"V:|-50-[connectUrl]-vSpacing-[sipLogin]-vSpacing-[sipAuthName]-vSpacing-[sipPassword]-vSpacing-[sipDomain]-vSpacing-[sipPort]-vSpacing-[sipRegRequired]-vSpacing-[connectionStatus]-vSpacing-[connectButton]-vSpacing-[videoView]-vSpacing-[callee]-vSpacing-[callStatus]-vSpacing-[callButton]-vSpacing-[holdButton]-vSpacing-|", 0);
+    setConstraint(self.contentView, @"V:|-50-[connectUrl]-vSpacing-[sipLogin]-vSpacing-[sipAuthName]-vSpacing-[sipPassword]-vSpacing-[sipDomain]-vSpacing-[sipPort]-vSpacing-[sipRegRequired]-vSpacing-[connectionStatus]-vSpacing-[connectButton]-vSpacing-[callee]-vSpacing-[callStatus]-vSpacing-[callButton]-vSpacing-[holdButton]-vSpacing-|", 0);
     
     //content view width
     setConstraintWithItem(self.view, _contentView, self.view, NSLayoutAttributeWidth, NSLayoutRelationEqual, NSLayoutAttributeWidth, 1.0, 0);
