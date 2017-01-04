@@ -397,20 +397,13 @@ UIAlertController *alert;
     [self.view addSubview:_scrollView];
     
     //set default values
-    _connectUrl.text = @"wss://87.226.225.59:8443";
-    _sipLogin.input.text = @"VKP014";
-    _sipAuthName.input.text = @"VKP014";
-    _sipPassword.input.text = @"VKP014";
-    _sipDomain.input.text = @"sipnet.ru";
+    _connectUrl.text = @"wss://wcs5-eu.flashphoner.com:8443";
+    _sipLogin.input.text = @"1000";
+    _sipAuthName.input.text = @"1000";
+    _sipPassword.input.text = @"1234";
+    _sipDomain.input.text = @"192.168.0.1";
     _sipPort.input.text = @"5060";
-    _callee.input.text = @"VKP013";
-//    _connectUrl.text = @"wss://wcs5-eu.flashphoner.com:8443";
-//    _sipLogin.input.text = @"1000";
-//    _sipAuthName.input.text = @"1000";
-//    _sipPassword.input.text = @"1234";
-//    _sipDomain.input.text = @"192.168.0.1";
-//    _sipPort.input.text = @"5060";
-//    _callee.input.text = @"1001";
+    _callee.input.text = @"1001";
 }
 
 - (void)setupLayout {
