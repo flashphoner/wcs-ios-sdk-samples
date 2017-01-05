@@ -42,6 +42,25 @@ UIAlertController *alert;
     options.sipPort = [NSNumber numberWithInteger: [_sipPort.input.text integerValue]];
     options.appKey = @"defaultApp";
     NSError *error;
+    if (!options.sipLogin.length || !options.sipAuthenticationName.length || !options.sipPassword.length ||
+        !options.sipDomain.length || options.sipPort.integerValue == 0) {
+        UIAlertController * alert = [UIAlertController
+                                     alertControllerWithTitle:@"All Sip Credentials is required"
+                                     message:error.localizedDescription
+                                     preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* okButton = [UIAlertAction
+                                   actionWithTitle:@"Ok"
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction * action) {
+                                       [self onDisconnected];
+                                   }];
+        
+        [alert addAction:okButton];
+        [self presentViewController:alert animated:YES completion:nil];
+        return nil;
+    }
+    
     session = [FPWCSApi2 createSession:options error:&error];
     if (error) {
         UIAlertController * alert = [UIAlertController
@@ -226,6 +245,12 @@ UIAlertController *alert;
     [_connectButton setTitle:@"CONNECT" forState:UIControlStateNormal];
     [self changeViewState:_connectButton enabled:YES];
     [self changeViewState:_connectUrl enabled:YES];
+    [self changeViewState:_sipLogin.input enabled:YES];
+    [self changeViewState:_sipAuthName.input enabled:YES];
+    [self changeViewState:_sipPassword.input enabled:YES];
+    [self changeViewState:_sipDomain.input enabled:YES];
+    [self changeViewState:_sipRegRequired.control enabled:YES];
+    [self changeViewState:_sipPort.input enabled:YES];
     [_callButton setTitle:@"CALL" forState:UIControlStateNormal];
     [self changeViewState:_callButton enabled:NO];
     [_holdButton setTitle:@"HOLD" forState:UIControlStateNormal];
@@ -262,6 +287,12 @@ UIAlertController *alert;
     } else {
         //todo check url is not empty
         [self changeViewState:_connectUrl enabled:NO];
+        [self changeViewState:_sipLogin.input enabled:NO];
+        [self changeViewState:_sipAuthName.input enabled:NO];
+        [self changeViewState:_sipPassword.input enabled:NO];
+        [self changeViewState:_sipDomain.input enabled:NO];
+        [self changeViewState:_sipRegRequired.control enabled:NO];
+        [self changeViewState:_sipPort.input enabled:NO];
         [self connect];
     }
 }
