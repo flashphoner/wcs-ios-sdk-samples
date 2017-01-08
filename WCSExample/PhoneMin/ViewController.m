@@ -39,11 +39,12 @@ UIAlertController *alert;
     options.sipAuthenticationName = _sipAuthName.input.text;
     options.sipPassword = _sipPassword.input.text;
     options.sipDomain = _sipDomain.input.text;
+    options.sipOutboundProxy = _sipOutboundProxy.input.text;
     options.sipPort = [NSNumber numberWithInteger: [_sipPort.input.text integerValue]];
     options.appKey = @"defaultApp";
     NSError *error;
     if (!options.sipLogin.length || !options.sipAuthenticationName.length || !options.sipPassword.length ||
-        !options.sipDomain.length || options.sipPort.integerValue == 0) {
+        !options.sipDomain.length || !options.sipOutboundProxy.length || options.sipPort.integerValue == 0) {
         UIAlertController * alert = [UIAlertController
                                      alertControllerWithTitle:@"All Sip Credentials is required"
                                      message:error.localizedDescription
@@ -243,6 +244,7 @@ UIAlertController *alert;
     [self changeViewState:_sipAuthName.input enabled:YES];
     [self changeViewState:_sipPassword.input enabled:YES];
     [self changeViewState:_sipDomain.input enabled:YES];
+    [self changeViewState:_sipOutboundProxy.input enabled:YES];
     [self changeViewState:_sipRegRequired.control enabled:YES];
     [self changeViewState:_sipPort.input enabled:YES];
     [_callButton setTitle:@"CALL" forState:UIControlStateNormal];
@@ -285,6 +287,7 @@ UIAlertController *alert;
         [self changeViewState:_sipAuthName.input enabled:NO];
         [self changeViewState:_sipPassword.input enabled:NO];
         [self changeViewState:_sipDomain.input enabled:NO];
+        [self changeViewState:_sipOutboundProxy.input enabled:NO];
         [self changeViewState:_sipRegRequired.control enabled:NO];
         [self changeViewState:_sipPort.input enabled:NO];
         [self connect];
@@ -390,6 +393,8 @@ UIAlertController *alert;
     _sipPassword.label.text = @"Sip Password";
     _sipDomain = [[WCSTextInputView alloc] init];
     _sipDomain.label.text = @"Sip Domain";
+    _sipOutboundProxy = [[WCSTextInputView alloc] init];
+    _sipOutboundProxy.label.text = @"Sip Outbound Proxy";
     _sipPort = [[WCSTextInputView alloc] init];
     _sipPort.label.text = @"Sip Port";
     _sipRegRequired = [[WCSSwitchView alloc] init];
@@ -414,6 +419,7 @@ UIAlertController *alert;
     [self.contentView addSubview:_sipAuthName];
     [self.contentView addSubview:_sipPassword];
     [self.contentView addSubview:_sipDomain];
+    [self.contentView addSubview:_sipOutboundProxy];
     [self.contentView addSubview:_sipPort];
     [self.contentView addSubview:_sipRegRequired];
     [self.contentView addSubview:_connectionStatus];
@@ -432,6 +438,7 @@ UIAlertController *alert;
     _sipAuthName.input.text = @"1000";
     _sipPassword.input.text = @"1234";
     _sipDomain.input.text = @"192.168.0.1";
+    _sipOutboundProxy.input.text = @"192.168.0.1";
     _sipPort.input.text = @"5060";
     _callee.input.text = @"1001";
 }
@@ -443,6 +450,7 @@ UIAlertController *alert;
                             @"sipAuthName": _sipAuthName,
                             @"sipPassword":_sipPassword,
                             @"sipDomain":_sipDomain,
+                            @"sipOutboundProxy":_sipOutboundProxy,
                             @"sipPort":_sipPort,
                             @"sipRegRequired":_sipRegRequired,
                             @"connectionStatus": _connectionStatus,
@@ -495,6 +503,7 @@ UIAlertController *alert;
     setConstraint(_contentView, @"H:|-hSpacing-[sipAuthName]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[sipPassword]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[sipDomain]-hSpacing-|",0);
+    setConstraint(_contentView, @"H:|-hSpacing-[sipOutboundProxy]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[sipPort]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[sipRegRequired]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[connectionStatus]-hSpacing-|", 0);
@@ -504,7 +513,7 @@ UIAlertController *alert;
     setConstraint(_contentView, @"H:|-hSpacing-[callButton]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[holdButton]-hSpacing-|",0);
     
-    setConstraint(self.contentView, @"V:|-50-[connectUrl]-vSpacing-[sipLogin]-vSpacing-[sipAuthName]-vSpacing-[sipPassword]-vSpacing-[sipDomain]-vSpacing-[sipPort]-vSpacing-[sipRegRequired]-vSpacing-[connectionStatus]-vSpacing-[connectButton]-vSpacing-[callee]-vSpacing-[callStatus]-vSpacing-[callButton]-vSpacing-[holdButton]-vSpacing-|", 0);
+    setConstraint(self.contentView, @"V:|-50-[connectUrl]-vSpacing-[sipLogin]-vSpacing-[sipAuthName]-vSpacing-[sipPassword]-vSpacing-[sipDomain]-vSpacing-[sipOutboundProxy]-vSpacing-[sipPort]-vSpacing-[sipRegRequired]-vSpacing-[connectionStatus]-vSpacing-[connectButton]-vSpacing-[callee]-vSpacing-[callStatus]-vSpacing-[callButton]-vSpacing-[holdButton]-vSpacing-|", 0);
     
     //content view width
     setConstraintWithItem(self.view, _contentView, self.view, NSLayoutAttributeWidth, NSLayoutRelationEqual, NSLayoutAttributeWidth, 1.0, 0);

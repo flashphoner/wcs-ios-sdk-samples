@@ -20,6 +20,7 @@
 @property WCSTextInputView *sipAuthName;
 @property WCSTextInputView *sipPassword;
 @property WCSTextInputView *sipDomain;
+@property WCSTextInputView *sipOutboundProxy;
 @property WCSTextInputView *sipPort;
 @property WCSSwitchView *sipRegRequired;
 @property UILabel *connectionStatus;
