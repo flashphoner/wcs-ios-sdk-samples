@@ -108,10 +108,6 @@ UIAlertController *alert;
     
     [session onIncomingCallCallback:^(FPWCSApi2Call *rCall) {
         call = rCall;
-        [call on:kFPWCSCallStatusTrying callback:^(FPWCSApi2Call *call){
-            [self changeCallStatus:call];
-            [self toHangupState];
-        }];
         
         [call on:kFPWCSCallStatusBusy callback:^(FPWCSApi2Call *call){
             [self changeCallStatus:call];
@@ -128,9 +124,15 @@ UIAlertController *alert;
             [self toHangupState];
         }];
         
+        [call on:kFPWCSCallStatusHold callback:^(FPWCSApi2Call *call){
+            [self changeCallStatus:call];
+            [self changeViewState:_holdButton enabled:YES];
+        }];
+        
         [call on:kFPWCSCallStatusEstablished callback:^(FPWCSApi2Call *call){
             [self changeCallStatus:call];
             [self toHangupState];
+            [self changeViewState:_holdButton enabled:YES];
         }];
         
         [call on:kFPWCSCallStatusFinish callback:^(FPWCSApi2Call *call){
@@ -191,10 +193,6 @@ UIAlertController *alert;
         [self presentViewController:alert animated:YES completion:nil];
         return nil;
     }
-    [call on:kFPWCSCallStatusTrying callback:^(FPWCSApi2Call *call){
-        [self changeCallStatus:call];
-        [self toHangupState];
-    }];
 
     [call on:kFPWCSCallStatusBusy callback:^(FPWCSApi2Call *call){
         [self changeCallStatus:call];
@@ -213,11 +211,13 @@ UIAlertController *alert;
     
     [call on:kFPWCSCallStatusHold callback:^(FPWCSApi2Call *call){
         [self changeCallStatus:call];
+        [self changeViewState:_holdButton enabled:YES];
     }];
     
     [call on:kFPWCSCallStatusEstablished callback:^(FPWCSApi2Call *call){
         [self changeCallStatus:call];
         [self toHangupState];
+        [self changeViewState:_holdButton enabled:YES];
     }];
     
     [call on:kFPWCSCallStatusFinish callback:^(FPWCSApi2Call *call){
@@ -312,6 +312,7 @@ UIAlertController *alert;
 }
 
 - (void)holdButton:(UIButton *)button {
+    [self changeViewState:button enabled:NO];
     if ([button.titleLabel.text isEqualToString:@"UNHOLD"]) {
         if (call) {
             [call unhold];
