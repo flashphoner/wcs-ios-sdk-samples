@@ -49,5 +49,8 @@ xcodebuild -exportArchive -exportOptionsPlist Info.plist -archivePath out-build/
 xcodebuild -workspace 'WCSExample.xcworkspace' -scheme "PhoneMin" -configuration="Release" clean archive OBJROOT=$(PWD)/out-build/PhoneMin -archivePath out-build/PhoneMin
 xcodebuild -exportArchive -exportOptionsPlist Info.plist -archivePath out-build/PhoneMin.xcarchive -exportPath out-build
 
+xcodebuild -workspace 'WCSExample.xcworkspace' -scheme "ClickToCall" -configuration="Release" clean archive OBJROOT=$(PWD)/out-build/ClickToCall -archivePath out-build/ClickToCall
+xcodebuild -exportArchive -exportOptionsPlist Info.plist -archivePath out-build/ClickToCall.xcarchive -exportPath out-build
+
 echo "Build complete"
 

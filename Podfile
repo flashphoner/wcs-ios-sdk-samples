@@ -50,3 +50,8 @@ target 'PhoneMin' do
     pod 'SocketRocket'
     pod 'JSONModel'
 end
+
+target 'ClickToCall' do
+    pod 'SocketRocket'
+    pod 'JSONModel'
+end
