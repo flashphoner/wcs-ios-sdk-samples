@@ -79,7 +79,7 @@ UIAlertController *alert;
 - (FPWCSApi2Call *)call {
     FPWCSApi2CallOptions *options = [[FPWCSApi2CallOptions alloc] init];
     options.callee = _callee.input.text;
-    options.constraints = [[FPWCSApi2MediaConstraints alloc] initWithAudio:YES video:NO];
+    options.localConstraints = [[FPWCSApi2MediaConstraints alloc] initWithAudio:YES video:NO];
     NSError *error;
     call = [session createCall:options error:&error];
     if (!call) {
@@ -121,6 +121,7 @@ UIAlertController *alert;
     
     [call on:kFPWCSCallStatusEstablished callback:^(FPWCSApi2Call *call){
         [self changeCallStatus:call];
+        [self onHangup];
     }];
     
     [call on:kFPWCSCallStatusFinish callback:^(FPWCSApi2Call *call){

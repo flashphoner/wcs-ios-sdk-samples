@@ -146,7 +146,7 @@ UIAlertController *alert;
                                    actionWithTitle:@"Answer"
                                    style:UIAlertActionStyleDefault
                                    handler:^(UIAlertAction * action) {
-                                       [call getConstraints].video = [[FPWCSApi2VideoConstraints alloc] init];
+                                       [call getLocalConstraints].video = [[FPWCSApi2VideoConstraints alloc] init];
                                        [call setLocalDisplay:_videoView.local];
                                        [call setRemoteDisplay:_videoView.remote];
                                        [call answer];
@@ -174,7 +174,8 @@ UIAlertController *alert;
     options.callee = _callee.input.text;
     options.localDisplay = _videoView.local;
     options.remoteDisplay = _videoView.remote;
-    options.constraints = [[FPWCSApi2MediaConstraints alloc] initWithAudio:YES video:YES];
+    options.localConstraints = [[FPWCSApi2MediaConstraints alloc] initWithAudio:YES video:YES];
+    options.remoteConstraints = [[FPWCSApi2MediaConstraints alloc] initWithAudio:YES video:YES];
     NSError *error;
     call = [session createCall:options error:&error];
     if (!call) {

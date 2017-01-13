@@ -173,7 +173,9 @@ UIAlertController *alert;
     FPWCSApi2Session *session = [FPWCSApi2 getSessions][0];
     FPWCSApi2CallOptions *options = [[FPWCSApi2CallOptions alloc] init];
     options.callee = _callee.input.text;
-    options.constraints = [[FPWCSApi2MediaConstraints alloc] initWithAudio:YES video:NO];
+    //used for only recv audio
+//    options.localConstraints = [[FPWCSApi2MediaConstraints alloc] initWithAudio:NO video:NO];
+//    options.remoteConstraints = [[FPWCSApi2MediaConstraints alloc] initWithAudio:YES video:NO];
     NSError *error;
     call = [session createCall:options error:&error];
     if (!call) {
