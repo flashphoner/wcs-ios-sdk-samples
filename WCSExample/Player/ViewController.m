@@ -97,10 +97,15 @@
         [self onPlaying:rStream];
     }];
     
+    [stream on:kFPWCSStreamStatusNotEnoughtBandwidth callback:^(FPWCSApi2Stream *rStream){
+        NSLog(@"Not enough bandwidth stream %@, consider using lower video resolution or bitrate. Bandwidth %ld bitrate %ld", [rStream getName], [stream getNetworkBandwidth] / 1000, [stream getRemoteBitrate] / 1000);
+    }];
+    
     [stream on:kFPWCSStreamStatusStopped callback:^(FPWCSApi2Stream *rStream){
         [self changeStreamStatus:rStream];
         [self onDisconnected];
     }];
+    
     [stream on:kFPWCSStreamStatusFailed callback:^(FPWCSApi2Stream *rStream){
         [self changeStreamStatus:rStream];
         [self onDisconnected];

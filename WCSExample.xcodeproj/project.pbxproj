@@ -292,7 +292,6 @@
 		554528001E25F9C900DD2F52 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ClickToCall/ViewController.h; sourceTree = "<group>"; };
 		554528011E25F9C900DD2F52 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ClickToCall/ViewController.m; sourceTree = "<group>"; };
 		554528261E25FA6100DD2F52 /* ClickToCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickToCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		554528271E25FA6100DD2F52 /* PhoneMin copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PhoneMin copy-Info.plist"; path = "/Users/andrey/Repositories/Tooboos/ios_sdk/PhoneMin copy-Info.plist"; sourceTree = "<absolute>"; };
 		55BD73541E0FF4D1003E0517 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = PhoneMinVideo/AppDelegate.h; sourceTree = "<group>"; };
 		55BD73551E0FF4D1003E0517 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = PhoneMinVideo/AppDelegate.m; sourceTree = "<group>"; };
 		55BD73561E0FF4D1003E0517 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PhoneMinVideo/Info.plist; sourceTree = "<group>"; };
@@ -811,7 +810,6 @@
 				CE23105B1C0D718100918455 /* WCSExample */,
 				CE23105A1C0D718100918455 /* Products */,
 				4D0B06C788C9EEF230372597 /* Pods */,
-				554528271E25FA6100DD2F52 /* PhoneMin copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
