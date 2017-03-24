@@ -100,6 +100,11 @@ FPWCSApi2Stream *player2Stream;
         [self onPlaying1:rStream];
     }];
     
+    [player1Stream on:kFPWCSStreamStatusNotEnoughtBandwidth callback:^(FPWCSApi2Stream *rStream){
+        NSLog(@"Not enough bandwidth stream %@, consider using lower video resolution or bitrate. Bandwidth %ld bitrate %ld", [rStream getName], [rStream getNetworkBandwidth] / 1000, [rStream getRemoteBitrate] / 1000);
+        [self changeStreamStatus:rStream];
+    }];
+    
     [player1Stream on:kFPWCSStreamStatusStopped callback:^(FPWCSApi2Stream *rStream){
         [self changeStream1Status:rStream];
         [self onStopped1];
@@ -154,6 +159,11 @@ FPWCSApi2Stream *player2Stream;
     [player2Stream on:kFPWCSStreamStatusPlaying callback:^(FPWCSApi2Stream *rStream){
         [self changeStream2Status:rStream];
         [self onPlaying2:rStream];
+    }];
+    
+    [player2Stream on:kFPWCSStreamStatusNotEnoughtBandwidth callback:^(FPWCSApi2Stream *rStream){
+        NSLog(@"Not enough bandwidth stream %@, consider using lower video resolution or bitrate. Bandwidth %ld bitrate %ld", [rStream getName], [rStream getNetworkBandwidth] / 1000, [rStream getRemoteBitrate] / 1000);
+        [self changeStreamStatus:rStream];
     }];
     
     [player2Stream on:kFPWCSStreamStatusStopped callback:^(FPWCSApi2Stream *rStream){
