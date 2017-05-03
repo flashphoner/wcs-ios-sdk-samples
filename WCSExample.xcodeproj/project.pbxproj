@@ -2500,7 +2500,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E09018DB4496D32FF344EAE3 /* Pods-TwoWayStreaming.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = TwoWayStreamingIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
@@ -2522,7 +2522,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DCB73F0D95AC5C28060A24E5 /* Pods-TwoWayStreaming.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = TwoWayStreamingIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
