@@ -22,6 +22,7 @@
 @property UITextField *localStreamName;
 @property UILabel *localStreamStatus;
 @property UIButton *publishButton;
+@property UIButton *switchCameraButton;
 
 @property UILabel *playStreamLabel;
 @property UITextField *remoteStreamName;

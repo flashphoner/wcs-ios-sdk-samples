@@ -208,6 +208,7 @@
 - (void)onPublishing:(FPWCSApi2Stream *)stream {
     [_publishButton setTitle:@"STOP" forState:UIControlStateNormal];
     [self changeViewState:_publishButton enabled:YES];
+    [self changeViewState:_switchCameraButton enabled:YES];
 }
 
 - (void)onUnpublished {
@@ -219,6 +220,7 @@
         [self changeViewState:_publishButton enabled:NO];
         [self changeViewState:_localStreamName enabled:NO];
     }
+    [self changeViewState:_switchCameraButton enabled:NO];
     [FPWCSApi2 releaseLocalMedia:_localDisplay];
     [_localDisplay renderFrame:nil];
 }
@@ -290,6 +292,21 @@
             NSLog(@"Start publishing, no session");
             [self onUnpublished];
         }
+    }
+}
+
+- (void)switchCameraButton:(UIButton *)button {
+    if ([FPWCSApi2 getSessions].count) {
+        FPWCSApi2Session *session = [FPWCSApi2 getSessions][0];
+        NSArray *streams = [session getStreams];
+        for (FPWCSApi2Stream *stream in streams ) {
+            if ([stream isPublished]) {
+                NSLog(@"Found published stream, switching camera");
+                [stream switchCamera];
+            }
+        }
+    } else {
+        NSLog(@"No active sessions found");
     }
 }
 
@@ -405,6 +422,8 @@
     _localStreamStatus = [WCSViewUtil createLabelView];
     _publishButton = [WCSViewUtil createButton:@"PUBLISH"];
     [_publishButton addTarget:self action:@selector(publishButton:) forControlEvents:UIControlEventTouchUpInside];
+    _switchCameraButton = [WCSViewUtil createButton:@"Switch camera"];
+    [_switchCameraButton addTarget:self action:@selector(switchCameraButton:) forControlEvents:UIControlEventTouchUpInside];
     
     _playStreamLabel = [WCSViewUtil createInfoLabel:@"Play Stream"];
     _remoteStreamName = [WCSViewUtil createTextField:self];
@@ -423,6 +442,7 @@
     [self.contentView addSubview:_localStreamName];
     [self.contentView addSubview:_localStreamStatus];
     [self.contentView addSubview:_publishButton];
+    [self.contentView addSubview:_switchCameraButton];
     
     [self.contentView addSubview:_playStreamLabel];
     [self.contentView addSubview:_remoteStreamName];
@@ -449,6 +469,7 @@
                             @"localStreamName": _localStreamName,
                             @"localStreamStatus": _localStreamStatus,
                             @"publishButton": _publishButton,
+                            @"switchCameraButton": _switchCameraButton,
                             @"playStreamLabel": _playStreamLabel,
                             @"remoteStreamName": _remoteStreamName,
                             @"remoteStreamStatus": _remoteStreamStatus,
@@ -503,6 +524,7 @@
     setConstraint(_remoteStreamStatus, @"V:[remoteStreamStatus(statusHeight)]", 0);
     setConstraint(_connectButton, @"V:[connectButton(buttonHeight)]", 0);
     setConstraint(_publishButton, @"V:[publishButton(buttonHeight)]", 0);
+    setConstraint(_switchCameraButton, @"V:[switchCameraButton(buttonHeight)]", 0);
     setConstraint(_playButton, @"V:[playButton(buttonHeight)]", 0);
     setConstraint(_videoContainer, @"V:[videoContainer(videoHeight)]", 0);
     
@@ -517,6 +539,7 @@
     setConstraint(_contentView, @"H:|-hSpacing-[remoteStreamStatus]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[connectButton]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[publishButton]-hSpacing-|", 0);
+    setConstraint(_contentView, @"H:|-hSpacing-[switchCameraButton]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[playButton]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[videoContainer]-hSpacing-|", 0);
     
@@ -540,7 +563,7 @@
     setConstraint(_videoContainer, @"H:|[localDisplay][remoteDisplay]|", NSLayoutFormatAlignAllTop);
     setConstraint(_videoContainer, @"V:|[localDisplay]", 0);
     
-    setConstraint(self.contentView, @"V:|-50-[connectUrl]-vSpacing-[connectionStatus]-vSpacing-[connectButton]-vSpacing-[publishStreamLabel]-vSpacing-[localStreamName]-vSpacing-[localStreamStatus]-vSpacing-[publishButton]-vSpacing-[playStreamLabel]-vSpacing-[remoteStreamName]-vSpacing-[remoteStreamStatus]-vSpacing-[playButton]-vSpacing-[videoContainer]-vSpacing-|", 0);
+    setConstraint(self.contentView, @"V:|-50-[connectUrl]-vSpacing-[connectionStatus]-vSpacing-[connectButton]-vSpacing-[publishStreamLabel]-vSpacing-[localStreamName]-vSpacing-[localStreamStatus]-vSpacing-[publishButton]-vSpacing-[switchCameraButton]-vSpacing-[playStreamLabel]-vSpacing-[remoteStreamName]-vSpacing-[remoteStreamStatus]-vSpacing-[playButton]-vSpacing-[videoContainer]-vSpacing-|", 0);
     
     //content view width
     setConstraintWithItem(self.view, _contentView, self.view, NSLayoutAttributeWidth, NSLayoutRelationEqual, NSLayoutAttributeWidth, 1.0, 0);
