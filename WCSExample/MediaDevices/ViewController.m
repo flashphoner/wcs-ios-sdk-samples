@@ -303,6 +303,7 @@
     _scrollView.scrollEnabled = YES;
     _startButton = [WCSViewUtil createButton:@"Start"];
     [_startButton addTarget:self action:@selector(startButton:) forControlEvents:UIControlEventTouchUpInside];
+    _lockOrientation = [[WCSSwitchView alloc] initWithLabelText:@"Lock orientation"];
     _localSettingsButton = [WCSViewUtil createButton:@"Local settings"];
     [_localSettingsButton addTarget:self action:@selector(localSettingsButton:) forControlEvents:UIControlEventTouchUpInside];
     _remoteSettingsButton = [WCSViewUtil createButton:@"Remote settings"];
@@ -320,6 +321,7 @@
     _contentView = [[UIView alloc] init];
     _contentView.translatesAutoresizingMaskIntoConstraints = NO;
     [_contentView addSubview:_startButton];
+    [_contentView addSubview:_lockOrientation];
     [_settingsButtonContainer addSubview:_localSettingsButton];
     [_settingsButtonContainer addSubview:_remoteSettingsButton];
     [_contentView addSubview:_settingsButtonContainer];
@@ -336,6 +338,7 @@
     
     NSDictionary *views = @{
                             @"start": _startButton,
+                            @"lockOrientation": _lockOrientation,
                             @"localSettings": _localSettingsButton,
                             @"remoteSettings": _remoteSettingsButton,
                             @"settings": _settingsButtonContainer,
@@ -358,7 +361,9 @@
     };
     
     setConstraint(_startButton, @"V:[start(height)]", 0);
+    setConstraint(_lockOrientation, @"V:[lockOrientation(height)]", 0);
     setConstraint(_contentView, @"H:|[start]|", 0);
+    setConstraint(_contentView, @"H:|[lockOrientation]|", 0);
     setConstraint(_localSettingsButton, @"V:[localSettings(height)]", 0);
     setConstraint(_remoteSettingsButton, @"V:[remoteSettings(height)]", 0);
     [_settingsButtonContainer addConstraint:[NSLayoutConstraint
@@ -403,7 +408,7 @@
     setConstraint(_contentView, @"H:|[videoView]|", 0);
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:_videoView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationGreaterThanOrEqual toItem:self.view attribute:NSLayoutAttributeHeight multiplier:0.5 constant:0]];
     
-    setConstraint(_contentView, @"V:|[videoView]-[settings]-vSpacing-[urlInput]-vSpacing-[connectStatus]-vSpacing-[start]-vSpacing-|", 0);
+    setConstraint(_contentView, @"V:|[videoView]-[settings]-vSpacing-[lockOrientation]-vSpacing-[urlInput]-vSpacing-[connectStatus]-vSpacing-[start]|", 0);
     setConstraint(_scrollView, @"V:|[content]|", 0);
     setConstraint(self.view, @"H:|[scroll]|", 0);
     setConstraint(self.view, @"H:|-hSpacing-[content]-hSpacing-|", 0);
@@ -439,6 +444,11 @@
         return split[3];
     }
     return [[[NSUUID UUID] UUIDString] substringToIndex:8];
+}
+
+- (BOOL) shouldAutorotate
+{
+    return !_lockOrientation.control.isOn;
 }
 
 @end
