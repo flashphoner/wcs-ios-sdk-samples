@@ -109,6 +109,10 @@
     if (_localControl.muteVideo.control.isOn) {
         [_localStream muteVideo];
     }
+    
+    if (_lockCameraOrientation.control.isOn) {
+        [_localStream lockCameraOrientation];
+    }
     [_localStream on:kFPWCSStreamStatusPublishing callback:^(FPWCSApi2Stream *stream){
         [self changeStreamStatus:stream];
         [self startPlaying];
@@ -245,6 +249,18 @@
     [_remoteControl show];
 }
 
+
+
+- (void)lockCameraOrientationValueChanged:(id)sender {
+    if (_localStream) {
+        if  (_lockCameraOrientation.control.isOn) {
+            [_localStream lockCameraOrientation];
+        } else {
+            [_localStream unlockCameraOrientation];
+        }
+    }
+}
+
 - (void)controlValueChanged:(id)sender {
     if (sender == _localControl.muteAudio.control) {
         if (_localStream) {
@@ -303,7 +319,8 @@
     _scrollView.scrollEnabled = YES;
     _startButton = [WCSViewUtil createButton:@"Start"];
     [_startButton addTarget:self action:@selector(startButton:) forControlEvents:UIControlEventTouchUpInside];
-    _lockOrientation = [[WCSSwitchView alloc] initWithLabelText:@"Lock orientation"];
+    _lockCameraOrientation = [[WCSSwitchView alloc] initWithLabelText:@"Lock Camera Orientation"];
+    [_lockCameraOrientation.control addTarget:self action:@selector(lockCameraOrientationValueChanged:) forControlEvents:UIControlEventValueChanged];
     _localSettingsButton = [WCSViewUtil createButton:@"Local settings"];
     [_localSettingsButton addTarget:self action:@selector(localSettingsButton:) forControlEvents:UIControlEventTouchUpInside];
     _remoteSettingsButton = [WCSViewUtil createButton:@"Remote settings"];
@@ -321,7 +338,7 @@
     _contentView = [[UIView alloc] init];
     _contentView.translatesAutoresizingMaskIntoConstraints = NO;
     [_contentView addSubview:_startButton];
-    [_contentView addSubview:_lockOrientation];
+    [_contentView addSubview:_lockCameraOrientation];
     [_settingsButtonContainer addSubview:_localSettingsButton];
     [_settingsButtonContainer addSubview:_remoteSettingsButton];
     [_contentView addSubview:_settingsButtonContainer];
@@ -338,7 +355,7 @@
     
     NSDictionary *views = @{
                             @"start": _startButton,
-                            @"lockOrientation": _lockOrientation,
+                            @"lockOrientation": _lockCameraOrientation,
                             @"localSettings": _localSettingsButton,
                             @"remoteSettings": _remoteSettingsButton,
                             @"settings": _settingsButtonContainer,
@@ -361,7 +378,7 @@
     };
     
     setConstraint(_startButton, @"V:[start(height)]", 0);
-    setConstraint(_lockOrientation, @"V:[lockOrientation(height)]", 0);
+    setConstraint(_lockCameraOrientation, @"V:[lockOrientation(height)]", 0);
     setConstraint(_contentView, @"H:|[start]|", 0);
     setConstraint(_contentView, @"H:|[lockOrientation]|", 0);
     setConstraint(_localSettingsButton, @"V:[localSettings(height)]", 0);
@@ -444,11 +461,6 @@
         return split[3];
     }
     return [[[NSUUID UUID] UUIDString] substringToIndex:8];
-}
-
-- (BOOL) shouldAutorotate
-{
-    return !_lockOrientation.control.isOn;
 }
 
 @end

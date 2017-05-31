@@ -1,4 +1,4 @@
-platform :ios, '9.3'
+platform :ios, '9.1'
 use_frameworks!
 
 target 'TwoWayStreaming' do
