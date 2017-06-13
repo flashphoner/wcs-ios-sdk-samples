@@ -19,6 +19,7 @@
 @property UILabel *connectStatus;
 @property UIButton *startButton;
 @property WCSSwitchView *lockCameraOrientation;
+@property WCSSwitchView *useLoudSpeaker;
 @property UIView *settingsButtonContainer;
 @property UIButton *localSettingsButton;
 @property UIButton *remoteSettingsButton;

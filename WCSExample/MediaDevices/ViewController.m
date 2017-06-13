@@ -172,6 +172,8 @@
     [_remoteStream on:kFPWCSStreamStatusPlaying callback:^(FPWCSApi2Stream *stream){
         [self changeStreamStatus:stream];
         [self onStarted];
+        _useLoudSpeaker.control.userInteractionEnabled = YES;
+        
     }];
     
     [_remoteStream on:kFPWCSStreamStatusNotEnoughtBandwidth callback:^(FPWCSApi2Stream *rStream){
@@ -182,12 +184,16 @@
     [_remoteStream on:kFPWCSStreamStatusStopped callback:^(FPWCSApi2Stream *rStream){
         [self changeStreamStatus:rStream];
         [_localStream stop:nil];
+        _useLoudSpeaker.control.userInteractionEnabled = NO;
+
     }];
     [_remoteStream on:kFPWCSStreamStatusFailed callback:^(FPWCSApi2Stream *rStream){
         [self changeStreamStatus:rStream];
         if (_localStream && [_localStream getStatus] == kFPWCSStreamStatusPublishing) {
             [_localStream stop:nil];
         }
+        _useLoudSpeaker.control.userInteractionEnabled = NO;
+
     }];
     if(![_remoteStream play:&error]) {
         UIAlertController * alert = [UIAlertController
@@ -261,6 +267,12 @@
     }
 }
 
+- (void)useLoudSpeakerValueChanged:(id)sender {
+    if (_remoteStream) {
+        [_remoteStream setLoudspeakerStatus:_useLoudSpeaker.control.isOn withError:nil];
+    }
+}
+
 - (void)controlValueChanged:(id)sender {
     if (sender == _localControl.muteAudio.control) {
         if (_localStream) {
@@ -321,6 +333,9 @@
     [_startButton addTarget:self action:@selector(startButton:) forControlEvents:UIControlEventTouchUpInside];
     _lockCameraOrientation = [[WCSSwitchView alloc] initWithLabelText:@"Lock Camera Orientation"];
     [_lockCameraOrientation.control addTarget:self action:@selector(lockCameraOrientationValueChanged:) forControlEvents:UIControlEventValueChanged];
+    _useLoudSpeaker = [[WCSSwitchView alloc] initWithLabelText:@"Use Loud Speaker"];
+    _useLoudSpeaker.control.userInteractionEnabled = NO;
+    [_useLoudSpeaker.control addTarget:self action:@selector(useLoudSpeakerValueChanged:) forControlEvents:UIControlEventValueChanged];
     _localSettingsButton = [WCSViewUtil createButton:@"Local settings"];
     [_localSettingsButton addTarget:self action:@selector(localSettingsButton:) forControlEvents:UIControlEventTouchUpInside];
     _remoteSettingsButton = [WCSViewUtil createButton:@"Remote settings"];
@@ -339,6 +354,7 @@
     _contentView.translatesAutoresizingMaskIntoConstraints = NO;
     [_contentView addSubview:_startButton];
     [_contentView addSubview:_lockCameraOrientation];
+    [_contentView addSubview:_useLoudSpeaker];
     [_settingsButtonContainer addSubview:_localSettingsButton];
     [_settingsButtonContainer addSubview:_remoteSettingsButton];
     [_contentView addSubview:_settingsButtonContainer];
@@ -356,6 +372,7 @@
     NSDictionary *views = @{
                             @"start": _startButton,
                             @"lockOrientation": _lockCameraOrientation,
+                            @"useLoudSpeaker": _useLoudSpeaker,
                             @"localSettings": _localSettingsButton,
                             @"remoteSettings": _remoteSettingsButton,
                             @"settings": _settingsButtonContainer,
@@ -379,8 +396,10 @@
     
     setConstraint(_startButton, @"V:[start(height)]", 0);
     setConstraint(_lockCameraOrientation, @"V:[lockOrientation(height)]", 0);
+    setConstraint(_useLoudSpeaker, @"V:[useLoudSpeaker(height)]", 0);
     setConstraint(_contentView, @"H:|[start]|", 0);
     setConstraint(_contentView, @"H:|[lockOrientation]|", 0);
+    setConstraint(_contentView, @"H:|[useLoudSpeaker]|", 0);
     setConstraint(_localSettingsButton, @"V:[localSettings(height)]", 0);
     setConstraint(_remoteSettingsButton, @"V:[remoteSettings(height)]", 0);
     [_settingsButtonContainer addConstraint:[NSLayoutConstraint
@@ -425,7 +444,7 @@
     setConstraint(_contentView, @"H:|[videoView]|", 0);
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:_videoView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationGreaterThanOrEqual toItem:self.view attribute:NSLayoutAttributeHeight multiplier:0.5 constant:0]];
     
-    setConstraint(_contentView, @"V:|[videoView]-[settings]-vSpacing-[lockOrientation]-vSpacing-[urlInput]-vSpacing-[connectStatus]-vSpacing-[start]|", 0);
+    setConstraint(_contentView, @"V:|[videoView]-[settings]-vSpacing-[lockOrientation]-vSpacing-[useLoudSpeaker]-vSpacing-[urlInput]-vSpacing-[connectStatus]-vSpacing-[start]|", 0);
     setConstraint(_scrollView, @"V:|[content]|", 0);
     setConstraint(self.view, @"H:|[scroll]|", 0);
     setConstraint(self.view, @"H:|-hSpacing-[content]-hSpacing-|", 0);
