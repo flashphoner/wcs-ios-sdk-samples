@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <FPWCSApi2/RTCEAGLVideoView.h>
+#import <CoreAudio/CoreAudioTypes.h>
+#import <AVFoundation/AVFoundation.h>
 #import "WCSViews.h"
 #import "WCSLocalVideoControl.h"
 #import "WCSRemoteVideoControl.h"
@@ -17,6 +19,8 @@
 @property UIScrollView *scrollView;
 @property UIView *contentView;
 @property UILabel *connectStatus;
+@property UILabel *micLevel;
+@property UIButton *testButton;
 @property UIButton *startButton;
 @property WCSSwitchView *lockCameraOrientation;
 @property WCSSwitchView *useLoudSpeaker;
@@ -27,6 +31,9 @@
 @property WCSDoubleVideoView *videoView;
 @property WCSLocalVideoControlView *localControl;
 @property WCSRemoteVideoControlView *remoteControl;
+@property AVAudioRecorder *recorder;
+@property NSTimer *levelTimer;
+@property double lowPassResults;
 
 @end
 

@@ -227,6 +227,7 @@
     _startButton.userInteractionEnabled = YES;
     _startButton.alpha = 1;
     _urlInput.userInteractionEnabled = YES;
+    [_testButton setTitle:@"Test" forState:UIControlStateNormal];
     if (_localStream) {
         [FPWCSApi2 releaseLocalMedia:_videoView.local];
     }
@@ -248,6 +249,49 @@
         [self start];
     }
 }
+
+- (void)testButton:(UIButton *)button {
+    if ([button.titleLabel.text isEqualToString:@"Test"]) {
+        NSError *error;
+        [FPWCSApi2 getMediaAccess:[_localControl toMediaConstraints] display:_videoView.local error:&error];
+        [_testButton setTitle:@"Release" forState:UIControlStateNormal];
+        
+        [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryRecord error:&error];
+        
+        NSURL *url = [NSURL fileURLWithPath:@"/dev/null"];
+        
+        NSDictionary *settings = [NSDictionary dictionaryWithObjectsAndKeys:
+                                  [NSNumber numberWithFloat: 44100.0],                 AVSampleRateKey,
+                                  [NSNumber numberWithInt: kAudioFormatAppleLossless], AVFormatIDKey,
+                                  [NSNumber numberWithInt: 1],                         AVNumberOfChannelsKey,
+                                  [NSNumber numberWithInt: AVAudioQualityMax],         AVEncoderAudioQualityKey,
+                                  nil];
+        
+        _recorder = [[AVAudioRecorder alloc] initWithURL:url settings:settings error:&error];
+        [_recorder prepareToRecord];
+        _recorder.meteringEnabled = YES;
+        [_recorder record];
+        _levelTimer = [NSTimer scheduledTimerWithTimeInterval: 0.3 target: self selector: @selector(levelTimerCallback:) userInfo: nil repeats: YES];
+    } else {
+        [FPWCSApi2 releaseLocalMedia:_videoView.local];
+        [_testButton setTitle:@"Test" forState:UIControlStateNormal];
+        
+        [_levelTimer invalidate];
+        [_recorder stop];
+
+    }
+}
+
+- (void)levelTimerCallback:(NSTimer *)timer {
+    [_recorder updateMeters];
+    
+    double peakPowerForChannel = pow(10, (0.05 * [_recorder peakPowerForChannel:0]));
+    
+    _micLevel.text = [NSString stringWithFormat:@"Mic Level: %d", (int) (peakPowerForChannel * 100)];
+
+}
+
+
 - (void)localSettingsButton:(UIButton *)button {
     [_localControl show];
 }
@@ -331,6 +375,8 @@
     _scrollView.scrollEnabled = YES;
     _startButton = [WCSViewUtil createButton:@"Start"];
     [_startButton addTarget:self action:@selector(startButton:) forControlEvents:UIControlEventTouchUpInside];
+    _testButton = [WCSViewUtil createButton:@"Test"];
+    [_testButton addTarget:self action:@selector(testButton:) forControlEvents:UIControlEventTouchUpInside];
     _lockCameraOrientation = [[WCSSwitchView alloc] initWithLabelText:@"Lock Camera Orientation"];
     [_lockCameraOrientation.control addTarget:self action:@selector(lockCameraOrientationValueChanged:) forControlEvents:UIControlEventValueChanged];
     _useLoudSpeaker = [[WCSSwitchView alloc] initWithLabelText:@"Use Loud Speaker"];
@@ -345,6 +391,8 @@
     _urlInput = [WCSViewUtil createTextField:self];
     _urlInput.text = @"wss://wcs5-eu.flashphoner.com:8443";
     _connectStatus = [WCSViewUtil createLabelView];
+    _micLevel = [WCSViewUtil createLabelView];
+    _micLevel.text = @"Mic Level: 0";
     _videoView = [[WCSDoubleVideoView alloc] init];
     _localControl = [[WCSLocalVideoControlView alloc] init];
     [_localControl.muteAudio.control addTarget:self action:@selector(controlValueChanged:) forControlEvents:UIControlEventValueChanged];
@@ -353,6 +401,7 @@
     _contentView = [[UIView alloc] init];
     _contentView.translatesAutoresizingMaskIntoConstraints = NO;
     [_contentView addSubview:_startButton];
+    [_contentView addSubview:_testButton];
     [_contentView addSubview:_lockCameraOrientation];
     [_contentView addSubview:_useLoudSpeaker];
     [_settingsButtonContainer addSubview:_localSettingsButton];
@@ -360,6 +409,7 @@
     [_contentView addSubview:_settingsButtonContainer];
     [_contentView addSubview:_urlInput];
     [_contentView addSubview:_connectStatus];
+    [_contentView addSubview:_micLevel];
     [_contentView addSubview:_videoView];
     [_scrollView addSubview:_contentView];
     [self.view addSubview:_scrollView];
@@ -371,6 +421,7 @@
     
     NSDictionary *views = @{
                             @"start": _startButton,
+                            @"test": _testButton,
                             @"lockOrientation": _lockCameraOrientation,
                             @"useLoudSpeaker": _useLoudSpeaker,
                             @"localSettings": _localSettingsButton,
@@ -378,6 +429,7 @@
                             @"settings": _settingsButtonContainer,
                             @"urlInput": _urlInput,
                             @"connectStatus": _connectStatus,
+                            @"micLevel":_micLevel,
                             @"videoView": _videoView,
                             @"content": _contentView,
                             @"localControl": _localControl,
@@ -394,10 +446,12 @@
         [view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:constraint options:options metrics:metrics views:views]];
     };
     
+    setConstraint(_testButton, @"V:[test(height)]", 0);
     setConstraint(_startButton, @"V:[start(height)]", 0);
     setConstraint(_lockCameraOrientation, @"V:[lockOrientation(height)]", 0);
     setConstraint(_useLoudSpeaker, @"V:[useLoudSpeaker(height)]", 0);
     setConstraint(_contentView, @"H:|[start]|", 0);
+    setConstraint(_contentView, @"H:|[test]|", 0);
     setConstraint(_contentView, @"H:|[lockOrientation]|", 0);
     setConstraint(_contentView, @"H:|[useLoudSpeaker]|", 0);
     setConstraint(_localSettingsButton, @"V:[localSettings(height)]", 0);
@@ -441,10 +495,11 @@
     setConstraint(_urlInput, @"V:[urlInput(height)]", 0);
     setConstraint(_contentView, @"H:|[urlInput]|", 0);
     setConstraint(_contentView, @"H:|[connectStatus]|", 0);
+    setConstraint(_contentView, @"H:|[micLevel]|", 0);
     setConstraint(_contentView, @"H:|[videoView]|", 0);
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:_videoView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationGreaterThanOrEqual toItem:self.view attribute:NSLayoutAttributeHeight multiplier:0.5 constant:0]];
     
-    setConstraint(_contentView, @"V:|[videoView]-[settings]-vSpacing-[lockOrientation]-vSpacing-[useLoudSpeaker]-vSpacing-[urlInput]-vSpacing-[connectStatus]-vSpacing-[start]|", 0);
+    setConstraint(_contentView, @"V:|[videoView]-[settings]-vSpacing-[lockOrientation]-vSpacing-[useLoudSpeaker]-vSpacing-[urlInput]-vSpacing-[connectStatus]-vSpacing-[micLevel]-vSpacing-[test]-vSpacing-[start]|", 0);
     setConstraint(_scrollView, @"V:|[content]|", 0);
     setConstraint(self.view, @"H:|[scroll]|", 0);
     setConstraint(self.view, @"H:|-hSpacing-[content]-hSpacing-|", 0);
