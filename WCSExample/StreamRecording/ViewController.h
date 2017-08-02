@@ -27,8 +27,8 @@
 
 @property NSMutableArray *remoteDisplayConstraints;
 
-//@property (strong, nonatomic) AVPlayerViewController *playerViewController;
-//@property (strong, nonatomic) AVPlayer *player;
+@property (strong, nonatomic) AVPlayerViewController *playerViewController;
+@property (strong, nonatomic) AVPlayer *player;
 
 @end
 

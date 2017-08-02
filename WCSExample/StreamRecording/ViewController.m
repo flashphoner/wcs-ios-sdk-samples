@@ -144,10 +144,10 @@ NSString *recordName;
     [self changeViewState:_connectUrl enabled:YES];
     [self onUnpublished];
     if (url && recordName) {
-        //NSString *urlString = @"http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4";
+//        NSString *urlString = @"http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4";
         NSString *urlString = [NSString stringWithFormat:@"http://%@:9091/client/records/%@", url.host, recordName];
         _recordLink.text = urlString;
-        //[self playVideo: urlString];
+        [self playVideo: urlString];
     }
 }
 
@@ -261,12 +261,12 @@ NSString *recordName;
     [self.contentView addSubview:_startButton];
     [self.contentView addSubview:_recordLink];
     
-//    _playerViewController = [[AVPlayerViewController alloc] init];
-//    _playerViewController.view.translatesAutoresizingMaskIntoConstraints = NO;
-//    [_playerViewController.view setFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.width)];
-//    _playerViewController.showsPlaybackControls = YES;
-//    [self addChildViewController:_playerViewController];
-//    [self.contentView addSubview:_playerViewController.view];
+    _playerViewController = [[AVPlayerViewController alloc] init];
+    _playerViewController.view.translatesAutoresizingMaskIntoConstraints = NO;
+    [_playerViewController.view setFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.width)];
+    _playerViewController.showsPlaybackControls = YES;
+    [self addChildViewController:_playerViewController];
+    [self.contentView addSubview:_playerViewController.view];
     
     [self.scrollView addSubview:_contentView];
     [self.view addSubview:_scrollView];
@@ -284,7 +284,7 @@ NSString *recordName;
                             @"remoteDisplay": _remoteDisplay,
                             @"videoContainer": _videoContainer,
                             @"recordLink": _recordLink,
-//                            @"videoPlayer": _playerViewController.view,
+                            @"videoPlayer": _playerViewController.view,
                             @"contentView": _contentView,
                             @"scrollView": _scrollView
                             };
@@ -327,7 +327,7 @@ NSString *recordName;
     setConstraint(_contentView, @"H:|-hSpacing-[status]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[startButton]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[recordLink]-hSpacing-|", 0);
-    //setConstraint(_contentView, @"H:|-hSpacing-[videoPlayer]-hSpacing-|", 0);
+    setConstraint(_contentView, @"H:|-hSpacing-[videoPlayer]-hSpacing-|", 0);
     
     //remote display max width and height
     setConstraintWithItem(_videoContainer, _remoteDisplay, _videoContainer, NSLayoutAttributeWidth, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeWidth, 1.0, 0);
@@ -339,8 +339,7 @@ NSString *recordName;
     setConstraint(_videoContainer, @"H:|[remoteDisplay]|", NSLayoutFormatAlignAllTop);
     setConstraint(_videoContainer, @"V:|[remoteDisplay]|", 0);
     
-//    setConstraint(self.contentView, @"V:|-50-[videoContainer]-vSpacing-[connectUrl]-vSpacing-[status]-vSpacing-[startButton]-vSpacing-[recordLink]-vSpacing-[videoPlayer]|", 0);
-    setConstraint(self.contentView, @"V:|-50-[videoContainer]-vSpacing-[connectUrl]-vSpacing-[status]-vSpacing-[startButton]-vSpacing-[recordLink]|", 0);
+    setConstraint(self.contentView, @"V:|-50-[videoContainer]-vSpacing-[connectUrl]-vSpacing-[status]-vSpacing-[startButton]-vSpacing-[recordLink]-vSpacing-[videoPlayer]|", 0);
     
     //content view width
     setConstraintWithItem(self.view, _contentView, self.view, NSLayoutAttributeWidth, NSLayoutRelationEqual, NSLayoutAttributeWidth, 1.0, 0);
@@ -381,16 +380,16 @@ NSString *recordName;
     return YES;
 }
 
-//- (void)playVideo:(NSString *)urlString {
-//    NSURL *url = [NSURL URLWithString:urlString];
-//    AVURLAsset *movieAsset = [AVURLAsset URLAssetWithURL:url options:nil];
-//    [movieAsset.resourceLoader setDelegate:self queue:dispatch_get_main_queue()];
-//    
-//    AVPlayerItem *playerItem = [AVPlayerItem playerItemWithAsset:movieAsset];
-//    _player = [AVPlayer playerWithPlayerItem:playerItem];
-//    _playerViewController.player = _player;
-//    [_player play];
-//}
+- (void)playVideo:(NSString *)urlString {
+    NSURL *url = [NSURL URLWithString:urlString];
+    AVURLAsset *movieAsset = [AVURLAsset URLAssetWithURL:url options:nil];
+    [movieAsset.resourceLoader setDelegate:self queue:dispatch_get_main_queue()];
+    
+    AVPlayerItem *playerItem = [AVPlayerItem playerItemWithAsset:movieAsset];
+    _player = [AVPlayer playerWithPlayerItem:playerItem];
+    _playerViewController.player = _player;
+    [_player play];
+}
 
 // AVAssetResourceLoaderDelegate
 - (BOOL)resourceLoader:(AVAssetResourceLoader *)resourceLoader
