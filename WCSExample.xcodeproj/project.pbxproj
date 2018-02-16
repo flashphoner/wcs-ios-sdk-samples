@@ -11,7 +11,6 @@
 		2C9EA6B7826D4E9D53C22823 /* Pods_Player.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8745492A7BF846C9479B539C /* Pods_Player.framework */; };
 		3F2A9FFC5A5A59E6CFD7FE70 /* Pods_TwoPlayers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31005716A70F1B337799F1 /* Pods_TwoPlayers.framework */; };
 		4CECE292C777F06FCE1291B5 /* Pods_Streamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C845B85743847299215C220 /* Pods_Streamer.framework */; };
-		5503A81F1DEEE961003A50AF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5503A81B1DEEE961003A50AF /* Info.plist */; };
 		5503A8241DEEE96C003A50AF /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		5503A8271DEEE96C003A50AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
 		5503A8291DEEE96C003A50AF /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
@@ -27,14 +26,12 @@
 		5503A8331DEEE96C003A50AF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */; };
 		5503A8341DEEE96C003A50AF /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */; };
 		5503A8351DEEE96C003A50AF /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
-		5503A8381DEEE96C003A50AF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55C3EED31DDD98D80004F538 /* Info.plist */; };
 		5503A8391DEEE96C003A50AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2310681C0D718100918455 /* Assets.xcassets */; };
 		5503A83A1DEEE96C003A50AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB6A1C75ABA4002FDF16 /* Main.storyboard */; };
 		5503A83B1DEEE96C003A50AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB681C75ABA4002FDF16 /* LaunchScreen.storyboard */; };
 		5503A8431DEEE9E6003A50AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503A81A1DEEE961003A50AF /* AppDelegate.m */; };
 		5503A8441DEEE9E6003A50AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503A81D1DEEE961003A50AF /* ViewController.m */; };
 		5517B1871E1D2CE400B39B15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F98A341E1D286100B70D94 /* AppDelegate.m */; };
-		554528031E25F9C900DD2F52 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 554527FF1E25F9C900DD2F52 /* Info.plist */; };
 		5545280A1E25FA6100DD2F52 /* WCSViews.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534441DDADA3800D7DF80 /* WCSViews.m */; };
 		5545280B1E25FA6100DD2F52 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		5545280C1E25FA6100DD2F52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
@@ -62,7 +59,6 @@
 		555260931DE45CAD00AED0F1 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		55B649CD1DFCFD05009D4264 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E1EC351DFCFBA0005AEE73 /* AppDelegate.m */; };
 		55B649CE1DFCFD05009D4264 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E1EC381DFCFBA0005AEE73 /* ViewController.m */; };
-		55BD735A1E0FF4D1003E0517 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55BD73561E0FF4D1003E0517 /* Info.plist */; };
 		55BD735F1E0FF4DF003E0517 /* WCSViews.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534441DDADA3800D7DF80 /* WCSViews.m */; };
 		55BD73611E0FF4DF003E0517 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		55BD73621E0FF4DF003E0517 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
@@ -120,14 +116,11 @@
 		55C3EEF41DE29F220004F538 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */; };
 		55C3EEF51DE29F220004F538 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */; };
 		55C3EEF61DE29F220004F538 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
-		55C3EEF91DE29F220004F538 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55C3EED31DDD98D80004F538 /* Info.plist */; };
 		55C3EEFA1DE29F220004F538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2310681C0D718100918455 /* Assets.xcassets */; };
 		55C3EEFB1DE29F220004F538 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB6A1C75ABA4002FDF16 /* Main.storyboard */; };
 		55C3EEFC1DE29F220004F538 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB681C75ABA4002FDF16 /* LaunchScreen.storyboard */; };
-		55C3EF0B1DE2A5470004F538 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55C3EF071DE2A5470004F538 /* Info.plist */; };
 		55C3EF0D1DE2A5B80004F538 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C3EF061DE2A5470004F538 /* AppDelegate.m */; };
 		55C3EF0E1DE2A5B80004F538 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C3EF091DE2A5470004F538 /* ViewController.m */; };
-		55E1EC3A1DFCFBA0005AEE73 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55E1EC361DFCFBA0005AEE73 /* Info.plist */; };
 		55E1EC3F1DFCFBAA005AEE73 /* WCSViews.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534441DDADA3800D7DF80 /* WCSViews.m */; };
 		55E1EC421DFCFBAA005AEE73 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		55E1EC431DFCFBAA005AEE73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
@@ -144,12 +137,10 @@
 		55E1EC4F1DFCFBAA005AEE73 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */; };
 		55E1EC501DFCFBAA005AEE73 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */; };
 		55E1EC511DFCFBAA005AEE73 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
-		55E1EC541DFCFBAA005AEE73 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55C3EED31DDD98D80004F538 /* Info.plist */; };
 		55E1EC551DFCFBAA005AEE73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2310681C0D718100918455 /* Assets.xcassets */; };
 		55E1EC561DFCFBAA005AEE73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB6A1C75ABA4002FDF16 /* Main.storyboard */; };
 		55E1EC571DFCFBAA005AEE73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB681C75ABA4002FDF16 /* LaunchScreen.storyboard */; };
 		55EC5EC11DF52C9000CEFD12 /* WCSViews.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534441DDADA3800D7DF80 /* WCSViews.m */; };
-		55F8AEDF1DE55895002F5DFC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55F8AEDB1DE55895002F5DFC /* Info.plist */; };
 		55F8AEE41DE55944002F5DFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F8AEDD1DE55895002F5DFC /* ViewController.m */; };
 		55F8AEE51DE55944002F5DFC /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		55F8AEE81DE55944002F5DFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
@@ -167,14 +158,11 @@
 		55F8AEF51DE55944002F5DFC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */; };
 		55F8AEF61DE55944002F5DFC /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */; };
 		55F8AEF81DE55944002F5DFC /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
-		55F8AEFA1DE55944002F5DFC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE29B5AD1DC038020081CD37 /* Info.plist */; };
 		55F8AEFB1DE55944002F5DFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE23106A1C0D718100918455 /* LaunchScreen.storyboard */; };
 		55F8AEFC1DE55944002F5DFC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55F8AEDB1DE55895002F5DFC /* Info.plist */; };
 		55F8AEFD1DE55944002F5DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2310681C0D718100918455 /* Assets.xcassets */; };
-		55F8AEFE1DE55944002F5DFC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55C3EF071DE2A5470004F538 /* Info.plist */; };
 		55F8AEFF1DE55944002F5DFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2310651C0D718100918455 /* Main.storyboard */; };
 		55F8AF071DE57DAA002F5DFC /* WCSViews.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534441DDADA3800D7DF80 /* WCSViews.m */; };
-		55F8AF101DE7FD32002F5DFC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55F8AF0C1DE7FD32002F5DFC /* Info.plist */; };
 		55F8AF151DE7FD3F002F5DFC /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		55F8AF181DE7FD3F002F5DFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
 		55F8AF1A1DE7FD3F002F5DFC /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
@@ -190,13 +178,11 @@
 		55F8AF241DE7FD3F002F5DFC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */; };
 		55F8AF251DE7FD3F002F5DFC /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */; };
 		55F8AF261DE7FD3F002F5DFC /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
-		55F8AF291DE7FD3F002F5DFC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55C3EED31DDD98D80004F538 /* Info.plist */; };
 		55F8AF2A1DE7FD3F002F5DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2310681C0D718100918455 /* Assets.xcassets */; };
 		55F8AF2B1DE7FD3F002F5DFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB6A1C75ABA4002FDF16 /* Main.storyboard */; };
 		55F8AF2C1DE7FD3F002F5DFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB681C75ABA4002FDF16 /* LaunchScreen.storyboard */; };
 		55F8AF341DE7FDA0002F5DFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F8AF0B1DE7FD32002F5DFC /* AppDelegate.m */; };
 		55F8AF351DE7FDA0002F5DFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F8AF0E1DE7FD32002F5DFC /* ViewController.m */; };
-		55F98A391E1D286100B70D94 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55F98A351E1D286100B70D94 /* Info.plist */; };
 		55F98A401E1D28BD00B70D94 /* WCSViews.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534441DDADA3800D7DF80 /* WCSViews.m */; };
 		55F98A411E1D28BD00B70D94 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		55F98A421E1D28BD00B70D94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
@@ -221,6 +207,11 @@
 		85458A1A4E20148A6AA67C8F /* Pods_MediaDevices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A58904727550EF62D7BF75 /* Pods_MediaDevices.framework */; };
 		874B8D646E3ADB17D3AF3DE6 /* Pods_PhoneMin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77B12A13431E3991180227D /* Pods_PhoneMin.framework */; };
 		8845F0DD6AEEA05D2C8C4CB9 /* Pods_VideoChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5BB64A1ECEAAAAE4BA4D58 /* Pods_VideoChat.framework */; };
+		8B8E55112036F88500C9E0B7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE988A421DD5548500742423 /* Info.plist */; };
+		8B8E55122036F8B200C9E0B7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55C3EF071DE2A5470004F538 /* Info.plist */; };
+		8B8E55142036F8EF00C9E0B7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5503A81B1DEEE961003A50AF /* Info.plist */; };
+		8B8E55162036F92100C9E0B7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55E1EC361DFCFBA0005AEE73 /* Info.plist */; };
+		8B8E55172036F94900C9E0B7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55F8AF0C1DE7FD32002F5DFC /* Info.plist */; };
 		96E97847B0DD3DD368A0655D /* Pods_ClickToCall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6092F5076645DB535DAF8F5F /* Pods_ClickToCall.framework */; };
 		AB70810F411954F98ECB0E4E /* Pods_StreamRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75098741D8433C8055082D8D /* Pods_StreamRecording.framework */; };
 		BF0C53CD5C35C2C303C8BBCD /* Pods_PhoneMinVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1B888B5E77A104987F94EC /* Pods_PhoneMinVideo.framework */; };
@@ -264,8 +255,6 @@
 		CE988A351DD5534400742423 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE23106A1C0D718100918455 /* LaunchScreen.storyboard */; };
 		CE988A361DD5534400742423 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2310681C0D718100918455 /* Assets.xcassets */; };
 		CE988A371DD5534400742423 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2310651C0D718100918455 /* Main.storyboard */; };
-		CE988A381DD5534400742423 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB6A1C75ABA4002FDF16 /* Main.storyboard */; };
-		CE988A391DD5534400742423 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB681C75ABA4002FDF16 /* LaunchScreen.storyboard */; };
 		CE988A4A1DD554DD00742423 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE988A451DD554C900742423 /* ViewController.m */; };
 		CE988A4B1DD554DD00742423 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE988A461DD554C900742423 /* AppDelegate.m */; };
 		F3A08259C38DCA0EEE53C091 /* Pods_Conference.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE75AB247F8E5C824B9E42F /* Pods_Conference.framework */; };
@@ -1145,35 +1134,43 @@
 				TargetAttributes = {
 					5503A8211DEEE96C003A50AF = {
 						DevelopmentTeam = SXWV5Z47NK;
+						ProvisioningStyle = Manual;
 					};
 					554528051E25FA6100DD2F52 = {
 						DevelopmentTeam = SXWV5Z47NK;
+						ProvisioningStyle = Manual;
 					};
 					55BD735C1E0FF4DF003E0517 = {
 						DevelopmentTeam = SXWV5Z47NK;
+						ProvisioningStyle = Manual;
 					};
 					55C3EEAB1DDD6B240004F538 = {
 						DevelopmentTeam = SXWV5Z47NK;
+						ProvisioningStyle = Manual;
 					};
 					55C3EEE31DE29F220004F538 = {
 						DevelopmentTeam = SXWV5Z47NK;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					55E1EC3C1DFCFBAA005AEE73 = {
 						DevelopmentTeam = SXWV5Z47NK;
+						ProvisioningStyle = Manual;
 					};
 					55F8AEE11DE55944002F5DFC = {
 						DevelopmentTeam = SXWV5Z47NK;
+						ProvisioningStyle = Manual;
 					};
 					55F8AF121DE7FD3F002F5DFC = {
 						DevelopmentTeam = SXWV5Z47NK;
+						ProvisioningStyle = Manual;
 					};
 					55F98A3B1E1D28BD00B70D94 = {
 						DevelopmentTeam = SXWV5Z47NK;
+						ProvisioningStyle = Manual;
 					};
 					CE29B5881DC036AE0081CD37 = {
 						DevelopmentTeam = SXWV5Z47NK;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -1182,6 +1179,7 @@
 					};
 					CE988A1F1DD5534400742423 = {
 						DevelopmentTeam = SXWV5Z47NK;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -1218,10 +1216,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5503A8381DEEE96C003A50AF /* Info.plist in Resources */,
+				8B8E55142036F8EF00C9E0B7 /* Info.plist in Resources */,
+				5503A83B1DEEE96C003A50AF /* LaunchScreen.storyboard in Resources */,
 				5503A8391DEEE96C003A50AF /* Assets.xcassets in Resources */,
 				5503A83A1DEEE96C003A50AF /* Main.storyboard in Resources */,
-				5503A83B1DEEE96C003A50AF /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1252,9 +1250,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				55C3EEE11DDEC1AC0004F538 /* Info.plist in Resources */,
+				55C3EEC91DDD6B240004F538 /* LaunchScreen.storyboard in Resources */,
 				55C3EEC61DDD6B240004F538 /* Assets.xcassets in Resources */,
 				55C3EEC81DDD6B240004F538 /* Main.storyboard in Resources */,
-				55C3EEC91DDD6B240004F538 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1262,10 +1260,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55C3EEF91DE29F220004F538 /* Info.plist in Resources */,
+				8B8E55122036F8B200C9E0B7 /* Info.plist in Resources */,
+				55C3EEFC1DE29F220004F538 /* LaunchScreen.storyboard in Resources */,
 				55C3EEFA1DE29F220004F538 /* Assets.xcassets in Resources */,
 				55C3EEFB1DE29F220004F538 /* Main.storyboard in Resources */,
-				55C3EEFC1DE29F220004F538 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1273,10 +1271,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55E1EC541DFCFBAA005AEE73 /* Info.plist in Resources */,
+				8B8E55162036F92100C9E0B7 /* Info.plist in Resources */,
+				55E1EC571DFCFBAA005AEE73 /* LaunchScreen.storyboard in Resources */,
 				55E1EC551DFCFBAA005AEE73 /* Assets.xcassets in Resources */,
 				55E1EC561DFCFBAA005AEE73 /* Main.storyboard in Resources */,
-				55E1EC571DFCFBAA005AEE73 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1284,11 +1282,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55F8AEFA1DE55944002F5DFC /* Info.plist in Resources */,
-				55F8AEFB1DE55944002F5DFC /* LaunchScreen.storyboard in Resources */,
 				55F8AEFC1DE55944002F5DFC /* Info.plist in Resources */,
+				55F8AEFB1DE55944002F5DFC /* LaunchScreen.storyboard in Resources */,
 				55F8AEFD1DE55944002F5DFC /* Assets.xcassets in Resources */,
-				55F8AEFE1DE55944002F5DFC /* Info.plist in Resources */,
 				55F8AEFF1DE55944002F5DFC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1297,10 +1293,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55F8AF291DE7FD3F002F5DFC /* Info.plist in Resources */,
+				8B8E55172036F94900C9E0B7 /* Info.plist in Resources */,
+				55F8AF2C1DE7FD3F002F5DFC /* LaunchScreen.storyboard in Resources */,
 				55F8AF2A1DE7FD3F002F5DFC /* Assets.xcassets in Resources */,
 				55F8AF2B1DE7FD3F002F5DFC /* Main.storyboard in Resources */,
-				55F8AF2C1DE7FD3F002F5DFC /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1319,18 +1315,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5503A81F1DEEE961003A50AF /* Info.plist in Resources */,
 				55C3EEE21DDEC1CF0004F538 /* Info.plist in Resources */,
-				55E1EC3A1DFCFBA0005AEE73 /* Info.plist in Resources */,
 				CE29B5A31DC036AE0081CD37 /* LaunchScreen.storyboard in Resources */,
-				55F8AEDF1DE55895002F5DFC /* Info.plist in Resources */,
 				CE29B5A41DC036AE0081CD37 /* Assets.xcassets in Resources */,
-				55C3EF0B1DE2A5470004F538 /* Info.plist in Resources */,
 				CE29B5A51DC036AE0081CD37 /* Main.storyboard in Resources */,
-				554528031E25F9C900DD2F52 /* Info.plist in Resources */,
-				55F98A391E1D286100B70D94 /* Info.plist in Resources */,
-				55BD735A1E0FF4D1003E0517 /* Info.plist in Resources */,
-				55F8AF101DE7FD32002F5DFC /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1338,11 +1326,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8E55112036F88500C9E0B7 /* Info.plist in Resources */,
 				CE988A351DD5534400742423 /* LaunchScreen.storyboard in Resources */,
 				CE988A361DD5534400742423 /* Assets.xcassets in Resources */,
 				CE988A371DD5534400742423 /* Main.storyboard in Resources */,
-				CE988A381DD5534400742423 /* Main.storyboard in Resources */,
-				CE988A391DD5534400742423 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1385,9 +1372,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TwoWayStreaming/Pods-TwoWayStreaming-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1400,13 +1392,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Conference-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5503A83C1DEEE96C003A50AF /* [CP] Embed Pods Frameworks */ = {
@@ -1415,9 +1410,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Conference/Pods-Conference-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1445,13 +1445,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClickToCall-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		554528211E25FA6100DD2F52 /* [CP] Embed Pods Frameworks */ = {
@@ -1460,9 +1463,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ClickToCall/Pods-ClickToCall-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1490,13 +1498,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhoneMinVideo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		55BD737A1E0FF4DF003E0517 /* [CP] Embed Pods Frameworks */ = {
@@ -1505,9 +1516,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PhoneMinVideo/Pods-PhoneMinVideo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1535,13 +1551,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Player-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		55C3EECA1DDD6B240004F538 /* [CP] Embed Pods Frameworks */ = {
@@ -1550,9 +1569,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Player/Pods-Player-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1580,13 +1604,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwoPlayers-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		55C3EEFD1DE29F220004F538 /* [CP] Embed Pods Frameworks */ = {
@@ -1595,9 +1622,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TwoPlayers/Pods-TwoPlayers-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1625,13 +1657,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VideoChat-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		55E1EC581DFCFBAA005AEE73 /* [CP] Embed Pods Frameworks */ = {
@@ -1640,9 +1675,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VideoChat/Pods-VideoChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1670,13 +1710,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Streamer-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		55F8AF001DE55944002F5DFC /* [CP] Embed Pods Frameworks */ = {
@@ -1685,9 +1728,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Streamer/Pods-Streamer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1715,13 +1763,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StreamRecording-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		55F8AF2D1DE7FD3F002F5DFC /* [CP] Embed Pods Frameworks */ = {
@@ -1730,9 +1781,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StreamRecording/Pods-StreamRecording-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1760,13 +1816,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhoneMin-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		55F98A571E1D28BD00B70D94 /* [CP] Embed Pods Frameworks */ = {
@@ -1775,9 +1834,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PhoneMin/Pods-PhoneMin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1805,9 +1869,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MediaDevices/Pods-MediaDevices-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1820,13 +1889,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwoWayStreaming-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8E680B36AB66F1F4FE5C2C5F /* [CP] Check Pods Manifest.lock */ = {
@@ -1835,13 +1907,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MediaDevices-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
