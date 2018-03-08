@@ -35,6 +35,7 @@
 @property UILabel *localStatus;
 @property WCSSwitchView *muteAudio;
 @property WCSSwitchView *muteVideo;
+@property WCSSwitchView *record;
 @property UIButton *publishButton;
 
 @property UITextView  *messageHistory;

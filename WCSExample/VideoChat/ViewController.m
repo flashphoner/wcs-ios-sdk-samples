@@ -105,6 +105,7 @@ NSMutableDictionary *busyViews;
     [_publishButton setTitle:@"PUBLISH" forState:UIControlStateNormal];
     [self changeViewState:_muteAudio enabled:NO];
     [self changeViewState:_muteVideo enabled:NO];
+    [self changeViewState:_record enabled:YES];
     [_muteAudio.control setOn:NO animated:YES];
     [_muteVideo.control setOn:NO animated:YES];
 }
@@ -263,13 +264,16 @@ NSMutableDictionary *busyViews;
     if ([button.titleLabel.text isEqualToString:@"STOP"]) {
         [room unpublish];
     } else {
-        publishStream = [room publish:_localDisplay];
+        FPWCSApi2StreamOptions * options = [[FPWCSApi2StreamOptions alloc] init];
+        options.record = [_record.control isOn];
+        publishStream = [room publish:_localDisplay withOptions:options];
         [publishStream on:kFPWCSStreamStatusPublishing callback:^(FPWCSApi2Stream *rStream){
             [self changeViewState:_publishButton enabled:YES];
             [self changeLocalStatus:rStream];
             [_publishButton setTitle:@"STOP" forState:UIControlStateNormal];
             [self changeViewState:_muteAudio enabled:YES];
             [self changeViewState:_muteVideo enabled:YES];
+            [self changeViewState:_record enabled:NO];
         }];
         
         [publishStream on:kFPWCSStreamStatusUnpublished callback:^(FPWCSApi2Stream *rStream){
@@ -393,6 +397,8 @@ NSMutableDictionary *busyViews;
     _muteVideo = [[WCSSwitchView alloc] initWithLabelText:@"Mute Video"];
     _muteVideo.translatesAutoresizingMaskIntoConstraints = NO;
     [_muteVideo.control addTarget:self action:@selector(muteVideoChanged:) forControlEvents:UIControlEventValueChanged];
+    _record = [[WCSSwitchView alloc] initWithLabelText:@"Record"];
+    _record.translatesAutoresizingMaskIntoConstraints = NO;
     _publishButton = [WCSViewUtil createButton:@"PUBLISH"];
     _publishButton.translatesAutoresizingMaskIntoConstraints = NO;
     [_publishButton addTarget:self action:@selector(publishButton:) forControlEvents:UIControlEventTouchUpInside];
@@ -423,6 +429,7 @@ NSMutableDictionary *busyViews;
     [self.contentView addSubview:_localStatus];
     [self.contentView addSubview:_muteAudio];
     [self.contentView addSubview:_muteVideo];
+    [self.contentView addSubview:_record];
     [self.contentView addSubview:_publishButton];
     
     [self.contentView addSubview:_messageHistory];
@@ -453,6 +460,7 @@ NSMutableDictionary *busyViews;
                             @"localStatus": _localStatus,
                             @"muteAudio":_muteAudio,
                             @"muteVideo":_muteVideo,
+                            @"record":_record,
                             @"publishButton": _publishButton,
                             @"messageHistory": _messageHistory,
                             @"messageBody":_messageBody,
@@ -503,6 +511,7 @@ NSMutableDictionary *busyViews;
     setConstraint(_localStatus, @"V:[localStatus(statusHeight)]", 0);
     setConstraint(_muteAudio, @"V:[muteAudio(statusHeight)]", 0);
     setConstraint(_muteVideo, @"V:[muteVideo(statusHeight)]", 0);
+    setConstraint(_record, @"V:[record(statusHeight)]", 0);
     setConstraint(_publishButton, @"V:[publishButton(buttonHeight)]", 0);
     setConstraint(_messageHistory, @"V:[messageHistory(150)]", 0);
     setConstraint(_messageBody, @"V:[messageBody(inputFieldHeight)]", 0);
@@ -528,6 +537,7 @@ NSMutableDictionary *busyViews;
     setConstraint(_contentView, @"H:|-hSpacing-[localStatus]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[muteAudio]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[muteVideo]-hSpacing-|", 0);
+    setConstraint(_contentView, @"H:|-hSpacing-[record]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[publishButton]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[messageHistory]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[messageBody]-hSpacing-|", 0);
@@ -544,7 +554,7 @@ NSMutableDictionary *busyViews;
     setConstraint(_localVideoContainer, @"H:|[localDisplay]|", NSLayoutFormatAlignAllTop);
     setConstraint(_localVideoContainer, @"V:|[localDisplay]|", 0);
 
-    setConstraint(_contentView, @"V:|-50-[connectUrl]-vSpacing-[connectLogin]-vSpacing-[connectionStatus]-vSpacing-[connectButton]-vSpacing-[joinRoomName]-vSpacing-[joinStatus]-vSpacing-[joinButton]-vSpacing-[player1Container]-vSpacing-[localVideoContainer]-vSpacing-[localStatus]-vSpacing-[muteAudio]-vSpacing-[muteVideo]-vSpacing-[publishButton]-vSpacing-[messageHistory]-vSpacing-[messageBody]-vSpacing-[sendButton]-vSpacing-|", 0);
+    setConstraint(_contentView, @"V:|-50-[connectUrl]-vSpacing-[connectLogin]-vSpacing-[connectionStatus]-vSpacing-[connectButton]-vSpacing-[joinRoomName]-vSpacing-[joinStatus]-vSpacing-[joinButton]-vSpacing-[player1Container]-vSpacing-[localVideoContainer]-vSpacing-[localStatus]-vSpacing-[muteAudio]-vSpacing-[muteVideo]-vSpacing-[record]-vSpacing-[publishButton]-vSpacing-[messageHistory]-vSpacing-[messageBody]-vSpacing-[sendButton]-vSpacing-|", 0);
     
     //content view width
     setConstraintWithItem(self.view, _contentView, self.view, NSLayoutAttributeWidth, NSLayoutRelationEqual, NSLayoutAttributeWidth, 1.0, 0);
