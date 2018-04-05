@@ -172,6 +172,16 @@ UIAlertController *alert;
 - (FPWCSApi2Call *)call {
     FPWCSApi2Session *session = [FPWCSApi2 getSessions][0];
     FPWCSApi2CallOptions *options = [[FPWCSApi2CallOptions alloc] init];
+    NSString *parameters = _inviteParameters.input.text;
+    if (parameters && [parameters length] > 0) {
+        NSError* err = nil;
+        NSMutableDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:[parameters dataUsingEncoding:NSUTF8StringEncoding] options:0 error:&err];
+        if (err) {
+            NSLog(@"Error converting JSON Invite parameters to dictionary %@, JSON %@", err, parameters);
+            return nil;
+        }
+        options.inviteParameters = dictionary;
+    }
     options.callee = _callee.input.text;
     //used for only recv audio
 //    options.localConstraints = [[FPWCSApi2MediaConstraints alloc] initWithAudio:NO video:NO];
@@ -407,6 +417,9 @@ UIAlertController *alert;
     _connectButton = [WCSViewUtil createButton:@"START"];
     [_connectButton addTarget:self action:@selector(connectButton:) forControlEvents:UIControlEventTouchUpInside];
     
+    _inviteParameters = [[WCSTextInputView alloc] init];
+    _inviteParameters.label.text = @"Invite Parameters";
+
     _callee = [[WCSTextInputView alloc] init];
     _callee.label.text = @"Callee";
     _callStatus = [WCSViewUtil createLabelView];
@@ -427,6 +440,7 @@ UIAlertController *alert;
     [self.contentView addSubview:_sipRegRequired];
     [self.contentView addSubview:_connectionStatus];
     [self.contentView addSubview:_connectButton];
+    [self.contentView addSubview:_inviteParameters];
     [self.contentView addSubview:_callee];
     [self.contentView addSubview:_callStatus];
     [self.contentView addSubview:_callButton];
@@ -443,6 +457,7 @@ UIAlertController *alert;
     _sipDomain.input.text = @"192.168.0.1";
     _sipOutboundProxy.input.text = @"192.168.0.1";
     _sipPort.input.text = @"5060";
+    _inviteParameters.input.text = @"{\"header\":\"value\"}";
     _callee.input.text = @"1001";
 }
 
@@ -459,6 +474,7 @@ UIAlertController *alert;
                             @"connectionStatus": _connectionStatus,
                             @"connectButton": _connectButton,
                             @"callee": _callee,
+                            @"inviteParameters":_inviteParameters,
                             @"callStatus":_callStatus,
                             @"callButton":_callButton,
                             @"holdButton":_holdButton,
@@ -511,12 +527,13 @@ UIAlertController *alert;
     setConstraint(_contentView, @"H:|-hSpacing-[sipRegRequired]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[connectionStatus]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[connectButton]-hSpacing-|",0);
+    setConstraint(_contentView, @"H:|-hSpacing-[inviteParameters]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[callee]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[callStatus]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[callButton]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[holdButton]-hSpacing-|",0);
     
-    setConstraint(self.contentView, @"V:|-50-[connectUrl]-vSpacing-[sipLogin]-vSpacing-[sipAuthName]-vSpacing-[sipPassword]-vSpacing-[sipDomain]-vSpacing-[sipOutboundProxy]-vSpacing-[sipPort]-vSpacing-[sipRegRequired]-vSpacing-[connectionStatus]-vSpacing-[connectButton]-vSpacing-[callee]-vSpacing-[callStatus]-vSpacing-[callButton]-vSpacing-[holdButton]-vSpacing-|", 0);
+    setConstraint(self.contentView, @"V:|-50-[connectUrl]-vSpacing-[sipLogin]-vSpacing-[sipAuthName]-vSpacing-[sipPassword]-vSpacing-[sipDomain]-vSpacing-[sipOutboundProxy]-vSpacing-[sipPort]-vSpacing-[sipRegRequired]-vSpacing-[connectionStatus]-vSpacing-[connectButton]-vSpacing-[inviteParameters]-vSpacing-[callee]-vSpacing-[callStatus]-vSpacing-[callButton]-vSpacing-[holdButton]-vSpacing-|", 0);
     
     //content view width
     setConstraintWithItem(self.view, _contentView, self.view, NSLayoutAttributeWidth, NSLayoutRelationEqual, NSLayoutAttributeWidth, 1.0, 0);

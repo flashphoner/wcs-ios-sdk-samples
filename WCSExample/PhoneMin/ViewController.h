@@ -9,6 +9,7 @@
 #import "WCSViews.h"
 #import <UIKit/UIKit.h>
 #import <FPWCSApi2/RTCEAGLVideoView.h>
+#import <JSONModel/JSONModel.h>
 
 @interface ViewController : UIViewController<UITextFieldDelegate>
 
@@ -25,6 +26,7 @@
 @property WCSSwitchView *sipRegRequired;
 @property UILabel *connectionStatus;
 @property UIButton *connectButton;
+@property WCSTextInputView *inviteParameters;
 @property WCSTextInputView *callee;
 @property UILabel *callStatus;
 @property UIButton *callButton;
