@@ -175,12 +175,13 @@ UIAlertController *alert;
     NSString *parameters = _inviteParameters.input.text;
     if (parameters && [parameters length] > 0) {
         NSError* err = nil;
+        parameters = [parameters stringByReplacingOccurrencesOfString:@"”" withString:@"\""];
         NSMutableDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:[parameters dataUsingEncoding:NSUTF8StringEncoding] options:0 error:&err];
         if (err) {
             NSLog(@"Error converting JSON Invite parameters to dictionary %@, JSON %@", err, parameters);
-            return nil;
+        } else {
+            options.inviteParameters = dictionary;
         }
-        options.inviteParameters = dictionary;
     }
     options.callee = _callee.input.text;
     //used for only recv audio
