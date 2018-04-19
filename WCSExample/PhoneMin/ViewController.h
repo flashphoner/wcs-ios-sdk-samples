@@ -31,6 +31,7 @@
 @property UILabel *callStatus;
 @property UIButton *callButton;
 @property UIButton *holdButton;
-
+@property WCSTextInputView *dtmf;
+@property UIButton *dtmfButton;
 @end
 

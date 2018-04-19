@@ -264,6 +264,8 @@ UIAlertController *alert;
     [self changeViewState:_callButton enabled:NO];
     [_holdButton setTitle:@"HOLD" forState:UIControlStateNormal];
     [self changeViewState:_holdButton enabled:NO];
+    [self changeViewState:_dtmfButton enabled:NO];
+
 }
 
 - (void)toHangupState {
@@ -271,6 +273,7 @@ UIAlertController *alert;
     [self changeViewState:_callButton enabled:YES];
     [_holdButton setTitle:@"HOLD" forState:UIControlStateNormal];
     [self changeViewState:_holdButton enabled:YES];
+    [self changeViewState:_dtmfButton enabled:YES];
 }
 
 - (void)toCallState {
@@ -278,6 +281,7 @@ UIAlertController *alert;
     [self changeViewState:_callButton enabled:YES];
     [_holdButton setTitle:@"HOLD" forState:UIControlStateNormal];
     [self changeViewState:_holdButton enabled:NO];
+    [self changeViewState:_dtmfButton enabled:NO];
 }
 
 //user interface handlers
@@ -336,6 +340,12 @@ UIAlertController *alert;
             [call hold];
             [_holdButton setTitle:@"UNHOLD" forState:UIControlStateNormal];
         }
+    }
+}
+
+- (void)dtmfButton:(UIButton *)button {
+    if (call) {
+        [call sendDTMF:_dtmf.input.text type:kFPWCSCallDTMFRFC2833];
     }
 }
 
@@ -428,8 +438,10 @@ UIAlertController *alert;
     [_callButton addTarget:self action:@selector(callButton:) forControlEvents:UIControlEventTouchUpInside];
     _holdButton = [WCSViewUtil createButton:@"HOLD"];
     [_holdButton addTarget:self action:@selector(holdButton:) forControlEvents:UIControlEventTouchUpInside];
-
-    
+    _dtmf = [[WCSTextInputView alloc] init];
+    _dtmf.label.text = @"DTMF";
+    _dtmfButton = [WCSViewUtil createButton:@"DTMF"];
+    [_dtmfButton addTarget:self action:@selector(dtmfButton:) forControlEvents:UIControlEventTouchUpInside];
     
     [self.contentView addSubview:_connectUrl];
     [self.contentView addSubview:_sipLogin];
@@ -446,6 +458,8 @@ UIAlertController *alert;
     [self.contentView addSubview:_callStatus];
     [self.contentView addSubview:_callButton];
     [self.contentView addSubview:_holdButton];
+    [self.contentView addSubview:_dtmf];
+    [self.contentView addSubview:_dtmfButton];
     
     [self.scrollView addSubview:_contentView];
     [self.view addSubview:_scrollView];
@@ -460,6 +474,8 @@ UIAlertController *alert;
     _sipPort.input.text = @"5060";
     _inviteParameters.input.text = @"{\"header\":\"value\"}";
     _callee.input.text = @"1001";
+    _dtmf.input.text = @"1";
+
 }
 
 - (void)setupLayout {
@@ -479,6 +495,8 @@ UIAlertController *alert;
                             @"callStatus":_callStatus,
                             @"callButton":_callButton,
                             @"holdButton":_holdButton,
+                            @"dtmf":_dtmf,
+                            @"dtmfButton":_dtmfButton,
                             @"contentView": _contentView,
                             @"scrollView": _scrollView
                             };
@@ -533,8 +551,10 @@ UIAlertController *alert;
     setConstraint(_contentView, @"H:|-hSpacing-[callStatus]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[callButton]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[holdButton]-hSpacing-|",0);
-    
-    setConstraint(self.contentView, @"V:|-50-[connectUrl]-vSpacing-[sipLogin]-vSpacing-[sipAuthName]-vSpacing-[sipPassword]-vSpacing-[sipDomain]-vSpacing-[sipOutboundProxy]-vSpacing-[sipPort]-vSpacing-[sipRegRequired]-vSpacing-[connectionStatus]-vSpacing-[connectButton]-vSpacing-[inviteParameters]-vSpacing-[callee]-vSpacing-[callStatus]-vSpacing-[callButton]-vSpacing-[holdButton]-vSpacing-|", 0);
+    setConstraint(_contentView, @"H:|-hSpacing-[dtmf]-hSpacing-|",0);
+    setConstraint(_contentView, @"H:|-hSpacing-[dtmfButton]-hSpacing-|",0);
+
+    setConstraint(self.contentView, @"V:|-50-[connectUrl]-vSpacing-[sipLogin]-vSpacing-[sipAuthName]-vSpacing-[sipPassword]-vSpacing-[sipDomain]-vSpacing-[sipOutboundProxy]-vSpacing-[sipPort]-vSpacing-[sipRegRequired]-vSpacing-[connectionStatus]-vSpacing-[connectButton]-vSpacing-[inviteParameters]-vSpacing-[callee]-vSpacing-[callStatus]-vSpacing-[callButton]-vSpacing-[holdButton]-vSpacing-[dtmf]-vSpacing-[dtmfButton]-vSpacing-|", 0);
     
     //content view width
     setConstraintWithItem(self.view, _contentView, self.view, NSLayoutAttributeWidth, NSLayoutRelationEqual, NSLayoutAttributeWidth, 1.0, 0);
