@@ -369,8 +369,36 @@
     view.text = [FPWCSApi2Model streamStatusToString:[stream getStatus]];
     switch ([stream getStatus]) {
         case kFPWCSStreamStatusFailed:
+        {
             view.textColor = [UIColor redColor];
+            switch ([stream getStatusInfo]) {
+                case kFPWCSStreamStatusInfoSessionDoesNotExist:
+                    view.text = @"Actual session does not exist";
+                    break;
+                case kFPWCSStreamStatusInfoStoppedByPublisherStop:
+                    view.text = @"Related publisher stopped its stream or lost connection";
+                    break;
+                case kFPWCSStreamStatusInfoSessionNotReady:
+                    view.text = @"Session is not initialized or terminated on play ordinary stream";
+                    break;
+                case kFPWCSStreamStatusInfoRtspStreamNotFound:
+                    view.text = @"Rtsp stream is not found, agent received '404-Not Found'";
+                    break;
+                case kFPWCSStreamStatusInfoFailedToConnectToRtspStream:
+                    view.text = @"Failed to connect to rtsp stream";
+                    break;
+                case kFPWCSStreamStatusInfoFileNotFound:
+                    view.text = @"File does not exist, check filename";
+                    break;
+                case kFPWCSStreamStatusInfoFileHasWrongFormat:
+                    view.text = @"Failed to play vod stream, this format is not supported";
+                    break;
+                case kFPWCSStreamStatusInfoStreamNameAlreadyInUse:
+                    view.text = @"Server already has a publish stream with the same name, try using different one";
+                    break;
+            }
             break;
+        }
         case kFPWCSStreamStatusPlaying:
         case kFPWCSStreamStatusPublishing:
             view.textColor = [UIColor greenColor];
