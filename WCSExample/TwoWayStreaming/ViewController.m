@@ -396,6 +396,9 @@
                 case kFPWCSStreamStatusInfoStreamNameAlreadyInUse:
                     view.text = @"Server already has a publish stream with the same name, try using different one";
                     break;
+				case kFPWCSStreamStatusInfoTranscodingRequiredButDisabled:
+                    view.text = @"Transcoding required, but disabled in settings";
+                    break;
             }
             break;
         }
