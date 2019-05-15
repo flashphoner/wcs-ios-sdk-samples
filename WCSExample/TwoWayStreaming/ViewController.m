@@ -399,6 +399,9 @@
 				case kFPWCSStreamStatusInfoTranscodingRequiredButDisabled:
                     view.text = @"Transcoding required, but disabled in settings";
                     break;
+                case kFPWCSStreamStatusInfoNoAvailableTranscoders:
+                    view.text = @"No available transcoders for stream";
+                    break;
             }
             break;
         }
