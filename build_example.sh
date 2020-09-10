@@ -11,6 +11,8 @@ PROJECT_DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
 CONFIGURATION="Release"
 
+rm -rf ~/Library/Developer/Xcode/DerivedData/*
+
 rm -rf out-build
 mkdir out-build
 
