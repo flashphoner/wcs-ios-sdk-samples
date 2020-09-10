@@ -14,7 +14,6 @@
 		5503A8241DEEE96C003A50AF /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		5503A8271DEEE96C003A50AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
 		5503A8291DEEE96C003A50AF /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
-		5503A82A1DEEE96C003A50AF /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F021C0D93DD00EAEC55 /* libstdc++.6.0.9.tbd */; };
 		5503A82B1DEEE96C003A50AF /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */; };
 		5503A82C1DEEE96C003A50AF /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFE1C0D93C300EAEC55 /* libc.tbd */; };
 		5503A82D1DEEE96C003A50AF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFC1C0D93BC00EAEC55 /* libsqlite3.tbd */; };
@@ -36,7 +35,6 @@
 		5545280B1E25FA6100DD2F52 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		5545280C1E25FA6100DD2F52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
 		5545280E1E25FA6100DD2F52 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
-		5545280F1E25FA6100DD2F52 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F021C0D93DD00EAEC55 /* libstdc++.6.0.9.tbd */; };
 		554528101E25FA6100DD2F52 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */; };
 		554528111E25FA6100DD2F52 /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFE1C0D93C300EAEC55 /* libc.tbd */; };
 		554528121E25FA6100DD2F52 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFC1C0D93BC00EAEC55 /* libsqlite3.tbd */; };
@@ -63,7 +61,6 @@
 		55BD73611E0FF4DF003E0517 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		55BD73621E0FF4DF003E0517 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
 		55BD73651E0FF4DF003E0517 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
-		55BD73661E0FF4DF003E0517 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F021C0D93DD00EAEC55 /* libstdc++.6.0.9.tbd */; };
 		55BD73671E0FF4DF003E0517 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */; };
 		55BD73681E0FF4DF003E0517 /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFE1C0D93C300EAEC55 /* libc.tbd */; };
 		55BD73691E0FF4DF003E0517 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFC1C0D93BC00EAEC55 /* libsqlite3.tbd */; };
@@ -83,7 +80,6 @@
 		55BD73831E1242EF003E0517 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55BD73561E0FF4D1003E0517 /* Info.plist */; };
 		55C3EEB31DDD6B240004F538 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
 		55C3EEB61DDD6B240004F538 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
-		55C3EEB71DDD6B240004F538 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F021C0D93DD00EAEC55 /* libstdc++.6.0.9.tbd */; };
 		55C3EEB81DDD6B240004F538 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */; };
 		55C3EEB91DDD6B240004F538 /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFE1C0D93C300EAEC55 /* libc.tbd */; };
 		55C3EEBA1DDD6B240004F538 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFC1C0D93BC00EAEC55 /* libsqlite3.tbd */; };
@@ -104,7 +100,6 @@
 		55C3EEE21DDEC1CF0004F538 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE29B5AD1DC038020081CD37 /* Info.plist */; };
 		55C3EEE81DE29F220004F538 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
 		55C3EEEA1DE29F220004F538 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
-		55C3EEEB1DE29F220004F538 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F021C0D93DD00EAEC55 /* libstdc++.6.0.9.tbd */; };
 		55C3EEEC1DE29F220004F538 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */; };
 		55C3EEED1DE29F220004F538 /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFE1C0D93C300EAEC55 /* libc.tbd */; };
 		55C3EEEE1DE29F220004F538 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFC1C0D93BC00EAEC55 /* libsqlite3.tbd */; };
@@ -125,7 +120,6 @@
 		55E1EC421DFCFBAA005AEE73 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		55E1EC431DFCFBAA005AEE73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
 		55E1EC451DFCFBAA005AEE73 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
-		55E1EC461DFCFBAA005AEE73 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F021C0D93DD00EAEC55 /* libstdc++.6.0.9.tbd */; };
 		55E1EC471DFCFBAA005AEE73 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */; };
 		55E1EC481DFCFBAA005AEE73 /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFE1C0D93C300EAEC55 /* libc.tbd */; };
 		55E1EC491DFCFBAA005AEE73 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFC1C0D93BC00EAEC55 /* libsqlite3.tbd */; };
@@ -146,7 +140,6 @@
 		55F8AEE81DE55944002F5DFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
 		55F8AEE91DE55944002F5DFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F8AEDA1DE55895002F5DFC /* AppDelegate.m */; };
 		55F8AEEB1DE55944002F5DFC /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
-		55F8AEEC1DE55944002F5DFC /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F021C0D93DD00EAEC55 /* libstdc++.6.0.9.tbd */; };
 		55F8AEED1DE55944002F5DFC /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */; };
 		55F8AEEE1DE55944002F5DFC /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFE1C0D93C300EAEC55 /* libc.tbd */; };
 		55F8AEEF1DE55944002F5DFC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFC1C0D93BC00EAEC55 /* libsqlite3.tbd */; };
@@ -166,7 +159,6 @@
 		55F8AF151DE7FD3F002F5DFC /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		55F8AF181DE7FD3F002F5DFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
 		55F8AF1A1DE7FD3F002F5DFC /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
-		55F8AF1B1DE7FD3F002F5DFC /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F021C0D93DD00EAEC55 /* libstdc++.6.0.9.tbd */; };
 		55F8AF1C1DE7FD3F002F5DFC /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */; };
 		55F8AF1D1DE7FD3F002F5DFC /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFE1C0D93C300EAEC55 /* libc.tbd */; };
 		55F8AF1E1DE7FD3F002F5DFC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFC1C0D93BC00EAEC55 /* libsqlite3.tbd */; };
@@ -187,7 +179,6 @@
 		55F98A411E1D28BD00B70D94 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		55F98A421E1D28BD00B70D94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
 		55F98A441E1D28BD00B70D94 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
-		55F98A451E1D28BD00B70D94 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F021C0D93DD00EAEC55 /* libstdc++.6.0.9.tbd */; };
 		55F98A461E1D28BD00B70D94 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */; };
 		55F98A471E1D28BD00B70D94 /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFE1C0D93C300EAEC55 /* libc.tbd */; };
 		55F98A481E1D28BD00B70D94 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFC1C0D93BC00EAEC55 /* libsqlite3.tbd */; };
@@ -218,7 +209,6 @@
 		CE29B5921DC036AE0081CD37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
 		CE29B5951DC036AE0081CD37 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
 		CE29B5961DC036AE0081CD37 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
-		CE29B5971DC036AE0081CD37 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F021C0D93DD00EAEC55 /* libstdc++.6.0.9.tbd */; };
 		CE29B5981DC036AE0081CD37 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */; };
 		CE29B5991DC036AE0081CD37 /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFE1C0D93C300EAEC55 /* libc.tbd */; };
 		CE29B59A1DC036AE0081CD37 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFC1C0D93BC00EAEC55 /* libsqlite3.tbd */; };
@@ -240,7 +230,6 @@
 		CE75344B1DDB39A100D7DF80 /* WCSRemoteVideoControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CE75344A1DDB39A100D7DF80 /* WCSRemoteVideoControl.m */; };
 		CE988A241DD5534400742423 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
 		CE988A261DD5534400742423 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
-		CE988A271DD5534400742423 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F021C0D93DD00EAEC55 /* libstdc++.6.0.9.tbd */; };
 		CE988A281DD5534400742423 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */; };
 		CE988A291DD5534400742423 /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFE1C0D93C300EAEC55 /* libc.tbd */; };
 		CE988A2A1DD5534400742423 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFC1C0D93BC00EAEC55 /* libsqlite3.tbd */; };
@@ -354,7 +343,6 @@
 		CE133EFC1C0D93BC00EAEC55 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		CE133EFE1C0D93C300EAEC55 /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
 		CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
-		CE133F021C0D93DD00EAEC55 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		CE133F041C0D93E800EAEC55 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		CE23105D1C0D718100918455 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE2310661C0D718100918455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -395,7 +383,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5503A8291DEEE96C003A50AF /* libicucore.tbd in Frameworks */,
-				5503A82A1DEEE96C003A50AF /* libstdc++.6.0.9.tbd in Frameworks */,
 				5503A82B1DEEE96C003A50AF /* libstdc++.tbd in Frameworks */,
 				5503A82C1DEEE96C003A50AF /* libc.tbd in Frameworks */,
 				5503A82D1DEEE96C003A50AF /* libsqlite3.tbd in Frameworks */,
@@ -416,7 +403,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5545280E1E25FA6100DD2F52 /* libicucore.tbd in Frameworks */,
-				5545280F1E25FA6100DD2F52 /* libstdc++.6.0.9.tbd in Frameworks */,
 				554528101E25FA6100DD2F52 /* libstdc++.tbd in Frameworks */,
 				554528111E25FA6100DD2F52 /* libc.tbd in Frameworks */,
 				554528121E25FA6100DD2F52 /* libsqlite3.tbd in Frameworks */,
@@ -437,7 +423,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				55BD73651E0FF4DF003E0517 /* libicucore.tbd in Frameworks */,
-				55BD73661E0FF4DF003E0517 /* libstdc++.6.0.9.tbd in Frameworks */,
 				55BD73671E0FF4DF003E0517 /* libstdc++.tbd in Frameworks */,
 				55BD73681E0FF4DF003E0517 /* libc.tbd in Frameworks */,
 				55BD73691E0FF4DF003E0517 /* libsqlite3.tbd in Frameworks */,
@@ -458,7 +443,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				55C3EEB61DDD6B240004F538 /* libicucore.tbd in Frameworks */,
-				55C3EEB71DDD6B240004F538 /* libstdc++.6.0.9.tbd in Frameworks */,
 				55C3EEB81DDD6B240004F538 /* libstdc++.tbd in Frameworks */,
 				55C3EEB91DDD6B240004F538 /* libc.tbd in Frameworks */,
 				55C3EEBA1DDD6B240004F538 /* libsqlite3.tbd in Frameworks */,
@@ -479,7 +463,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				55C3EEEA1DE29F220004F538 /* libicucore.tbd in Frameworks */,
-				55C3EEEB1DE29F220004F538 /* libstdc++.6.0.9.tbd in Frameworks */,
 				55C3EEEC1DE29F220004F538 /* libstdc++.tbd in Frameworks */,
 				55C3EEED1DE29F220004F538 /* libc.tbd in Frameworks */,
 				55C3EEEE1DE29F220004F538 /* libsqlite3.tbd in Frameworks */,
@@ -500,7 +483,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				55E1EC451DFCFBAA005AEE73 /* libicucore.tbd in Frameworks */,
-				55E1EC461DFCFBAA005AEE73 /* libstdc++.6.0.9.tbd in Frameworks */,
 				55E1EC471DFCFBAA005AEE73 /* libstdc++.tbd in Frameworks */,
 				55E1EC481DFCFBAA005AEE73 /* libc.tbd in Frameworks */,
 				55E1EC491DFCFBAA005AEE73 /* libsqlite3.tbd in Frameworks */,
@@ -521,7 +503,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				55F8AEEB1DE55944002F5DFC /* libicucore.tbd in Frameworks */,
-				55F8AEEC1DE55944002F5DFC /* libstdc++.6.0.9.tbd in Frameworks */,
 				55F8AEED1DE55944002F5DFC /* libstdc++.tbd in Frameworks */,
 				55F8AEEE1DE55944002F5DFC /* libc.tbd in Frameworks */,
 				55F8AEEF1DE55944002F5DFC /* libsqlite3.tbd in Frameworks */,
@@ -542,7 +523,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				55F8AF1A1DE7FD3F002F5DFC /* libicucore.tbd in Frameworks */,
-				55F8AF1B1DE7FD3F002F5DFC /* libstdc++.6.0.9.tbd in Frameworks */,
 				55F8AF1C1DE7FD3F002F5DFC /* libstdc++.tbd in Frameworks */,
 				55F8AF1D1DE7FD3F002F5DFC /* libc.tbd in Frameworks */,
 				55F8AF1E1DE7FD3F002F5DFC /* libsqlite3.tbd in Frameworks */,
@@ -563,7 +543,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				55F98A441E1D28BD00B70D94 /* libicucore.tbd in Frameworks */,
-				55F98A451E1D28BD00B70D94 /* libstdc++.6.0.9.tbd in Frameworks */,
 				55F98A461E1D28BD00B70D94 /* libstdc++.tbd in Frameworks */,
 				55F98A471E1D28BD00B70D94 /* libc.tbd in Frameworks */,
 				55F98A481E1D28BD00B70D94 /* libsqlite3.tbd in Frameworks */,
@@ -584,7 +563,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE29B5961DC036AE0081CD37 /* libicucore.tbd in Frameworks */,
-				CE29B5971DC036AE0081CD37 /* libstdc++.6.0.9.tbd in Frameworks */,
 				CE29B5981DC036AE0081CD37 /* libstdc++.tbd in Frameworks */,
 				CE29B5991DC036AE0081CD37 /* libc.tbd in Frameworks */,
 				CE29B59A1DC036AE0081CD37 /* libsqlite3.tbd in Frameworks */,
@@ -605,7 +583,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE988A261DD5534400742423 /* libicucore.tbd in Frameworks */,
-				CE988A271DD5534400742423 /* libstdc++.6.0.9.tbd in Frameworks */,
 				CE988A281DD5534400742423 /* libstdc++.tbd in Frameworks */,
 				CE988A291DD5534400742423 /* libc.tbd in Frameworks */,
 				CE988A2A1DD5534400742423 /* libsqlite3.tbd in Frameworks */,
@@ -766,7 +743,6 @@
 			children = (
 				CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */,
 				CE133F041C0D93E800EAEC55 /* libicucore.tbd */,
-				CE133F021C0D93DD00EAEC55 /* libstdc++.6.0.9.tbd */,
 				CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */,
 				CE133EFE1C0D93C300EAEC55 /* libc.tbd */,
 				CE133EFC1C0D93BC00EAEC55 /* libsqlite3.tbd */,
