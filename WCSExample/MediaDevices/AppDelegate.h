@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  WCSExample
 //
-//  Created by user on 1/12/2015.
+//  Created by flashphoner on 1/12/2015.
 //  Copyright © 2015 flashphoner. All rights reserved.
 //
 

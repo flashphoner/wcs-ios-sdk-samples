@@ -2,7 +2,7 @@
 //  WCSExampleUtil.m
 //  WCSExample
 //
-//  Created by user on 14/11/2016.
+//  Created by flashphoner on 14/11/2016.
 //  Copyright © 2016 flashphoner. All rights reserved.
 //
 

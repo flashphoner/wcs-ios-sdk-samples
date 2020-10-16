@@ -2,16 +2,16 @@
 //  ViewController.h
 //  WCSApiExample
 //
-//  Created by user on 24/11/2015.
-//  Copyright © 2015 user. All rights reserved.
+//  Created by flashphoner on 24/11/2015.
+//  Copyright © 2015 flashphoner. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import <FPWCSApi2/RTCEAGLVideoView.h>
+#import <WebRTC/RTCEAGLVideoView.h>
 @import AVFoundation;
 @import AVKit;
 
-@interface ViewController : UIViewController<UITextFieldDelegate, RTCEAGLVideoViewDelegate, AVAssetResourceLoaderDelegate>
+@interface ViewController : UIViewController<UITextFieldDelegate, RTCVideoViewDelegate, AVAssetResourceLoaderDelegate>
 
 @property UIScrollView *scrollView;
 @property UIView *contentView;

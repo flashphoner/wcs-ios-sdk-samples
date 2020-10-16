@@ -2,8 +2,8 @@
 //  ViewController.m
 //  WCSApiExample
 //
-//  Created by user on 24/11/2015.
-//  Copyright © 2015 user. All rights reserved.
+//  Created by flashphoner on 24/11/2015.
+//  Copyright © 2015 flashphoner. All rights reserved.
 //
 
 #import "WCSUtil.h"
@@ -109,12 +109,12 @@ NSString *recordName;
     
     [stream on:kFPWCSStreamStatusUnpublished callback:^(FPWCSApi2Stream *rStream){
         [self changeStreamStatus:rStream];
-        [self onUnpublished];
+        [self onUnpublished:rStream];
     }];
     
     [stream on:kFPWCSStreamStatusFailed callback:^(FPWCSApi2Stream *rStream){
         [self changeStreamStatus:rStream];
-        [self onUnpublished];
+        [self onUnpublished:rStream];
     }];
     if(![stream publish:&error]) {
         UIAlertController * alert = [UIAlertController
@@ -142,25 +142,27 @@ NSString *recordName;
 
 - (void)onDisconnected {
     [self changeViewState:_connectUrl enabled:YES];
-    [self onUnpublished];
-    if (url && recordName) {
-//        NSString *urlString = @"http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4";
-        NSString *urlString = [NSString stringWithFormat:@"http://%@:9091/client/records/%@", url.host, recordName];
-        _recordLink.text = urlString;
-        [self playVideo: urlString];
-    }
+    [self onUnpublished:nil];
 }
 
 - (void)onPublishing:(FPWCSApi2Stream *)stream {
     [_startButton setTitle:@"STOP" forState:UIControlStateNormal];
     [self changeViewState:_startButton enabled:YES];
-    recordName = [stream getRecordName];
 }
 
-- (void)onUnpublished {
+- (void)onUnpublished:(FPWCSApi2Stream *)stream {
     [_startButton setTitle:@"START" forState:UIControlStateNormal];
     [self changeViewState:_startButton enabled:YES];
     [_remoteDisplay renderFrame:nil];
+    
+    if (stream) {
+        recordName = [stream getRecordName];
+        if (recordName) {
+            NSString *urlString = [NSString stringWithFormat:@"http://%@:8081/client/records/%@", url.host, recordName];
+            _recordLink.text = urlString;
+            [self playVideo: urlString];
+        }
+    }
 }
 
 //user interface handlers
@@ -272,7 +274,7 @@ NSString *recordName;
     [self.view addSubview:_scrollView];
     
     //set default values
-    _connectUrl.text = @"wss://wcs5-eu.flashphoner.com:8443/test";
+    _connectUrl.text = @"wss://demo.flashphoner.com:8443/test";
 }
 
 

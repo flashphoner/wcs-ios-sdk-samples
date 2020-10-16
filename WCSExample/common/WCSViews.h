@@ -1,6 +1,7 @@
 
 #import <UIKit/UIKit.h>
 #import <FPWCSApi2/FPWCSApi2.h>
+#import <WebRTC/RTCEAGLVideoView.h>
 
 @interface WCSKeyboardTracker : NSObject
 
@@ -51,7 +52,7 @@
 
 @end
 
-@interface WCSDoubleVideoView : UIView<RTCEAGLVideoViewDelegate>
+@interface WCSDoubleVideoView : UIView<RTCVideoViewDelegate>
 
 @property RTCEAGLVideoView *local;
 @property RTCEAGLVideoView *remote;

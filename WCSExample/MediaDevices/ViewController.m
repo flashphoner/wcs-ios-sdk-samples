@@ -2,8 +2,8 @@
 //  ViewController.m
 //  WCSApiExample
 //
-//  Created by user on 24/11/2015.
-//  Copyright © 2015 user. All rights reserved.
+//  Created by flashphoner on 24/11/2015.
+//  Copyright © 2015 flashphoner. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -389,7 +389,7 @@
     _settingsButtonContainer = [[UIView alloc] init];
     _settingsButtonContainer.translatesAutoresizingMaskIntoConstraints = NO;
     _urlInput = [WCSViewUtil createTextField:self];
-    _urlInput.text = @"wss://wcs5-eu.flashphoner.com:8443";
+    _urlInput.text = @"wss://demo.flashphoner.com:8443";
     _connectStatus = [WCSViewUtil createLabelView];
     _micLevel = [WCSViewUtil createLabelView];
     _micLevel.text = @"Mic Level: 0";

@@ -2,12 +2,12 @@
 //  ViewController.h
 //  WCSApiExample
 //
-//  Created by user on 24/11/2015.
-//  Copyright © 2015 user. All rights reserved.
+//  Created by flashphoner on 24/11/2015.
+//  Copyright © 2015 flashphoner. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import <FPWCSApi2/RTCEAGLVideoView.h>
+#import <WebRTC/RTCEAGLVideoView.h>
 #import <CoreAudio/CoreAudioTypes.h>
 #import <AVFoundation/AVFoundation.h>
 #import "WCSViews.h"

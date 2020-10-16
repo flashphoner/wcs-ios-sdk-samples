@@ -2,8 +2,8 @@
 //  ViewController.m
 //  WCSApiExample
 //
-//  Created by user on 24/11/2015.
-//  Copyright © 2015 user. All rights reserved.
+//  Created by flashphoner on 24/11/2015.
+//  Copyright © 2015 flashphoner. All rights reserved.
 //
 
 #import "WCSUtil.h"
@@ -439,7 +439,7 @@ UIAlertController *alert;
     [self.view addSubview:_scrollView];
     
     //set default values
-    _connectUrl.text = @"wss://wcs5-eu.flashphoner.com:8443";
+    _connectUrl.text = @"wss://demo.flashphoner.com:8443";
     _sipLogin.input.text = @"1000";
     _sipAuthName.input.text = @"1000";
     _sipPassword.input.text = @"1234";

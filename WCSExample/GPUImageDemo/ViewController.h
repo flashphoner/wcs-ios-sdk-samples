@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <WebRTC/RTCMTLVideoView.h>
 #import <WebRTC/RTCEAGLVideoView.h>
+#import <GPUImage/GPUImage.h>
 
 @interface ViewController : UIViewController<UITextFieldDelegate, RTCVideoViewDelegate>
 
@@ -23,7 +24,8 @@
 @property UITextField *localStreamName;
 @property UILabel *localStreamStatus;
 @property UIButton *publishButton;
-@property UIButton *switchCameraButton;
+@property UIButton *beautyButton;
+@property BOOL beautifyEnabled;
 
 @property UILabel *playStreamLabel;
 @property UITextField *remoteStreamName;
@@ -31,7 +33,8 @@
 @property UIButton *playButton;
 
 @property UIView *videoContainer;
-@property(nonatomic) UIView<RTCVideoRenderer> *localDisplay;
+@property(nonatomic) UIView<RTCVideoRenderer> *localNativeDisplay;
+@property(nonatomic) GPUImageView *localDisplay;
 @property(nonatomic) UIView<RTCVideoRenderer> *remoteDisplay;
 
 @property NSMutableArray *localDisplayConstraints;

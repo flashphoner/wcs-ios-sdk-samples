@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		007FCEA027937F1705D714B2 /* Pods_TwoWayStreaming.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657FE6304944E7B0E86B981B /* Pods_TwoWayStreaming.framework */; };
+		061B4A6262F2BD8EE560DC97 /* Pods_StreamRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA37E8F9999876F4BDE5240 /* Pods_StreamRecording.framework */; };
 		2C9EA6B7826D4E9D53C22823 /* Pods_Player.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8745492A7BF846C9479B539C /* Pods_Player.framework */; };
+		347EAE752A00A7D6410BD50A /* Pods_GPUImageDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67583FC82A75C6CC4844C24B /* Pods_GPUImageDemo.framework */; };
 		3F2A9FFC5A5A59E6CFD7FE70 /* Pods_TwoPlayers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31005716A70F1B337799F1 /* Pods_TwoPlayers.framework */; };
 		4CECE292C777F06FCE1291B5 /* Pods_Streamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C845B85743847299215C220 /* Pods_Streamer.framework */; };
 		5503A8241DEEE96C003A50AF /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
@@ -51,10 +53,29 @@
 		554528201E25FA6100DD2F52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2310651C0D718100918455 /* Main.storyboard */; };
 		554528281E25FB3B00DD2F52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 554527FE1E25F9C900DD2F52 /* AppDelegate.m */; };
 		554528291E25FB3B00DD2F52 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554528011E25F9C900DD2F52 /* ViewController.m */; };
-		5545282A1E25FB4900DD2F52 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 554527FF1E25F9C900DD2F52 /* Info.plist */; };
 		555260911DE418FA00AED0F1 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		555260921DE45C6B00AED0F1 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		555260931DE45CAD00AED0F1 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
+		5570EAAE2519EB4E0031E44C /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
+		5570EAAF2519EB4E0031E44C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
+		5570EAB12519EB4E0031E44C /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
+		5570EAB22519EB4E0031E44C /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */; };
+		5570EAB32519EB4E0031E44C /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFE1C0D93C300EAEC55 /* libc.tbd */; };
+		5570EAB42519EB4E0031E44C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFC1C0D93BC00EAEC55 /* libsqlite3.tbd */; };
+		5570EAB52519EB4E0031E44C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFA1C0D93AC00EAEC55 /* Foundation.framework */; };
+		5570EAB62519EB4E0031E44C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF81C0D93A200EAEC55 /* AVFoundation.framework */; };
+		5570EAB72519EB4E0031E44C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF61C0D939800EAEC55 /* UIKit.framework */; };
+		5570EAB82519EB4E0031E44C /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF41C0D939000EAEC55 /* GLKit.framework */; };
+		5570EAB92519EB4E0031E44C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF21C0D938100EAEC55 /* CoreMedia.framework */; };
+		5570EABA2519EB4E0031E44C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */; };
+		5570EABB2519EB4E0031E44C /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */; };
+		5570EABC2519EB4E0031E44C /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
+		5570EABF2519EB4E0031E44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB681C75ABA4002FDF16 /* LaunchScreen.storyboard */; };
+		5570EAC02519EB4E0031E44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2310681C0D718100918455 /* Assets.xcassets */; };
+		5570EAC12519EB4E0031E44C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB6A1C75ABA4002FDF16 /* Main.storyboard */; };
+		5570EB732519EF530031E44C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570EAFC2519EBE70031E44C /* AppDelegate.m */; };
+		5570EB742519EF530031E44C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570EAFD2519EBE70031E44C /* ViewController.m */; };
+		5570EB832519EFF30031E44C /* GPUImageBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570EB822519EFF30031E44C /* GPUImageBeautifyFilter.m */; };
 		55B649CD1DFCFD05009D4264 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E1EC351DFCFBA0005AEE73 /* AppDelegate.m */; };
 		55B649CE1DFCFD05009D4264 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E1EC381DFCFBA0005AEE73 /* ViewController.m */; };
 		55BD735F1E0FF4DF003E0517 /* WCSViews.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534441DDADA3800D7DF80 /* WCSViews.m */; };
@@ -77,7 +98,6 @@
 		55BD73791E0FF4DF003E0517 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2310651C0D718100918455 /* Main.storyboard */; };
 		55BD73811E0FF59E003E0517 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BD73551E0FF4D1003E0517 /* AppDelegate.m */; };
 		55BD73821E0FF59E003E0517 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BD73581E0FF4D1003E0517 /* ViewController.m */; };
-		55BD73831E1242EF003E0517 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55BD73561E0FF4D1003E0517 /* Info.plist */; };
 		55C3EEB31DDD6B240004F538 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
 		55C3EEB61DDD6B240004F538 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
 		55C3EEB81DDD6B240004F538 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */; };
@@ -96,8 +116,6 @@
 		55C3EEC91DDD6B240004F538 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB681C75ABA4002FDF16 /* LaunchScreen.storyboard */; };
 		55C3EEDB1DDD99700004F538 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C3EED21DDD98D80004F538 /* AppDelegate.m */; };
 		55C3EEDE1DDD99700004F538 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C3EED51DDD98D80004F538 /* ViewController.m */; };
-		55C3EEE11DDEC1AC0004F538 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55C3EED31DDD98D80004F538 /* Info.plist */; };
-		55C3EEE21DDEC1CF0004F538 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE29B5AD1DC038020081CD37 /* Info.plist */; };
 		55C3EEE81DE29F220004F538 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
 		55C3EEEA1DE29F220004F538 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
 		55C3EEEC1DE29F220004F538 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */; };
@@ -152,7 +170,6 @@
 		55F8AEF61DE55944002F5DFC /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */; };
 		55F8AEF81DE55944002F5DFC /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
 		55F8AEFB1DE55944002F5DFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE23106A1C0D718100918455 /* LaunchScreen.storyboard */; };
-		55F8AEFC1DE55944002F5DFC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55F8AEDB1DE55895002F5DFC /* Info.plist */; };
 		55F8AEFD1DE55944002F5DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2310681C0D718100918455 /* Assets.xcassets */; };
 		55F8AEFF1DE55944002F5DFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2310651C0D718100918455 /* Main.storyboard */; };
 		55F8AF071DE57DAA002F5DFC /* WCSViews.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534441DDADA3800D7DF80 /* WCSViews.m */; };
@@ -194,19 +211,14 @@
 		55F98A551E1D28BD00B70D94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2310681C0D718100918455 /* Assets.xcassets */; };
 		55F98A561E1D28BD00B70D94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2310651C0D718100918455 /* Main.storyboard */; };
 		55F98A5F1E1D28DC00B70D94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F98A371E1D286100B70D94 /* ViewController.m */; };
-		55F98A601E1D28EB00B70D94 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55F98A351E1D286100B70D94 /* Info.plist */; };
+		55F9BB35251DAA5500F39D69 /* GPUImageVideoCapturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9BB26251DA9E100F39D69 /* GPUImageVideoCapturer.m */; };
+		55FCD3CE252B0437008C54E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
 		85458A1A4E20148A6AA67C8F /* Pods_MediaDevices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A58904727550EF62D7BF75 /* Pods_MediaDevices.framework */; };
 		874B8D646E3ADB17D3AF3DE6 /* Pods_PhoneMin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77B12A13431E3991180227D /* Pods_PhoneMin.framework */; };
 		8845F0DD6AEEA05D2C8C4CB9 /* Pods_VideoChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5BB64A1ECEAAAAE4BA4D58 /* Pods_VideoChat.framework */; };
-		8B8E55112036F88500C9E0B7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE988A421DD5548500742423 /* Info.plist */; };
-		8B8E55122036F8B200C9E0B7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55C3EF071DE2A5470004F538 /* Info.plist */; };
-		8B8E55142036F8EF00C9E0B7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5503A81B1DEEE961003A50AF /* Info.plist */; };
-		8B8E55162036F92100C9E0B7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55E1EC361DFCFBA0005AEE73 /* Info.plist */; };
-		8B8E55172036F94900C9E0B7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55F8AF0C1DE7FD32002F5DFC /* Info.plist */; };
 		96E97847B0DD3DD368A0655D /* Pods_ClickToCall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6092F5076645DB535DAF8F5F /* Pods_ClickToCall.framework */; };
-		AB70810F411954F98ECB0E4E /* Pods_StreamRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75098741D8433C8055082D8D /* Pods_StreamRecording.framework */; };
+		AB70810F411954F98ECB0E4E /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		BF0C53CD5C35C2C303C8BBCD /* Pods_PhoneMinVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1B888B5E77A104987F94EC /* Pods_PhoneMinVideo.framework */; };
-		CE29B5921DC036AE0081CD37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
 		CE29B5951DC036AE0081CD37 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
 		CE29B5961DC036AE0081CD37 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
 		CE29B5981DC036AE0081CD37 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */; };
@@ -270,6 +282,14 @@
 		554528001E25F9C900DD2F52 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ClickToCall/ViewController.h; sourceTree = "<group>"; };
 		554528011E25F9C900DD2F52 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ClickToCall/ViewController.m; sourceTree = "<group>"; };
 		554528261E25FA6100DD2F52 /* ClickToCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickToCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5570EAC62519EB4E0031E44C /* GPUImageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPUImageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5570EAFB2519EBE70031E44C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = GPUImageDemo/ViewController.h; sourceTree = "<group>"; };
+		5570EAFC2519EBE70031E44C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = GPUImageDemo/AppDelegate.m; sourceTree = "<group>"; };
+		5570EAFD2519EBE70031E44C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = GPUImageDemo/ViewController.m; sourceTree = "<group>"; };
+		5570EAFE2519EBE70031E44C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GPUImageDemo/Info.plist; sourceTree = "<group>"; };
+		5570EAFF2519EBE70031E44C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = GPUImageDemo/AppDelegate.h; sourceTree = "<group>"; };
+		5570EB812519EFF30031E44C /* GPUImageBeautifyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPUImageBeautifyFilter.h; path = GPUImageDemo/GPUImageBeautifyFilter.h; sourceTree = "<group>"; };
+		5570EB822519EFF30031E44C /* GPUImageBeautifyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPUImageBeautifyFilter.m; path = GPUImageDemo/GPUImageBeautifyFilter.m; sourceTree = "<group>"; };
 		55BD73541E0FF4D1003E0517 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = PhoneMinVideo/AppDelegate.h; sourceTree = "<group>"; };
 		55BD73551E0FF4D1003E0517 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = PhoneMinVideo/AppDelegate.m; sourceTree = "<group>"; };
 		55BD73561E0FF4D1003E0517 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PhoneMinVideo/Info.plist; sourceTree = "<group>"; };
@@ -312,13 +332,16 @@
 		55F98A361E1D286100B70D94 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = PhoneMin/ViewController.h; sourceTree = "<group>"; };
 		55F98A371E1D286100B70D94 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = PhoneMin/ViewController.m; sourceTree = "<group>"; };
 		55F98A5C1E1D28BD00B70D94 /* PhoneMin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneMin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55F9BB26251DA9E100F39D69 /* GPUImageVideoCapturer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GPUImageVideoCapturer.m; path = GPUImageDemo/GPUImageVideoCapturer.m; sourceTree = "<group>"; };
+		55F9BB34251DA9FC00F39D69 /* GPUImageVideoCapturer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GPUImageVideoCapturer.h; path = GPUImageDemo/GPUImageVideoCapturer.h; sourceTree = "<group>"; };
 		5C8F2CB9B54362118F8B9C3A /* Pods-StreamRecording.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamRecording.release.xcconfig"; path = "Pods/Target Support Files/Pods-StreamRecording/Pods-StreamRecording.release.xcconfig"; sourceTree = "<group>"; };
 		5EF73068B49AD2F4A1CCED3C /* Pods-PhoneMin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneMin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneMin/Pods-PhoneMin.debug.xcconfig"; sourceTree = "<group>"; };
 		6092F5076645DB535DAF8F5F /* Pods_ClickToCall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClickToCall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		657FE6304944E7B0E86B981B /* Pods_TwoWayStreaming.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwoWayStreaming.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67583FC82A75C6CC4844C24B /* Pods_GPUImageDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GPUImageDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68EBD96E5E0DFFC406FCC540 /* Pods-TwoPlayers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoPlayers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwoPlayers/Pods-TwoPlayers.debug.xcconfig"; sourceTree = "<group>"; };
 		70F0D9BC4DD77EFBBCD071EB /* Pods-VideoChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoChat/Pods-VideoChat.debug.xcconfig"; sourceTree = "<group>"; };
-		75098741D8433C8055082D8D /* Pods_StreamRecording.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreamRecording.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EA37E8F9999876F4BDE5240 /* Pods_StreamRecording.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreamRecording.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		846E3A66B3858038D2B5AC8F /* Pods-Player.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Player.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Player/Pods-Player.debug.xcconfig"; sourceTree = "<group>"; };
 		8745492A7BF846C9479B539C /* Pods_Player.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Player.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B31005716A70F1B337799F1 /* Pods_TwoPlayers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwoPlayers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -331,8 +354,10 @@
 		A4E7F3FF1ED3C85F7E330E36 /* Pods-ClickToCall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickToCall.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClickToCall/Pods-ClickToCall.debug.xcconfig"; sourceTree = "<group>"; };
 		AB9EF3E96A197A886FE5113E /* Pods-PhoneMin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneMin.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneMin/Pods-PhoneMin.release.xcconfig"; sourceTree = "<group>"; };
 		B900BCE0A039E397F83E1A7B /* Pods-Streamer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Streamer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Streamer/Pods-Streamer.release.xcconfig"; sourceTree = "<group>"; };
+		BB36930046A19DB5A3967C15 /* Pods-GPUImageDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUImageDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GPUImageDemo/Pods-GPUImageDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C2DDB1571337A4A0E150A71D /* Pods-MediaDevices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaDevices.release.xcconfig"; path = "Pods/Target Support Files/Pods-MediaDevices/Pods-MediaDevices.release.xcconfig"; sourceTree = "<group>"; };
 		C77B12A13431E3991180227D /* Pods_PhoneMin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneMin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA63B6F28BC74A6479BB3E44 /* Pods-GPUImageDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUImageDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GPUImageDemo/Pods-GPUImageDemo.release.xcconfig"; sourceTree = "<group>"; };
 		CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CE133EF21C0D938100EAEC55 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -415,6 +440,26 @@
 				554528191E25FA6100DD2F52 /* VideoToolbox.framework in Frameworks */,
 				5545281A1E25FA6100DD2F52 /* FPWCSApi2.framework in Frameworks */,
 				96E97847B0DD3DD368A0655D /* Pods_ClickToCall.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5570EAB02519EB4E0031E44C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5570EAB12519EB4E0031E44C /* libicucore.tbd in Frameworks */,
+				5570EAB22519EB4E0031E44C /* libstdc++.tbd in Frameworks */,
+				5570EAB32519EB4E0031E44C /* libc.tbd in Frameworks */,
+				5570EAB42519EB4E0031E44C /* libsqlite3.tbd in Frameworks */,
+				5570EAB52519EB4E0031E44C /* Foundation.framework in Frameworks */,
+				5570EAB62519EB4E0031E44C /* AVFoundation.framework in Frameworks */,
+				5570EAB72519EB4E0031E44C /* UIKit.framework in Frameworks */,
+				5570EAB82519EB4E0031E44C /* GLKit.framework in Frameworks */,
+				5570EAB92519EB4E0031E44C /* CoreMedia.framework in Frameworks */,
+				5570EABA2519EB4E0031E44C /* CoreGraphics.framework in Frameworks */,
+				5570EABB2519EB4E0031E44C /* VideoToolbox.framework in Frameworks */,
+				5570EABC2519EB4E0031E44C /* FPWCSApi2.framework in Frameworks */,
+				347EAE752A00A7D6410BD50A /* Pods_GPUImageDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,7 +579,8 @@
 				55F8AF241DE7FD3F002F5DFC /* CoreGraphics.framework in Frameworks */,
 				55F8AF251DE7FD3F002F5DFC /* VideoToolbox.framework in Frameworks */,
 				55F8AF261DE7FD3F002F5DFC /* FPWCSApi2.framework in Frameworks */,
-				AB70810F411954F98ECB0E4E /* Pods_StreamRecording.framework in Frameworks */,
+				AB70810F411954F98ECB0E4E /* (null) in Frameworks */,
+				061B4A6262F2BD8EE560DC97 /* Pods_StreamRecording.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,6 +672,8 @@
 				AB9EF3E96A197A886FE5113E /* Pods-PhoneMin.release.xcconfig */,
 				A4E7F3FF1ED3C85F7E330E36 /* Pods-ClickToCall.debug.xcconfig */,
 				2F658772CEA94FD2C2636F0F /* Pods-ClickToCall.release.xcconfig */,
+				BB36930046A19DB5A3967C15 /* Pods-GPUImageDemo.debug.xcconfig */,
+				CA63B6F28BC74A6479BB3E44 /* Pods-GPUImageDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -664,6 +712,22 @@
 				55F98A371E1D286100B70D94 /* ViewController.m */,
 			);
 			name = PhoneMin;
+			sourceTree = "<group>";
+		};
+		5570EA9D2519EB180031E44C /* GPUImageDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5570EB812519EFF30031E44C /* GPUImageBeautifyFilter.h */,
+				5570EB822519EFF30031E44C /* GPUImageBeautifyFilter.m */,
+				5570EAFF2519EBE70031E44C /* AppDelegate.h */,
+				5570EAFC2519EBE70031E44C /* AppDelegate.m */,
+				5570EAFE2519EBE70031E44C /* Info.plist */,
+				5570EAFB2519EBE70031E44C /* ViewController.h */,
+				5570EAFD2519EBE70031E44C /* ViewController.m */,
+				55F9BB26251DA9E100F39D69 /* GPUImageVideoCapturer.m */,
+				55F9BB34251DA9FC00F39D69 /* GPUImageVideoCapturer.h */,
+			);
+			name = GPUImageDemo;
 			sourceTree = "<group>";
 		};
 		55BD73531E0FF407003E0517 /* PhoneMinVideo */ = {
@@ -758,12 +822,13 @@
 				8B31005716A70F1B337799F1 /* Pods_TwoPlayers.framework */,
 				02A58904727550EF62D7BF75 /* Pods_MediaDevices.framework */,
 				0C845B85743847299215C220 /* Pods_Streamer.framework */,
-				75098741D8433C8055082D8D /* Pods_StreamRecording.framework */,
 				9BE75AB247F8E5C824B9E42F /* Pods_Conference.framework */,
 				9C5BB64A1ECEAAAAE4BA4D58 /* Pods_VideoChat.framework */,
 				9B1B888B5E77A104987F94EC /* Pods_PhoneMinVideo.framework */,
 				C77B12A13431E3991180227D /* Pods_PhoneMin.framework */,
 				6092F5076645DB535DAF8F5F /* Pods_ClickToCall.framework */,
+				67583FC82A75C6CC4844C24B /* Pods_GPUImageDemo.framework */,
+				7EA37E8F9999876F4BDE5240 /* Pods_StreamRecording.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -792,6 +857,7 @@
 				55BD737F1E0FF4DF003E0517 /* PhoneMinVideo.app */,
 				55F98A5C1E1D28BD00B70D94 /* PhoneMin.app */,
 				554528261E25FA6100DD2F52 /* ClickToCall.app */,
+				5570EAC62519EB4E0031E44C /* GPUImageDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -799,6 +865,7 @@
 		CE23105B1C0D718100918455 /* WCSExample */ = {
 			isa = PBXGroup;
 			children = (
+				5570EA9D2519EB180031E44C /* GPUImageDemo */,
 				554527FC1E25F96800DD2F52 /* ClickToCall */,
 				555168761E14E3140069ED0C /* PhoneMin */,
 				55BD73531E0FF407003E0517 /* PhoneMinVideo */,
@@ -888,7 +955,6 @@
 				5503A8281DEEE96C003A50AF /* Frameworks */,
 				5503A8371DEEE96C003A50AF /* Resources */,
 				5503A83C1DEEE96C003A50AF /* [CP] Embed Pods Frameworks */,
-				5503A83D1DEEE96C003A50AF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -908,7 +974,6 @@
 				5545280D1E25FA6100DD2F52 /* Frameworks */,
 				5545281C1E25FA6100DD2F52 /* Resources */,
 				554528211E25FA6100DD2F52 /* [CP] Embed Pods Frameworks */,
-				554528221E25FA6100DD2F52 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -917,6 +982,25 @@
 			name = ClickToCall;
 			productName = WCSExample;
 			productReference = 554528261E25FA6100DD2F52 /* ClickToCall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5570EAA92519EB4E0031E44C /* GPUImageDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5570EAC32519EB4E0031E44C /* Build configuration list for PBXNativeTarget "GPUImageDemo" */;
+			buildPhases = (
+				5570EAAA2519EB4E0031E44C /* [CP] Check Pods Manifest.lock */,
+				5570EAAB2519EB4E0031E44C /* Sources */,
+				5570EAB02519EB4E0031E44C /* Frameworks */,
+				5570EABE2519EB4E0031E44C /* Resources */,
+				5570EAC22519EB4E0031E44C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPUImageDemo;
+			productName = WCSExample;
+			productReference = 5570EAC62519EB4E0031E44C /* GPUImageDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		55BD735C1E0FF4DF003E0517 /* PhoneMinVideo */ = {
@@ -928,7 +1012,6 @@
 				55BD73641E0FF4DF003E0517 /* Frameworks */,
 				55BD73731E0FF4DF003E0517 /* Resources */,
 				55BD737A1E0FF4DF003E0517 /* [CP] Embed Pods Frameworks */,
-				55BD737B1E0FF4DF003E0517 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -948,7 +1031,6 @@
 				55C3EEB51DDD6B240004F538 /* Frameworks */,
 				55C3EEC41DDD6B240004F538 /* Resources */,
 				55C3EECA1DDD6B240004F538 /* [CP] Embed Pods Frameworks */,
-				55C3EECB1DDD6B240004F538 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -968,7 +1050,6 @@
 				55C3EEE91DE29F220004F538 /* Frameworks */,
 				55C3EEF81DE29F220004F538 /* Resources */,
 				55C3EEFD1DE29F220004F538 /* [CP] Embed Pods Frameworks */,
-				55C3EEFE1DE29F220004F538 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -988,7 +1069,6 @@
 				55E1EC441DFCFBAA005AEE73 /* Frameworks */,
 				55E1EC531DFCFBAA005AEE73 /* Resources */,
 				55E1EC581DFCFBAA005AEE73 /* [CP] Embed Pods Frameworks */,
-				55E1EC591DFCFBAA005AEE73 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1008,7 +1088,6 @@
 				55F8AEEA1DE55944002F5DFC /* Frameworks */,
 				55F8AEF91DE55944002F5DFC /* Resources */,
 				55F8AF001DE55944002F5DFC /* [CP] Embed Pods Frameworks */,
-				55F8AF011DE55944002F5DFC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1028,7 +1107,6 @@
 				55F8AF191DE7FD3F002F5DFC /* Frameworks */,
 				55F8AF281DE7FD3F002F5DFC /* Resources */,
 				55F8AF2D1DE7FD3F002F5DFC /* [CP] Embed Pods Frameworks */,
-				55F8AF2E1DE7FD3F002F5DFC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1048,7 +1126,6 @@
 				55F98A431E1D28BD00B70D94 /* Frameworks */,
 				55F98A521E1D28BD00B70D94 /* Resources */,
 				55F98A571E1D28BD00B70D94 /* [CP] Embed Pods Frameworks */,
-				55F98A581E1D28BD00B70D94 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1068,7 +1145,6 @@
 				CE29B5941DC036AE0081CD37 /* Frameworks */,
 				CE29B5A21DC036AE0081CD37 /* Resources */,
 				2EF5402938E13FA3BB9BB8E8 /* [CP] Embed Pods Frameworks */,
-				2DB236D19223181E8CFAD1FC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1088,7 +1164,6 @@
 				CE988A251DD5534400742423 /* Frameworks */,
 				CE988A341DD5534400742423 /* Resources */,
 				5C4D4FF7694FE2B75D457075 /* [CP] Embed Pods Frameworks */,
-				1F873536BB1623536B2AA07C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1110,43 +1185,47 @@
 				TargetAttributes = {
 					5503A8211DEEE96C003A50AF = {
 						DevelopmentTeam = SXWV5Z47NK;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					554528051E25FA6100DD2F52 = {
 						DevelopmentTeam = SXWV5Z47NK;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
+					};
+					5570EAA92519EB4E0031E44C = {
+						DevelopmentTeam = SXWV5Z47NK;
+						ProvisioningStyle = Automatic;
 					};
 					55BD735C1E0FF4DF003E0517 = {
 						DevelopmentTeam = SXWV5Z47NK;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					55C3EEAB1DDD6B240004F538 = {
 						DevelopmentTeam = SXWV5Z47NK;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					55C3EEE31DE29F220004F538 = {
 						DevelopmentTeam = SXWV5Z47NK;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					55E1EC3C1DFCFBAA005AEE73 = {
 						DevelopmentTeam = SXWV5Z47NK;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					55F8AEE11DE55944002F5DFC = {
 						DevelopmentTeam = SXWV5Z47NK;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					55F8AF121DE7FD3F002F5DFC = {
 						DevelopmentTeam = SXWV5Z47NK;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					55F98A3B1E1D28BD00B70D94 = {
 						DevelopmentTeam = SXWV5Z47NK;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					CE29B5881DC036AE0081CD37 = {
 						DevelopmentTeam = SXWV5Z47NK;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -1155,7 +1234,7 @@
 					};
 					CE988A1F1DD5534400742423 = {
 						DevelopmentTeam = SXWV5Z47NK;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -1164,6 +1243,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1183,6 +1263,7 @@
 				55BD735C1E0FF4DF003E0517 /* PhoneMinVideo */,
 				55F98A3B1E1D28BD00B70D94 /* PhoneMin */,
 				554528051E25FA6100DD2F52 /* ClickToCall */,
+				5570EAA92519EB4E0031E44C /* GPUImageDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -1192,7 +1273,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B8E55142036F8EF00C9E0B7 /* Info.plist in Resources */,
 				5503A83B1DEEE96C003A50AF /* LaunchScreen.storyboard in Resources */,
 				5503A8391DEEE96C003A50AF /* Assets.xcassets in Resources */,
 				5503A83A1DEEE96C003A50AF /* Main.storyboard in Resources */,
@@ -1203,10 +1283,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5545282A1E25FB4900DD2F52 /* Info.plist in Resources */,
 				5545281E1E25FA6100DD2F52 /* LaunchScreen.storyboard in Resources */,
 				5545281F1E25FA6100DD2F52 /* Assets.xcassets in Resources */,
 				554528201E25FA6100DD2F52 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5570EABE2519EB4E0031E44C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5570EABF2519EB4E0031E44C /* LaunchScreen.storyboard in Resources */,
+				5570EAC02519EB4E0031E44C /* Assets.xcassets in Resources */,
+				5570EAC12519EB4E0031E44C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1214,7 +1303,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55BD73831E1242EF003E0517 /* Info.plist in Resources */,
 				55BD73751E0FF4DF003E0517 /* LaunchScreen.storyboard in Resources */,
 				55BD73771E0FF4DF003E0517 /* Assets.xcassets in Resources */,
 				55BD73791E0FF4DF003E0517 /* Main.storyboard in Resources */,
@@ -1225,7 +1313,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55C3EEE11DDEC1AC0004F538 /* Info.plist in Resources */,
 				55C3EEC91DDD6B240004F538 /* LaunchScreen.storyboard in Resources */,
 				55C3EEC61DDD6B240004F538 /* Assets.xcassets in Resources */,
 				55C3EEC81DDD6B240004F538 /* Main.storyboard in Resources */,
@@ -1236,7 +1323,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B8E55122036F8B200C9E0B7 /* Info.plist in Resources */,
 				55C3EEFC1DE29F220004F538 /* LaunchScreen.storyboard in Resources */,
 				55C3EEFA1DE29F220004F538 /* Assets.xcassets in Resources */,
 				55C3EEFB1DE29F220004F538 /* Main.storyboard in Resources */,
@@ -1247,7 +1333,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B8E55162036F92100C9E0B7 /* Info.plist in Resources */,
 				55E1EC571DFCFBAA005AEE73 /* LaunchScreen.storyboard in Resources */,
 				55E1EC551DFCFBAA005AEE73 /* Assets.xcassets in Resources */,
 				55E1EC561DFCFBAA005AEE73 /* Main.storyboard in Resources */,
@@ -1258,7 +1343,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55F8AEFC1DE55944002F5DFC /* Info.plist in Resources */,
 				55F8AEFB1DE55944002F5DFC /* LaunchScreen.storyboard in Resources */,
 				55F8AEFD1DE55944002F5DFC /* Assets.xcassets in Resources */,
 				55F8AEFF1DE55944002F5DFC /* Main.storyboard in Resources */,
@@ -1269,7 +1353,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B8E55172036F94900C9E0B7 /* Info.plist in Resources */,
 				55F8AF2C1DE7FD3F002F5DFC /* LaunchScreen.storyboard in Resources */,
 				55F8AF2A1DE7FD3F002F5DFC /* Assets.xcassets in Resources */,
 				55F8AF2B1DE7FD3F002F5DFC /* Main.storyboard in Resources */,
@@ -1280,7 +1363,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55F98A601E1D28EB00B70D94 /* Info.plist in Resources */,
 				55F98A541E1D28BD00B70D94 /* LaunchScreen.storyboard in Resources */,
 				55F98A551E1D28BD00B70D94 /* Assets.xcassets in Resources */,
 				55F98A561E1D28BD00B70D94 /* Main.storyboard in Resources */,
@@ -1291,7 +1373,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55C3EEE21DDEC1CF0004F538 /* Info.plist in Resources */,
 				CE29B5A31DC036AE0081CD37 /* LaunchScreen.storyboard in Resources */,
 				CE29B5A41DC036AE0081CD37 /* Assets.xcassets in Resources */,
 				CE29B5A51DC036AE0081CD37 /* Main.storyboard in Resources */,
@@ -1302,7 +1383,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B8E55112036F88500C9E0B7 /* Info.plist in Resources */,
 				CE988A351DD5534400742423 /* LaunchScreen.storyboard in Resources */,
 				CE988A361DD5534400742423 /* Assets.xcassets in Resources */,
 				CE988A371DD5534400742423 /* Main.storyboard in Resources */,
@@ -1312,54 +1392,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1F873536BB1623536B2AA07C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MediaDevices/Pods-MediaDevices-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2DB236D19223181E8CFAD1FC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwoWayStreaming/Pods-TwoWayStreaming-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2EF5402938E13FA3BB9BB8E8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TwoWayStreaming/Pods-TwoWayStreaming-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-TwoWayStreaming/Pods-TwoWayStreaming-frameworks.sh",
+				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
 				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwoWayStreaming/Pods-TwoWayStreaming-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TwoWayStreaming/Pods-TwoWayStreaming-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5503A8221DEEE96C003A50AF /* [CP] Check Pods Manifest.lock */ = {
@@ -1386,33 +1438,20 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Conference/Pods-Conference-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Conference/Pods-Conference-frameworks.sh",
+				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
 				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Conference/Pods-Conference-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5503A83D1DEEE96C003A50AF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Conference/Pods-Conference-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Conference/Pods-Conference-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		554528061E25FA6100DD2F52 /* [CP] Check Pods Manifest.lock */ = {
@@ -1439,33 +1478,62 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ClickToCall/Pods-ClickToCall-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ClickToCall/Pods-ClickToCall-frameworks.sh",
+				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
 				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClickToCall/Pods-ClickToCall-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ClickToCall/Pods-ClickToCall-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		554528221E25FA6100DD2F52 /* [CP] Copy Pods Resources */ = {
+		5570EAAA2519EB4E0031E44C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GPUImageDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClickToCall/Pods-ClickToCall-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5570EAC22519EB4E0031E44C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GPUImageDemo/Pods-GPUImageDemo-frameworks.sh",
+				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GPUImageDemo/Pods-GPUImageDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		55BD735D1E0FF4DF003E0517 /* [CP] Check Pods Manifest.lock */ = {
@@ -1492,33 +1560,20 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PhoneMinVideo/Pods-PhoneMinVideo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-PhoneMinVideo/Pods-PhoneMinVideo-frameworks.sh",
+				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
 				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhoneMinVideo/Pods-PhoneMinVideo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		55BD737B1E0FF4DF003E0517 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhoneMinVideo/Pods-PhoneMinVideo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhoneMinVideo/Pods-PhoneMinVideo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		55C3EEAC1DDD6B240004F538 /* [CP] Check Pods Manifest.lock */ = {
@@ -1545,33 +1600,20 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Player/Pods-Player-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Player/Pods-Player-frameworks.sh",
+				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
 				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Player/Pods-Player-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		55C3EECB1DDD6B240004F538 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Player/Pods-Player-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Player/Pods-Player-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		55C3EEE41DE29F220004F538 /* [CP] Check Pods Manifest.lock */ = {
@@ -1598,33 +1640,20 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TwoPlayers/Pods-TwoPlayers-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-TwoPlayers/Pods-TwoPlayers-frameworks.sh",
+				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
 				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwoPlayers/Pods-TwoPlayers-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		55C3EEFE1DE29F220004F538 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwoPlayers/Pods-TwoPlayers-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TwoPlayers/Pods-TwoPlayers-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		55E1EC3D1DFCFBAA005AEE73 /* [CP] Check Pods Manifest.lock */ = {
@@ -1651,33 +1680,20 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-VideoChat/Pods-VideoChat-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-VideoChat/Pods-VideoChat-frameworks.sh",
+				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
 				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoChat/Pods-VideoChat-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		55E1EC591DFCFBAA005AEE73 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoChat/Pods-VideoChat-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VideoChat/Pods-VideoChat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		55F8AEE21DE55944002F5DFC /* [CP] Check Pods Manifest.lock */ = {
@@ -1704,33 +1720,20 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Streamer/Pods-Streamer-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Streamer/Pods-Streamer-frameworks.sh",
+				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
 				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Streamer/Pods-Streamer-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		55F8AF011DE55944002F5DFC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Streamer/Pods-Streamer-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Streamer/Pods-Streamer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		55F8AF131DE7FD3F002F5DFC /* [CP] Check Pods Manifest.lock */ = {
@@ -1757,33 +1760,20 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-StreamRecording/Pods-StreamRecording-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-StreamRecording/Pods-StreamRecording-frameworks.sh",
+				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
 				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StreamRecording/Pods-StreamRecording-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		55F8AF2E1DE7FD3F002F5DFC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StreamRecording/Pods-StreamRecording-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StreamRecording/Pods-StreamRecording-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		55F98A3C1E1D28BD00B70D94 /* [CP] Check Pods Manifest.lock */ = {
@@ -1810,33 +1800,20 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PhoneMin/Pods-PhoneMin-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-PhoneMin/Pods-PhoneMin-frameworks.sh",
+				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
 				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhoneMin/Pods-PhoneMin-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		55F98A581E1D28BD00B70D94 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhoneMin/Pods-PhoneMin-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhoneMin/Pods-PhoneMin-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5C4D4FF7694FE2B75D457075 /* [CP] Embed Pods Frameworks */ = {
@@ -1845,18 +1822,20 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MediaDevices/Pods-MediaDevices-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-MediaDevices/Pods-MediaDevices-frameworks.sh",
+				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
 				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MediaDevices/Pods-MediaDevices-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MediaDevices/Pods-MediaDevices-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		844393695E4BE0D09F545A4B /* [CP] Check Pods Manifest.lock */ = {
@@ -1919,6 +1898,19 @@
 				5545280A1E25FA6100DD2F52 /* WCSViews.m in Sources */,
 				5545280B1E25FA6100DD2F52 /* WCSUtil.m in Sources */,
 				5545280C1E25FA6100DD2F52 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5570EAAB2519EB4E0031E44C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55F9BB35251DAA5500F39D69 /* GPUImageVideoCapturer.m in Sources */,
+				5570EB732519EF530031E44C /* AppDelegate.m in Sources */,
+				5570EB832519EFF30031E44C /* GPUImageBeautifyFilter.m in Sources */,
+				5570EB742519EF530031E44C /* ViewController.m in Sources */,
+				5570EAAE2519EB4E0031E44C /* WCSUtil.m in Sources */,
+				5570EAAF2519EB4E0031E44C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2007,10 +1999,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55FCD3CE252B0437008C54E9 /* main.m in Sources */,
 				555260931DE45CAD00AED0F1 /* WCSUtil.m in Sources */,
 				CE29B5B51DC038BF0081CD37 /* ViewController.m in Sources */,
 				CE29B5B61DC038BF0081CD37 /* AppDelegate.m in Sources */,
-				CE29B5921DC036AE0081CD37 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2085,6 +2077,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.Conference;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -2107,6 +2100,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.Conference;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -2151,6 +2145,55 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.ClickToCall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		5570EAC42519EB4E0031E44C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB36930046A19DB5A3967C15 /* Pods-GPUImageDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SXWV5Z47NK;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/GPUImageDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.GPUImageDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		5570EAC52519EB4E0031E44C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA63B6F28BC74A6479BB3E44 /* Pods-GPUImageDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SXWV5Z47NK;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/GPUImageDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.GPUImageDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -2195,6 +2238,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.PhoneMinVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -2216,6 +2260,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.Player;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -2237,6 +2282,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.Player;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -2259,6 +2305,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.TwoPlayers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -2281,6 +2328,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.TwoPlayers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -2303,6 +2351,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.VideoChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -2325,6 +2374,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.VideoChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -2369,6 +2419,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.Streamer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -2390,6 +2441,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.StreamRecording;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -2411,6 +2463,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.StreamRecording;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -2455,6 +2508,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.PhoneMin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -2496,7 +2550,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -2537,7 +2591,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
@@ -2552,7 +2606,8 @@
 			baseConfigurationReference = E09018DB4496D32FF344EAE3 /* Pods-TwoWayStreaming.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = TwoWayStreamingIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2574,7 +2629,8 @@
 			baseConfigurationReference = DCB73F0D95AC5C28060A24E5 /* Pods-TwoWayStreaming.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = TwoWayStreamingIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2586,6 +2642,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.TwoWayStreaming;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -2630,6 +2687,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.MediaDevices;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -2650,6 +2708,15 @@
 			buildConfigurations = (
 				554528241E25FA6100DD2F52 /* Debug */,
 				554528251E25FA6100DD2F52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5570EAC32519EB4E0031E44C /* Build configuration list for PBXNativeTarget "GPUImageDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5570EAC42519EB4E0031E44C /* Debug */,
+				5570EAC52519EB4E0031E44C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

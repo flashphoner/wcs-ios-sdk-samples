@@ -2,20 +2,25 @@
 //  ViewController.m
 //  WCSApiExample
 //
-//  Created by flashphoner on 24/11/2015.
+//  Created by falshphonr on 24/11/2015.
 //  Copyright © 2015 flashphoner. All rights reserved.
 //
 
 #import "WCSUtil.h"
 #import "ViewController.h"
+#import "GPUImageVideoCapturer.h"
+#import "GPUImageBeautifyFilter.h"
 #import <AVFoundation/AVFoundation.h>
 #import <FPWCSApi2/FPWCSApi2.h>
 
 @interface ViewController ()
-
+    @property (nonatomic, strong) GPUImageVideoCamera *videoCamera;
+    @property (nonatomic, strong) GPUImageVideoCapturer *videoCapturer;
+    @property (nonatomic, strong) GPUImageRawDataOutput *rawDataOutput;
 @end
 
 @implementation ViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -72,10 +77,25 @@
     FPWCSApi2Session *session = [FPWCSApi2 getSessions][0];
     FPWCSApi2StreamOptions *options = [[FPWCSApi2StreamOptions alloc] init];
     options.name = _localStreamName.text;
-    options.display = _localDisplay;
-    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ) {
-        options.constraints = [[FPWCSApi2MediaConstraints alloc] initWithAudio:YES videoWidth:640 videoHeight:480 videoFps:15];
+    
+    if (!self.videoCamera) {
+        self.videoCamera = [[GPUImageVideoCamera alloc] initWithSessionPreset:AVCaptureSessionPreset640x480 cameraPosition:AVCaptureDevicePositionFront];
+        self.videoCamera.outputImageOrientation = UIInterfaceOrientationPortrait;
+        self.videoCamera.horizontallyMirrorFrontFacingCamera = YES;
+    
+        self.rawDataOutput = [[GPUImageRawDataOutput alloc] initWithImageSize:CGSizeMake(480, 640) resultsInBGRAFormat:YES];
+        self.videoCapturer = [[GPUImageVideoCapturer alloc] init];
+
+        [self.rawDataOutput setNewFrameAvailableBlock:^{
+            [_videoCapturer processNewFrame:_rawDataOutput];
+        }];
+        [self.videoCamera addTarget:_rawDataOutput];
+        [self.videoCamera addTarget:_localDisplay];
     }
+    
+    options.display = _localNativeDisplay;
+    options.constraints = [[FPWCSApi2MediaConstraints alloc] initWithAudio:YES videoCapturer:self.videoCapturer];
+
     NSError *error;
     FPWCSApi2Stream *stream = [session createStream:options error:&error];
     if (!stream) {
@@ -83,14 +103,14 @@
                                      alertControllerWithTitle:@"Failed to publish"
                                      message:error.localizedDescription
                                      preferredStyle:UIAlertControllerStyleAlert];
-        
+
         UIAlertAction* okButton = [UIAlertAction
                                    actionWithTitle:@"Ok"
                                    style:UIAlertActionStyleDefault
                                    handler:^(UIAlertAction * action) {
                                        [self onUnpublished];
                                    }];
-        
+
         [alert addAction:okButton];
         [self presentViewController:alert animated:YES completion:nil];
         return nil;
@@ -104,7 +124,7 @@
         [self changeStreamStatus:rStream];
         [self onUnpublished];
     }];
-    
+
     [stream on:kFPWCSStreamStatusFailed callback:^(FPWCSApi2Stream *rStream){
         [self changeStreamStatus:rStream];
         [self onUnpublished];
@@ -114,17 +134,20 @@
                                      alertControllerWithTitle:@"Failed to publish"
                                      message:error.localizedDescription
                                      preferredStyle:UIAlertControllerStyleAlert];
-        
+
         UIAlertAction* okButton = [UIAlertAction
                                     actionWithTitle:@"Ok"
                                     style:UIAlertActionStyleDefault
                                     handler:^(UIAlertAction * action) {
                                         [self onUnpublished];
                                     }];
-        
+
         [alert addAction:okButton];
         [self presentViewController:alert animated:YES completion:nil];
     }
+    
+    [self.videoCamera startCameraCapture];
+    
     return stream;
 }
 
@@ -208,10 +231,13 @@
 - (void)onPublishing:(FPWCSApi2Stream *)stream {
     [_publishButton setTitle:@"STOP" forState:UIControlStateNormal];
     [self changeViewState:_publishButton enabled:YES];
-    [self changeViewState:_switchCameraButton enabled:YES];
+    [self changeViewState:_beautyButton enabled:YES];
+
 }
 
 - (void)onUnpublished {
+    [self.videoCamera stopCameraCapture];
+    
     [_publishButton setTitle:@"PUBLISH" forState:UIControlStateNormal];
     if ([FPWCSApi2 getSessions].count && [[FPWCSApi2 getSessions][0] getStatus] == kFPWCSSessionStatusEstablished) {
         [self changeViewState:_publishButton enabled:YES];
@@ -220,9 +246,9 @@
         [self changeViewState:_publishButton enabled:NO];
         [self changeViewState:_localStreamName enabled:NO];
     }
-    [self changeViewState:_switchCameraButton enabled:NO];
-    [FPWCSApi2 releaseLocalMedia:_localDisplay];
-    [_localDisplay renderFrame:nil];
+    [self changeViewState:_beautyButton enabled:NO];
+    [FPWCSApi2 releaseLocalMedia:_localNativeDisplay];
+    [_localNativeDisplay renderFrame:nil];
 }
 
 - (void)onPlaying:(FPWCSApi2Stream *)stream {
@@ -295,18 +321,22 @@
     }
 }
 
-- (void)switchCameraButton:(UIButton *)button {
-    if ([FPWCSApi2 getSessions].count) {
-        FPWCSApi2Session *session = [FPWCSApi2 getSessions][0];
-        NSArray *streams = [session getStreams];
-        for (FPWCSApi2Stream *stream in streams ) {
-            if ([stream isPublished]) {
-                NSLog(@"Found published stream, switching camera");
-                [stream switchCamera];
-            }
-        }
-    } else {
-        NSLog(@"No active sessions found");
+- (void)beautify:(UIButton *)button {
+    if (self.beautifyEnabled) {
+        self.beautifyEnabled = NO;
+        [_beautyButton setTitle:@"Beautify Enable" forState:UIControlStateNormal];
+        [self.videoCamera removeAllTargets];
+        [self.videoCamera addTarget:_rawDataOutput];
+        [self.videoCamera addTarget:_localDisplay];
+    }
+    else {
+        self.beautifyEnabled = YES;
+        [_beautyButton setTitle:@"Beautify Disable" forState:UIControlStateNormal];
+        [self.videoCamera removeAllTargets];
+        GPUImageBeautifyFilter *beautifyFilter = [[GPUImageBeautifyFilter alloc] init];
+        [self.videoCamera addTarget:beautifyFilter];
+        [beautifyFilter addTarget:_localDisplay];
+        [beautifyFilter addTarget:_rawDataOutput];
     }
 }
 
@@ -438,16 +468,20 @@
     _videoContainer = [[UIView alloc] init];
     _videoContainer.translatesAutoresizingMaskIntoConstraints = NO;
     
+    _localDisplay = [[GPUImageView alloc] initWithFrame:self.view.frame];
+    _localDisplay.translatesAutoresizingMaskIntoConstraints = NO;
+    _localDisplay.backgroundColor = [UIColor blackColor];
+    
     #ifdef RTC_SUPPORTS_METAL
         RTCMTLVideoView *localView = [[RTCMTLVideoView alloc] init];
         localView.delegate = self;
-        _localDisplay = localView;
+    _localNativeDisplay = localView;
     #else
         RTCEAGLVideoView *localView = [[RTCEAGLVideoView alloc] init];
         localView.delegate = self;
-        _localDisplay = localView;
+        _localNativeDisplay = localView;
     #endif
-    _localDisplay.translatesAutoresizingMaskIntoConstraints = NO;
+    _localNativeDisplay.translatesAutoresizingMaskIntoConstraints = NO;
     
     #ifdef RTC_SUPPORTS_METAL
         RTCMTLVideoView *remoteView = [[RTCMTLVideoView alloc] init];
@@ -470,8 +504,8 @@
     _localStreamStatus = [WCSViewUtil createLabelView];
     _publishButton = [WCSViewUtil createButton:@"PUBLISH"];
     [_publishButton addTarget:self action:@selector(publishButton:) forControlEvents:UIControlEventTouchUpInside];
-    _switchCameraButton = [WCSViewUtil createButton:@"Switch camera"];
-    [_switchCameraButton addTarget:self action:@selector(switchCameraButton:) forControlEvents:UIControlEventTouchUpInside];
+    _beautyButton = [WCSViewUtil createButton:@"Beautify Enable"];
+    [_beautyButton addTarget:self action:@selector(beautify:) forControlEvents:UIControlEventTouchUpInside];
     
     _playStreamLabel = [WCSViewUtil createInfoLabel:@"Play Stream"];
     _remoteStreamName = [WCSViewUtil createTextField:self];
@@ -490,7 +524,7 @@
     [self.contentView addSubview:_localStreamName];
     [self.contentView addSubview:_localStreamStatus];
     [self.contentView addSubview:_publishButton];
-    [self.contentView addSubview:_switchCameraButton];
+    [self.contentView addSubview:_beautyButton];
     
     [self.contentView addSubview:_playStreamLabel];
     [self.contentView addSubview:_remoteStreamName];
@@ -517,7 +551,7 @@
                             @"localStreamName": _localStreamName,
                             @"localStreamStatus": _localStreamStatus,
                             @"publishButton": _publishButton,
-                            @"switchCameraButton": _switchCameraButton,
+                            @"beautyButton": _beautyButton,
                             @"playStreamLabel": _playStreamLabel,
                             @"remoteStreamName": _remoteStreamName,
                             @"remoteStreamStatus": _remoteStreamStatus,
@@ -572,7 +606,7 @@
     setConstraint(_remoteStreamStatus, @"V:[remoteStreamStatus(statusHeight)]", 0);
     setConstraint(_connectButton, @"V:[connectButton(buttonHeight)]", 0);
     setConstraint(_publishButton, @"V:[publishButton(buttonHeight)]", 0);
-    setConstraint(_switchCameraButton, @"V:[switchCameraButton(buttonHeight)]", 0);
+    setConstraint(_beautyButton, @"V:[beautyButton(buttonHeight)]", 0);
     setConstraint(_playButton, @"V:[playButton(buttonHeight)]", 0);
     setConstraint(_videoContainer, @"V:[videoContainer(videoHeight)]", 0);
     
@@ -587,7 +621,7 @@
     setConstraint(_contentView, @"H:|-hSpacing-[remoteStreamStatus]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[connectButton]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[publishButton]-hSpacing-|", 0);
-    setConstraint(_contentView, @"H:|-hSpacing-[switchCameraButton]-hSpacing-|", 0);
+    setConstraint(_contentView, @"H:|-hSpacing-[beautyButton]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[playButton]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[videoContainer]-hSpacing-|", 0);
     
@@ -596,7 +630,7 @@
     setConstraintWithItem(_videoContainer, _localDisplay, _videoContainer, NSLayoutAttributeWidth, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeWidth, 0.48, 0);
     
     //local display aspect ratio
-    NSLayoutConstraint *localARConstraint = setConstraintWithItem(_localDisplay, _localDisplay, _localDisplay, NSLayoutAttributeWidth, NSLayoutRelationEqual, NSLayoutAttributeHeight, 640.0/480.0, 0);
+    NSLayoutConstraint *localARConstraint = setConstraintWithItem(_localDisplay, _localDisplay, _localDisplay, NSLayoutAttributeWidth, NSLayoutRelationEqual, NSLayoutAttributeHeight, 480.0/640.0, 0);
     [_localDisplayConstraints addObject:localARConstraint];
     
     //remote display max width and height
@@ -604,14 +638,14 @@
     setConstraintWithItem(_videoContainer, _remoteDisplay, _videoContainer, NSLayoutAttributeWidth, NSLayoutRelationLessThanOrEqual, NSLayoutAttributeWidth, 0.48, 0);
     
     //remote display aspect ratio
-    NSLayoutConstraint *remoteARConstraint = setConstraintWithItem(_remoteDisplay, _remoteDisplay, _remoteDisplay, NSLayoutAttributeWidth, NSLayoutRelationEqual, NSLayoutAttributeHeight, 640.0/480.0, 0);
+    NSLayoutConstraint *remoteARConstraint = setConstraintWithItem(_remoteDisplay, _remoteDisplay, _remoteDisplay, NSLayoutAttributeWidth, NSLayoutRelationEqual, NSLayoutAttributeHeight, 480.0/640.0, 0);
     [_remoteDisplayConstraints addObject:remoteARConstraint];
     
     //position video views inside video container
     setConstraint(_videoContainer, @"H:|[localDisplay][remoteDisplay]|", NSLayoutFormatAlignAllTop);
     setConstraint(_videoContainer, @"V:|[localDisplay]", 0);
     
-    setConstraint(self.contentView, @"V:|-50-[connectUrl]-vSpacing-[connectionStatus]-vSpacing-[connectButton]-vSpacing-[publishStreamLabel]-vSpacing-[localStreamName]-vSpacing-[localStreamStatus]-vSpacing-[publishButton]-vSpacing-[switchCameraButton]-vSpacing-[playStreamLabel]-vSpacing-[remoteStreamName]-vSpacing-[remoteStreamStatus]-vSpacing-[playButton]-vSpacing-[videoContainer]-vSpacing-|", 0);
+    setConstraint(self.contentView, @"V:|-50-[connectUrl]-vSpacing-[connectionStatus]-vSpacing-[connectButton]-vSpacing-[publishStreamLabel]-vSpacing-[localStreamName]-vSpacing-[localStreamStatus]-vSpacing-[publishButton]-vSpacing-[beautyButton]-vSpacing-[playStreamLabel]-vSpacing-[remoteStreamName]-vSpacing-[remoteStreamStatus]-vSpacing-[playButton]-vSpacing-[videoContainer]-vSpacing-|", 0);
     
     //content view width
     setConstraintWithItem(self.view, _contentView, self.view, NSLayoutAttributeWidth, NSLayoutRelationEqual, NSLayoutAttributeWidth, 1.0, 0);
@@ -631,25 +665,12 @@
 #pragma mark - RTCVideoViewDelegate
 
 - (void)videoView:(id<RTCVideoRenderer>)videoView didChangeVideoSize:(CGSize)size {
-    if (videoView == _localDisplay) {
-        NSLog(@"Size of local video %fx%f", size.width, size.height);
-    } else {
+    if (videoView == _remoteDisplay) {
         NSLog(@"Size of remote video %fx%f", size.width, size.height);
-    }
-    if (videoView == _localDisplay) {
-        [_localDisplay removeConstraints:_localDisplayConstraints];
-        [_localDisplayConstraints removeAllObjects];
-        NSLayoutConstraint *constraint =[NSLayoutConstraint
-                                         constraintWithItem:_localDisplay
-                                         attribute:NSLayoutAttributeWidth
-                                         relatedBy:NSLayoutRelationEqual
-                                         toItem:_localDisplay
-                                         attribute:NSLayoutAttributeHeight
-                                         multiplier:size.width/size.height
-                                         constant:0.0f];
-        [_localDisplayConstraints addObject:constraint];
-        [_localDisplay addConstraints:_localDisplayConstraints];
     } else {
+        NSLog(@"Size of local video %fx%f", size.width, size.height);
+    }
+    if (videoView == _remoteDisplay) {
         [_remoteDisplay removeConstraints:_remoteDisplayConstraints];
         [_remoteDisplayConstraints removeAllObjects];
         NSLayoutConstraint *constraint =[NSLayoutConstraint
@@ -662,6 +683,19 @@
                                          constant:0.0f];
         [_remoteDisplayConstraints addObject:constraint];
         [_remoteDisplay addConstraints:_remoteDisplayConstraints];
+    } else {
+        [_localDisplay removeConstraints:_localDisplayConstraints];
+        [_localDisplayConstraints removeAllObjects];
+        NSLayoutConstraint *constraint =[NSLayoutConstraint
+                                         constraintWithItem:_localDisplay
+                                         attribute:NSLayoutAttributeWidth
+                                         relatedBy:NSLayoutRelationEqual
+                                         toItem:_localDisplay
+                                         attribute:NSLayoutAttributeHeight
+                                         multiplier:size.width/size.height
+                                         constant:0.0f];
+        [_localDisplayConstraints addObject:constraint];
+        [_localDisplay addConstraints:_localDisplayConstraints];
     }
 }
 

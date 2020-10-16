@@ -49,6 +49,8 @@ cat << EOF > Info_ipa.plist
                <string>$2</string>
                <key>com.flashphoner.ios.ClickToCall</key>
                <string>$2</string>
+               <key>com.flashphoner.ios.GPUImageDemo</key>
+               <string>$2</string>
         </dict>
 </dict>
 </plist>
@@ -93,6 +95,9 @@ xcodebuild -exportArchive -exportOptionsPlist Info_ipa.plist -archivePath out-bu
 
 xcodebuild CODE_SIGN_STYLE=Automatic -UseModernBuildSystem=NO -workspace 'WCSExample.xcworkspace' -scheme "ClickToCall" -configuration="Release" clean archive OBJROOT=$(PWD)/out-build/ClickToCall -archivePath out-build/ClickToCall
 xcodebuild -exportArchive -exportOptionsPlist Info_ipa.plist -archivePath out-build/ClickToCall.xcarchive -exportPath out-build
+
+xcodebuild CODE_SIGN_STYLE=Automatic -UseModernBuildSystem=NO -workspace 'WCSExample.xcworkspace' -scheme "GPUImageDemo" -configuration="Release" clean archive OBJROOT=$(PWD)/out-build/GPUImageDemo -archivePath out-build/GPUImageDemo
+xcodebuild -exportArchive -exportOptionsPlist Info_ipa.plist -archivePath out-build/GPUImageDemo.xcarchive -exportPath out-build
 
 # Remove plist
 rm -rf Info_ipa.plist
