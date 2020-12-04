@@ -10,6 +10,8 @@
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import <FPWCSApi2/FPWCSApi2.h>
+#import <Metal/Metal.h>
+
 
 @interface ViewController ()
 
@@ -438,26 +440,36 @@
     _videoContainer = [[UIView alloc] init];
     _videoContainer.translatesAutoresizingMaskIntoConstraints = NO;
     
-    #ifdef RTC_SUPPORTS_METAL
+    id<MTLDevice> localDevice;
+#ifdef __aarch64__
+    localDevice = MTLCreateSystemDefaultDevice();
+    if (localDevice) {
         RTCMTLVideoView *localView = [[RTCMTLVideoView alloc] init];
         localView.delegate = self;
         _localDisplay = localView;
-    #else
+    }
+#endif
+    if (!localDevice) {
         RTCEAGLVideoView *localView = [[RTCEAGLVideoView alloc] init];
         localView.delegate = self;
         _localDisplay = localView;
-    #endif
+    }
     _localDisplay.translatesAutoresizingMaskIntoConstraints = NO;
     
-    #ifdef RTC_SUPPORTS_METAL
+    id<MTLDevice> remoteDevice;
+#ifdef __aarch64__
+    remoteDevice = MTLCreateSystemDefaultDevice();
+    if (remoteDevice) {
         RTCMTLVideoView *remoteView = [[RTCMTLVideoView alloc] init];
         remoteView.delegate = self;
         _remoteDisplay = remoteView;
-    #else
+    }
+#endif
+    if (!remoteDevice) {
         RTCEAGLVideoView *remoteView = [[RTCEAGLVideoView alloc] init];
         remoteView.delegate = self;
         _remoteDisplay = remoteView;
-    #endif
+    }
     _remoteDisplay.translatesAutoresizingMaskIntoConstraints = NO;
     
     _connectUrl = [WCSViewUtil createTextField:self];
