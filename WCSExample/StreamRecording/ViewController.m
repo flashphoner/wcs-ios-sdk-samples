@@ -171,9 +171,20 @@ NSString *recordName;
     [self changeViewState:button enabled:NO];
     if ([button.titleLabel.text isEqualToString:@"STOP"]) {
         if ([FPWCSApi2 getSessions].count) {
-            FPWCSApi2Session *session = [FPWCSApi2 getSessions][0];
-            NSLog(@"Disconnect session with server %@", [session getServerUrl]);
-            [session disconnect];
+            FPWCSApi2Stream *stream;
+            for (FPWCSApi2Stream *s in [[FPWCSApi2 getSessions][0] getStreams]) {
+                if ([[s getName] isEqualToString:streamName] && s.isPublished) {
+                    stream = s;
+                    break;
+                }
+            }
+            if (!stream) {
+                NSLog(@"Stop publishing, nothing to stop");
+                [self onUnpublished:nil];
+                return;
+            }
+            NSError *error;
+            [stream stop:&error];
         } else {
             NSLog(@"Nothing to disconnect");
             [self onDisconnected];
@@ -321,7 +332,7 @@ NSString *recordName;
     setConstraint(_status, @"V:[status(statusHeight)]", 0);
     setConstraint(_startButton, @"V:[startButton(buttonHeight)]", 0);
     setConstraint(_recordLink, @"V:[recordLink(linkHeight)]", 0);
-    //setConstraint(_playerViewController.view, @"V:[videoPlayer(videoHeight)]", 0);
+    setConstraint(_playerViewController.view, @"V:[videoPlayer(videoHeight)]", 0);
     
     //set width related to super view
     setConstraint(_contentView, @"H:|-hSpacing-[videoContainer]-hSpacing-|", 0);

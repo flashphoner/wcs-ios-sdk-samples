@@ -72,7 +72,16 @@
             [self changeConnectionStatus:[session getStatus]];
             [self onStopped];
         }];
-        [_session connect];
+        NSURL* nsURL = [NSURL URLWithString:_urlInput.text];
+        if (nsURL.user && nsURL.password) {
+            NSString* auth = [NSString stringWithFormat:@"%@:%@", nsURL.user, nsURL.password];
+            NSData *authData = [auth dataUsingEncoding:NSUTF8StringEncoding];
+            NSString *authBase64 = [NSString stringWithFormat:@"Basic %@", [authData base64EncodedStringWithOptions:kNilOptions]];
+            NSDictionary *headers = [[NSDictionary alloc] initWithObjectsAndKeys: authBase64, @"Authorization", nil];
+            [_session connectWithHeaders: headers];
+        } else {
+            [_session connect];
+        }
     } else {
         [self startStreaming];
     }
