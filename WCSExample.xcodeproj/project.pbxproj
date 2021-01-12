@@ -26,12 +26,59 @@
 		5503A8321DEEE96C003A50AF /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF21C0D938100EAEC55 /* CoreMedia.framework */; };
 		5503A8331DEEE96C003A50AF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */; };
 		5503A8341DEEE96C003A50AF /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */; };
-		5503A8351DEEE96C003A50AF /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
 		5503A8391DEEE96C003A50AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2310681C0D718100918455 /* Assets.xcassets */; };
 		5503A83A1DEEE96C003A50AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB6A1C75ABA4002FDF16 /* Main.storyboard */; };
 		5503A83B1DEEE96C003A50AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB681C75ABA4002FDF16 /* LaunchScreen.storyboard */; };
 		5503A8431DEEE9E6003A50AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503A81A1DEEE961003A50AF /* AppDelegate.m */; };
 		5503A8441DEEE9E6003A50AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503A81D1DEEE961003A50AF /* ViewController.m */; };
+		55079CD7259AE3CF001E2402 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
+		55079CD8259AE3CF001E2402 /* FPWCSApi2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55079D4E259AE9D2001E2402 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55079D4D259AE9D2001E2402 /* WebRTC.framework */; };
+		55079D4F259AE9D2001E2402 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55079D4D259AE9D2001E2402 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55079DBD259AF86F001E2402 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
+		55079DBE259AF86F001E2402 /* FPWCSApi2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55079DC0259AF878001E2402 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55079D4D259AE9D2001E2402 /* WebRTC.framework */; };
+		55079DC1259AF878001E2402 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55079D4D259AE9D2001E2402 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55079EFA259AFD6E001E2402 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
+		55079EFB259AFD6E001E2402 /* FPWCSApi2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55079EFD259AFD77001E2402 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55079D4D259AE9D2001E2402 /* WebRTC.framework */; };
+		55079EFE259AFD78001E2402 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55079D4D259AE9D2001E2402 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55079EFF259AFD85001E2402 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55079D4D259AE9D2001E2402 /* WebRTC.framework */; };
+		55079F00259AFD85001E2402 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55079D4D259AE9D2001E2402 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55079F02259AFD8E001E2402 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55079D4D259AE9D2001E2402 /* WebRTC.framework */; };
+		55079F03259AFD8E001E2402 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55079D4D259AE9D2001E2402 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55079F0C259AFD97001E2402 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55079D4D259AE9D2001E2402 /* WebRTC.framework */; };
+		55079F0D259AFD97001E2402 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55079D4D259AE9D2001E2402 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55079F0F259AFD9B001E2402 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
+		55079F10259AFD9B001E2402 /* FPWCSApi2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55079F11259AFD9E001E2402 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
+		55079F12259AFD9E001E2402 /* FPWCSApi2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55079F19259AFDA2001E2402 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
+		55079F1A259AFDA2001E2402 /* FPWCSApi2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55079F1B259AFDB1001E2402 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55079D4D259AE9D2001E2402 /* WebRTC.framework */; };
+		55079F1C259AFDB1001E2402 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55079D4D259AE9D2001E2402 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55079F1E259AFDB9001E2402 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
+		55079F1F259AFDB9001E2402 /* FPWCSApi2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55079F20259AFDC2001E2402 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55079D4D259AE9D2001E2402 /* WebRTC.framework */; };
+		55079F21259AFDC2001E2402 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55079D4D259AE9D2001E2402 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55079F23259AFDCD001E2402 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
+		55079F24259AFDCD001E2402 /* FPWCSApi2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55079F25259AFDDA001E2402 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55079D4D259AE9D2001E2402 /* WebRTC.framework */; };
+		55079F26259AFDDA001E2402 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55079D4D259AE9D2001E2402 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55079F28259AFDDF001E2402 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
+		55079F29259AFDDF001E2402 /* FPWCSApi2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55079F2A259AFDEC001E2402 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55079D4D259AE9D2001E2402 /* WebRTC.framework */; };
+		55079F2B259AFDEC001E2402 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55079D4D259AE9D2001E2402 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55079F2D259AFDF0001E2402 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
+		55079F2E259AFDF0001E2402 /* FPWCSApi2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55079F2F259AFDF9001E2402 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55079D4D259AE9D2001E2402 /* WebRTC.framework */; };
+		55079F30259AFDF9001E2402 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55079D4D259AE9D2001E2402 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55079F32259AFE04001E2402 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
+		55079F33259AFE04001E2402 /* FPWCSApi2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55079F34259AFE0F001E2402 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55079D4D259AE9D2001E2402 /* WebRTC.framework */; };
+		55079F35259AFE0F001E2402 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55079D4D259AE9D2001E2402 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55079F37259AFE14001E2402 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
+		55079F38259AFE14001E2402 /* FPWCSApi2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5517B1871E1D2CE400B39B15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F98A341E1D286100B70D94 /* AppDelegate.m */; };
 		5545280A1E25FA6100DD2F52 /* WCSViews.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534441DDADA3800D7DF80 /* WCSViews.m */; };
 		5545280B1E25FA6100DD2F52 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
@@ -47,7 +94,6 @@
 		554528171E25FA6100DD2F52 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF21C0D938100EAEC55 /* CoreMedia.framework */; };
 		554528181E25FA6100DD2F52 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */; };
 		554528191E25FA6100DD2F52 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */; };
-		5545281A1E25FA6100DD2F52 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
 		5545281E1E25FA6100DD2F52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE23106A1C0D718100918455 /* LaunchScreen.storyboard */; };
 		5545281F1E25FA6100DD2F52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2310681C0D718100918455 /* Assets.xcassets */; };
 		554528201E25FA6100DD2F52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2310651C0D718100918455 /* Main.storyboard */; };
@@ -69,7 +115,6 @@
 		5570EAB92519EB4E0031E44C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF21C0D938100EAEC55 /* CoreMedia.framework */; };
 		5570EABA2519EB4E0031E44C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */; };
 		5570EABB2519EB4E0031E44C /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */; };
-		5570EABC2519EB4E0031E44C /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
 		5570EABF2519EB4E0031E44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB681C75ABA4002FDF16 /* LaunchScreen.storyboard */; };
 		5570EAC02519EB4E0031E44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2310681C0D718100918455 /* Assets.xcassets */; };
 		5570EAC12519EB4E0031E44C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB6A1C75ABA4002FDF16 /* Main.storyboard */; };
@@ -92,7 +137,6 @@
 		55BD736E1E0FF4DF003E0517 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF21C0D938100EAEC55 /* CoreMedia.framework */; };
 		55BD736F1E0FF4DF003E0517 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */; };
 		55BD73701E0FF4DF003E0517 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */; };
-		55BD73711E0FF4DF003E0517 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
 		55BD73751E0FF4DF003E0517 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE23106A1C0D718100918455 /* LaunchScreen.storyboard */; };
 		55BD73771E0FF4DF003E0517 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2310681C0D718100918455 /* Assets.xcassets */; };
 		55BD73791E0FF4DF003E0517 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2310651C0D718100918455 /* Main.storyboard */; };
@@ -110,7 +154,6 @@
 		55C3EEBF1DDD6B240004F538 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF21C0D938100EAEC55 /* CoreMedia.framework */; };
 		55C3EEC01DDD6B240004F538 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */; };
 		55C3EEC11DDD6B240004F538 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */; };
-		55C3EEC21DDD6B240004F538 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
 		55C3EEC61DDD6B240004F538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2310681C0D718100918455 /* Assets.xcassets */; };
 		55C3EEC81DDD6B240004F538 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB6A1C75ABA4002FDF16 /* Main.storyboard */; };
 		55C3EEC91DDD6B240004F538 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB681C75ABA4002FDF16 /* LaunchScreen.storyboard */; };
@@ -128,7 +171,6 @@
 		55C3EEF31DE29F220004F538 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF21C0D938100EAEC55 /* CoreMedia.framework */; };
 		55C3EEF41DE29F220004F538 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */; };
 		55C3EEF51DE29F220004F538 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */; };
-		55C3EEF61DE29F220004F538 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
 		55C3EEFA1DE29F220004F538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2310681C0D718100918455 /* Assets.xcassets */; };
 		55C3EEFB1DE29F220004F538 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB6A1C75ABA4002FDF16 /* Main.storyboard */; };
 		55C3EEFC1DE29F220004F538 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB681C75ABA4002FDF16 /* LaunchScreen.storyboard */; };
@@ -148,7 +190,6 @@
 		55E1EC4E1DFCFBAA005AEE73 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF21C0D938100EAEC55 /* CoreMedia.framework */; };
 		55E1EC4F1DFCFBAA005AEE73 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */; };
 		55E1EC501DFCFBAA005AEE73 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */; };
-		55E1EC511DFCFBAA005AEE73 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
 		55E1EC551DFCFBAA005AEE73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2310681C0D718100918455 /* Assets.xcassets */; };
 		55E1EC561DFCFBAA005AEE73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB6A1C75ABA4002FDF16 /* Main.storyboard */; };
 		55E1EC571DFCFBAA005AEE73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB681C75ABA4002FDF16 /* LaunchScreen.storyboard */; };
@@ -168,7 +209,6 @@
 		55F8AEF41DE55944002F5DFC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF21C0D938100EAEC55 /* CoreMedia.framework */; };
 		55F8AEF51DE55944002F5DFC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */; };
 		55F8AEF61DE55944002F5DFC /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */; };
-		55F8AEF81DE55944002F5DFC /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
 		55F8AEFB1DE55944002F5DFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE23106A1C0D718100918455 /* LaunchScreen.storyboard */; };
 		55F8AEFD1DE55944002F5DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2310681C0D718100918455 /* Assets.xcassets */; };
 		55F8AEFF1DE55944002F5DFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2310651C0D718100918455 /* Main.storyboard */; };
@@ -186,7 +226,6 @@
 		55F8AF231DE7FD3F002F5DFC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF21C0D938100EAEC55 /* CoreMedia.framework */; };
 		55F8AF241DE7FD3F002F5DFC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */; };
 		55F8AF251DE7FD3F002F5DFC /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */; };
-		55F8AF261DE7FD3F002F5DFC /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
 		55F8AF2A1DE7FD3F002F5DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2310681C0D718100918455 /* Assets.xcassets */; };
 		55F8AF2B1DE7FD3F002F5DFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB6A1C75ABA4002FDF16 /* Main.storyboard */; };
 		55F8AF2C1DE7FD3F002F5DFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB681C75ABA4002FDF16 /* LaunchScreen.storyboard */; };
@@ -206,7 +245,6 @@
 		55F98A4D1E1D28BD00B70D94 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF21C0D938100EAEC55 /* CoreMedia.framework */; };
 		55F98A4E1E1D28BD00B70D94 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */; };
 		55F98A4F1E1D28BD00B70D94 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */; };
-		55F98A501E1D28BD00B70D94 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
 		55F98A541E1D28BD00B70D94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE23106A1C0D718100918455 /* LaunchScreen.storyboard */; };
 		55F98A551E1D28BD00B70D94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2310681C0D718100918455 /* Assets.xcassets */; };
 		55F98A561E1D28BD00B70D94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2310651C0D718100918455 /* Main.storyboard */; };
@@ -219,7 +257,6 @@
 		96E97847B0DD3DD368A0655D /* Pods_ClickToCall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6092F5076645DB535DAF8F5F /* Pods_ClickToCall.framework */; };
 		AB70810F411954F98ECB0E4E /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		BF0C53CD5C35C2C303C8BBCD /* Pods_PhoneMinVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1B888B5E77A104987F94EC /* Pods_PhoneMinVideo.framework */; };
-		CE29B5951DC036AE0081CD37 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
 		CE29B5961DC036AE0081CD37 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
 		CE29B5981DC036AE0081CD37 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */; };
 		CE29B5991DC036AE0081CD37 /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EFE1C0D93C300EAEC55 /* libc.tbd */; };
@@ -252,7 +289,6 @@
 		CE988A2F1DD5534400742423 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF21C0D938100EAEC55 /* CoreMedia.framework */; };
 		CE988A301DD5534400742423 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */; };
 		CE988A311DD5534400742423 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */; };
-		CE988A331DD5534400742423 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
 		CE988A351DD5534400742423 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE23106A1C0D718100918455 /* LaunchScreen.storyboard */; };
 		CE988A361DD5534400742423 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2310681C0D718100918455 /* Assets.xcassets */; };
 		CE988A371DD5534400742423 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2310651C0D718100918455 /* Main.storyboard */; };
@@ -260,6 +296,153 @@
 		CE988A4B1DD554DD00742423 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE988A461DD554C900742423 /* AppDelegate.m */; };
 		F3A08259C38DCA0EEE53C091 /* Pods_Conference.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE75AB247F8E5C824B9E42F /* Pods_Conference.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55079CD9259AE3CF001E2402 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55079CD8259AE3CF001E2402 /* FPWCSApi2.framework in Embed Frameworks */,
+				55079D4F259AE9D2001E2402 /* WebRTC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55079DBF259AF86F001E2402 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55079DBE259AF86F001E2402 /* FPWCSApi2.framework in Embed Frameworks */,
+				55079DC1259AF878001E2402 /* WebRTC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55079EFC259AFD6E001E2402 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55079EFB259AFD6E001E2402 /* FPWCSApi2.framework in Embed Frameworks */,
+				55079EFE259AFD78001E2402 /* WebRTC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55079F01259AFD85001E2402 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55079F1A259AFDA2001E2402 /* FPWCSApi2.framework in Embed Frameworks */,
+				55079F00259AFD85001E2402 /* WebRTC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55079F04259AFD8E001E2402 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55079F12259AFD9E001E2402 /* FPWCSApi2.framework in Embed Frameworks */,
+				55079F03259AFD8E001E2402 /* WebRTC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55079F0E259AFD98001E2402 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55079F10259AFD9B001E2402 /* FPWCSApi2.framework in Embed Frameworks */,
+				55079F0D259AFD97001E2402 /* WebRTC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55079F1D259AFDB1001E2402 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55079F1F259AFDB9001E2402 /* FPWCSApi2.framework in Embed Frameworks */,
+				55079F1C259AFDB1001E2402 /* WebRTC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55079F22259AFDC3001E2402 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55079F24259AFDCD001E2402 /* FPWCSApi2.framework in Embed Frameworks */,
+				55079F21259AFDC2001E2402 /* WebRTC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55079F27259AFDDA001E2402 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55079F29259AFDDF001E2402 /* FPWCSApi2.framework in Embed Frameworks */,
+				55079F26259AFDDA001E2402 /* WebRTC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55079F2C259AFDEC001E2402 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55079F2E259AFDF0001E2402 /* FPWCSApi2.framework in Embed Frameworks */,
+				55079F2B259AFDEC001E2402 /* WebRTC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55079F31259AFDF9001E2402 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55079F33259AFE04001E2402 /* FPWCSApi2.framework in Embed Frameworks */,
+				55079F30259AFDF9001E2402 /* WebRTC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55079F36259AFE0F001E2402 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55079F38259AFE14001E2402 /* FPWCSApi2.framework in Embed Frameworks */,
+				55079F35259AFE0F001E2402 /* WebRTC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		02A58904727550EF62D7BF75 /* Pods_MediaDevices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaDevices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -276,6 +459,7 @@
 		5503A81C1DEEE961003A50AF /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Conference/ViewController.h; sourceTree = "<group>"; };
 		5503A81D1DEEE961003A50AF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Conference/ViewController.m; sourceTree = "<group>"; };
 		5503A8411DEEE96C003A50AF /* Conference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Conference.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55079D4D259AE9D2001E2402 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = FPWCSApi2.framework/Frameworks/WebRTC.framework; sourceTree = "<group>"; };
 		554527FD1E25F9C900DD2F52 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ClickToCall/AppDelegate.h; sourceTree = "<group>"; };
 		554527FE1E25F9C900DD2F52 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ClickToCall/AppDelegate.m; sourceTree = "<group>"; };
 		554527FF1E25F9C900DD2F52 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ClickToCall/Info.plist; sourceTree = "<group>"; };
@@ -407,9 +591,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55079F1E259AFDB9001E2402 /* FPWCSApi2.framework in Frameworks */,
 				5503A8291DEEE96C003A50AF /* libicucore.tbd in Frameworks */,
 				5503A82B1DEEE96C003A50AF /* libstdc++.tbd in Frameworks */,
 				5503A82C1DEEE96C003A50AF /* libc.tbd in Frameworks */,
+				55079F1B259AFDB1001E2402 /* WebRTC.framework in Frameworks */,
 				5503A82D1DEEE96C003A50AF /* libsqlite3.tbd in Frameworks */,
 				5503A82E1DEEE96C003A50AF /* Foundation.framework in Frameworks */,
 				5503A82F1DEEE96C003A50AF /* AVFoundation.framework in Frameworks */,
@@ -418,7 +604,6 @@
 				5503A8321DEEE96C003A50AF /* CoreMedia.framework in Frameworks */,
 				5503A8331DEEE96C003A50AF /* CoreGraphics.framework in Frameworks */,
 				5503A8341DEEE96C003A50AF /* VideoToolbox.framework in Frameworks */,
-				5503A8351DEEE96C003A50AF /* FPWCSApi2.framework in Frameworks */,
 				F3A08259C38DCA0EEE53C091 /* Pods_Conference.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,9 +612,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55079F32259AFE04001E2402 /* FPWCSApi2.framework in Frameworks */,
 				5545280E1E25FA6100DD2F52 /* libicucore.tbd in Frameworks */,
 				554528101E25FA6100DD2F52 /* libstdc++.tbd in Frameworks */,
 				554528111E25FA6100DD2F52 /* libc.tbd in Frameworks */,
+				55079F2F259AFDF9001E2402 /* WebRTC.framework in Frameworks */,
 				554528121E25FA6100DD2F52 /* libsqlite3.tbd in Frameworks */,
 				554528131E25FA6100DD2F52 /* Foundation.framework in Frameworks */,
 				554528141E25FA6100DD2F52 /* AVFoundation.framework in Frameworks */,
@@ -438,7 +625,6 @@
 				554528171E25FA6100DD2F52 /* CoreMedia.framework in Frameworks */,
 				554528181E25FA6100DD2F52 /* CoreGraphics.framework in Frameworks */,
 				554528191E25FA6100DD2F52 /* VideoToolbox.framework in Frameworks */,
-				5545281A1E25FA6100DD2F52 /* FPWCSApi2.framework in Frameworks */,
 				96E97847B0DD3DD368A0655D /* Pods_ClickToCall.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,9 +633,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55079F37259AFE14001E2402 /* FPWCSApi2.framework in Frameworks */,
 				5570EAB12519EB4E0031E44C /* libicucore.tbd in Frameworks */,
 				5570EAB22519EB4E0031E44C /* libstdc++.tbd in Frameworks */,
 				5570EAB32519EB4E0031E44C /* libc.tbd in Frameworks */,
+				55079F34259AFE0F001E2402 /* WebRTC.framework in Frameworks */,
 				5570EAB42519EB4E0031E44C /* libsqlite3.tbd in Frameworks */,
 				5570EAB52519EB4E0031E44C /* Foundation.framework in Frameworks */,
 				5570EAB62519EB4E0031E44C /* AVFoundation.framework in Frameworks */,
@@ -458,7 +646,6 @@
 				5570EAB92519EB4E0031E44C /* CoreMedia.framework in Frameworks */,
 				5570EABA2519EB4E0031E44C /* CoreGraphics.framework in Frameworks */,
 				5570EABB2519EB4E0031E44C /* VideoToolbox.framework in Frameworks */,
-				5570EABC2519EB4E0031E44C /* FPWCSApi2.framework in Frameworks */,
 				347EAE752A00A7D6410BD50A /* Pods_GPUImageDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,9 +654,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55079F28259AFDDF001E2402 /* FPWCSApi2.framework in Frameworks */,
 				55BD73651E0FF4DF003E0517 /* libicucore.tbd in Frameworks */,
 				55BD73671E0FF4DF003E0517 /* libstdc++.tbd in Frameworks */,
 				55BD73681E0FF4DF003E0517 /* libc.tbd in Frameworks */,
+				55079F25259AFDDA001E2402 /* WebRTC.framework in Frameworks */,
 				55BD73691E0FF4DF003E0517 /* libsqlite3.tbd in Frameworks */,
 				55BD736A1E0FF4DF003E0517 /* Foundation.framework in Frameworks */,
 				55BD736B1E0FF4DF003E0517 /* AVFoundation.framework in Frameworks */,
@@ -478,7 +667,6 @@
 				55BD736E1E0FF4DF003E0517 /* CoreMedia.framework in Frameworks */,
 				55BD736F1E0FF4DF003E0517 /* CoreGraphics.framework in Frameworks */,
 				55BD73701E0FF4DF003E0517 /* VideoToolbox.framework in Frameworks */,
-				55BD73711E0FF4DF003E0517 /* FPWCSApi2.framework in Frameworks */,
 				BF0C53CD5C35C2C303C8BBCD /* Pods_PhoneMinVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,6 +678,7 @@
 				55C3EEB61DDD6B240004F538 /* libicucore.tbd in Frameworks */,
 				55C3EEB81DDD6B240004F538 /* libstdc++.tbd in Frameworks */,
 				55C3EEB91DDD6B240004F538 /* libc.tbd in Frameworks */,
+				55079D4E259AE9D2001E2402 /* WebRTC.framework in Frameworks */,
 				55C3EEBA1DDD6B240004F538 /* libsqlite3.tbd in Frameworks */,
 				55C3EEBB1DDD6B240004F538 /* Foundation.framework in Frameworks */,
 				55C3EEBC1DDD6B240004F538 /* AVFoundation.framework in Frameworks */,
@@ -498,8 +687,8 @@
 				55C3EEBF1DDD6B240004F538 /* CoreMedia.framework in Frameworks */,
 				55C3EEC01DDD6B240004F538 /* CoreGraphics.framework in Frameworks */,
 				55C3EEC11DDD6B240004F538 /* VideoToolbox.framework in Frameworks */,
-				55C3EEC21DDD6B240004F538 /* FPWCSApi2.framework in Frameworks */,
 				2C9EA6B7826D4E9D53C22823 /* Pods_Player.framework in Frameworks */,
+				55079CD7259AE3CF001E2402 /* FPWCSApi2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,9 +696,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55079F19259AFDA2001E2402 /* FPWCSApi2.framework in Frameworks */,
 				55C3EEEA1DE29F220004F538 /* libicucore.tbd in Frameworks */,
 				55C3EEEC1DE29F220004F538 /* libstdc++.tbd in Frameworks */,
 				55C3EEED1DE29F220004F538 /* libc.tbd in Frameworks */,
+				55079EFF259AFD85001E2402 /* WebRTC.framework in Frameworks */,
 				55C3EEEE1DE29F220004F538 /* libsqlite3.tbd in Frameworks */,
 				55C3EEEF1DE29F220004F538 /* Foundation.framework in Frameworks */,
 				55C3EEF01DE29F220004F538 /* AVFoundation.framework in Frameworks */,
@@ -518,7 +709,6 @@
 				55C3EEF31DE29F220004F538 /* CoreMedia.framework in Frameworks */,
 				55C3EEF41DE29F220004F538 /* CoreGraphics.framework in Frameworks */,
 				55C3EEF51DE29F220004F538 /* VideoToolbox.framework in Frameworks */,
-				55C3EEF61DE29F220004F538 /* FPWCSApi2.framework in Frameworks */,
 				3F2A9FFC5A5A59E6CFD7FE70 /* Pods_TwoPlayers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,9 +717,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55079F23259AFDCD001E2402 /* FPWCSApi2.framework in Frameworks */,
 				55E1EC451DFCFBAA005AEE73 /* libicucore.tbd in Frameworks */,
 				55E1EC471DFCFBAA005AEE73 /* libstdc++.tbd in Frameworks */,
 				55E1EC481DFCFBAA005AEE73 /* libc.tbd in Frameworks */,
+				55079F20259AFDC2001E2402 /* WebRTC.framework in Frameworks */,
 				55E1EC491DFCFBAA005AEE73 /* libsqlite3.tbd in Frameworks */,
 				55E1EC4A1DFCFBAA005AEE73 /* Foundation.framework in Frameworks */,
 				55E1EC4B1DFCFBAA005AEE73 /* AVFoundation.framework in Frameworks */,
@@ -538,7 +730,6 @@
 				55E1EC4E1DFCFBAA005AEE73 /* CoreMedia.framework in Frameworks */,
 				55E1EC4F1DFCFBAA005AEE73 /* CoreGraphics.framework in Frameworks */,
 				55E1EC501DFCFBAA005AEE73 /* VideoToolbox.framework in Frameworks */,
-				55E1EC511DFCFBAA005AEE73 /* FPWCSApi2.framework in Frameworks */,
 				8845F0DD6AEEA05D2C8C4CB9 /* Pods_VideoChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -547,9 +738,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55079F11259AFD9E001E2402 /* FPWCSApi2.framework in Frameworks */,
 				55F8AEEB1DE55944002F5DFC /* libicucore.tbd in Frameworks */,
 				55F8AEED1DE55944002F5DFC /* libstdc++.tbd in Frameworks */,
 				55F8AEEE1DE55944002F5DFC /* libc.tbd in Frameworks */,
+				55079F02259AFD8E001E2402 /* WebRTC.framework in Frameworks */,
 				55F8AEEF1DE55944002F5DFC /* libsqlite3.tbd in Frameworks */,
 				55F8AEF01DE55944002F5DFC /* Foundation.framework in Frameworks */,
 				55F8AEF11DE55944002F5DFC /* AVFoundation.framework in Frameworks */,
@@ -558,7 +751,6 @@
 				55F8AEF41DE55944002F5DFC /* CoreMedia.framework in Frameworks */,
 				55F8AEF51DE55944002F5DFC /* CoreGraphics.framework in Frameworks */,
 				55F8AEF61DE55944002F5DFC /* VideoToolbox.framework in Frameworks */,
-				55F8AEF81DE55944002F5DFC /* FPWCSApi2.framework in Frameworks */,
 				4CECE292C777F06FCE1291B5 /* Pods_Streamer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -575,10 +767,11 @@
 				55F8AF201DE7FD3F002F5DFC /* AVFoundation.framework in Frameworks */,
 				55F8AF211DE7FD3F002F5DFC /* UIKit.framework in Frameworks */,
 				55F8AF221DE7FD3F002F5DFC /* GLKit.framework in Frameworks */,
+				55079F0C259AFD97001E2402 /* WebRTC.framework in Frameworks */,
 				55F8AF231DE7FD3F002F5DFC /* CoreMedia.framework in Frameworks */,
 				55F8AF241DE7FD3F002F5DFC /* CoreGraphics.framework in Frameworks */,
+				55079F0F259AFD9B001E2402 /* FPWCSApi2.framework in Frameworks */,
 				55F8AF251DE7FD3F002F5DFC /* VideoToolbox.framework in Frameworks */,
-				55F8AF261DE7FD3F002F5DFC /* FPWCSApi2.framework in Frameworks */,
 				AB70810F411954F98ECB0E4E /* (null) in Frameworks */,
 				061B4A6262F2BD8EE560DC97 /* Pods_StreamRecording.framework in Frameworks */,
 			);
@@ -588,9 +781,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55079F2D259AFDF0001E2402 /* FPWCSApi2.framework in Frameworks */,
 				55F98A441E1D28BD00B70D94 /* libicucore.tbd in Frameworks */,
 				55F98A461E1D28BD00B70D94 /* libstdc++.tbd in Frameworks */,
 				55F98A471E1D28BD00B70D94 /* libc.tbd in Frameworks */,
+				55079F2A259AFDEC001E2402 /* WebRTC.framework in Frameworks */,
 				55F98A481E1D28BD00B70D94 /* libsqlite3.tbd in Frameworks */,
 				55F98A491E1D28BD00B70D94 /* Foundation.framework in Frameworks */,
 				55F98A4A1E1D28BD00B70D94 /* AVFoundation.framework in Frameworks */,
@@ -599,7 +794,6 @@
 				55F98A4D1E1D28BD00B70D94 /* CoreMedia.framework in Frameworks */,
 				55F98A4E1E1D28BD00B70D94 /* CoreGraphics.framework in Frameworks */,
 				55F98A4F1E1D28BD00B70D94 /* VideoToolbox.framework in Frameworks */,
-				55F98A501E1D28BD00B70D94 /* FPWCSApi2.framework in Frameworks */,
 				874B8D646E3ADB17D3AF3DE6 /* Pods_PhoneMin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -620,7 +814,8 @@
 				CE29B5A01DC036AE0081CD37 /* CoreGraphics.framework in Frameworks */,
 				CE29B5A11DC036AE0081CD37 /* VideoToolbox.framework in Frameworks */,
 				007FCEA027937F1705D714B2 /* Pods_TwoWayStreaming.framework in Frameworks */,
-				CE29B5951DC036AE0081CD37 /* FPWCSApi2.framework in Frameworks */,
+				55079DC0259AF878001E2402 /* WebRTC.framework in Frameworks */,
+				55079DBD259AF86F001E2402 /* FPWCSApi2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,6 +826,7 @@
 				CE988A261DD5534400742423 /* libicucore.tbd in Frameworks */,
 				CE988A281DD5534400742423 /* libstdc++.tbd in Frameworks */,
 				CE988A291DD5534400742423 /* libc.tbd in Frameworks */,
+				55079EFD259AFD77001E2402 /* WebRTC.framework in Frameworks */,
 				CE988A2A1DD5534400742423 /* libsqlite3.tbd in Frameworks */,
 				CE988A2B1DD5534400742423 /* Foundation.framework in Frameworks */,
 				CE988A2C1DD5534400742423 /* AVFoundation.framework in Frameworks */,
@@ -639,8 +835,8 @@
 				CE988A2F1DD5534400742423 /* CoreMedia.framework in Frameworks */,
 				CE988A301DD5534400742423 /* CoreGraphics.framework in Frameworks */,
 				CE988A311DD5534400742423 /* VideoToolbox.framework in Frameworks */,
-				CE988A331DD5534400742423 /* FPWCSApi2.framework in Frameworks */,
 				85458A1A4E20148A6AA67C8F /* Pods_MediaDevices.framework in Frameworks */,
+				55079EFA259AFD6E001E2402 /* FPWCSApi2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -805,6 +1001,7 @@
 		CE1BE62D1C0D8BA400A4970E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				55079D4D259AE9D2001E2402 /* WebRTC.framework */,
 				CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */,
 				CE133F041C0D93E800EAEC55 /* libicucore.tbd */,
 				CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */,
@@ -954,7 +1151,9 @@
 				5503A8231DEEE96C003A50AF /* Sources */,
 				5503A8281DEEE96C003A50AF /* Frameworks */,
 				5503A8371DEEE96C003A50AF /* Resources */,
-				5503A83C1DEEE96C003A50AF /* [CP] Embed Pods Frameworks */,
+				55079F1D259AFDB1001E2402 /* Embed Frameworks */,
+				5E99F2E025118888BC2A53E3 /* [CP] Embed Pods Frameworks */,
+				558952A325A6EEA3003C4B38 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -973,7 +1172,9 @@
 				554528071E25FA6100DD2F52 /* Sources */,
 				5545280D1E25FA6100DD2F52 /* Frameworks */,
 				5545281C1E25FA6100DD2F52 /* Resources */,
-				554528211E25FA6100DD2F52 /* [CP] Embed Pods Frameworks */,
+				55079F31259AFDF9001E2402 /* Embed Frameworks */,
+				559442463BE4038C1C24D418 /* [CP] Embed Pods Frameworks */,
+				558952A725A6EEBA003C4B38 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -993,6 +1194,8 @@
 				5570EAB02519EB4E0031E44C /* Frameworks */,
 				5570EABE2519EB4E0031E44C /* Resources */,
 				5570EAC22519EB4E0031E44C /* [CP] Embed Pods Frameworks */,
+				55079F36259AFE0F001E2402 /* Embed Frameworks */,
+				558952A825A6EEC0003C4B38 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1011,7 +1214,9 @@
 				55BD735E1E0FF4DF003E0517 /* Sources */,
 				55BD73641E0FF4DF003E0517 /* Frameworks */,
 				55BD73731E0FF4DF003E0517 /* Resources */,
-				55BD737A1E0FF4DF003E0517 /* [CP] Embed Pods Frameworks */,
+				55079F27259AFDDA001E2402 /* Embed Frameworks */,
+				1877AFF485868B5C73CDE7B4 /* [CP] Embed Pods Frameworks */,
+				558952A525A6EEAF003C4B38 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1030,7 +1235,9 @@
 				55C3EEAD1DDD6B240004F538 /* Sources */,
 				55C3EEB51DDD6B240004F538 /* Frameworks */,
 				55C3EEC41DDD6B240004F538 /* Resources */,
-				55C3EECA1DDD6B240004F538 /* [CP] Embed Pods Frameworks */,
+				55079CD9259AE3CF001E2402 /* Embed Frameworks */,
+				37517502C8705F3495421F6B /* [CP] Embed Pods Frameworks */,
+				5589529F25A6EE77003C4B38 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1049,7 +1256,9 @@
 				55C3EEE51DE29F220004F538 /* Sources */,
 				55C3EEE91DE29F220004F538 /* Frameworks */,
 				55C3EEF81DE29F220004F538 /* Resources */,
-				55C3EEFD1DE29F220004F538 /* [CP] Embed Pods Frameworks */,
+				55079F01259AFD85001E2402 /* Embed Frameworks */,
+				2CA250A8E7D140DC5A37D1A1 /* [CP] Embed Pods Frameworks */,
+				558952A025A6EE80003C4B38 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1068,7 +1277,9 @@
 				55E1EC3E1DFCFBAA005AEE73 /* Sources */,
 				55E1EC441DFCFBAA005AEE73 /* Frameworks */,
 				55E1EC531DFCFBAA005AEE73 /* Resources */,
-				55E1EC581DFCFBAA005AEE73 /* [CP] Embed Pods Frameworks */,
+				55079F22259AFDC3001E2402 /* Embed Frameworks */,
+				792FEC8BC50606EA21455BAD /* [CP] Embed Pods Frameworks */,
+				558952A425A6EEA9003C4B38 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1087,7 +1298,9 @@
 				55F8AEE31DE55944002F5DFC /* Sources */,
 				55F8AEEA1DE55944002F5DFC /* Frameworks */,
 				55F8AEF91DE55944002F5DFC /* Resources */,
-				55F8AF001DE55944002F5DFC /* [CP] Embed Pods Frameworks */,
+				55079F04259AFD8E001E2402 /* Embed Frameworks */,
+				B3083465F24648415A9C040B /* [CP] Embed Pods Frameworks */,
+				558952A125A6EE86003C4B38 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1106,7 +1319,9 @@
 				55F8AF141DE7FD3F002F5DFC /* Sources */,
 				55F8AF191DE7FD3F002F5DFC /* Frameworks */,
 				55F8AF281DE7FD3F002F5DFC /* Resources */,
-				55F8AF2D1DE7FD3F002F5DFC /* [CP] Embed Pods Frameworks */,
+				55079F0E259AFD98001E2402 /* Embed Frameworks */,
+				9E01A8035318C4294D862FE2 /* [CP] Embed Pods Frameworks */,
+				558952A225A6EE94003C4B38 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1125,7 +1340,9 @@
 				55F98A3D1E1D28BD00B70D94 /* Sources */,
 				55F98A431E1D28BD00B70D94 /* Frameworks */,
 				55F98A521E1D28BD00B70D94 /* Resources */,
-				55F98A571E1D28BD00B70D94 /* [CP] Embed Pods Frameworks */,
+				55079F2C259AFDEC001E2402 /* Embed Frameworks */,
+				D902ED09399D14D9EF6C2B0F /* [CP] Embed Pods Frameworks */,
+				558952A625A6EEB5003C4B38 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1144,7 +1361,9 @@
 				CE29B5891DC036AE0081CD37 /* Sources */,
 				CE29B5941DC036AE0081CD37 /* Frameworks */,
 				CE29B5A21DC036AE0081CD37 /* Resources */,
-				2EF5402938E13FA3BB9BB8E8 /* [CP] Embed Pods Frameworks */,
+				55079DBF259AF86F001E2402 /* Embed Frameworks */,
+				9F17C5DA2EEDD994C1825D7D /* [CP] Embed Pods Frameworks */,
+				5541D09925A6E8510065E91D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1163,7 +1382,9 @@
 				CE988A211DD5534400742423 /* Sources */,
 				CE988A251DD5534400742423 /* Frameworks */,
 				CE988A341DD5534400742423 /* Resources */,
-				5C4D4FF7694FE2B75D457075 /* [CP] Embed Pods Frameworks */,
+				55079EFC259AFD6E001E2402 /* Embed Frameworks */,
+				96BA2AA72EDAD2B75C9C8DFD /* [CP] Embed Pods Frameworks */,
+				5589529E25A6EE6A003C4B38 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1392,26 +1613,64 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2EF5402938E13FA3BB9BB8E8 /* [CP] Embed Pods Frameworks */ = {
+		1877AFF485868B5C73CDE7B4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TwoWayStreaming/Pods-TwoWayStreaming-frameworks.sh",
-				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-PhoneMinVideo/Pods-PhoneMinVideo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TwoWayStreaming/Pods-TwoWayStreaming-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhoneMinVideo/Pods-PhoneMinVideo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CA250A8E7D140DC5A37D1A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TwoPlayers/Pods-TwoPlayers-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TwoPlayers/Pods-TwoPlayers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37517502C8705F3495421F6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Player/Pods-Player-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Player/Pods-Player-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5503A8221DEEE96C003A50AF /* [CP] Check Pods Manifest.lock */ = {
@@ -1432,27 +1691,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5503A83C1DEEE96C003A50AF /* [CP] Embed Pods Frameworks */ = {
+		5541D09925A6E8510065E91D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Conference/Pods-Conference-frameworks.sh",
-				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
-				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+			inputFileListPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Conference/Pods-Conference-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
 		};
 		554528061E25FA6100DD2F52 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1470,28 +1724,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		554528211E25FA6100DD2F52 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ClickToCall/Pods-ClickToCall-frameworks.sh",
-				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
-				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ClickToCall/Pods-ClickToCall-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5570EAAA2519EB4E0031E44C /* [CP] Check Pods Manifest.lock */ = {
@@ -1519,14 +1751,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GPUImageDemo/Pods-GPUImageDemo-frameworks.sh",
-				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
 				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
@@ -1534,6 +1764,213 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GPUImageDemo/Pods-GPUImageDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5589529E25A6EE6A003C4B38 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
+		};
+		5589529F25A6EE77003C4B38 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
+		};
+		558952A025A6EE80003C4B38 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
+		};
+		558952A125A6EE86003C4B38 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
+		};
+		558952A225A6EE94003C4B38 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
+		};
+		558952A325A6EEA3003C4B38 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
+		};
+		558952A425A6EEA9003C4B38 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
+		};
+		558952A525A6EEAF003C4B38 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
+		};
+		558952A625A6EEB5003C4B38 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
+		};
+		558952A725A6EEBA003C4B38 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
+		};
+		558952A825A6EEC0003C4B38 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
+		};
+		559442463BE4038C1C24D418 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClickToCall/Pods-ClickToCall-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ClickToCall/Pods-ClickToCall-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		55BD735D1E0FF4DF003E0517 /* [CP] Check Pods Manifest.lock */ = {
@@ -1554,28 +1991,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		55BD737A1E0FF4DF003E0517 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PhoneMinVideo/Pods-PhoneMinVideo-frameworks.sh",
-				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
-				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhoneMinVideo/Pods-PhoneMinVideo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		55C3EEAC1DDD6B240004F538 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1592,28 +2007,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		55C3EECA1DDD6B240004F538 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Player/Pods-Player-frameworks.sh",
-				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
-				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Player/Pods-Player-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		55C3EEE41DE29F220004F538 /* [CP] Check Pods Manifest.lock */ = {
@@ -1634,28 +2027,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		55C3EEFD1DE29F220004F538 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TwoPlayers/Pods-TwoPlayers-frameworks.sh",
-				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
-				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TwoPlayers/Pods-TwoPlayers-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		55E1EC3D1DFCFBAA005AEE73 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1672,28 +2043,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		55E1EC581DFCFBAA005AEE73 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VideoChat/Pods-VideoChat-frameworks.sh",
-				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
-				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VideoChat/Pods-VideoChat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		55F8AEE21DE55944002F5DFC /* [CP] Check Pods Manifest.lock */ = {
@@ -1714,28 +2063,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		55F8AF001DE55944002F5DFC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Streamer/Pods-Streamer-frameworks.sh",
-				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
-				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Streamer/Pods-Streamer-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		55F8AF131DE7FD3F002F5DFC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1752,28 +2079,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		55F8AF2D1DE7FD3F002F5DFC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StreamRecording/Pods-StreamRecording-frameworks.sh",
-				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
-				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StreamRecording/Pods-StreamRecording-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		55F98A3C1E1D28BD00B70D94 /* [CP] Check Pods Manifest.lock */ = {
@@ -1794,48 +2099,44 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		55F98A571E1D28BD00B70D94 /* [CP] Embed Pods Frameworks */ = {
+		5E99F2E025118888BC2A53E3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PhoneMin/Pods-PhoneMin-frameworks.sh",
-				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Conference/Pods-Conference-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhoneMin/Pods-PhoneMin-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Conference/Pods-Conference-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5C4D4FF7694FE2B75D457075 /* [CP] Embed Pods Frameworks */ = {
+		792FEC8BC50606EA21455BAD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MediaDevices/Pods-MediaDevices-frameworks.sh",
-				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-VideoChat/Pods-VideoChat-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MediaDevices/Pods-MediaDevices-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VideoChat/Pods-VideoChat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		844393695E4BE0D09F545A4B /* [CP] Check Pods Manifest.lock */ = {
@@ -1872,6 +2173,106 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96BA2AA72EDAD2B75C9C8DFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MediaDevices/Pods-MediaDevices-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MediaDevices/Pods-MediaDevices-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E01A8035318C4294D862FE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StreamRecording/Pods-StreamRecording-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StreamRecording/Pods-StreamRecording-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F17C5DA2EEDD994C1825D7D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TwoWayStreaming/Pods-TwoWayStreaming-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TwoWayStreaming/Pods-TwoWayStreaming-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3083465F24648415A9C040B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Streamer/Pods-Streamer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Streamer/Pods-Streamer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D902ED09399D14D9EF6C2B0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhoneMin/Pods-PhoneMin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhoneMin/Pods-PhoneMin-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2063,6 +2464,7 @@
 			baseConfigurationReference = 1D638A5574E01255F80E5B79 /* Pods-Conference.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Alexey Trunov (UDA328ES3S)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
@@ -2070,7 +2472,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/Conference/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -2078,6 +2480,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.Conference;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -2086,6 +2489,7 @@
 			baseConfigurationReference = 8C7745018D6298F1D431D19C /* Pods-Conference.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Alexey Trunov (UDA328ES3S)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
@@ -2093,7 +2497,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/Conference/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -2101,6 +2505,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.Conference;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
@@ -2109,6 +2514,7 @@
 			baseConfigurationReference = A4E7F3FF1ED3C85F7E330E36 /* Pods-ClickToCall.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Alexey Trunov (UDA328ES3S)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
@@ -2116,6 +2522,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/ClickToCall/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -2124,6 +2531,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -2132,6 +2540,7 @@
 			baseConfigurationReference = 2F658772CEA94FD2C2636F0F /* Pods-ClickToCall.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Alexey Trunov (UDA328ES3S)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
@@ -2139,6 +2548,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/ClickToCall/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -2146,6 +2556,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.ClickToCall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
@@ -2154,6 +2565,7 @@
 			baseConfigurationReference = BB36930046A19DB5A3967C15 /* Pods-GPUImageDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -2162,7 +2574,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/GPUImageDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -2170,6 +2582,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.GPUImageDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -2178,6 +2591,7 @@
 			baseConfigurationReference = CA63B6F28BC74A6479BB3E44 /* Pods-GPUImageDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -2186,7 +2600,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/GPUImageDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -2194,6 +2608,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.GPUImageDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
@@ -2202,6 +2617,7 @@
 			baseConfigurationReference = 197A1744E5786E2455C350B7 /* Pods-PhoneMinVideo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Alexey Trunov (UDA328ES3S)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
@@ -2209,6 +2625,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/PhoneMinVideo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -2217,6 +2634,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -2225,6 +2643,7 @@
 			baseConfigurationReference = 28EC9B3398AF302C83D5B83E /* Pods-PhoneMinVideo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Alexey Trunov (UDA328ES3S)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
@@ -2232,6 +2651,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/PhoneMinVideo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -2239,6 +2659,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.PhoneMinVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
@@ -2247,13 +2668,14 @@
 			baseConfigurationReference = 846E3A66B3858038D2B5AC8F /* Pods-Player.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/Player/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -2261,6 +2683,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.Player;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -2269,13 +2692,14 @@
 			baseConfigurationReference = A0063D10D113946F372D9269 /* Pods-Player.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/Player/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -2283,6 +2707,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.Player;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
@@ -2291,6 +2716,7 @@
 			baseConfigurationReference = 68EBD96E5E0DFFC406FCC540 /* Pods-TwoPlayers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Alexey Trunov (UDA328ES3S)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
@@ -2298,7 +2724,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/TwoPlayers/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -2306,6 +2732,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.TwoPlayers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -2314,6 +2741,7 @@
 			baseConfigurationReference = A2E17542E1DE12F0286A5CB0 /* Pods-TwoPlayers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Alexey Trunov (UDA328ES3S)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
@@ -2321,7 +2749,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/TwoPlayers/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -2329,6 +2757,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.TwoPlayers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
@@ -2337,6 +2766,7 @@
 			baseConfigurationReference = 70F0D9BC4DD77EFBBCD071EB /* Pods-VideoChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Alexey Trunov (UDA328ES3S)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
@@ -2344,7 +2774,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/VideoChat/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -2352,6 +2782,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.VideoChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -2360,6 +2791,7 @@
 			baseConfigurationReference = 351C7C8EFEA3BF6F067F632E /* Pods-VideoChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Alexey Trunov (UDA328ES3S)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
@@ -2367,7 +2799,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/VideoChat/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -2375,6 +2807,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.VideoChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
@@ -2383,6 +2816,7 @@
 			baseConfigurationReference = FA2746768B91B1FC7D438ACE /* Pods-Streamer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Alexey Trunov (UDA328ES3S)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
@@ -2390,6 +2824,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/Streamer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -2398,6 +2833,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -2406,6 +2842,7 @@
 			baseConfigurationReference = B900BCE0A039E397F83E1A7B /* Pods-Streamer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Alexey Trunov (UDA328ES3S)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
@@ -2413,6 +2850,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/Streamer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -2420,6 +2858,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.Streamer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
@@ -2428,13 +2867,14 @@
 			baseConfigurationReference = F8923D117764EE08F498B30A /* Pods-StreamRecording.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/StreamRecording/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -2442,6 +2882,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.StreamRecording;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -2450,13 +2891,14 @@
 			baseConfigurationReference = 5C8F2CB9B54362118F8B9C3A /* Pods-StreamRecording.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/StreamRecording/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -2464,6 +2906,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.StreamRecording;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
@@ -2472,6 +2915,7 @@
 			baseConfigurationReference = 5EF73068B49AD2F4A1CCED3C /* Pods-PhoneMin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Alexey Trunov (UDA328ES3S)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
@@ -2479,6 +2923,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/PhoneMin/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -2487,6 +2932,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -2495,6 +2941,7 @@
 			baseConfigurationReference = AB9EF3E96A197A886FE5113E /* Pods-PhoneMin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Alexey Trunov (UDA328ES3S)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
@@ -2502,6 +2949,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/PhoneMin/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -2509,6 +2957,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.PhoneMin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
@@ -2606,6 +3055,7 @@
 			baseConfigurationReference = E09018DB4496D32FF344EAE3 /* Pods-TwoWayStreaming.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = TwoWayStreamingIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
@@ -2613,6 +3063,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/TwoWayStreaming/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -2621,6 +3072,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -2629,6 +3081,7 @@
 			baseConfigurationReference = DCB73F0D95AC5C28060A24E5 /* Pods-TwoWayStreaming.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = TwoWayStreamingIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
@@ -2636,6 +3089,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
 				);
 				"GCC_PREPROCESSOR_DEFINITIONS[sdk=*]" = (
 					"$(inherited)",
@@ -2647,6 +3101,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.TwoWayStreaming;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
@@ -2655,13 +3110,14 @@
 			baseConfigurationReference = 251625D1C68BDE4F9EA1E79A /* Pods-MediaDevices.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/MediaDevices/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -2670,6 +3126,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -2678,13 +3135,14 @@
 			baseConfigurationReference = C2DDB1571337A4A0E150A71D /* Pods-MediaDevices.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/MediaDevices/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -2692,6 +3150,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.MediaDevices;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
