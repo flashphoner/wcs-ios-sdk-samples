@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <WebRTC/RTCEAGLVideoView.h>
+#import <WebRTC/RTCMTLVideoView.h>
 
 @interface ViewController : UIViewController<UITextFieldDelegate, RTCVideoViewDelegate>
 
@@ -19,9 +20,11 @@
 @property UITextField *remoteStreamName;
 @property UILabel *status;
 @property UIButton *startButton;
+@property UIButton *fullscreenButton;
+@property bool fullscreen;
 
 @property UIView *videoContainer;
-@property(nonatomic) RTCEAGLVideoView *remoteDisplay;
+@property(nonatomic) UIView<RTCVideoRenderer> *remoteDisplay;
 
 @property NSMutableArray *remoteDisplayConstraints;
 
