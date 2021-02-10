@@ -29,6 +29,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var lockCamera: UISwitch!
     @IBOutlet weak var loudSpeaker: UISwitch!
+    @IBOutlet weak var tcpTransport: UISwitch!
     @IBOutlet weak var testButton: UIButton!
     @IBOutlet weak var urlField: UITextField!
     @IBOutlet weak var connectStatus: UILabel!
@@ -209,6 +210,7 @@ class ViewController: UIViewController {
             options.name = publishName.text
             options.display = localDisplay.videoView
             options.constraints = localMediaConstrains;
+            options.transport = tcpTransport.isOn ? kFPWCSTransport.fpwcsTransportTCP : kFPWCSTransport.fpwcsTransportUDP;
             do {
                 try publishStream = session!.createStream(options)
             } catch {
@@ -251,6 +253,7 @@ class ViewController: UIViewController {
             options.name = playName.text;
             options.display = remoteDisplay.videoView;
             options.constraints = remoteMediaConstrains;
+            options.transport = tcpTransport.isOn ? kFPWCSTransport.fpwcsTransportTCP : kFPWCSTransport.fpwcsTransportUDP;
             do {
             playStream = try session!.createStream(options)
             } catch {

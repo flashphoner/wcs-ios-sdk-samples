@@ -92,6 +92,7 @@
     options.name = [self getStreamName];
     options.display = _videoView.local;
     options.constraints = [_localControl toMediaConstraints];
+    options.transport = _useTCPTransport.control.on ? kFPWCSTransportTCP : kFPWCSTransportUDP;
     NSError *error;
     _localStream = [_session createStream:options error:&error];
     if (!_localStream) {
@@ -159,6 +160,7 @@
     options.name = [_localStream getName];
     options.display = _videoView.remote;
     options.constraints = [_remoteControl toMediaConstraints];
+    options.transport = _useTCPTransport.control.on ? kFPWCSTransportTCP : kFPWCSTransportUDP;
     NSError *error;
     _remoteStream = [_session createStream:options error:&error];
     if (!_remoteStream) {
@@ -236,6 +238,7 @@
     _startButton.userInteractionEnabled = YES;
     _startButton.alpha = 1;
     _urlInput.userInteractionEnabled = YES;
+    _useTCPTransport.control.userInteractionEnabled = YES;
     [_testButton setTitle:@"Test" forState:UIControlStateNormal];
     if (_localStream) {
         [FPWCSApi2 releaseLocalMedia:_videoView.local];
@@ -246,6 +249,7 @@
     button.userInteractionEnabled = NO;
     button.alpha = 0.5;
     _urlInput.userInteractionEnabled = NO;
+    _useTCPTransport.control.userInteractionEnabled = NO;
     if ([button.titleLabel.text isEqualToString:@"Stop"]) {
         if (_remoteStream) {
             NSError *error;
@@ -391,6 +395,9 @@
     _useLoudSpeaker = [[WCSSwitchView alloc] initWithLabelText:@"Use Loud Speaker"];
     _useLoudSpeaker.control.userInteractionEnabled = NO;
     [_useLoudSpeaker.control addTarget:self action:@selector(useLoudSpeakerValueChanged:) forControlEvents:UIControlEventValueChanged];
+    
+    _useTCPTransport = [[WCSSwitchView alloc] initWithLabelText:@"Use TCP Transport"];
+    
     _localSettingsButton = [WCSViewUtil createButton:@"Local settings"];
     [_localSettingsButton addTarget:self action:@selector(localSettingsButton:) forControlEvents:UIControlEventTouchUpInside];
     _remoteSettingsButton = [WCSViewUtil createButton:@"Remote settings"];
@@ -413,6 +420,7 @@
     [_contentView addSubview:_testButton];
     [_contentView addSubview:_lockCameraOrientation];
     [_contentView addSubview:_useLoudSpeaker];
+    [_contentView addSubview:_useTCPTransport];
     [_settingsButtonContainer addSubview:_localSettingsButton];
     [_settingsButtonContainer addSubview:_remoteSettingsButton];
     [_contentView addSubview:_settingsButtonContainer];
@@ -433,6 +441,7 @@
                             @"test": _testButton,
                             @"lockOrientation": _lockCameraOrientation,
                             @"useLoudSpeaker": _useLoudSpeaker,
+                            @"useTCPTransport": _useTCPTransport,
                             @"localSettings": _localSettingsButton,
                             @"remoteSettings": _remoteSettingsButton,
                             @"settings": _settingsButtonContainer,
@@ -459,10 +468,12 @@
     setConstraint(_startButton, @"V:[start(height)]", 0);
     setConstraint(_lockCameraOrientation, @"V:[lockOrientation(height)]", 0);
     setConstraint(_useLoudSpeaker, @"V:[useLoudSpeaker(height)]", 0);
+    setConstraint(_useTCPTransport, @"V:[useTCPTransport(height)]", 0);
     setConstraint(_contentView, @"H:|[start]|", 0);
     setConstraint(_contentView, @"H:|[test]|", 0);
     setConstraint(_contentView, @"H:|[lockOrientation]|", 0);
     setConstraint(_contentView, @"H:|[useLoudSpeaker]|", 0);
+    setConstraint(_contentView, @"H:|[useTCPTransport]|", 0);
     setConstraint(_localSettingsButton, @"V:[localSettings(height)]", 0);
     setConstraint(_remoteSettingsButton, @"V:[remoteSettings(height)]", 0);
     [_settingsButtonContainer addConstraint:[NSLayoutConstraint
@@ -508,7 +519,7 @@
     setConstraint(_contentView, @"H:|[videoView]|", 0);
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:_videoView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationGreaterThanOrEqual toItem:self.view attribute:NSLayoutAttributeHeight multiplier:0.5 constant:0]];
     
-    setConstraint(_contentView, @"V:|[videoView]-[settings]-vSpacing-[lockOrientation]-vSpacing-[useLoudSpeaker]-vSpacing-[urlInput]-vSpacing-[connectStatus]-vSpacing-[micLevel]-vSpacing-[test]-vSpacing-[start]|", 0);
+    setConstraint(_contentView, @"V:|[videoView]-[settings]-vSpacing-[lockOrientation]-vSpacing-[useLoudSpeaker]-vSpacing-[useTCPTransport]-vSpacing-[urlInput]-vSpacing-[connectStatus]-vSpacing-[micLevel]-vSpacing-[test]-vSpacing-[start]|", 0);
     setConstraint(_scrollView, @"V:|[content]|", 0);
     setConstraint(self.view, @"H:|[scroll]|", 0);
     setConstraint(self.view, @"H:|-hSpacing-[content]-hSpacing-|", 0);
