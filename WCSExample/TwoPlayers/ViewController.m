@@ -21,6 +21,7 @@ FPWCSApi2Stream *player1Stream;
 FPWCSApi2Stream *player2Stream;
 
 - (void)viewDidLoad {
+    [WCSViewUtil updateBackgroundColor:self];
     [super viewDidLoad];
     [self setupViews];
     [self setupLayout];

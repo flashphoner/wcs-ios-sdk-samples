@@ -11,6 +11,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <FPWCSApi2/FPWCSApi2.h>
 #import <Metal/Metal.h>
+#import "MediaPlayer/MPVolumeView.h"
 
 @interface ViewController ()
 
@@ -18,12 +19,38 @@
 
 @implementation ViewController
 
+float currentVolume;
+
 - (void)viewDidLoad {
+    [WCSViewUtil updateBackgroundColor:self];
     [super viewDidLoad];
     [self setupViews];
     [self setupLayout];
     [self onDisconnected];
+    
+    MPVolumeView *volumeView = [[MPVolumeView alloc] init];
+    [self.view addSubview: volumeView];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(volumeChanged:) name:@"AVSystemController_SystemVolumeDidChangeNotification" object:nil];
+    
     NSLog(@"Did load views");
+}
+
+- (void)volumeChanged:(NSNotification *)notification
+{
+    float volume =
+    [[[notification userInfo]
+      objectForKey:@"AVSystemController_AudioVolumeNotificationParameter"]
+     floatValue];
+    
+    currentVolume = volume;
+    
+    if (volume <= 0.0625) {
+        [[FPWCSApi2 getAudioManager] muteAudio];
+    } else {
+        [[FPWCSApi2 getAudioManager] unmuteAudio];
+    }
+    
 }
 
 //connect

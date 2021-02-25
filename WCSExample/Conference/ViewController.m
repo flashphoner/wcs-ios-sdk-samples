@@ -30,6 +30,7 @@ WCSStack *freeViews;
 NSMutableDictionary *busyViews;
 
 - (void)viewDidLoad {
+    [WCSViewUtil updateBackgroundColor:self];
     [super viewDidLoad];
     [self setupViews];
     [self setupLayout];

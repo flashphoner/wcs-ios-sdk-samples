@@ -23,6 +23,7 @@
 
 
 - (void)viewDidLoad {
+    [WCSViewUtil updateBackgroundColor:self];
     [super viewDidLoad];
     [self setupViews];
     [self setupLayout];

@@ -11,6 +11,12 @@
 
 @implementation WCSViewUtil
 
++ (void)updateBackgroundColor:(UIViewController *)viewController{
+    if (@available(iOS 13.0, *)) {
+        viewController.view.backgroundColor = [UIColor systemBackgroundColor];
+    }
+}
+
 + (UITextField *)createTextField:(id)delegate{
     UITextField *textField = [[UITextField alloc] init];
     textField.borderStyle = UITextBorderStyleRoundedRect;
@@ -33,12 +39,16 @@
     return textView;
 }
 
+
 + (UILabel *)createLabelView {
     UILabel *textView = [[UILabel alloc] init];
     [textView setFont:[UIFont boldSystemFontOfSize:12]];
     textView.translatesAutoresizingMaskIntoConstraints = NO;
     textView.textAlignment = NSTextAlignmentCenter;
     textView.text = @"NO STATUS";
+    if (@available(iOS 13.0, *)) {
+        textView.textColor = UIColor.labelColor;
+    }
     return textView;
 }
 
@@ -48,6 +58,9 @@
     label.translatesAutoresizingMaskIntoConstraints = NO;
     label.textAlignment = NSTextAlignmentLeft;
     label.text = infoText;
+    if (@available(iOS 13.0, *)) {
+        label.textColor = UIColor.labelColor;
+    }
     return label;
 }
 

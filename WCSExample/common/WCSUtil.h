@@ -6,6 +6,8 @@
 
 @interface WCSViewUtil : NSObject
 
++ (void)updateBackgroundColor:(UIViewController *)viewController;
+
 + (UITextField *)createTextField:(id)delegate;
 + (UITextView *)createTextView;
 + (UILabel *)createLabelView;

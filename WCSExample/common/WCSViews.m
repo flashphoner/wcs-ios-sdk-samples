@@ -97,7 +97,11 @@
     self = [super init];
     if (self) {
         self.translatesAutoresizingMaskIntoConstraints = NO;
-        [self setBackgroundColor:[UIColor whiteColor]];
+        if (@available(iOS 13.0, *)) {
+            [self setBackgroundColor:[UIColor systemBackgroundColor]];
+        } else {
+            [self setBackgroundColor:[UIColor whiteColor]];
+        }
         position = pos;
         paddingHide = (pos == NSLayoutAttributeBottom || pos == NSLayoutAttributeRight) ? 2000 : -2000;
     }
