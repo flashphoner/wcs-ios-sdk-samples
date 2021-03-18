@@ -407,5 +407,14 @@ class ViewController: UIViewController {
             button.alpha = 0.5;
         }
     }
+    
+    func muteAudio(mute: Bool) {
+        mute ? publishStream?.muteAudio() : publishStream?.unmuteAudio();
+    }
+    
+    func muteVideo(mute: Bool) {
+        mute ? publishStream?.muteVideo() : publishStream?.unmuteVideo();
+    }
+
 }
 

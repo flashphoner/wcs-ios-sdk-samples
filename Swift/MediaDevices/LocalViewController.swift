@@ -16,7 +16,15 @@ extension LocalViewController : UITextFieldDelegate {
 
 extension LocalViewController: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
-        (viewController as? ViewController)?.localMediaConstrains = self.toMediaConstraints();
+        if let controller = viewController as? ViewController {
+            controller.localMediaConstrains = self.toMediaConstraints();
+        }
+    }
+    
+    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+        if let controller = viewController as? ViewController {
+            self.viewController = controller;
+        }
     }
 }
 
@@ -37,6 +45,7 @@ class LocalViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     @IBOutlet weak var videoBitrate: UITextField!
     @IBOutlet weak var muteVideo: UISwitch!
     
+    var viewController: ViewController?
     var microphonePicker = UIPickerView()
     var cameraPicker = UIPickerView()
     var localDevices: FPWCSApi2MediaDeviceList?
@@ -185,5 +194,22 @@ class LocalViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
             return (localDevices?.video[row] as AnyObject).label
         }
         return ""
+    }
+    
+    
+    @IBAction func muteAudio(_ sender: UISwitch) {
+        if (viewController?.publishStream != nil) {
+            viewController?.muteAudio(mute: sender.isOn);
+        } else {
+            sender.setOn(!sender.isOn, animated: false);
+        }
+    }
+    
+    @IBAction func muteVideo(_ sender: UISwitch) {
+        if (viewController?.publishStream != nil) {
+            viewController?.muteVideo(mute: sender.isOn);
+        } else {
+            sender.setOn(!sender.isOn, animated: false);
+        }
     }
 }
