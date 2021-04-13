@@ -30,10 +30,17 @@
         [_quality.control addTarget:self action:@selector(controlValueChanged:) forControlEvents:UIControlEventValueChanged];
         [_quality.control setOn:NO];
         [self controlValueChanged:_quality.control];
+        _audioMuted = [WCSViewUtil createLabelView];
+        _audioMuted.text = @"Audio Muted: false";
+        _videoMuted = [WCSViewUtil createLabelView];
+        _videoMuted.text = @"Video Muted: false";
+
         [_contentView addSubview:_playVideo];
         [_contentView addSubview:_videoResolution];
         [_contentView addSubview:_bitrate];
         [_contentView addSubview:_quality];
+        [_contentView addSubview:_audioMuted];
+        [_contentView addSubview:_videoMuted];
         [_scrollView addSubview:_contentView];
         [self addSubview:_hideButton];
         [self addSubview:_scrollView];
@@ -44,6 +51,8 @@
                                 @"videoResolution": _videoResolution,
                                 @"bitrate": _bitrate,
                                 @"quality": _quality,
+                                @"audioMuted": _audioMuted,
+                                @"videoMuted": _videoMuted,
                                 @"content": _contentView,
                                 @"scroll": _scrollView,
                                 @"container": self
@@ -57,8 +66,10 @@
         [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[videoResolution]|" options:0 metrics:metrics views:views]];
         [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[bitrate]|" options:0 metrics:metrics views:views]];
         [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[quality]|" options:0 metrics:metrics views:views]];
-        
-        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-vSpacing-[playVideo]-vSpacing-[videoResolution]-vSpacing-[bitrate]-vSpacing-[quality]-vSpacing-|" options:0 metrics:metrics views:views]];
+        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[audioMuted]|" options:0 metrics:metrics views:views]];
+        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[videoMuted]|" options:0 metrics:metrics views:views]];
+
+        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-vSpacing-[playVideo]-vSpacing-[videoResolution]-vSpacing-[bitrate]-vSpacing-[quality]-vSpacing-[audioMuted]-vSpacing-[videoMuted]-vSpacing-|" options:0 metrics:metrics views:views]];
 
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-hSpacing-[hideButton]-hSpacing-|" options:0 metrics:metrics views:views]];
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[scroll]|" options:0 metrics:metrics views:views]];
@@ -122,6 +133,15 @@
     _videoResolution.userInteractionEnabled = enabled;
     _bitrate.userInteractionEnabled = enabled;
     _quality.userInteractionEnabled = enabled;
+}
+
+- (void)onAudioMute:(bool)muted {
+    NSLog(@"muted %d", muted);
+    _audioMuted.text = [NSString stringWithFormat:@"Audio muted: %@", muted ? @"true" : @"false"];
+}
+
+- (void)onVideoMute:(bool)muted {
+    _videoMuted.text = [NSString stringWithFormat:@"Video muted: %@", muted ? @"true" : @"false"];
 }
 
 - (FPWCSApi2MediaConstraints *)toMediaConstraints {

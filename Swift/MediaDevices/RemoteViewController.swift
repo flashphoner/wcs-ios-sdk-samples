@@ -29,12 +29,19 @@ class RemoteViewController: UIViewController {
     @IBOutlet weak var videoHeight: UITextField!
     @IBOutlet weak var videoBitrate: UITextField!
     @IBOutlet weak var videoQuality: UITextField!
+    @IBOutlet weak var audioMuted: UILabel!
+    @IBOutlet weak var videoMuted: UILabel!
     
-    
+    var currentAudioMuted = false;
+    var currentVideoMuted = false;
+
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController!.delegate = self
-
+        
+        onAudioMute(currentAudioMuted)
+        onVideoMute(currentVideoMuted)
+        
         setupTextFields()
         
         videoWidth.delegate = self
@@ -95,6 +102,22 @@ class RemoteViewController: UIViewController {
         view.endEditing(true)
     }
     
+    func onAudioMute(_ muted: Bool) {
+        if (audioMuted != nil) {
+            audioMuted.text = "Audio Muted: " + (muted ? "true": "false");
+        } else {
+            currentAudioMuted = muted;
+        }
+    }
+
+    func onVideoMute(_ muted: Bool) {
+        if (videoMuted != nil) {
+            videoMuted.text = "Video Muted: " + (muted ? "true": "false");
+        } else {
+            currentVideoMuted = muted;
+        }
+    }
+
     func toMediaConstraints() -> FPWCSApi2MediaConstraints {
         let ret = FPWCSApi2MediaConstraints();
         ret.audio = FPWCSApi2AudioConstraints();

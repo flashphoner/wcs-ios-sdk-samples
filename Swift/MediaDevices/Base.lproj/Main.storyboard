@@ -553,15 +553,31 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Audio Muted: false" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qb8-QA-hS1">
+                                <rect key="frame" x="124" y="282" width="142" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Video Muted: false" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K08-ee-gCy">
+                                <rect key="frame" x="124" y="311" width="142" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bq6-cF-N1F"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Remote Settings" id="6hM-jC-UKU"/>
                     <connections>
+                        <outlet property="audioMuted" destination="qb8-QA-hS1" id="29O-Py-prP"/>
                         <outlet property="playVideo" destination="6O5-xe-qLC" id="5pF-Fz-z4B"/>
                         <outlet property="videoBitrate" destination="A7b-yd-XkQ" id="qyX-9W-SVW"/>
                         <outlet property="videoHeight" destination="TNG-qi-jta" id="Idm-Ev-l8b"/>
+                        <outlet property="videoMuted" destination="K08-ee-gCy" id="Q86-4M-XKj"/>
                         <outlet property="videoQuality" destination="hOr-F4-1fZ" id="5u7-Xl-hMH"/>
                         <outlet property="videoWidth" destination="IC3-gT-YYk" id="7V3-X6-QEw"/>
                     </connections>

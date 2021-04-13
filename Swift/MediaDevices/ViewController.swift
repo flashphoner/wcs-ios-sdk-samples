@@ -66,6 +66,9 @@ class ViewController: UIViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+        localViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LocalViewController") as! LocalViewController
+        remoteViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RemoteViewController") as! RemoteViewController
     }
     
     @objc func keyboardWillShow(notification: NSNotification) {
@@ -119,16 +122,10 @@ class ViewController: UIViewController {
     
     
     @IBAction func openLocalSettings(_ sender: Any) {
-        if (localViewController == nil) {
-            localViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LocalViewController") as! LocalViewController
-        }
         self.navigationController?.pushViewController(localViewController!, animated: true)
     }
     
     @IBAction func openRemoteSettings(_ sender: Any) {
-        if (remoteViewController == nil) {
-            remoteViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RemoteViewController") as! RemoteViewController
-        }
         self.navigationController?.pushViewController(remoteViewController!, animated: true)
     }
     
@@ -274,6 +271,23 @@ class ViewController: UIViewController {
                 self.changeStreamStatus(rStream!)
                 self.onStopped()
             });
+            
+            playStream?.onStreamEvent({streamEvent in
+                if (streamEvent?.type == FPWCSApi2Model.streamEventType(toString: .fpwcsStreamEventTypeAudioMuted)) {
+                    self.remoteViewController?.onAudioMute(true);
+                }
+                if (streamEvent?.type == FPWCSApi2Model.streamEventType(toString: .fpwcsStreamEventTypeAudioUnmuted)) {
+                    self.remoteViewController?.onAudioMute(false);
+                }
+                if (streamEvent?.type == FPWCSApi2Model.streamEventType(toString: .fpwcsStreamEventTypeVideoMuted)) {
+                    self.remoteViewController?.onVideoMute(true);
+                }
+                if (streamEvent?.type == FPWCSApi2Model.streamEventType(toString: .fpwcsStreamEventTypeVideoUnmuted)) {
+                    self.remoteViewController?.onVideoMute(false);
+                }
+            });
+
+            
             do {
                 try playStream?.play()
             } catch {
@@ -384,6 +398,8 @@ class ViewController: UIViewController {
         playButton.setTitle("STOP", for:.normal)
         changeViewState(loudSpeaker, true)
         changeViewState(playButton, true)
+        self.remoteViewController!.onAudioMute(stream.getAudioState()?.muted ?? false)
+        self.remoteViewController!.onVideoMute(stream.getVideoState()?.muted ?? false)
     }
 
     fileprivate func onStopped() {

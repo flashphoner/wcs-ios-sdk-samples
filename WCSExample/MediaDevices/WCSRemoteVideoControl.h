@@ -11,9 +11,15 @@
 @property WCSVideoResolutionInputWithDefaultView *videoResolution;
 @property WCSTextInputWithDefaultView *bitrate;
 @property WCSTextInputWithDefaultView *quality;
+@property UILabel *audioMuted;
+@property UILabel *videoMuted;
 
 - (void)muteVideoInputs:(BOOL)mute;
 
 - (FPWCSApi2MediaConstraints *)toMediaConstraints;
+
+- (void)onAudioMute:(bool)muted;
+
+- (void)onVideoMute:(bool)muted;
 
 @end

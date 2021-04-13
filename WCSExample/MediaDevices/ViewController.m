@@ -138,6 +138,7 @@
         [self changeStreamStatus:stream];
         [self onStopped];
     }];
+
     if(![_localStream publish:&error]) {
         UIAlertController * alert = [UIAlertController
                                      alertControllerWithTitle:@"Failed to publish"
@@ -185,7 +186,8 @@
         [self changeStreamStatus:stream];
         [self onStarted];
         _useLoudSpeaker.control.userInteractionEnabled = YES;
-        
+        [_remoteControl onAudioMute:[stream getAudioState].muted];
+        [_remoteControl onVideoMute:[stream getVideoState].muted];
     }];
     
     [_remoteStream on:kFPWCSStreamStatusNotEnoughtBandwidth callback:^(FPWCSApi2Stream *rStream){
@@ -207,6 +209,23 @@
         _useLoudSpeaker.control.userInteractionEnabled = NO;
 
     }];
+    
+    [_remoteStream onStreamEvent:^(FPWCSApi2StreamEvent *streamEvent){
+        NSLog(@"No remote stream, %@", streamEvent.type);
+        if ([streamEvent.type isEqual:[FPWCSApi2Model streamEventTypeToString:kFPWCSStreamEventTypeAudioMuted]]) {
+            [_remoteControl onAudioMute:true];
+        }
+        if ([streamEvent.type isEqual:[FPWCSApi2Model streamEventTypeToString:kFPWCSStreamEventTypeAudioUnmuted]]) {
+            [_remoteControl onAudioMute:false];
+        }
+        if ([streamEvent.type isEqual:[FPWCSApi2Model streamEventTypeToString:kFPWCSStreamEventTypeVideoMuted]]) {
+            [_remoteControl onVideoMute:true];
+        }
+        if ([streamEvent.type isEqual:[FPWCSApi2Model streamEventTypeToString:kFPWCSStreamEventTypeVideoUnmuted]]) {
+            [_remoteControl onVideoMute:false];
+        }
+    }];
+    
     if(![_remoteStream play:&error]) {
         UIAlertController * alert = [UIAlertController
                                      alertControllerWithTitle:@"Failed to play"
