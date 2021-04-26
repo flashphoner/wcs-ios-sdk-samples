@@ -12,7 +12,7 @@
         <!--Red-->
         <scene sceneID="iSR-eV-qbq">
             <objects>
-                <viewController title="Red" id="gq4-pf-7pZ" customClass="ViewController" customModule="TwoWayStreamingSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Red" id="gq4-pf-7pZ" customClass="TwoWayViewController" customModule="TwoWayStreamingSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FF7-LP-4VP">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,8 +43,9 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frq-YF-XBa">
-                                                <rect key="frame" x="5" y="272" width="380" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frq-YF-XBa">
+                                                <rect key="frame" x="13" y="258" width="360" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                 <rect key="contentStretch" x="0.20000000000000001" y="0.0" width="1" height="1"/>
                                                 <state key="normal" title="PUBLISH">
@@ -60,27 +61,28 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Publish Stream" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNd-aO-eGr">
-                                                <rect key="frame" x="16" y="198" width="115" height="21"/>
+                                                <rect key="frame" x="14" y="184" width="115" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="streamName" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EUe-94-ykh">
-                                                <rect key="frame" x="15" y="227" width="358" height="34"/>
+                                                <rect key="frame" x="13" y="213" width="358" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NO STATUS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbA-xF-JcE">
-                                                <rect key="frame" x="104" y="478" width="180" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <rect key="frame" x="104" y="434" width="180" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duP-oO-hX1">
-                                                <rect key="frame" x="5" y="440" width="380" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duP-oO-hX1">
+                                                <rect key="frame" x="14" y="396" width="359" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                 <rect key="contentStretch" x="0.20000000000000001" y="0.0" width="1" height="1"/>
                                                 <state key="normal" title="PLAY">
@@ -96,20 +98,21 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Play Stream" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYa-pI-heh">
-                                                <rect key="frame" x="15" y="369" width="91" height="21"/>
+                                                <rect key="frame" x="15" y="325" width="91" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="streamName" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xtS-3z-l6d">
-                                                <rect key="frame" x="16" y="398" width="357" height="34"/>
+                                                <rect key="frame" x="16" y="354" width="357" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fm8-gK-cE5">
-                                                <rect key="frame" x="5" y="125" width="380" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fm8-gK-cE5">
+                                                <rect key="frame" x="15" y="125" width="358" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                 <rect key="contentStretch" x="0.20000000000000001" y="0.0" width="1" height="1"/>
                                                 <state key="normal" title="CONNECT">
@@ -124,36 +127,67 @@
                                                     <action selector="connectPressed:" destination="gq4-pf-7pZ" eventType="touchUpInside" id="N6x-yO-wib"/>
                                                 </connections>
                                             </button>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N5C-Ir-CJ3" customClass="WebRTCView" customModule="TwoWayStreamingSwift" customModuleProvider="target">
-                                                <rect key="frame" x="208" y="519" width="165" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NO STATUS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="930-b4-NrS">
-                                                <rect key="frame" x="90" y="310" width="206" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <rect key="frame" x="88" y="296" width="206" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ea6-Od-liL" customClass="WebRTCView" customModule="TwoWayStreamingSwift" customModuleProvider="target">
-                                                <rect key="frame" x="15" y="519" width="169" height="150"/>
+                                                <rect key="frame" x="11" y="623" width="169" height="150"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="{&quot;count&quot;:123}" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="khI-wS-KNf" userLabel="dataToSend">
+                                                <rect key="frame" x="5" y="475" width="181" height="67"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SRz-DY-FBS" userLabel="dataRecieved">
+                                                <rect key="frame" x="200" y="475" width="171" height="105"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8C6-oP-IeQ" userLabel="sendDataBtn">
+                                                <rect key="frame" x="5" y="550" width="181" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                <rect key="contentStretch" x="0.20000000000000001" y="0.0" width="1" height="1"/>
+                                                <state key="normal" title="Send data">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="sendDataPressed:" destination="gq4-pf-7pZ" eventType="touchUpInside" id="b06-5J-xPz"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N5C-Ir-CJ3" customClass="WebRTCView" customModule="TwoWayStreamingSwift" customModuleProvider="target">
+                                                <rect key="frame" x="206" y="623" width="165" height="150"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NO STATUS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NU9-y8-8Gl" userLabel="dataStatus">
+                                                <rect key="frame" x="101" y="588" width="180" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="frq-YF-XBa" firstAttribute="leading" secondItem="eP8-1A-9cI" secondAttribute="leading" constant="5" id="JXE-Sd-x97"/>
-                                            <constraint firstAttribute="trailing" secondItem="frq-YF-XBa" secondAttribute="trailing" constant="5" id="PSf-6J-aky"/>
-                                            <constraint firstAttribute="trailing" secondItem="fm8-gK-cE5" secondAttribute="trailing" constant="5" id="RUi-GX-MVj"/>
-                                            <constraint firstItem="fm8-gK-cE5" firstAttribute="leading" secondItem="eP8-1A-9cI" secondAttribute="leading" constant="5" id="UFZ-lR-Txz"/>
-                                            <constraint firstAttribute="trailing" secondItem="duP-oO-hX1" secondAttribute="trailing" constant="5" id="XGy-Mi-d6z"/>
-                                            <constraint firstItem="frq-YF-XBa" firstAttribute="top" secondItem="eP8-1A-9cI" secondAttribute="top" constant="272" id="ZJZ-RY-NcF"/>
                                             <constraint firstAttribute="height" constant="844" id="aIk-Jw-VV9"/>
-                                            <constraint firstItem="fm8-gK-cE5" firstAttribute="top" secondItem="eP8-1A-9cI" secondAttribute="top" constant="125" id="gVO-Wv-0Kn"/>
-                                            <constraint firstItem="duP-oO-hX1" firstAttribute="top" secondItem="eP8-1A-9cI" secondAttribute="top" constant="440" id="nsH-Ei-eoH"/>
-                                            <constraint firstItem="duP-oO-hX1" firstAttribute="leading" secondItem="eP8-1A-9cI" secondAttribute="leading" constant="5" id="vhC-gB-LE1"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -178,6 +212,9 @@
                     <connections>
                         <outlet property="connectButton" destination="fm8-gK-cE5" id="zfh-DH-DHS"/>
                         <outlet property="connectStatus" destination="4Av-81-mH0" id="4Sh-p3-wlI"/>
+                        <outlet property="dataReceivedTextView" destination="SRz-DY-FBS" id="iK0-fM-mGN"/>
+                        <outlet property="dataStatus" destination="NU9-y8-8Gl" id="EDd-5L-UoN"/>
+                        <outlet property="dataToSendTextView" destination="khI-wS-KNf" id="YWh-wp-6tX"/>
                         <outlet property="localDisplay" destination="ea6-Od-liL" id="tWP-4W-0E1"/>
                         <outlet property="playButton" destination="duP-oO-hX1" id="oDL-GW-4IP"/>
                         <outlet property="playName" destination="xtS-3z-l6d" id="c9t-j2-41c"/>
@@ -186,6 +223,7 @@
                         <outlet property="publishName" destination="EUe-94-ykh" id="0NO-fE-7vK"/>
                         <outlet property="publishStatus" destination="930-b4-NrS" id="vg1-Ke-b66"/>
                         <outlet property="remoteDisplay" destination="N5C-Ir-CJ3" id="iH9-4R-ez4"/>
+                        <outlet property="sendDataBtn" destination="8C6-oP-IeQ" id="KuX-ro-LvK"/>
                         <outlet property="urlField" destination="15q-XI-y4Z" id="jBS-I6-8Ea"/>
                     </connections>
                 </viewController>
@@ -195,8 +233,14 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

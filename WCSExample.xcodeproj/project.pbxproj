@@ -122,7 +122,7 @@
 		557879A3254FFEA600F8CD95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5578799F254FFEA600F8CD95 /* Main.storyboard */; };
 		557879A4254FFEA600F8CD95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557879A1254FFEA600F8CD95 /* Assets.xcassets */; };
 		557879B3254FFEC600F8CD95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557879B2254FFEC600F8CD95 /* AppDelegate.swift */; };
-		5589534725A6F804003C4B38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5589534625A6F803003C4B38 /* ViewController.swift */; };
+		5589534725A6F804003C4B38 /* TwoWayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5589534625A6F803003C4B38 /* TwoWayViewController.swift */; };
 		558D5EAA258267AA00C77CAC /* WebRTCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D5EA9258267AA00C77CAC /* WebRTCView.swift */; };
 		558D5EB82582685900C77CAC /* WebRTCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D5EA9258267AA00C77CAC /* WebRTCView.swift */; };
 		559ECC5B2593040600C3FA89 /* RemoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559ECC5A2593040600C3FA89 /* RemoteViewController.swift */; };
@@ -534,7 +534,7 @@
 		557879A0254FFEA600F8CD95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		557879A1254FFEA600F8CD95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		557879B2254FFEC600F8CD95 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5589534625A6F803003C4B38 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5589534625A6F803003C4B38 /* TwoWayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoWayViewController.swift; sourceTree = "<group>"; };
 		558D5EA9258267AA00C77CAC /* WebRTCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCView.swift; sourceTree = "<group>"; };
 		559ECC5A2593040600C3FA89 /* RemoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RemoteViewController.swift; path = MediaDevices/RemoteViewController.swift; sourceTree = "<group>"; };
 		55BD73541E0FF4D1003E0517 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = PhoneMinVideo/AppDelegate.h; sourceTree = "<group>"; };
@@ -1047,7 +1047,7 @@
 		5578781D254DAC5600F8CD95 /* TwoWayStreaming */ = {
 			isa = PBXGroup;
 			children = (
-				5589534625A6F803003C4B38 /* ViewController.swift */,
+				5589534625A6F803003C4B38 /* TwoWayViewController.swift */,
 				557879A1254FFEA600F8CD95 /* Assets.xcassets */,
 				5578799D254FFEA600F8CD95 /* LaunchScreen.storyboard */,
 				5578799F254FFEA600F8CD95 /* Main.storyboard */,
@@ -1610,7 +1610,6 @@
 					};
 					55787937254FFE0700F8CD95 = {
 						CreatedOnToolsVersion = 12.1;
-						DevelopmentTeam = SXWV5Z47NK;
 						LastSwiftMigration = 1210;
 						ProvisioningStyle = Automatic;
 					};
@@ -2671,7 +2670,7 @@
 			files = (
 				557879B3254FFEC600F8CD95 /* AppDelegate.swift in Sources */,
 				558D5EAA258267AA00C77CAC /* WebRTCView.swift in Sources */,
-				5589534725A6F804003C4B38 /* ViewController.swift in Sources */,
+				5589534725A6F804003C4B38 /* TwoWayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
