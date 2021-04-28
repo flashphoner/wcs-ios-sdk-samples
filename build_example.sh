@@ -55,6 +55,8 @@ cat << EOF > Info_ipa.plist
                <string>$2</string>
                <key>com.flashphoner.ios.MediaDevicesSwift</key>
                <string>$2</string>
+               <key>com.flashphoner.ios.MCUClientSwift</key>
+               <string>$2</string>
         </dict>
 </dict>
 </plist>
@@ -108,6 +110,10 @@ xcodebuild -exportArchive -exportOptionsPlist Info_ipa.plist -archivePath out-bu
 
 xcodebuild CODE_SIGN_STYLE=Automatic -workspace 'WCSExample.xcworkspace' -scheme "MediaDevicesSwift" -configuration="Release" clean archive OBJROOT=$(PWD)/out-build/MediaDevicesSwift -archivePath out-build/MediaDevicesSwift
 xcodebuild -exportArchive -exportOptionsPlist Info_ipa.plist -archivePath out-build/MediaDevicesSwift.xcarchive -exportPath out-build
+
+xcodebuild CODE_SIGN_STYLE=Automatic -workspace 'WCSExample.xcworkspace' -scheme "MCUClientSwift" -configuration="Release" clean archive OBJROOT=$(PWD)/out-build/MCUClientSwift -archivePath out-build/MCUClientSwift
+xcodebuild -exportArchive -exportOptionsPlist Info_ipa.plist -archivePath out-build/MCUClientSwift.xcarchive -exportPath out-build
+
 
 # Remove plist
 rm -rf Info_ipa.plist

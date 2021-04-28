@@ -71,3 +71,8 @@ target 'MediaDevicesSwift' do
     pod 'SocketRocket'
     pod 'JSONModel'
 end
+
+target 'MCUClientSwift' do
+    pod 'SocketRocket'
+    pod 'JSONModel'
+end
