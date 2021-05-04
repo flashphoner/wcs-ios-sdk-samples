@@ -12,7 +12,6 @@
 		2C9EA6B7826D4E9D53C22823 /* Pods_Player.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8745492A7BF846C9479B539C /* Pods_Player.framework */; };
 		2D60120E95DF0969E87948A9 /* Pods_TwoWayStreamingSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120AE7BC2CDC0ABB8E3CDBBB /* Pods_TwoWayStreamingSwift.framework */; };
 		347EAE752A00A7D6410BD50A /* Pods_GPUImageDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67583FC82A75C6CC4844C24B /* Pods_GPUImageDemo.framework */; };
-		3A2BD4172C0446ECB09256FE /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		3F2A9FFC5A5A59E6CFD7FE70 /* Pods_TwoPlayers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31005716A70F1B337799F1 /* Pods_TwoPlayers.framework */; };
 		4CECE292C777F06FCE1291B5 /* Pods_Streamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C845B85743847299215C220 /* Pods_Streamer.framework */; };
 		5503A8241DEEE96C003A50AF /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
@@ -36,8 +35,6 @@
 		5503A8441DEEE9E6003A50AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503A81D1DEEE961003A50AF /* ViewController.m */; };
 		5512B68825655FD900E207B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557879B2254FFEC600F8CD95 /* AppDelegate.swift */; };
 		5512B6B5256560A800E207B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5512B6B0256560A800E207B5 /* ViewController.swift */; };
-		5512B6F2256567B200E207B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5512B6AA256560A700E207B5 /* LaunchScreen.storyboard */; };
-		5512B6F3256567B200E207B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5512B6AC256560A800E207B5 /* Main.storyboard */; };
 		5517B1871E1D2CE400B39B15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F98A341E1D286100B70D94 /* AppDelegate.m */; };
 		551F8B3C25C3FA4700653B11 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551F8B3B25C3FA4700653B11 /* WebRTC.framework */; };
 		551F8B3D25C3FA4700653B11 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 551F8B3B25C3FA4700653B11 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -118,17 +115,9 @@
 		5570EB732519EF530031E44C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570EAFC2519EBE70031E44C /* AppDelegate.m */; };
 		5570EB742519EF530031E44C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570EAFD2519EBE70031E44C /* ViewController.m */; };
 		5570EB832519EFF30031E44C /* GPUImageBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570EB822519EFF30031E44C /* GPUImageBeautifyFilter.m */; };
-		557879A2254FFEA600F8CD95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5578799D254FFEA600F8CD95 /* LaunchScreen.storyboard */; };
-		557879A3254FFEA600F8CD95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5578799F254FFEA600F8CD95 /* Main.storyboard */; };
 		557879A4254FFEA600F8CD95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557879A1254FFEA600F8CD95 /* Assets.xcassets */; };
 		557879B3254FFEC600F8CD95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557879B2254FFEC600F8CD95 /* AppDelegate.swift */; };
-		55812163263946FC00379A43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5581215D263946FC00379A43 /* LaunchScreen.storyboard */; };
-		55812164263946FC00379A43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5581215D263946FC00379A43 /* LaunchScreen.storyboard */; };
-		55812165263946FC00379A43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5581215F263946FC00379A43 /* Main.storyboard */; };
-		55812166263946FC00379A43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5581215F263946FC00379A43 /* Main.storyboard */; };
 		55812167263946FC00379A43 /* MCUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55812161263946FC00379A43 /* MCUViewController.swift */; };
-		55812169263946FC00379A43 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55812162263946FC00379A43 /* Info.plist */; };
-		5581216A263946FC00379A43 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55812162263946FC00379A43 /* Info.plist */; };
 		558121702639471000379A43 /* MCUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55812161263946FC00379A43 /* MCUViewController.swift */; };
 		558121712639471000379A43 /* WebRTCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D5EA9258267AA00C77CAC /* WebRTCView.swift */; };
 		558121732639471000379A43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557879B2254FFEC600F8CD95 /* AppDelegate.swift */; };
@@ -138,6 +127,10 @@
 		5581217D2639471000379A43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5581215F263946FC00379A43 /* Main.storyboard */; };
 		5581217F2639471000379A43 /* FPWCSApi2Swift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		558121802639471000379A43 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A06125E0CFE6006C1B4F /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		558125002640FAB000379A43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5512B6AA256560A700E207B5 /* LaunchScreen.storyboard */; };
+		558125012640FAB000379A43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5512B6AC256560A800E207B5 /* Main.storyboard */; };
+		558125142640FAE600379A43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5578799D254FFEA600F8CD95 /* LaunchScreen.storyboard */; };
+		558125152640FAE600379A43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5578799F254FFEA600F8CD95 /* Main.storyboard */; };
 		5589534725A6F804003C4B38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5589534625A6F803003C4B38 /* ViewController.swift */; };
 		558D5EAA258267AA00C77CAC /* WebRTCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D5EA9258267AA00C77CAC /* WebRTCView.swift */; };
 		558D5EB82582685900C77CAC /* WebRTCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D5EA9258267AA00C77CAC /* WebRTCView.swift */; };
@@ -720,7 +713,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A2BD4172C0446ECB09256FE /* (null) in Frameworks */,
 				55E2A01B25DF82A9006C1B4F /* FPWCSApi2Swift.xcframework in Frameworks */,
 				55E2A06825E0D240006C1B4F /* WebRTC.framework in Frameworks */,
 				A718D7F631BF58F7D83DE9D9 /* Pods_MediaDevicesSwift.framework in Frameworks */,
@@ -1792,11 +1784,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55812164263946FC00379A43 /* LaunchScreen.storyboard in Resources */,
-				5512B6F2256567B200E207B5 /* LaunchScreen.storyboard in Resources */,
-				5512B6F3256567B200E207B5 /* Main.storyboard in Resources */,
-				5581216A263946FC00379A43 /* Info.plist in Resources */,
-				55812166263946FC00379A43 /* Main.storyboard in Resources */,
+				558125002640FAB000379A43 /* LaunchScreen.storyboard in Resources */,
+				558125012640FAB000379A43 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1824,12 +1813,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				557879A3254FFEA600F8CD95 /* Main.storyboard in Resources */,
-				55812165263946FC00379A43 /* Main.storyboard in Resources */,
-				55812169263946FC00379A43 /* Info.plist in Resources */,
-				55812163263946FC00379A43 /* LaunchScreen.storyboard in Resources */,
+				558125142640FAE600379A43 /* LaunchScreen.storyboard in Resources */,
+				558125152640FAE600379A43 /* Main.storyboard in Resources */,
 				557879A4254FFEA600F8CD95 /* Assets.xcassets in Resources */,
-				557879A2254FFEA600F8CD95 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
