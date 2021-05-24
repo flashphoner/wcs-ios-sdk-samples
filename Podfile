@@ -76,3 +76,8 @@ target 'MCUClientSwift' do
     pod 'SocketRocket'
     pod 'JSONModel'
 end
+
+target 'ImageOverlaySwift' do
+    pod 'SocketRocket'
+    pod 'JSONModel'
+end

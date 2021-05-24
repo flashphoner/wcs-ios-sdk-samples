@@ -57,6 +57,9 @@ cat << EOF > Info_ipa.plist
                <string>$2</string>
                <key>com.flashphoner.ios.MCUClientSwift</key>
                <string>$2</string>
+               <key>com.flashphoner.ios.ImageOverlaySwift</key>
+               <string>$2</string>
+
         </dict>
 </dict>
 </plist>
@@ -113,6 +116,9 @@ xcodebuild -exportArchive -exportOptionsPlist Info_ipa.plist -archivePath out-bu
 
 xcodebuild CODE_SIGN_STYLE=Automatic -workspace 'WCSExample.xcworkspace' -scheme "MCUClientSwift" -configuration="Release" clean archive OBJROOT=$(PWD)/out-build/MCUClientSwift -archivePath out-build/MCUClientSwift
 xcodebuild -exportArchive -exportOptionsPlist Info_ipa.plist -archivePath out-build/MCUClientSwift.xcarchive -exportPath out-build
+
+xcodebuild CODE_SIGN_STYLE=Automatic -workspace 'WCSExample.xcworkspace' -scheme "ImageOverlaySwift" -configuration="Release" clean archive OBJROOT=$(PWD)/out-build/ImageOverlaySwift -archivePath out-build/ImageOverlaySwift
+xcodebuild -exportArchive -exportOptionsPlist Info_ipa.plist -archivePath out-build/ImageOverlaySwift.xcarchive -exportPath out-build
 
 
 # Remove plist

@@ -131,6 +131,16 @@
 		558125012640FAB000379A43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5512B6AC256560A800E207B5 /* Main.storyboard */; };
 		558125142640FAE600379A43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5578799D254FFEA600F8CD95 /* LaunchScreen.storyboard */; };
 		558125152640FAE600379A43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5578799F254FFEA600F8CD95 /* Main.storyboard */; };
+		558125C02643937700379A43 /* WebRTCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D5EA9258267AA00C77CAC /* WebRTCView.swift */; };
+		558125C22643937700379A43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557879B2254FFEC600F8CD95 /* AppDelegate.swift */; };
+		558125C42643937700379A43 /* FPWCSApi2Swift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; };
+		558125C52643937700379A43 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A06125E0CFE6006C1B4F /* WebRTC.framework */; };
+		558125CB2643937700379A43 /* FPWCSApi2Swift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		558125CC2643937700379A43 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A06125E0CFE6006C1B4F /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		558125EF2643944000379A43 /* ImageOverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558125E82643943F00379A43 /* ImageOverlayViewController.swift */; };
+		558125FA264396A200379A43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 558125F42643945C00379A43 /* LaunchScreen.storyboard */; };
+		558125FB264396A200379A43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 558125F22643945C00379A43 /* Main.storyboard */; };
+		5581261326439FA700379A43 /* CameraVideoCapturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5581261226439FA700379A43 /* CameraVideoCapturer.swift */; };
 		5589534725A6F804003C4B38 /* TwoWayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5589534625A6F803003C4B38 /* TwoWayViewController.swift */; };
 		558D5EAA258267AA00C77CAC /* WebRTCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D5EA9258267AA00C77CAC /* WebRTCView.swift */; };
 		558D5EB82582685900C77CAC /* WebRTCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D5EA9258267AA00C77CAC /* WebRTCView.swift */; };
@@ -281,12 +291,14 @@
 		55F98A5F1E1D28DC00B70D94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F98A371E1D286100B70D94 /* ViewController.m */; };
 		55F9BB35251DAA5500F39D69 /* GPUImageVideoCapturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9BB26251DA9E100F39D69 /* GPUImageVideoCapturer.m */; };
 		55FCD3CE252B0437008C54E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
+		6C30CB3000443DDE6FF500C9 /* Pods_ImageOverlaySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524459B41543F94D92ED576A /* Pods_ImageOverlaySwift.framework */; };
 		85458A1A4E20148A6AA67C8F /* Pods_MediaDevices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A58904727550EF62D7BF75 /* Pods_MediaDevices.framework */; };
 		874B8D646E3ADB17D3AF3DE6 /* Pods_PhoneMin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77B12A13431E3991180227D /* Pods_PhoneMin.framework */; };
 		8845F0DD6AEEA05D2C8C4CB9 /* Pods_VideoChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5BB64A1ECEAAAAE4BA4D58 /* Pods_VideoChat.framework */; };
 		96E97847B0DD3DD368A0655D /* Pods_ClickToCall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6092F5076645DB535DAF8F5F /* Pods_ClickToCall.framework */; };
-		A718D7F631BF58F7D83DE9D9 /* Pods_MediaDevicesSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147179FE0FD75E2BA9A18541 /* Pods_MediaDevicesSwift.framework */; };
+		A718D7F631BF58F7D83DE9D9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		AB70810F411954F98ECB0E4E /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		ADE49FDDD3F913A301FC5B0B /* Pods_MediaDevicesSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B321C1597A2D603CFB8EB1 /* Pods_MediaDevicesSwift.framework */; };
 		BF0C53CD5C35C2C303C8BBCD /* Pods_PhoneMinVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1B888B5E77A104987F94EC /* Pods_PhoneMinVideo.framework */; };
 		CE29B5951DC036AE0081CD37 /* FPWCSApi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; };
 		CE29B5961DC036AE0081CD37 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
@@ -500,6 +512,18 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		558125CA2643937700379A43 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				558125CB2643937700379A43 /* FPWCSApi2Swift.xcframework in Embed Frameworks */,
+				558125CC2643937700379A43 /* WebRTC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55F2CCFA2553A725005A6681 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -518,13 +542,14 @@
 		02A58904727550EF62D7BF75 /* Pods_MediaDevices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaDevices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C845B85743847299215C220 /* Pods_Streamer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Streamer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		120AE7BC2CDC0ABB8E3CDBBB /* Pods_TwoWayStreamingSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwoWayStreamingSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		147179FE0FD75E2BA9A18541 /* Pods_MediaDevicesSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaDevicesSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		197A1744E5786E2455C350B7 /* Pods-PhoneMinVideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneMinVideo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneMinVideo/Pods-PhoneMinVideo.debug.xcconfig"; sourceTree = "<group>"; };
+		19B321C1597A2D603CFB8EB1 /* Pods_MediaDevicesSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaDevicesSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D638A5574E01255F80E5B79 /* Pods-Conference.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conference.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Conference/Pods-Conference.debug.xcconfig"; sourceTree = "<group>"; };
 		251625D1C68BDE4F9EA1E79A /* Pods-MediaDevices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaDevices.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MediaDevices/Pods-MediaDevices.debug.xcconfig"; sourceTree = "<group>"; };
 		28EC9B3398AF302C83D5B83E /* Pods-PhoneMinVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneMinVideo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneMinVideo/Pods-PhoneMinVideo.release.xcconfig"; sourceTree = "<group>"; };
 		2F658772CEA94FD2C2636F0F /* Pods-ClickToCall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickToCall.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClickToCall/Pods-ClickToCall.release.xcconfig"; sourceTree = "<group>"; };
 		351C7C8EFEA3BF6F067F632E /* Pods-VideoChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoChat/Pods-VideoChat.release.xcconfig"; sourceTree = "<group>"; };
+		524459B41543F94D92ED576A /* Pods_ImageOverlaySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageOverlaySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5503A8191DEEE961003A50AF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Conference/AppDelegate.h; sourceTree = "<group>"; };
 		5503A81A1DEEE961003A50AF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Conference/AppDelegate.m; sourceTree = "<group>"; };
 		5503A81B1DEEE961003A50AF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Conference/Info.plist; sourceTree = "<group>"; };
@@ -562,6 +587,12 @@
 		55812161263946FC00379A43 /* MCUViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCUViewController.swift; sourceTree = "<group>"; };
 		55812162263946FC00379A43 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		558121862639471000379A43 /* MCUClientSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCUClientSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		558125D22643937700379A43 /* ImageOverlaySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageOverlaySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		558125E72643943F00379A43 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		558125E82643943F00379A43 /* ImageOverlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageOverlayViewController.swift; sourceTree = "<group>"; };
+		558125F32643945C00379A43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		558125F52643945C00379A43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5581261226439FA700379A43 /* CameraVideoCapturer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVideoCapturer.swift; sourceTree = "<group>"; };
 		5589534625A6F803003C4B38 /* TwoWayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoWayViewController.swift; sourceTree = "<group>"; };
 		558D5EA9258267AA00C77CAC /* WebRTCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCView.swift; sourceTree = "<group>"; };
 		559ECC5A2593040600C3FA89 /* RemoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RemoteViewController.swift; path = MediaDevices/RemoteViewController.swift; sourceTree = "<group>"; };
@@ -621,6 +652,7 @@
 		68EBD96E5E0DFFC406FCC540 /* Pods-TwoPlayers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoPlayers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwoPlayers/Pods-TwoPlayers.debug.xcconfig"; sourceTree = "<group>"; };
 		6E27B384E73F73BC93BE4E18 /* Pods-MCUClientSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCUClientSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MCUClientSwift/Pods-MCUClientSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		70F0D9BC4DD77EFBBCD071EB /* Pods-VideoChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoChat/Pods-VideoChat.debug.xcconfig"; sourceTree = "<group>"; };
+		7415178EA8D3601F08AE17E0 /* Pods-ImageOverlaySwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageOverlaySwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageOverlaySwift/Pods-ImageOverlaySwift.release.xcconfig"; sourceTree = "<group>"; };
 		7EA37E8F9999876F4BDE5240 /* Pods_StreamRecording.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreamRecording.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		846E3A66B3858038D2B5AC8F /* Pods-Player.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Player.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Player/Pods-Player.debug.xcconfig"; sourceTree = "<group>"; };
 		8745492A7BF846C9479B539C /* Pods_Player.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Player.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -635,6 +667,7 @@
 		A2E17542E1DE12F0286A5CB0 /* Pods-TwoPlayers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoPlayers.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwoPlayers/Pods-TwoPlayers.release.xcconfig"; sourceTree = "<group>"; };
 		A4E7F3FF1ED3C85F7E330E36 /* Pods-ClickToCall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickToCall.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClickToCall/Pods-ClickToCall.debug.xcconfig"; sourceTree = "<group>"; };
 		AB9EF3E96A197A886FE5113E /* Pods-PhoneMin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneMin.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneMin/Pods-PhoneMin.release.xcconfig"; sourceTree = "<group>"; };
+		AD864E8C9C2E475CA1B05FC4 /* Pods-ImageOverlaySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageOverlaySwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageOverlaySwift/Pods-ImageOverlaySwift.debug.xcconfig"; sourceTree = "<group>"; };
 		B8F750DEF4D7FD2484C6B4D2 /* Pods-TwoWayStreamingSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoWayStreamingSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwoWayStreamingSwift/Pods-TwoWayStreamingSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		B900BCE0A039E397F83E1A7B /* Pods-Streamer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Streamer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Streamer/Pods-Streamer.release.xcconfig"; sourceTree = "<group>"; };
 		BB36930046A19DB5A3967C15 /* Pods-GPUImageDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUImageDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GPUImageDemo/Pods-GPUImageDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -715,7 +748,8 @@
 			files = (
 				55E2A01B25DF82A9006C1B4F /* FPWCSApi2Swift.xcframework in Frameworks */,
 				55E2A06825E0D240006C1B4F /* WebRTC.framework in Frameworks */,
-				A718D7F631BF58F7D83DE9D9 /* Pods_MediaDevicesSwift.framework in Frameworks */,
+				A718D7F631BF58F7D83DE9D9 /* (null) in Frameworks */,
+				ADE49FDDD3F913A301FC5B0B /* Pods_MediaDevicesSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -778,6 +812,16 @@
 				558121762639471000379A43 /* FPWCSApi2Swift.xcframework in Frameworks */,
 				558121772639471000379A43 /* WebRTC.framework in Frameworks */,
 				EBB0D5D3421BFBDDAFC2DC7E /* Pods_MCUClientSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		558125C32643937700379A43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				558125C42643937700379A43 /* FPWCSApi2Swift.xcframework in Frameworks */,
+				558125C52643937700379A43 /* WebRTC.framework in Frameworks */,
+				6C30CB3000443DDE6FF500C9 /* Pods_ImageOverlaySwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1007,6 +1051,8 @@
 				8E7E73AA99093585A497CEBD /* Pods-MediaDevicesSwift.release.xcconfig */,
 				6E27B384E73F73BC93BE4E18 /* Pods-MCUClientSwift.debug.xcconfig */,
 				C7A5805B4233CBC68B00A58B /* Pods-MCUClientSwift.release.xcconfig */,
+				AD864E8C9C2E475CA1B05FC4 /* Pods-ImageOverlaySwift.debug.xcconfig */,
+				7415178EA8D3601F08AE17E0 /* Pods-ImageOverlaySwift.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1079,6 +1125,7 @@
 		5578781C254DAC3400F8CD95 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				558125BA264392AD00379A43 /* ImageOverlay */,
 				5581215C263946FC00379A43 /* MCUClient */,
 				558D5EB72582684B00C77CAC /* Common */,
 				5512B6A92565608700E207B5 /* MediaDevices */,
@@ -1109,6 +1156,18 @@
 				55812162263946FC00379A43 /* Info.plist */,
 			);
 			path = MCUClient;
+			sourceTree = "<group>";
+		};
+		558125BA264392AD00379A43 /* ImageOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				558125F42643945C00379A43 /* LaunchScreen.storyboard */,
+				558125F22643945C00379A43 /* Main.storyboard */,
+				558125E82643943F00379A43 /* ImageOverlayViewController.swift */,
+				558125E72643943F00379A43 /* Info.plist */,
+				5581261226439FA700379A43 /* CameraVideoCapturer.swift */,
+			);
+			path = ImageOverlay;
 			sourceTree = "<group>";
 		};
 		558D5EB72582684B00C77CAC /* Common */ = {
@@ -1223,7 +1282,8 @@
 				7EA37E8F9999876F4BDE5240 /* Pods_StreamRecording.framework */,
 				120AE7BC2CDC0ABB8E3CDBBB /* Pods_TwoWayStreamingSwift.framework */,
 				D71040B0F8C4B2E300D34779 /* Pods_MCUClientSwift.framework */,
-				147179FE0FD75E2BA9A18541 /* Pods_MediaDevicesSwift.framework */,
+				524459B41543F94D92ED576A /* Pods_ImageOverlaySwift.framework */,
+				19B321C1597A2D603CFB8EB1 /* Pods_MediaDevicesSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1257,6 +1317,7 @@
 				55787938254FFE0700F8CD95 /* TwoWayStreamingSwift.app */,
 				5512B69825655FD900E207B5 /* MediaDevicesSwift.app */,
 				558121862639471000379A43 /* MCUClientSwift.app */,
+				558125D22643937700379A43 /* ImageOverlaySwift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1469,6 +1530,27 @@
 			name = MCUClientSwift;
 			productName = TwoWayStreamingSwift;
 			productReference = 558121862639471000379A43 /* MCUClientSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		558125BB2643937700379A43 /* ImageOverlaySwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 558125CF2643937700379A43 /* Build configuration list for PBXNativeTarget "ImageOverlaySwift" */;
+			buildPhases = (
+				558125BC2643937700379A43 /* [CP] Check Pods Manifest.lock */,
+				558125BD2643937700379A43 /* Sources */,
+				558125C32643937700379A43 /* Frameworks */,
+				558125C72643937700379A43 /* Resources */,
+				558125CA2643937700379A43 /* Embed Frameworks */,
+				558125CD2643937700379A43 /* [CP] Embed Pods Frameworks */,
+				558125CE2643937700379A43 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageOverlaySwift;
+			productName = TwoWayStreamingSwift;
+			productReference = 558125D22643937700379A43 /* ImageOverlaySwift.app */;
 			productType = "com.apple.product-type.application";
 		};
 		55BD735C1E0FF4DF003E0517 /* PhoneMinVideo */ = {
@@ -1692,6 +1774,9 @@
 						LastSwiftMigration = 1210;
 						ProvisioningStyle = Automatic;
 					};
+					558125BB2643937700379A43 = {
+						LastSwiftMigration = 1240;
+					};
 					55BD735C1E0FF4DF003E0517 = {
 						DevelopmentTeam = SXWV5Z47NK;
 						ProvisioningStyle = Automatic;
@@ -1765,6 +1850,7 @@
 				55787937254FFE0700F8CD95 /* TwoWayStreamingSwift */,
 				5512B68525655FD900E207B5 /* MediaDevicesSwift */,
 				5581216B2639471000379A43 /* MCUClientSwift */,
+				558125BB2643937700379A43 /* ImageOverlaySwift */,
 			);
 		};
 /* End PBXProject section */
@@ -1825,6 +1911,15 @@
 			files = (
 				5581217A2639471000379A43 /* LaunchScreen.storyboard in Resources */,
 				5581217D2639471000379A43 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		558125C72643937700379A43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				558125FA264396A200379A43 /* LaunchScreen.storyboard in Resources */,
+				558125FB264396A200379A43 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2379,6 +2474,65 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\n    FRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\n    FRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\n    echo \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\n    EXTRACTED_ARCHS=()\n\n    for ARCH in $ARCHS\n    do\n        echo \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\n        lipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\n        EXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\n    done\n\n    echo \"Merging extracted architectures: ${ARCHS}\"\n    lipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\n    rm \"${EXTRACTED_ARCHS[@]}\"\n\n    echo \"Replacing original executable with thinned version\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
 		};
+		558125BC2643937700379A43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageOverlaySwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		558125CD2643937700379A43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageOverlaySwift/Pods-ImageOverlaySwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImageOverlaySwift/Pods-ImageOverlaySwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		558125CE2643937700379A43 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\n    FRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\n    FRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\n    echo \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\n    EXTRACTED_ARCHS=()\n\n    for ARCH in $ARCHS\n    do\n        echo \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\n        lipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\n        EXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\n    done\n\n    echo \"Merging extracted architectures: ${ARCHS}\"\n    lipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\n    rm \"${EXTRACTED_ARCHS[@]}\"\n\n    echo \"Replacing original executable with thinned version\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
+		};
 		55BD735D1E0FF4DF003E0517 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2833,6 +2987,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		558125BD2643937700379A43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				558125C02643937700379A43 /* WebRTCView.swift in Sources */,
+				558125C22643937700379A43 /* AppDelegate.swift in Sources */,
+				558125EF2643944000379A43 /* ImageOverlayViewController.swift in Sources */,
+				5581261326439FA700379A43 /* CameraVideoCapturer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55BD735E1E0FF4DF003E0517 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2988,6 +3153,22 @@
 				55812160263946FC00379A43 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		558125F22643945C00379A43 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				558125F32643945C00379A43 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		558125F42643945C00379A43 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				558125F52643945C00379A43 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 		CE2310651C0D718100918455 /* Main.storyboard */ = {
@@ -3494,6 +3675,107 @@
 				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.MCUClientSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Release;
+		};
+		558125D02643937700379A43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD864E8C9C2E475CA1B05FC4 /* Pods-ImageOverlaySwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = SXWV5Z47NK;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FPWCSApi2Swift.framework/Frameworks",
+					"$(PROJECT_DIR)/FPWCSApi2Swift.xcframework/ios-arm64_armv7/FPWCSApi2Swift.framework/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Swift/ImageOverlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.ImageOverlaySwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Debug;
+		};
+		558125D12643937700379A43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7415178EA8D3601F08AE17E0 /* Pods-ImageOverlaySwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = SXWV5Z47NK;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FPWCSApi2Swift.framework/Frameworks",
+					"$(PROJECT_DIR)/FPWCSApi2Swift.xcframework/ios-arm64_armv7/FPWCSApi2Swift.framework/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Swift/ImageOverlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.ImageOverlaySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -4163,6 +4445,15 @@
 			buildConfigurations = (
 				558121842639471000379A43 /* Debug */,
 				558121852639471000379A43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		558125CF2643937700379A43 /* Build configuration list for PBXNativeTarget "ImageOverlaySwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				558125D02643937700379A43 /* Debug */,
+				558125D12643937700379A43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
