@@ -14,6 +14,8 @@ class CameraVideoCapturer: RTCCameraVideoCapturer {
     let kNanosecondsPerSecond = 1000000000
 
     var device: AVCaptureDevice?
+    
+    var overlayImage: CIImage?
  
     override init() {
         super.init()
@@ -37,8 +39,22 @@ class CameraVideoCapturer: RTCCameraVideoCapturer {
         return _device
     }
     
+    func updateOverlayImage(_ image:CIImage) {
+        self.overlayImage = image;
+    }
+    
     func startCapture() {
-        self.startCapture(with: device!, format: device!.activeFormat, fps: 30)
+        var currentFormat = device!.activeFormat
+        for format in device!.formats {
+            let dimensions = CMVideoFormatDescriptionGetDimensions(format.formatDescription)
+            if (dimensions.width == 640) {
+                currentFormat = format
+                print(currentFormat.debugDescription)
+                break
+            }
+    
+        }
+        self.startCapture(with: device!, format: currentFormat, fps: 30)
     }
     
     func scale(velocity: CGFloat) {
@@ -74,15 +90,56 @@ extension CameraVideoCapturer: AVCaptureVideoDataOutputSampleBufferDelegate {
             return;
         }
         
+        if (overlayImage != nil) {
+            let inputImage = CIImage.init(cvImageBuffer: pixelBuffer!);
+            let combinedFilter = CIFilter(name: "CISourceOverCompositing")!
+            combinedFilter.setValue(inputImage, forKey: "inputBackgroundImage")
+            combinedFilter.setValue(overlayImage, forKey: "inputImage")
+
+            let outputImage = combinedFilter.outputImage!
+            let tmpcontext = CIContext(options: nil)
+            tmpcontext.render(outputImage, to: pixelBuffer!, bounds: outputImage.extent, colorSpace: CGColorSpaceCreateDeviceRGB())
+
+        }
         let rtcPixelBuffer = RTCCVPixelBuffer(pixelBuffer: pixelBuffer!)
         let timeStampNs = CMTimeGetSeconds(CMSampleBufferGetPresentationTimeStamp(sampleBuffer)) *
             Float64(kNanosecondsPerSecond)
-        
         
         let videoFrame = RTCVideoFrame(buffer: rtcPixelBuffer,
                                        rotation: ._90,
                                        timeStampNs: Int64(timeStampNs))
         self.delegate?.capturer(self, didCapture: videoFrame)
+    }
+    
+    func convertCIImageToCGImage(inputImage: CIImage) -> CGImage! {
+        let context = CIContext(options: nil)
+        return context.createCGImage(inputImage, from: inputImage.extent)
+    }
+    
+    func pixelBufferFromCGImage(image: CGImage) -> CVPixelBuffer {
+        var pxbuffer: CVPixelBuffer? = nil
+        let options: NSDictionary = [:]
+
+        let width =  image.width
+        let height = image.height
+        let bytesPerRow = image.bytesPerRow
+
+        let dataFromImageDataProvider = CFDataCreateMutableCopy(kCFAllocatorDefault, 0, image.dataProvider!.data)
+        let x = CFDataGetMutableBytePtr(dataFromImageDataProvider)
+
+        CVPixelBufferCreateWithBytes(
+            kCFAllocatorDefault,
+            width,
+            height,
+            kCVPixelFormatType_32ARGB,
+            x!,
+            bytesPerRow,
+            nil,
+            nil,
+            options,
+            &pxbuffer
+        )
+        return pxbuffer!;
     }
     
     func captureOutput(_ output: AVCaptureOutput, didDrop sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {

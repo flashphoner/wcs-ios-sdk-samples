@@ -2,6 +2,21 @@ import UIKit
 import FPWCSApi2Swift
 import Foundation
 
+extension UIImage
+{
+    // convenience function in UIImage extension to resize a given image
+    func convert(toSize size:CGSize, scale:CGFloat) ->UIImage
+    {
+        let imgRect = CGRect(origin: CGPoint(x:0.0, y:0.0), size: size)
+        UIGraphicsBeginImageContextWithOptions(size, false, scale)
+        self.draw(in: imgRect)
+        let copied = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+
+        return copied!
+    }
+}
+
 extension ImageOverlayViewController : UITextFieldDelegate {
   func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
     self.activeTextField = textField
@@ -26,18 +41,27 @@ extension ImageOverlayViewController : UITextViewDelegate {
   }
 }
 
-class ImageOverlayViewController: UIViewController {
+class ImageOverlayViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    var capturer: CameraVideoCapturer?
+    var capturer: CameraVideoCapturer = CameraVideoCapturer()
     var lightOn = true
     var session:WCSSession?
     var publishStream:WCSStream?
     var playStream:WCSStream?
+    var imagePicker = UIImagePickerController()
+    var selectedImage:UIImage?
     
     @IBOutlet weak var urlField: UITextField!
     @IBOutlet weak var connectStatus: UILabel!
     @IBOutlet weak var connectButton: UIButton!
-
+    
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var widthImage: UITextField!
+    @IBOutlet weak var heightImage: UITextField!
+    @IBOutlet weak var overlayX: UITextField!
+    @IBOutlet weak var overlayY: UITextField!
+    @IBOutlet weak var selectImage: UIButton!
+    
     @IBOutlet weak var publishName: UITextField!
     @IBOutlet weak var publishStatus: UILabel!
     @IBOutlet weak var publishButton: UIButton!
@@ -57,12 +81,17 @@ class ImageOverlayViewController: UIViewController {
         onDisconnected();
         
         urlField.delegate = self
+        widthImage.delegate = self
+        heightImage.delegate = self
+        overlayX.delegate = self
+        overlayY.delegate = self
+
         publishName.delegate = self
         playName.delegate = self
+        imagePicker.delegate = self
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
-        capturer = CameraVideoCapturer()
     }
     
     @objc func keyboardWillShow(notification: NSNotification) {
@@ -105,12 +134,18 @@ class ImageOverlayViewController: UIViewController {
         toolbar.sizeToFit()
         
         urlField.inputAccessoryView = toolbar
+        widthImage.inputAccessoryView = toolbar
+        heightImage.inputAccessoryView = toolbar
+        overlayX.inputAccessoryView = toolbar
+        overlayY.inputAccessoryView = toolbar
+
         publishName.inputAccessoryView = toolbar
         playName.inputAccessoryView = toolbar
     }
     
     @objc func doneButtonTapped() {
         view.endEditing(true)
+        updateOverlayImage()
     }
     
     @IBAction func connectPressed(_ sender: Any) {
@@ -153,6 +188,59 @@ class ImageOverlayViewController: UIViewController {
 
     }
     
+    @IBAction func selectImagePressed(_ sender: Any) {
+        imagePicker.allowsEditing = false
+        imagePicker.sourceType = .photoLibrary
+        DispatchQueue.main.async {
+            self.present(self.imagePicker, animated: true, completion: nil)
+        }
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        guard let image = info[.originalImage] as? UIImage else {
+            return;
+        }
+        
+        selectedImage = image
+        imageView.image = selectedImage
+        updateOverlayImage()
+        
+        DispatchQueue.main.async {
+            picker.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    func updateOverlayImage() {
+        if let selectedImage = selectedImage {
+            let resizeImage = resize((selectedImage.cgImage)!, selectedImage.imageOrientation)
+            
+            let overlayImage = CIImage.init(cgImage: (resizeImage)!)
+            let overX = CGFloat(Int(overlayX.text ?? "0") ?? 0)
+            let overY = CGFloat(Int(overlayY.text ?? "0") ?? 0)
+            let movedImage = overlayImage.oriented(.left).transformed(by: CGAffineTransform(translationX: overY, y: overX))
+            capturer.updateOverlayImage(movedImage)
+        } else {
+            capturer.overlayImage = nil
+            return
+        }
+    }
+    
+    func resize(_ image: CGImage, _ orientation: UIImage.Orientation) -> CGImage? {
+        let width: CGFloat = CGFloat(Int(heightImage.text ?? "") ?? 200)
+        let height: CGFloat = CGFloat(Int(widthImage.text ?? "") ?? 200)
+        let colorSpace:CGColorSpace = CGColorSpaceCreateDeviceRGB()
+        let bitmapInfo = CGBitmapInfo(rawValue: CGImageAlphaInfo.noneSkipFirst.rawValue)
+        guard let context = CGContext(data: nil, width: Int(height), height: Int(width), bitsPerComponent: 8, bytesPerRow: 0, space: colorSpace, bitmapInfo: bitmapInfo.rawValue) else { return nil }
+        
+        if (orientation == .right) {
+            context.translateBy(x: 0, y: width)
+            context.rotate(by: -.pi/2)
+        }
+
+        context.draw(image, in: CGRect(x: 0, y: 0, width: CGFloat(Int(width)), height: CGFloat(Int(height))))
+        return context.makeImage()
+    }
+    
     @IBAction func publishPressed(_ sender: Any) {
         changeViewState(publishButton,false)
         if (publishButton.title(for: .normal) == "PUBLISH") {
@@ -182,7 +270,7 @@ class ImageOverlayViewController: UIViewController {
             });
             do {
                 try publishStream?.publish()
-                capturer?.startCapture()
+                capturer.startCapture()
             } catch {
                 print(error);
             }
@@ -199,7 +287,7 @@ class ImageOverlayViewController: UIViewController {
     
     @IBAction func pinchOnLocalDisplay(_ sender: UIPinchGestureRecognizer) {
         if sender.state == .changed {
-            self.capturer?.scale(velocity: sender.velocity)
+            self.capturer.scale(velocity: sender.velocity)
         }
     }
     
@@ -329,9 +417,7 @@ class ImageOverlayViewController: UIViewController {
             changeViewState(publishButton, false)
             changeViewState(publishName, false)
         }
-        capturer?.stopCapture()
-//        [FPWCSApi2 releaseLocalMedia:_localDisplay]
-//        [_localDisplay renderFrame:nil]
+        capturer.stopCapture()
     }
 
     fileprivate func onPlaying(_ stream:FPWCSApi2Stream) {
