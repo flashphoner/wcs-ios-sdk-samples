@@ -10,7 +10,7 @@
 		007FCEA027937F1705D714B2 /* Pods_TwoWayStreaming.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657FE6304944E7B0E86B981B /* Pods_TwoWayStreaming.framework */; };
 		061B4A6262F2BD8EE560DC97 /* Pods_StreamRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA37E8F9999876F4BDE5240 /* Pods_StreamRecording.framework */; };
 		2C9EA6B7826D4E9D53C22823 /* Pods_Player.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8745492A7BF846C9479B539C /* Pods_Player.framework */; };
-		2D60120E95DF0969E87948A9 /* Pods_TwoWayStreamingSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120AE7BC2CDC0ABB8E3CDBBB /* Pods_TwoWayStreamingSwift.framework */; };
+		2D60120E95DF0969E87948A9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		347EAE752A00A7D6410BD50A /* Pods_GPUImageDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67583FC82A75C6CC4844C24B /* Pods_GPUImageDemo.framework */; };
 		3F2A9FFC5A5A59E6CFD7FE70 /* Pods_TwoPlayers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31005716A70F1B337799F1 /* Pods_TwoPlayers.framework */; };
 		4CECE292C777F06FCE1291B5 /* Pods_Streamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C845B85743847299215C220 /* Pods_Streamer.framework */; };
@@ -145,6 +145,11 @@
 		558D5EAA258267AA00C77CAC /* WebRTCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D5EA9258267AA00C77CAC /* WebRTCView.swift */; };
 		558D5EB82582685900C77CAC /* WebRTCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D5EA9258267AA00C77CAC /* WebRTCView.swift */; };
 		559ECC5B2593040600C3FA89 /* RemoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559ECC5A2593040600C3FA89 /* RemoteViewController.swift */; };
+		559F74FD2665F049006A5231 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557879B2254FFEC600F8CD95 /* AppDelegate.swift */; };
+		559F751F2665F16A006A5231 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559F751A2665F16A006A5231 /* WebViewController.swift */; };
+		559F75212665F18F006A5231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 559F75152665F16A006A5231 /* Assets.xcassets */; };
+		559F75222665F18F006A5231 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 559F75162665F16A006A5231 /* LaunchScreen.storyboard */; };
+		559F75232665F18F006A5231 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 559F75182665F16A006A5231 /* Main.storyboard */; };
 		55B649CD1DFCFD05009D4264 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E1EC351DFCFBA0005AEE73 /* AppDelegate.m */; };
 		55B649CE1DFCFD05009D4264 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E1EC381DFCFBA0005AEE73 /* ViewController.m */; };
 		55BD735F1E0FF4DF003E0517 /* WCSViews.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534441DDADA3800D7DF80 /* WCSViews.m */; };
@@ -293,6 +298,7 @@
 		55FCD3CE252B0437008C54E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
 		6C30CB3000443DDE6FF500C9 /* Pods_ImageOverlaySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524459B41543F94D92ED576A /* Pods_ImageOverlaySwift.framework */; };
 		85458A1A4E20148A6AA67C8F /* Pods_MediaDevices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A58904727550EF62D7BF75 /* Pods_MediaDevices.framework */; };
+		860B894766550601C22FB1F7 /* Pods_WebViewSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9E1D6D79359A9C141FD1DB5 /* Pods_WebViewSwift.framework */; };
 		874B8D646E3ADB17D3AF3DE6 /* Pods_PhoneMin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77B12A13431E3991180227D /* Pods_PhoneMin.framework */; };
 		8845F0DD6AEEA05D2C8C4CB9 /* Pods_VideoChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5BB64A1ECEAAAAE4BA4D58 /* Pods_VideoChat.framework */; };
 		96E97847B0DD3DD368A0655D /* Pods_ClickToCall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6092F5076645DB535DAF8F5F /* Pods_ClickToCall.framework */; };
@@ -541,14 +547,15 @@
 /* Begin PBXFileReference section */
 		02A58904727550EF62D7BF75 /* Pods_MediaDevices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaDevices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C845B85743847299215C220 /* Pods_Streamer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Streamer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		120AE7BC2CDC0ABB8E3CDBBB /* Pods_TwoWayStreamingSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwoWayStreamingSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		197A1744E5786E2455C350B7 /* Pods-PhoneMinVideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneMinVideo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneMinVideo/Pods-PhoneMinVideo.debug.xcconfig"; sourceTree = "<group>"; };
 		19B321C1597A2D603CFB8EB1 /* Pods_MediaDevicesSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaDevicesSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE784088783ED8B898EB85D /* Pods-WebViewSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebViewSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebViewSwift/Pods-WebViewSwift.release.xcconfig"; sourceTree = "<group>"; };
 		1D638A5574E01255F80E5B79 /* Pods-Conference.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conference.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Conference/Pods-Conference.debug.xcconfig"; sourceTree = "<group>"; };
 		251625D1C68BDE4F9EA1E79A /* Pods-MediaDevices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaDevices.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MediaDevices/Pods-MediaDevices.debug.xcconfig"; sourceTree = "<group>"; };
 		28EC9B3398AF302C83D5B83E /* Pods-PhoneMinVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneMinVideo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneMinVideo/Pods-PhoneMinVideo.release.xcconfig"; sourceTree = "<group>"; };
 		2F658772CEA94FD2C2636F0F /* Pods-ClickToCall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickToCall.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClickToCall/Pods-ClickToCall.release.xcconfig"; sourceTree = "<group>"; };
 		351C7C8EFEA3BF6F067F632E /* Pods-VideoChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoChat/Pods-VideoChat.release.xcconfig"; sourceTree = "<group>"; };
+		48C0A73AFC463662768767E3 /* Pods-WebViewSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebViewSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebViewSwift/Pods-WebViewSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		524459B41543F94D92ED576A /* Pods_ImageOverlaySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageOverlaySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5503A8191DEEE961003A50AF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Conference/AppDelegate.h; sourceTree = "<group>"; };
 		5503A81A1DEEE961003A50AF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Conference/AppDelegate.m; sourceTree = "<group>"; };
@@ -596,6 +603,12 @@
 		5589534625A6F803003C4B38 /* TwoWayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoWayViewController.swift; sourceTree = "<group>"; };
 		558D5EA9258267AA00C77CAC /* WebRTCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCView.swift; sourceTree = "<group>"; };
 		559ECC5A2593040600C3FA89 /* RemoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RemoteViewController.swift; path = MediaDevices/RemoteViewController.swift; sourceTree = "<group>"; };
+		559F75112665F049006A5231 /* WebViewSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		559F75152665F16A006A5231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		559F75172665F16A006A5231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		559F75192665F16A006A5231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		559F751A2665F16A006A5231 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		559F751B2665F16A006A5231 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55BD73541E0FF4D1003E0517 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = PhoneMinVideo/AppDelegate.h; sourceTree = "<group>"; };
 		55BD73551E0FF4D1003E0517 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = PhoneMinVideo/AppDelegate.m; sourceTree = "<group>"; };
 		55BD73561E0FF4D1003E0517 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PhoneMinVideo/Info.plist; sourceTree = "<group>"; };
@@ -714,6 +727,7 @@
 		CEF3EB691C75ABA4002FDF16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEF3EB6B1C75ABA4002FDF16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		D71040B0F8C4B2E300D34779 /* Pods_MCUClientSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCUClientSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9E1D6D79359A9C141FD1DB5 /* Pods_WebViewSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebViewSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB73F0D95AC5C28060A24E5 /* Pods-TwoWayStreaming.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoWayStreaming.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwoWayStreaming/Pods-TwoWayStreaming.release.xcconfig"; sourceTree = "<group>"; };
 		E09018DB4496D32FF344EAE3 /* Pods-TwoWayStreaming.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoWayStreaming.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwoWayStreaming/Pods-TwoWayStreaming.debug.xcconfig"; sourceTree = "<group>"; };
 		F8923D117764EE08F498B30A /* Pods-StreamRecording.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamRecording.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StreamRecording/Pods-StreamRecording.debug.xcconfig"; sourceTree = "<group>"; };
@@ -799,7 +813,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D60120E95DF0969E87948A9 /* Pods_TwoWayStreamingSwift.framework in Frameworks */,
+				2D60120E95DF0969E87948A9 /* (null) in Frameworks */,
 				55E2A01925DF8299006C1B4F /* FPWCSApi2Swift.xcframework in Frameworks */,
 				55E2A06225E0CFE6006C1B4F /* WebRTC.framework in Frameworks */,
 			);
@@ -822,6 +836,14 @@
 				558125C42643937700379A43 /* FPWCSApi2Swift.xcframework in Frameworks */,
 				558125C52643937700379A43 /* WebRTC.framework in Frameworks */,
 				6C30CB3000443DDE6FF500C9 /* Pods_ImageOverlaySwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559F75012665F049006A5231 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				860B894766550601C22FB1F7 /* Pods_WebViewSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1053,6 +1075,8 @@
 				C7A5805B4233CBC68B00A58B /* Pods-MCUClientSwift.release.xcconfig */,
 				AD864E8C9C2E475CA1B05FC4 /* Pods-ImageOverlaySwift.debug.xcconfig */,
 				7415178EA8D3601F08AE17E0 /* Pods-ImageOverlaySwift.release.xcconfig */,
+				48C0A73AFC463662768767E3 /* Pods-WebViewSwift.debug.xcconfig */,
+				1CE784088783ED8B898EB85D /* Pods-WebViewSwift.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1125,6 +1149,7 @@
 		5578781C254DAC3400F8CD95 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				559F75142665F16A006A5231 /* WebView */,
 				558125BA264392AD00379A43 /* ImageOverlay */,
 				5581215C263946FC00379A43 /* MCUClient */,
 				558D5EB72582684B00C77CAC /* Common */,
@@ -1176,6 +1201,18 @@
 				558D5EA9258267AA00C77CAC /* WebRTCView.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		559F75142665F16A006A5231 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				559F75152665F16A006A5231 /* Assets.xcassets */,
+				559F75162665F16A006A5231 /* LaunchScreen.storyboard */,
+				559F75182665F16A006A5231 /* Main.storyboard */,
+				559F751A2665F16A006A5231 /* WebViewController.swift */,
+				559F751B2665F16A006A5231 /* Info.plist */,
+			);
+			path = WebView;
 			sourceTree = "<group>";
 		};
 		55BD73531E0FF407003E0517 /* PhoneMinVideo */ = {
@@ -1280,10 +1317,10 @@
 				6092F5076645DB535DAF8F5F /* Pods_ClickToCall.framework */,
 				67583FC82A75C6CC4844C24B /* Pods_GPUImageDemo.framework */,
 				7EA37E8F9999876F4BDE5240 /* Pods_StreamRecording.framework */,
-				120AE7BC2CDC0ABB8E3CDBBB /* Pods_TwoWayStreamingSwift.framework */,
 				D71040B0F8C4B2E300D34779 /* Pods_MCUClientSwift.framework */,
 				524459B41543F94D92ED576A /* Pods_ImageOverlaySwift.framework */,
 				19B321C1597A2D603CFB8EB1 /* Pods_MediaDevicesSwift.framework */,
+				D9E1D6D79359A9C141FD1DB5 /* Pods_WebViewSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1318,6 +1355,7 @@
 				5512B69825655FD900E207B5 /* MediaDevicesSwift.app */,
 				558121862639471000379A43 /* MCUClientSwift.app */,
 				558125D22643937700379A43 /* ImageOverlaySwift.app */,
+				559F75112665F049006A5231 /* WebViewSwift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1551,6 +1589,25 @@
 			name = ImageOverlaySwift;
 			productName = TwoWayStreamingSwift;
 			productReference = 558125D22643937700379A43 /* ImageOverlaySwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		559F74FA2665F049006A5231 /* WebViewSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 559F750E2665F049006A5231 /* Build configuration list for PBXNativeTarget "WebViewSwift" */;
+			buildPhases = (
+				559F74FB2665F049006A5231 /* [CP] Check Pods Manifest.lock */,
+				559F74FC2665F049006A5231 /* Sources */,
+				559F75012665F049006A5231 /* Frameworks */,
+				559F75052665F049006A5231 /* Resources */,
+				559F750D2665F049006A5231 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebViewSwift;
+			productName = TwoWayStreamingSwift;
+			productReference = 559F75112665F049006A5231 /* WebViewSwift.app */;
 			productType = "com.apple.product-type.application";
 		};
 		55BD735C1E0FF4DF003E0517 /* PhoneMinVideo */ = {
@@ -1851,6 +1908,7 @@
 				5512B68525655FD900E207B5 /* MediaDevicesSwift */,
 				5581216B2639471000379A43 /* MCUClientSwift */,
 				558125BB2643937700379A43 /* ImageOverlaySwift */,
+				559F74FA2665F049006A5231 /* WebViewSwift */,
 			);
 		};
 /* End PBXProject section */
@@ -1920,6 +1978,16 @@
 			files = (
 				558125FA264396A200379A43 /* LaunchScreen.storyboard in Resources */,
 				558125FB264396A200379A43 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559F75052665F049006A5231 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559F75212665F18F006A5231 /* Assets.xcassets in Resources */,
+				559F75222665F18F006A5231 /* LaunchScreen.storyboard in Resources */,
+				559F75232665F18F006A5231 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2533,6 +2601,45 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\n    FRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\n    FRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\n    echo \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\n    EXTRACTED_ARCHS=()\n\n    for ARCH in $ARCHS\n    do\n        echo \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\n        lipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\n        EXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\n    done\n\n    echo \"Merging extracted architectures: ${ARCHS}\"\n    lipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\n    rm \"${EXTRACTED_ARCHS[@]}\"\n\n    echo \"Replacing original executable with thinned version\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
 		};
+		559F74FB2665F049006A5231 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebViewSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		559F750D2665F049006A5231 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\n    FRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\n    FRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\n    echo \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\n    EXTRACTED_ARCHS=()\n\n    for ARCH in $ARCHS\n    do\n        echo \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\n        lipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\n        EXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\n    done\n\n    echo \"Merging extracted architectures: ${ARCHS}\"\n    lipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\n    rm \"${EXTRACTED_ARCHS[@]}\"\n\n    echo \"Replacing original executable with thinned version\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
+		};
 		55BD735D1E0FF4DF003E0517 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2998,6 +3105,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		559F74FC2665F049006A5231 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559F74FD2665F049006A5231 /* AppDelegate.swift in Sources */,
+				559F751F2665F16A006A5231 /* WebViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55BD735E1E0FF4DF003E0517 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3169,6 +3285,22 @@
 				558125F52643945C00379A43 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		559F75162665F16A006A5231 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				559F75172665F16A006A5231 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		559F75182665F16A006A5231 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				559F75192665F16A006A5231 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		CE2310651C0D718100918455 /* Main.storyboard */ = {
@@ -3776,6 +3908,107 @@
 				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.ImageOverlaySwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Release;
+		};
+		559F750F2665F049006A5231 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48C0A73AFC463662768767E3 /* Pods-WebViewSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = SXWV5Z47NK;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/**",
+					"$(PROJECT_DIR)/FPWCSApi2Swift.xcframework/ios-arm64_armv7/FPWCSApi2Swift.framework/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Swift/WebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.WebViewSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Debug;
+		};
+		559F75102665F049006A5231 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CE784088783ED8B898EB85D /* Pods-WebViewSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = SXWV5Z47NK;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/**",
+					"$(PROJECT_DIR)/FPWCSApi2Swift.xcframework/ios-arm64_armv7/FPWCSApi2Swift.framework/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Swift/WebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.WebViewSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -4454,6 +4687,15 @@
 			buildConfigurations = (
 				558125D02643937700379A43 /* Debug */,
 				558125D12643937700379A43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		559F750E2665F049006A5231 /* Build configuration list for PBXNativeTarget "WebViewSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				559F750F2665F049006A5231 /* Debug */,
+				559F75102665F049006A5231 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
