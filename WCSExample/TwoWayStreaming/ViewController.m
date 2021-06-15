@@ -237,9 +237,11 @@
     [_playButton setTitle:@"PLAY" forState:UIControlStateNormal];
     if ([FPWCSApi2 getSessions].count && [[FPWCSApi2 getSessions][0] getStatus] == kFPWCSSessionStatusEstablished) {
         [self changeViewState:_playButton enabled:YES];
+        [self changeViewState:_availableButton enabled:YES];
         [self changeViewState:_remoteStreamName enabled:YES];
     } else {
         [self changeViewState:_playButton enabled:NO];
+        [self changeViewState:_availableButton enabled:NO];
         [self changeViewState:_remoteStreamName enabled:NO];
     }
     [_remoteDisplay renderFrame:nil];
@@ -311,6 +313,26 @@
     } else {
         NSLog(@"No active sessions found");
     }
+}
+
+- (void)availableButton:(UIButton *)button {
+    [self changeViewState:button enabled:NO];
+    FPWCSApi2Session *session = [FPWCSApi2 getSessions][0];
+    FPWCSApi2StreamOptions *options = [[FPWCSApi2StreamOptions alloc] init];
+    options.name = _remoteStreamName.text;
+    options.display = _remoteDisplay;
+    FPWCSApi2Stream *stream = [session createStream:options error:nil];
+    [stream available:^(BOOL available, NSString *info) {
+        [self changeViewState:button enabled:YES];
+        if (available) {
+            _remoteStreamStatus.text = @"AVAILABLE";
+            _remoteStreamStatus.textColor = [UIColor greenColor];
+        } else {
+            _remoteStreamStatus.text = info;
+            _remoteStreamStatus.textColor = [UIColor redColor];
+
+        }
+    }];
 }
 
 - (void)playButton:(UIButton *)button {
@@ -491,7 +513,10 @@
     _remoteStreamStatus = [WCSViewUtil createLabelView];
     _playButton = [WCSViewUtil createButton:@"PLAY"];
     [_playButton addTarget:self action:@selector(playButton:) forControlEvents:UIControlEventTouchUpInside];
-    
+
+    _availableButton = [WCSViewUtil createButton:@"AVAILABLE"];
+    [_availableButton addTarget:self action:@selector(availableButton:) forControlEvents:UIControlEventTouchUpInside];
+
     [self.videoContainer addSubview:_localDisplay];
     [self.videoContainer addSubview:_remoteDisplay];
     
@@ -509,6 +534,8 @@
     [self.contentView addSubview:_remoteStreamName];
     [self.contentView addSubview:_remoteStreamStatus];
     [self.contentView addSubview:_playButton];
+    [self.contentView addSubview:_availableButton];
+
     
     [self.contentView addSubview:_videoContainer];
     
@@ -535,6 +562,7 @@
                             @"remoteStreamName": _remoteStreamName,
                             @"remoteStreamStatus": _remoteStreamStatus,
                             @"playButton": _playButton,
+                            @"availableButton": _availableButton,
                             @"localDisplay": _localDisplay,
                             @"remoteDisplay": _remoteDisplay,
                             @"videoContainer": _videoContainer,
@@ -587,6 +615,7 @@
     setConstraint(_publishButton, @"V:[publishButton(buttonHeight)]", 0);
     setConstraint(_switchCameraButton, @"V:[switchCameraButton(buttonHeight)]", 0);
     setConstraint(_playButton, @"V:[playButton(buttonHeight)]", 0);
+    setConstraint(_availableButton, @"V:[availableButton(buttonHeight)]", 0);
     setConstraint(_videoContainer, @"V:[videoContainer(videoHeight)]", 0);
     
     //set width related to super view
@@ -602,6 +631,7 @@
     setConstraint(_contentView, @"H:|-hSpacing-[publishButton]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[switchCameraButton]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[playButton]-hSpacing-|", 0);
+    setConstraint(_contentView, @"H:|-hSpacing-[availableButton]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[videoContainer]-hSpacing-|", 0);
     
     //local display max width and height
@@ -624,7 +654,7 @@
     setConstraint(_videoContainer, @"H:|[localDisplay][remoteDisplay]|", NSLayoutFormatAlignAllTop);
     setConstraint(_videoContainer, @"V:|[localDisplay]", 0);
     
-    setConstraint(self.contentView, @"V:|-50-[connectUrl]-vSpacing-[connectionStatus]-vSpacing-[connectButton]-vSpacing-[publishStreamLabel]-vSpacing-[localStreamName]-vSpacing-[localStreamStatus]-vSpacing-[publishButton]-vSpacing-[switchCameraButton]-vSpacing-[playStreamLabel]-vSpacing-[remoteStreamName]-vSpacing-[remoteStreamStatus]-vSpacing-[playButton]-vSpacing-[videoContainer]-vSpacing-|", 0);
+    setConstraint(self.contentView, @"V:|-50-[connectUrl]-vSpacing-[connectionStatus]-vSpacing-[connectButton]-vSpacing-[publishStreamLabel]-vSpacing-[localStreamName]-vSpacing-[localStreamStatus]-vSpacing-[publishButton]-vSpacing-[switchCameraButton]-vSpacing-[playStreamLabel]-vSpacing-[remoteStreamName]-vSpacing-[remoteStreamStatus]-vSpacing-[playButton]-vSpacing-[availableButton]-vSpacing-[videoContainer]-vSpacing-|", 0);
     
     //content view width
     setConstraintWithItem(self.view, _contentView, self.view, NSLayoutAttributeWidth, NSLayoutRelationEqual, NSLayoutAttributeWidth, 1.0, 0);

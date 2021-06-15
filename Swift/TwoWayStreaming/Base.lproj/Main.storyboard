@@ -81,7 +81,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duP-oO-hX1">
-                                                <rect key="frame" x="14" y="396" width="359" height="30"/>
+                                                <rect key="frame" x="14" y="396" width="172" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                 <rect key="contentStretch" x="0.20000000000000001" y="0.0" width="1" height="1"/>
@@ -184,6 +184,23 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iht-9L-Hvg" userLabel="availableButon">
+                                                <rect key="frame" x="199" y="396" width="172" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                <rect key="contentStretch" x="0.20000000000000001" y="0.0" width="1" height="1"/>
+                                                <state key="normal" title="AVAILABLE">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="availablePressed:" destination="gq4-pf-7pZ" eventType="touchUpInside" id="hWF-cn-Hdu"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -210,6 +227,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="availableButton" destination="Iht-9L-Hvg" id="X5p-hM-rMv"/>
                         <outlet property="connectButton" destination="fm8-gK-cE5" id="zfh-DH-DHS"/>
                         <outlet property="connectStatus" destination="4Av-81-mH0" id="4Sh-p3-wlI"/>
                         <outlet property="dataReceivedTextView" destination="SRz-DY-FBS" id="iK0-fM-mGN"/>

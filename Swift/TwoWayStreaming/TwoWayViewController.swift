@@ -44,7 +44,8 @@ class TwoWayViewController: UIViewController {
     @IBOutlet weak var playName: UITextField!
     @IBOutlet weak var playStatus: UILabel!
     @IBOutlet weak var playButton: UIButton!
-
+    @IBOutlet weak var availableButton: UIButton!
+    
     @IBOutlet weak var dataToSendTextView: UITextView!
     @IBOutlet weak var dataReceivedTextView: UITextView!
     @IBOutlet weak var sendDataBtn: UIButton!
@@ -272,6 +273,29 @@ class TwoWayViewController: UIViewController {
         }
     }
     
+    @IBAction func availablePressed(_ sender: Any) {
+        changeViewState(availableButton, false)
+        let options = FPWCSApi2StreamOptions()
+        options.name = playName.text;
+        options.display = remoteDisplay.videoView;
+        do {
+            playStream = try session!.createStream(options)
+            playStream?.available({ (available, info) in
+                self.changeViewState(self.availableButton, true)
+                if (available) {
+                    self.playStatus.text = "AVAILABLE"
+                    self.playStatus.textColor = .green
+                } else {
+                    self.playStatus.text = info
+                    self.playStatus.textColor = .red
+                }
+            })
+        } catch {
+            print(error)
+        }
+    }
+    
+    
     fileprivate func changeConnectionStatus(status: kFPWCSSessionStatus) {
         connectStatus.text = FPWCSApi2Model.sessionStatus(toString: status);
         switch (status) {
@@ -375,12 +399,13 @@ class TwoWayViewController: UIViewController {
         playButton.setTitle("PLAY", for:.normal)
         if (session?.getStatus() == kFPWCSSessionStatus.fpwcsSessionStatusEstablished) {
             changeViewState(playButton, true)
+            changeViewState(availableButton, true)
             changeViewState(playName, true)
         } else {
             changeViewState(playButton, false)
+            changeViewState(availableButton, false)
             changeViewState(playName, false)
         }
-//        [_remoteDisplay renderFrame:nil];
     }
     
     fileprivate func changeViewState(_ button:UIView, _ enabled:Bool) {

@@ -29,6 +29,7 @@
 @property UITextField *remoteStreamName;
 @property UILabel *remoteStreamStatus;
 @property UIButton *playButton;
+@property UIButton *availableButton;
 
 @property UIView *videoContainer;
 @property(nonatomic) UIView<RTCVideoRenderer> *localDisplay;
