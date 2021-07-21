@@ -82,5 +82,15 @@ target 'ImageOverlaySwift' do
     pod 'JSONModel'
 end
 
+target 'ScreenCapturerSwift' do
+    pod 'SocketRocket'
+    pod 'JSONModel'
+end
+
+target 'ScreenCapturerExtension' do
+    pod 'SocketRocket'
+    pod 'JSONModel'
+end
+
 target 'WebViewSwift' do
 end

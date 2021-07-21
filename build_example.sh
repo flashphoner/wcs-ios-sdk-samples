@@ -61,6 +61,11 @@ cat << EOF > Info_ipa.plist
                <string>$2</string>
                <key>com.flashphoner.ios.WebViewSwift</key>
                <string>$2</string>
+               <key>com.flashphoner.ios.ScreenCapturer</key>
+               <string>AdHoc ScreenCapturer</string>
+               <key>com.flashphoner.ios.ScreenCapturer.ScreenCapturerExtension</key>
+               <string>AdHoc ScreenCapturerExtension</string>
+               
 
         </dict>
 </dict>
@@ -125,6 +130,8 @@ xcodebuild -exportArchive -exportOptionsPlist Info_ipa.plist -archivePath out-bu
 xcodebuild CODE_SIGN_STYLE=Automatic -workspace 'WCSExample.xcworkspace' -scheme "WebViewSwift" -configuration="Release" clean archive OBJROOT=$(PWD)/out-build/WebViewSwift -archivePath out-build/WebViewSwift
 xcodebuild -exportArchive -exportOptionsPlist Info_ipa.plist -archivePath out-build/WebViewSwift.xcarchive -exportPath out-build
 
+xcodebuild CODE_SIGN_STYLE=Automatic -workspace 'WCSExample.xcworkspace' -scheme "ScreenCapturerSwift" -configuration="Release" clean archive OBJROOT=$(PWD)/out-build/ScreenCapturerSwift -archivePath out-build/ScreenCapturerSwift
+xcodebuild -exportArchive -exportOptionsPlist Info_ipa.plist -archivePath out-build/ScreenCapturerSwift.xcarchive -exportPath out-build
 
 # Remove plist
 rm -rf Info_ipa.plist
