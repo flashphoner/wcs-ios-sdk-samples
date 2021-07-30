@@ -42,7 +42,8 @@ class LocalViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     @IBOutlet weak var videoWidth: UITextField!
     @IBOutlet weak var videoHeight: UITextField!
     @IBOutlet weak var videoFPS: UITextField!
-    @IBOutlet weak var videoBitrate: UITextField!
+    @IBOutlet weak var videoMinBitrate: UITextField!
+    @IBOutlet weak var videoMaxBitrate: UITextField!
     @IBOutlet weak var muteVideo: UISwitch!
     
     var viewController: ViewController?
@@ -70,8 +71,9 @@ class LocalViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         videoWidth.delegate = self
         videoHeight.delegate = self
         videoFPS.delegate = self
-        videoBitrate.delegate = self
-        
+        videoMinBitrate.delegate = self
+        videoMaxBitrate.delegate = self
+
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
@@ -127,7 +129,8 @@ class LocalViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         videoWidth.inputAccessoryView = toolbar
         videoHeight.inputAccessoryView = toolbar
         videoFPS.inputAccessoryView = toolbar
-        videoBitrate.inputAccessoryView = toolbar
+        videoMinBitrate.inputAccessoryView = toolbar
+        videoMaxBitrate.inputAccessoryView = toolbar
         microphone.inputAccessoryView = toolbar
         camera.inputAccessoryView = toolbar
     }
@@ -158,7 +161,8 @@ class LocalViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
             video.maxHeight = video.minHeight
             video.minFrameRate = Int(videoFPS.text ?? "0") ?? 0
             video.maxFrameRate = video.minFrameRate
-            video.bitrate = Int(videoBitrate.text ?? "0") ?? 0
+            video.minBitrate = Int(videoMinBitrate.text ?? "0") ?? 0
+            video.maxBitrate = Int(videoMaxBitrate.text ?? "0") ?? 0
             ret.video = video;
         }
         return ret;

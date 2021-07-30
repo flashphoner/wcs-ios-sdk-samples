@@ -49,7 +49,8 @@
         //set default fps
         _fpsSelector.input.text = @"30";
         [_fpsSelector.picker selectRow:[_fpsSelector.picker numberOfRowsInComponent:0] - 1 inComponent:0 animated:NO];
-        _videoBitrate = [[WCSTextInputView alloc] initWithLabelText:@"Bitrate"];
+        _minVideoBitrate = [[WCSTextInputView alloc] initWithLabelText:@"Min Bitrate (kbps)"];
+        _maxVideoBitrate = [[WCSTextInputView alloc] initWithLabelText:@"Max Bitrate (kbps)"];
         _muteVideo = [[WCSSwitchView alloc] initWithLabelText:@"Mute Video"];
         [_contentView addSubview:_sendAudio];
         [_contentView addSubview:_micSelector];
@@ -62,7 +63,8 @@
         [_contentView addSubview:_camSelector];
         [_contentView addSubview:_videoResolutionSelector];
         [_contentView addSubview:_fpsSelector];
-        [_contentView addSubview:_videoBitrate];
+        [_contentView addSubview:_minVideoBitrate];
+        [_contentView addSubview:_maxVideoBitrate];
         [_contentView addSubview:_muteVideo];
         [_scrollView addSubview:_contentView];
         [self addSubview:_hideButton];
@@ -81,7 +83,8 @@
                                 @"camSelector": _camSelector,
                                 @"videoResolution": _videoResolutionSelector,
                                 @"fpsSelector": _fpsSelector,
-                                @"videoBitrate": _videoBitrate,
+                                @"minVideoBitrate": _minVideoBitrate,
+                                @"maxVideoBitrate": _maxVideoBitrate,
                                 @"muteVideo": _muteVideo,
                                 @"content": _contentView,
                                 @"scroll": _scrollView,
@@ -103,10 +106,11 @@
         [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[camSelector]|" options:0 metrics:metrics views:views]];
         [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[videoResolution]|" options:0 metrics:metrics views:views]];
         [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[fpsSelector]|" options:0 metrics:metrics views:views]];
-        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[videoBitrate]|" options:0 metrics:metrics views:views]];
+        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[minVideoBitrate]|" options:0 metrics:metrics views:views]];
+        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[maxVideoBitrate]|" options:0 metrics:metrics views:views]];
         [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[muteVideo]|" options:0 metrics:metrics views:views]];
         
-        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-vSpacing-[sendAudio]-vSpacing-[micSelector]-vSpacing-[useFEC]-vSpacing-[useStereo]-vSpacing-[audioBitrate]-vSpacing-[muteAudio]-vSpacing-[border]-vSpacing-[sendVideo]-vSpacing-[camSelector]-vSpacing-[videoResolution]-vSpacing-[fpsSelector]-vSpacing-[videoBitrate]-vSpacing-[muteVideo]-vSpacing-|" options:0 metrics:metrics views:views]];
+        [_contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-vSpacing-[sendAudio]-vSpacing-[micSelector]-vSpacing-[useFEC]-vSpacing-[useStereo]-vSpacing-[audioBitrate]-vSpacing-[muteAudio]-vSpacing-[border]-vSpacing-[sendVideo]-vSpacing-[camSelector]-vSpacing-[videoResolution]-vSpacing-[fpsSelector]-vSpacing-[minVideoBitrate]-vSpacing-[maxVideoBitrate]-vSpacing-[muteVideo]-vSpacing-|" options:0 metrics:metrics views:views]];
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-hSpacing-[hideButton]-hSpacing-|" options:0 metrics:metrics views:views]];
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[scroll]|" options:0 metrics:metrics views:views]];
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-hSpacing-[content]-hSpacing-|" options:0 metrics:metrics views:views]];
@@ -184,7 +188,8 @@
     [_camSelector.input resignFirstResponder];
     [_videoResolutionSelector.input resignFirstResponder];
     [_fpsSelector.input resignFirstResponder];
-    [_videoBitrate.input resignFirstResponder];
+    [_minVideoBitrate.input resignFirstResponder];
+    [_maxVideoBitrate.input resignFirstResponder];
     [self hide];
 }
 
@@ -219,7 +224,8 @@
     _camSelector.input.userInteractionEnabled = enabled;
     _videoResolutionSelector.userInteractionEnabled = enabled;
     _fpsSelector.input.userInteractionEnabled = enabled;
-    _videoBitrate.input.userInteractionEnabled = enabled;
+    _minVideoBitrate.input.userInteractionEnabled = enabled;
+    _maxVideoBitrate.input.userInteractionEnabled = enabled;
     _muteVideo.control.userInteractionEnabled = enabled;
 }
 
@@ -243,7 +249,8 @@
         video.minWidth = video.maxWidth = [res[0] integerValue];
         video.minHeight = video.maxHeight = [res[1] integerValue];
         video.minFrameRate = video.maxFrameRate = [_fpsSelector.input.text integerValue];
-        video.bitrate = [_videoBitrate.input.text integerValue];
+        video.minBitrate = [_minVideoBitrate.input.text integerValue];
+        video.maxBitrate = [_maxVideoBitrate.input.text integerValue];
         ret.video = video;
     }
     return ret;

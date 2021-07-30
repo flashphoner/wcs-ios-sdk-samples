@@ -19,7 +19,8 @@
 @property WCSPickerInputView *camSelector;
 @property WCSPickerInputView *videoResolutionSelector;
 @property WCSPickerInputView *fpsSelector;
-@property WCSTextInputView *videoBitrate;
+@property WCSTextInputView *minVideoBitrate;
+@property WCSTextInputView *maxVideoBitrate;
 @property WCSSwitchView *muteVideo;
 
 - (void)muteAudioInputs:(BOOL)mute;
