@@ -273,6 +273,7 @@ class ViewController: UIViewController {
             });
             
             playStream?.onStreamEvent({streamEvent in
+                print("Received stream event: %@", streamEvent.debugDescription)
                 if (streamEvent?.type == FPWCSApi2Model.streamEventType(toString: .fpwcsStreamEventTypeAudioMuted)) {
                     self.remoteViewController?.onAudioMute(true);
                 }
