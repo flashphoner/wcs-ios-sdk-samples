@@ -94,3 +94,8 @@ end
 
 target 'WebViewSwift' do
 end
+
+target 'GPUImageDemoSwift' do
+    pod 'SocketRocket'
+    pod 'JSONModel'
+end
