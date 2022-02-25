@@ -26,6 +26,8 @@
 @property WCSSwitchView *sipRegRequired;
 @property UILabel *connectionStatus;
 @property UIButton *connectButton;
+@property WCSTextInputView *authToken;
+@property UIButton *connectTokenButton;
 @property WCSTextInputView *inviteParameters;
 @property WCSTextInputView *callee;
 @property UILabel *callStatus;

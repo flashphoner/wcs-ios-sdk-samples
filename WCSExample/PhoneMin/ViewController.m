@@ -34,7 +34,19 @@ UIAlertController *alert;
 //connect
 - (FPWCSApi2Session *)connect {
     FPWCSApi2SessionOptions *options = [[FPWCSApi2SessionOptions alloc] init];
+    return [self connectWithOptions:options];
+    
+}
+
+- (FPWCSApi2Session *)connectWithToken {
+    FPWCSApi2SessionOptions *options = [[FPWCSApi2SessionOptions alloc] init];
+    options.authToken = _authToken.input.text;
+    return [self connectWithOptions:options];
+}
+
+- (FPWCSApi2Session *)connectWithOptions:(FPWCSApi2SessionOptions *)options {
     options.urlServer = _connectUrl.text;
+    options.keepAlive = true;
     options.sipRegisterRequired = _sipRegRequired.control.isOn;
     options.sipLogin = _sipLogin.input.text;
     options.sipAuthenticationName = _sipAuthName.input.text;
@@ -82,6 +94,7 @@ UIAlertController *alert;
     }
     
     [session on:kFPWCSSessionStatusEstablished callback:^(FPWCSApi2Session *rSession){
+        _authToken.input.text = [rSession getAuthToken];
         [self changeConnectionStatus:[rSession getStatus]];
         [self onConnected:rSession];
         if (!_sipRegRequired.control.isOn) {
@@ -247,12 +260,19 @@ UIAlertController *alert;
 - (void)onConnected:(FPWCSApi2Session *)session {
     [_connectButton setTitle:@"DISCONNECT" forState:UIControlStateNormal];
     [self changeViewState:_connectButton enabled:YES];
+
+    [_connectTokenButton setTitle:@"DISCONNECT" forState:UIControlStateNormal];
+    [self changeViewState:_connectTokenButton enabled:YES];
+
 }
 
 - (void)onDisconnected {
     [self toCallState];
     [_connectButton setTitle:@"CONNECT" forState:UIControlStateNormal];
     [self changeViewState:_connectButton enabled:YES];
+    [_connectTokenButton setTitle:@"CONNECT WITH TOKEN" forState:UIControlStateNormal];
+    [self changeViewState:_connectTokenButton enabled:_authToken.input.text.length > 0];
+
     [self changeViewState:_connectUrl enabled:YES];
     [self changeViewState:_sipLogin.input enabled:YES];
     [self changeViewState:_sipAuthName.input enabled:YES];
@@ -288,7 +308,8 @@ UIAlertController *alert;
 //user interface handlers
 
 - (void)connectButton:(UIButton *)button {
-    [self changeViewState:button enabled:NO];
+    [self changeViewState:_connectButton enabled:NO];
+    [self changeViewState:_connectTokenButton enabled:NO];
     if ([button.titleLabel.text isEqualToString:@"DISCONNECT"]) {
         if ([FPWCSApi2 getSessions].count) {
             FPWCSApi2Session *session = [FPWCSApi2 getSessions][0];
@@ -308,7 +329,11 @@ UIAlertController *alert;
         [self changeViewState:_sipOutboundProxy.input enabled:NO];
         [self changeViewState:_sipRegRequired.control enabled:NO];
         [self changeViewState:_sipPort.input enabled:NO];
-        [self connect];
+        if (button == _connectButton) {
+            [self connect];
+        } else {
+            [self connectWithToken];
+        }
     }
 }
 
@@ -360,9 +385,6 @@ UIAlertController *alert;
             break;
         case kFPWCSSessionStatusEstablished:
             _connectionStatus.textColor = [UIColor greenColor];
-            if (_sipRegRequired.control.isOn){
-                _connectionStatus.text = [NSString stringWithFormat:@"%@. Registering ...", [FPWCSApi2Model sessionStatusToString:status]];
-            }
             break;
         case kFPWCSSessionStatusRegistered:
             _connectionStatus.textColor = [UIColor greenColor];
@@ -425,10 +447,17 @@ UIAlertController *alert;
     _sipRegRequired = [[WCSSwitchView alloc] init];
     _sipRegRequired.label.text = @"Sip Register Required";
     [_sipRegRequired.control setOn:YES];
-    _connectionStatus = [WCSViewUtil createLabelView];
-    _connectButton = [WCSViewUtil createButton:@"START"];
+    _connectButton = [WCSViewUtil createButton:@"CONNECT"];
     [_connectButton addTarget:self action:@selector(connectButton:) forControlEvents:UIControlEventTouchUpInside];
-    
+
+    _authToken = [[WCSTextInputView alloc] init];
+    _authToken.label.text = @"Auth Token";
+
+    _connectTokenButton = [WCSViewUtil createButton:@"CONNECT WITH TOKEN"];
+    [_connectTokenButton addTarget:self action:@selector(connectButton:) forControlEvents:UIControlEventTouchUpInside];
+
+    _connectionStatus = [WCSViewUtil createLabelView];
+
     _inviteParameters = [[WCSTextInputView alloc] init];
     _inviteParameters.label.text = @"Invite Parameters";
 
@@ -452,8 +481,12 @@ UIAlertController *alert;
     [self.contentView addSubview:_sipOutboundProxy];
     [self.contentView addSubview:_sipPort];
     [self.contentView addSubview:_sipRegRequired];
-    [self.contentView addSubview:_connectionStatus];
     [self.contentView addSubview:_connectButton];
+
+    [self.contentView addSubview:_authToken];
+    [self.contentView addSubview:_connectTokenButton];
+
+    [self.contentView addSubview:_connectionStatus];
     [self.contentView addSubview:_inviteParameters];
     [self.contentView addSubview:_callee];
     [self.contentView addSubview:_callStatus];
@@ -489,8 +522,10 @@ UIAlertController *alert;
                             @"sipOutboundProxy":_sipOutboundProxy,
                             @"sipPort":_sipPort,
                             @"sipRegRequired":_sipRegRequired,
-                            @"connectionStatus": _connectionStatus,
                             @"connectButton": _connectButton,
+                            @"authToken": _authToken,
+                            @"connectTokenButton": _connectTokenButton,
+                            @"connectionStatus": _connectionStatus,
                             @"callee": _callee,
                             @"inviteParameters":_inviteParameters,
                             @"callStatus":_callStatus,
@@ -545,8 +580,10 @@ UIAlertController *alert;
     setConstraint(_contentView, @"H:|-hSpacing-[sipOutboundProxy]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[sipPort]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[sipRegRequired]-hSpacing-|",0);
-    setConstraint(_contentView, @"H:|-hSpacing-[connectionStatus]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[connectButton]-hSpacing-|",0);
+    setConstraint(_contentView, @"H:|-hSpacing-[authToken]-hSpacing-|", 0);
+    setConstraint(_contentView, @"H:|-hSpacing-[connectTokenButton]-hSpacing-|", 0);
+    setConstraint(_contentView, @"H:|-hSpacing-[connectionStatus]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[inviteParameters]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[callee]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[callStatus]-hSpacing-|",0);
@@ -555,7 +592,7 @@ UIAlertController *alert;
     setConstraint(_contentView, @"H:|-hSpacing-[dtmf]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[dtmfButton]-hSpacing-|",0);
 
-    setConstraint(self.contentView, @"V:|-50-[connectUrl]-vSpacing-[sipLogin]-vSpacing-[sipAuthName]-vSpacing-[sipPassword]-vSpacing-[sipDomain]-vSpacing-[sipOutboundProxy]-vSpacing-[sipPort]-vSpacing-[sipRegRequired]-vSpacing-[connectionStatus]-vSpacing-[connectButton]-vSpacing-[inviteParameters]-vSpacing-[callee]-vSpacing-[callStatus]-vSpacing-[callButton]-vSpacing-[holdButton]-vSpacing-[dtmf]-vSpacing-[dtmfButton]-vSpacing-|", 0);
+    setConstraint(self.contentView, @"V:|-50-[connectUrl]-vSpacing-[sipLogin]-vSpacing-[sipAuthName]-vSpacing-[sipPassword]-vSpacing-[sipDomain]-vSpacing-[sipOutboundProxy]-vSpacing-[sipPort]-vSpacing-[sipRegRequired]-vSpacing-[connectButton]-vSpacing-[authToken]-vSpacing-[connectTokenButton]-vSpacing-[connectionStatus]-vSpacing-[inviteParameters]-vSpacing-[callee]-vSpacing-[callStatus]-vSpacing-[callButton]-vSpacing-[holdButton]-vSpacing-[dtmf]-vSpacing-[dtmfButton]-vSpacing-|", 0);
     
     //content view width
     setConstraintWithItem(self.view, _contentView, self.view, NSLayoutAttributeWidth, NSLayoutRelationEqual, NSLayoutAttributeWidth, 1.0, 0);
