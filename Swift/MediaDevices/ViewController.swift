@@ -23,9 +23,11 @@ class ViewController: UIViewController {
     
     var localViewController:LocalViewController?
     var localMediaConstrains:FPWCSApi2MediaConstraints
+    var localStripCodecs:String?
 
     var remoteViewController:RemoteViewController?
     var remoteMediaConstrains:FPWCSApi2MediaConstraints
+    var remoteStripCodecs:String?
 
     @IBOutlet weak var lockCamera: UISwitch!
     @IBOutlet weak var loudSpeaker: UISwitch!
@@ -207,6 +209,7 @@ class ViewController: UIViewController {
             options.name = publishName.text
             options.display = localDisplay.videoView
             options.constraints = localMediaConstrains;
+            options.stripCodecs = localStripCodecs?.split(separator: ",")
             options.transport = tcpTransport.isOn ? kFPWCSTransport.fpwcsTransportTCP : kFPWCSTransport.fpwcsTransportUDP;
             do {
                 try publishStream = session!.createStream(options)
@@ -250,6 +253,7 @@ class ViewController: UIViewController {
             options.name = playName.text;
             options.display = remoteDisplay.videoView;
             options.constraints = remoteMediaConstrains;
+            options.stripCodecs = remoteStripCodecs?.split(separator: ",")
             options.transport = tcpTransport.isOn ? kFPWCSTransport.fpwcsTransportTCP : kFPWCSTransport.fpwcsTransportUDP;
             do {
             playStream = try session!.createStream(options)

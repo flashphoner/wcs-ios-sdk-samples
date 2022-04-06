@@ -17,7 +17,8 @@ extension LocalViewController : UITextFieldDelegate {
 extension LocalViewController: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
         if let controller = viewController as? ViewController {
-            controller.localMediaConstrains = self.toMediaConstraints();
+            controller.localMediaConstrains = self.toMediaConstraints()
+            controller.localStripCodecs = self.stripCodecs.text
         }
     }
     
@@ -45,6 +46,7 @@ class LocalViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     @IBOutlet weak var videoMinBitrate: UITextField!
     @IBOutlet weak var videoMaxBitrate: UITextField!
     @IBOutlet weak var muteVideo: UISwitch!
+    @IBOutlet weak var stripCodecs: UITextField!
     
     var viewController: ViewController?
     var microphonePicker = UIPickerView()
@@ -73,6 +75,7 @@ class LocalViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         videoFPS.delegate = self
         videoMinBitrate.delegate = self
         videoMaxBitrate.delegate = self
+        stripCodecs.delegate = self
 
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
@@ -133,6 +136,7 @@ class LocalViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         videoMaxBitrate.inputAccessoryView = toolbar
         microphone.inputAccessoryView = toolbar
         camera.inputAccessoryView = toolbar
+        stripCodecs.inputAccessoryView = toolbar
     }
     
     @objc func doneButtonTapped() {

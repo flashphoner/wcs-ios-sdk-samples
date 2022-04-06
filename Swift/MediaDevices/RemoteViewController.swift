@@ -16,7 +16,11 @@ extension RemoteViewController : UITextFieldDelegate {
 
 extension RemoteViewController: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
-        (viewController as? ViewController)?.remoteMediaConstrains = self.toMediaConstraints();
+        if let controller = viewController as? ViewController {
+            controller.remoteMediaConstrains = self.toMediaConstraints()
+            controller.remoteStripCodecs = self.stripCodecs.text
+        }
+
     }
 }
 
@@ -29,6 +33,7 @@ class RemoteViewController: UIViewController {
     @IBOutlet weak var videoHeight: UITextField!
     @IBOutlet weak var videoBitrate: UITextField!
     @IBOutlet weak var videoQuality: UITextField!
+    @IBOutlet weak var stripCodecs: UITextField!
     @IBOutlet weak var audioMuted: UILabel!
     @IBOutlet weak var videoMuted: UILabel!
     
@@ -48,6 +53,7 @@ class RemoteViewController: UIViewController {
         videoHeight.delegate = self
         videoBitrate.delegate = self
         videoQuality.delegate = self
+        stripCodecs.delegate = self
 
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
@@ -96,6 +102,7 @@ class RemoteViewController: UIViewController {
         videoHeight.inputAccessoryView = toolbar
         videoBitrate.inputAccessoryView = toolbar
         videoQuality.inputAccessoryView = toolbar
+        stripCodecs.inputAccessoryView = toolbar
     }
     
     @objc func doneButtonTapped() {
