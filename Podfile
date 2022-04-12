@@ -99,3 +99,9 @@ target 'GPUImageDemoSwift' do
     pod 'SocketRocket'
     pod 'JSONModel'
 end
+
+target 'CallKitDemoSwift' do
+    pod 'SocketRocket'
+    pod 'JSONModel'
+end
+

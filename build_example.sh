@@ -67,8 +67,10 @@ cat << EOF > Info_ipa.plist
                <string>AdHoc ScreenCapturerExtension</string>
                <key>com.flashphoner.ios.GPUImageDemoSwift</key>
                <string>$2</string>
-               
-
+               <key>com.flashphoner.ios.CallKitDemoSwift</key>
+               <string>AdHoc CallKitDemo</string>
+               <key>com.flashphoner.ios.CallKitDemoSwift.CallKitIntentExtension</key>
+               <string>AdHoc CallKitIntentExtension</string>
         </dict>
 </dict>
 </plist>
@@ -137,6 +139,9 @@ xcodebuild -exportArchive -exportOptionsPlist Info_ipa.plist -archivePath out-bu
 
 xcodebuild CODE_SIGN_STYLE=Automatic -workspace 'WCSExample.xcworkspace' -scheme "GPUImageDemoSwift" -configuration="Release" clean archive OBJROOT=$(PWD)/out-build/GPUImageDemoSwift -archivePath out-build/GPUImageDemoSwift
 xcodebuild -exportArchive -exportOptionsPlist Info_ipa.plist -archivePath out-build/GPUImageDemoSwift.xcarchive -exportPath out-build
+
+xcodebuild CODE_SIGN_STYLE=Automatic -workspace 'WCSExample.xcworkspace' -scheme "CallKitDemoSwift" -configuration="Release" clean archive OBJROOT=$(PWD)/out-build/CallKitDemoSwift -archivePath out-build/CallKitDemoSwift
+xcodebuild -exportArchive -exportOptionsPlist Info_ipa.plist -archivePath out-build/CallKitDemoSwift.xcarchive -exportPath out-build
 
 # Remove plist
 rm -rf Info_ipa.plist
