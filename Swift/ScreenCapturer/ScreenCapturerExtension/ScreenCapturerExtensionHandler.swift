@@ -5,7 +5,13 @@ import FPWCSApi2Swift
 
 fileprivate class ScreenRTCVideoCapturer: RTCVideoCapturer {
     let kNanosecondsPerSecond = 1000000000
-
+    var useMic: Bool = true;
+    
+    init(useMic: Bool) {
+        super.init()
+        self.useMic = useMic
+    }
+    
     func processSampleBuffer(_ sampleBuffer: CMSampleBuffer, with sampleBufferType: RPSampleBufferType) {
         switch sampleBufferType {
         case RPSampleBufferType.video:
@@ -30,10 +36,14 @@ fileprivate class ScreenRTCVideoCapturer: RTCVideoCapturer {
             self.delegate?.capturer(self, didCapture: videoFrame)
             break
         case RPSampleBufferType.audioApp:
-            // Handle audio sample buffer for app audio
+            if (!useMic) {
+                FPWCSApi2.getAudioManager().getAudioModule().deliverRecordedData(sampleBuffer)
+            }
             break
         case RPSampleBufferType.audioMic:
-            // Handle audio sample buffer for mic audio
+            if (useMic) {
+                FPWCSApi2.getAudioManager().getAudioModule().deliverRecordedData(sampleBuffer)
+            }
             break
         @unknown default:
             // Handle other sample buffer types
@@ -49,7 +59,7 @@ class ScreenCapturerExtensionHandler: RPBroadcastSampleHandler {
     var session:WCSSession?
     var publishStream:WCSStream?
     
-    fileprivate var capturer: ScreenRTCVideoCapturer = ScreenRTCVideoCapturer()
+    fileprivate var capturer: ScreenRTCVideoCapturer?
     
     override func broadcastStarted(withSetupInfo setupInfo: [String : NSObject]?) {
         //#WCS-3207 - Use suite name as group id in entitlements
@@ -63,6 +73,13 @@ class ScreenCapturerExtensionHandler: RPBroadcastSampleHandler {
         
         let streamName = userDefaults?.string(forKey: "streamName")
         self.streamName = streamName ?? self.streamName
+        
+
+        let useMic = userDefaults?.bool(forKey: "useMic")
+
+        capturer = ScreenRTCVideoCapturer(useMic: useMic ?? true)
+
+        FPWCSApi2.getAudioManager().useAudioModule(true)
         
         if (session == nil) {
             let options = FPWCSApi2SessionOptions()
@@ -96,7 +113,7 @@ class ScreenCapturerExtensionHandler: RPBroadcastSampleHandler {
     func onConnected(_ session:WCSSession) throws {
         let options = FPWCSApi2StreamOptions()
         options.name = streamName
-        options.constraints = FPWCSApi2MediaConstraints(audio: false, videoCapturer: capturer);
+        options.constraints = FPWCSApi2MediaConstraints(audio: true, videoCapturer: capturer);
 
         try publishStream = session.createStream(options)
         
@@ -133,6 +150,6 @@ class ScreenCapturerExtensionHandler: RPBroadcastSampleHandler {
     }
     
     override func processSampleBuffer(_ sampleBuffer: CMSampleBuffer, with sampleBufferType: RPSampleBufferType) {
-        capturer.processSampleBuffer(sampleBuffer, with: sampleBufferType)
+        capturer?.processSampleBuffer(sampleBuffer, with: sampleBufferType)
     }
 }

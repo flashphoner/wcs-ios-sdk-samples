@@ -35,13 +35,12 @@ class ScreenCapturerViewController: UIViewController, UIImagePickerControllerDel
     
     static let kBroadcastExtensionBundleId = "com.flashphoner.ios.ScreenCapturer.ScreenCapturerExtension"
     
-    @IBOutlet weak var broadcastPickerView: UIView?
+    @IBOutlet weak var broadcastPickerView: RPSystemBroadcastPickerView?
     @IBOutlet weak var urlField: UITextField!
     
     @IBOutlet weak var publishVideoName: UITextField!
     @IBOutlet weak var publishVideoButton: UIButton!
-    @IBOutlet weak var publishAudioName: UITextField!
-    @IBOutlet weak var publishAudioButton: UIButton!
+    @IBOutlet weak var systemOrMicSwitch: UISwitch!
     
     var session:WCSSession?
     var publishStream:WCSStream?
@@ -54,7 +53,6 @@ class ScreenCapturerViewController: UIViewController, UIImagePickerControllerDel
         
         urlField.delegate = self
         publishVideoName.delegate = self
-        publishAudioName.delegate = self
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
@@ -77,7 +75,7 @@ class ScreenCapturerViewController: UIViewController, UIImagePickerControllerDel
                                                                    height: 80))
         pickerView.translatesAutoresizingMaskIntoConstraints = false
         pickerView.preferredExtension = ScreenCapturerViewController.kBroadcastExtensionBundleId
-        pickerView.showsMicrophoneButton = false
+        pickerView.showsMicrophoneButton = systemOrMicSwitch.isOn
 
         // Theme the picker view to match the white that we want.
         if let button = pickerView.subviews.first as? UIButton {
@@ -85,58 +83,27 @@ class ScreenCapturerViewController: UIViewController, UIImagePickerControllerDel
         }
 
         view.addSubview(pickerView)
-        
-        /// picker is an instance of RPSystemBroadcastPickerView
-        for subviews in pickerView.subviews {
-            if let button = subviews as? UIButton {
-                button.addTarget(self, action: #selector(pickerAction), for: .touchUpInside)
-            }
-        }
 
         self.broadcastPickerView = pickerView
-        publishVideoButton.isEnabled = false
-        publishVideoButton.titleEdgeInsets = UIEdgeInsets(top: 34, left: 0, bottom: 0, right: 0)
-
-        let centerX = NSLayoutConstraint(item:pickerView,
-                                         attribute: NSLayoutConstraint.Attribute.centerX,
-                                         relatedBy: NSLayoutConstraint.Relation.equal,
-                                         toItem: publishVideoButton,
-                                         attribute: NSLayoutConstraint.Attribute.centerX,
-                                         multiplier: 1,
-                                         constant: 0);
-        self.view.addConstraint(centerX)
-        let centerY = NSLayoutConstraint(item: pickerView,
-                                         attribute: NSLayoutConstraint.Attribute.centerY,
-                                         relatedBy: NSLayoutConstraint.Relation.equal,
-                                         toItem: publishVideoButton,
-                                         attribute: NSLayoutConstraint.Attribute.centerY,
-                                         multiplier: 1,
-                                         constant: -10);
-        self.view.addConstraint(centerY)
-        let width = NSLayoutConstraint(item: pickerView,
-                                       attribute: NSLayoutConstraint.Attribute.width,
-                                       relatedBy: NSLayoutConstraint.Relation.equal,
-                                       toItem: self.publishVideoButton,
-                                       attribute: NSLayoutConstraint.Attribute.width,
-                                       multiplier: 1,
-                                       constant: 0);
-        self.view.addConstraint(width)
-        let height = NSLayoutConstraint(item: pickerView,
-                                        attribute: NSLayoutConstraint.Attribute.height,
-                                        relatedBy: NSLayoutConstraint.Relation.equal,
-                                        toItem: self.publishVideoButton,
-                                        attribute: NSLayoutConstraint.Attribute.height,
-                                        multiplier: 1,
-                                        constant: 0);
-        self.view.addConstraint(height)
     }
     
-    @objc func pickerAction() {
-        //#WCS-3207 - Use suite name as group id in entitlements
+    @IBAction func broadcastBtnPressed(_ sender: Any) {
+        guard let pickerView = self.broadcastPickerView else {
+            return
+        }
+            
+        pickerView.showsMicrophoneButton = systemOrMicSwitch.isOn
+
         let userDefaults = UserDefaults.init(suiteName: "group.com.flashphoner.ScreenCapturerSwift")
         userDefaults?.set(urlField.text, forKey: "wcsUrl")
         userDefaults?.set(publishVideoName.text, forKey: "streamName")
+        userDefaults?.set(systemOrMicSwitch.isOn, forKey: "useMic")
         
+        for view in pickerView.subviews {
+            if let button = view as? UIButton {
+                button.sendActions(for: .touchUpInside)
+            }
+        }
     }
     
     @objc func keyboardWillShow(notification: NSNotification) {
@@ -180,7 +147,6 @@ class ScreenCapturerViewController: UIViewController, UIImagePickerControllerDel
         
         urlField.inputAccessoryView = toolbar
         publishVideoName.inputAccessoryView = toolbar
-        publishAudioName.inputAccessoryView = toolbar
     }
     
     @objc func doneButtonTapped() {
@@ -194,81 +160,6 @@ class ScreenCapturerViewController: UIViewController, UIImagePickerControllerDel
         } else {
             button.alpha = 0.5;
         }
-    }
-    
-    
-    @IBAction func publishAudioPressed(_ sender: Any) {
-        if (publishAudioButton.title(for: .normal) == "Publish Audio") {
-            let options = FPWCSApi2SessionOptions()
-                options.urlServer = self.urlField.text
-                options.appKey = "defaultApp"
-                do {
-                    try session = WCSSession(options)
-                } catch {
-                    print(error)
-                }
-        
-                session?.on(.fpwcsSessionStatusEstablished, { rSession in
-                    do {
-                        try self.onConnected(self.session!)
-                    } catch {
-                        print(error)
-                    }
-                })
-        
-                session?.on(.fpwcsSessionStatusDisconnected, { rSession in
-                    self.onUnpublished()
-                })
-        
-                session?.on(.fpwcsSessionStatusFailed, { rSession in
-                    self.onUnpublished()
-                })
-                session?.connect()
-            changeViewState(publishAudioButton, false)
-        } else {
-            session?.disconnect()
-            session = nil
-        }
-    }
-    
-    
-    func onConnected(_ session:WCSSession) throws {
-            let options = FPWCSApi2StreamOptions()
-            options.name = publishAudioName.text
-            options.constraints = FPWCSApi2MediaConstraints(audio: true, video: false);
-            do {
-                publishStream = try session.createStream(options)
-            } catch {
-                print(error);
-            }
-            
-            publishStream?.on(.fpwcsStreamStatusPublishing, {rStream in
-                self.onPublishing(rStream!);
-            });
-            
-            publishStream?.on(.fpwcsStreamStatusUnpublished, {rStream in
-                self.onUnpublished()
-            });
-            
-            publishStream?.on(.fpwcsStreamStatusFailed, {rStream in
-                self.onUnpublished()
-            });
-            do {
-                try publishStream?.publish()
-            } catch {
-                print(error);
-            }
-    }
-    
-    fileprivate func onPublishing(_ stream:FPWCSApi2Stream) {
-        publishAudioButton.setTitle("Unpublish Audio", for:.normal)
-        changeViewState(publishAudioButton, true)
-    }
-
-    fileprivate func onUnpublished() {
-        publishAudioButton.setTitle("Publish Audio", for:.normal);
-        changeViewState(publishAudioButton, true)
-        changeViewState(publishAudioName, true)
     }
 }
 
