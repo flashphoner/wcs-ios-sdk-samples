@@ -36,46 +36,18 @@
 		5512026626818AF400A0E6DD /* WebRTCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D5EA9258267AA00C77CAC /* WebRTCView.swift */; };
 		5512026726818AF400A0E6DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557879B2254FFEC600F8CD95 /* AppDelegate.swift */; };
 		5512026B26818AF400A0E6DD /* FPWCSApi2Swift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; };
-		5512026C26818AF400A0E6DD /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A06125E0CFE6006C1B4F /* WebRTC.framework */; };
 		5512027226818AF400A0E6DD /* FPWCSApi2Swift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5512027326818AF400A0E6DD /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A06125E0CFE6006C1B4F /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5512028226818B2300A0E6DD /* ScreenCapturerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5512027B26818B2300A0E6DD /* ScreenCapturerViewController.swift */; };
 		5512028726818B7400A0E6DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5512027C26818B2300A0E6DD /* LaunchScreen.storyboard */; };
 		5512028826818B7400A0E6DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5512027E26818B2300A0E6DD /* Main.storyboard */; };
 		551202E1268C757E00A0E6DD /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5512028E268AF81700A0E6DD /* ReplayKit.framework */; };
 		551202E4268C757E00A0E6DD /* ScreenCapturerExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551202E3268C757E00A0E6DD /* ScreenCapturerExtensionHandler.swift */; };
 		551202E8268C757E00A0E6DD /* ScreenCapturerExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 551202E0268C757E00A0E6DD /* ScreenCapturerExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		551202EC268D8C5C00A0E6DD /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A06125E0CFE6006C1B4F /* WebRTC.framework */; };
-		551202ED268D8C5C00A0E6DD /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A06125E0CFE6006C1B4F /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		551202F0268D8EEE00A0E6DD /* FPWCSApi2Swift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; };
 		551202F1268D8EEE00A0E6DD /* FPWCSApi2Swift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5512B68825655FD900E207B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557879B2254FFEC600F8CD95 /* AppDelegate.swift */; };
 		5512B6B5256560A800E207B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5512B6B0256560A800E207B5 /* ViewController.swift */; };
 		5517B1871E1D2CE400B39B15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F98A341E1D286100B70D94 /* AppDelegate.m */; };
-		551F8B3C25C3FA4700653B11 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551F8B3B25C3FA4700653B11 /* WebRTC.framework */; };
-		551F8B3D25C3FA4700653B11 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 551F8B3B25C3FA4700653B11 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		551F8B3F25C3FA5700653B11 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551F8B3B25C3FA4700653B11 /* WebRTC.framework */; };
-		551F8B4025C3FA5700653B11 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 551F8B3B25C3FA4700653B11 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		551F8B4225C3FA8100653B11 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551F8B3B25C3FA4700653B11 /* WebRTC.framework */; };
-		551F8B4325C3FA8100653B11 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 551F8B3B25C3FA4700653B11 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		551F8B4525C3FA8A00653B11 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551F8B3B25C3FA4700653B11 /* WebRTC.framework */; };
-		551F8B4625C3FA8A00653B11 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 551F8B3B25C3FA4700653B11 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		551F8B4825C3FA9500653B11 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551F8B3B25C3FA4700653B11 /* WebRTC.framework */; };
-		551F8B4925C3FA9500653B11 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 551F8B3B25C3FA4700653B11 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		551F8B4B25C3FAA200653B11 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551F8B3B25C3FA4700653B11 /* WebRTC.framework */; };
-		551F8B4C25C3FAA200653B11 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 551F8B3B25C3FA4700653B11 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		551F8B4E25C3FAAF00653B11 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551F8B3B25C3FA4700653B11 /* WebRTC.framework */; };
-		551F8B4F25C3FAAF00653B11 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 551F8B3B25C3FA4700653B11 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		551F8B5125C3FAB800653B11 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551F8B3B25C3FA4700653B11 /* WebRTC.framework */; };
-		551F8B5225C3FAB800653B11 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 551F8B3B25C3FA4700653B11 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		551F8B5425C3FAC000653B11 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551F8B3B25C3FA4700653B11 /* WebRTC.framework */; };
-		551F8B5525C3FAC000653B11 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 551F8B3B25C3FA4700653B11 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		551F8B5725C3FACA00653B11 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551F8B3B25C3FA4700653B11 /* WebRTC.framework */; };
-		551F8B5825C3FACA00653B11 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 551F8B3B25C3FA4700653B11 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		551F8B5C25C3FAD200653B11 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551F8B3B25C3FA4700653B11 /* WebRTC.framework */; };
-		551F8B5D25C3FAD200653B11 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 551F8B3B25C3FA4700653B11 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		551F8B5F25C3FADF00653B11 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551F8B3B25C3FA4700653B11 /* WebRTC.framework */; };
-		551F8B6025C3FADF00653B11 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 551F8B3B25C3FA4700653B11 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		551F8B7325C3FBC500653B11 /* FPWCSApi2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		551F8B7425C3FBCD00653B11 /* FPWCSApi2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		551F8B7525C3FBD800653B11 /* FPWCSApi2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -111,6 +83,46 @@
 		555260911DE418FA00AED0F1 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		555260921DE45C6B00AED0F1 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		555260931DE45CAD00AED0F1 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
+		556E0EEF2849D51A00D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
+		556E0EF02849D51A00D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		556E0EF12849D74B00D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
+		556E0EF22849D74B00D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		556E0EF32849D76A00D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
+		556E0EF42849D76B00D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		556E0EF52849D7E900D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
+		556E0EF62849D7E900D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		556E0EF72849DB2E00D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
+		556E0EF82849DB2F00D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		556E0EF92849DB8B00D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
+		556E0EFA2849DB8C00D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		556E0EFB2849DC3600D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
+		556E0EFC2849DC3600D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		556E0EFD2849DCE500D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
+		556E0EFE2849DCE500D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		556E0EFF2849DD6700D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
+		556E0F002849DD6700D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		556E0F012849DDFF00D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
+		556E0F022849DDFF00D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		556E0F032849DE1000D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
+		556E0F042849DE1000D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		556E0F052849DEC600D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
+		556E0F062849DEC600D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		556E0F072849DF1F00D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
+		556E0F082849DF2000D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		556E0F092849DF2B00D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
+		556E0F0A2849DF2B00D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		556E0F0B2849DFDD00D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
+		556E0F0C2849DFDD00D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		556E0F0D2849E00100D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
+		556E0F0E2849E00100D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		556E0F0F2849E09000D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
+		556E0F102849E09000D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		556E0F112849E0B300D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
+		556E0F122849E0B300D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		556E0F132849E0EE00D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
+		556E0F142849E0EE00D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		556E0F152849E12F00D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
+		556E0F162849E12F00D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5570EAAE2519EB4E0031E44C /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		5570EAAF2519EB4E0031E44C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
 		5570EAB12519EB4E0031E44C /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
@@ -133,16 +145,13 @@
 		5570EB832519EFF30031E44C /* GPUImageBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570EB822519EFF30031E44C /* GPUImageBeautifyFilter.m */; };
 		557879A4254FFEA600F8CD95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557879A1254FFEA600F8CD95 /* Assets.xcassets */; };
 		557879B3254FFEC600F8CD95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557879B2254FFEC600F8CD95 /* AppDelegate.swift */; };
-		55812167263946FC00379A43 /* MCUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55812161263946FC00379A43 /* MCUViewController.swift */; };
 		558121702639471000379A43 /* MCUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55812161263946FC00379A43 /* MCUViewController.swift */; };
 		558121712639471000379A43 /* WebRTCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D5EA9258267AA00C77CAC /* WebRTCView.swift */; };
 		558121732639471000379A43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557879B2254FFEC600F8CD95 /* AppDelegate.swift */; };
 		558121762639471000379A43 /* FPWCSApi2Swift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; };
-		558121772639471000379A43 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A06125E0CFE6006C1B4F /* WebRTC.framework */; };
 		5581217A2639471000379A43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5512B6AA256560A700E207B5 /* LaunchScreen.storyboard */; };
 		5581217D2639471000379A43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5581215F263946FC00379A43 /* Main.storyboard */; };
 		5581217F2639471000379A43 /* FPWCSApi2Swift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		558121802639471000379A43 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A06125E0CFE6006C1B4F /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		558125002640FAB000379A43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5512B6AA256560A700E207B5 /* LaunchScreen.storyboard */; };
 		558125012640FAB000379A43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5512B6AC256560A800E207B5 /* Main.storyboard */; };
 		558125142640FAE600379A43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5578799D254FFEA600F8CD95 /* LaunchScreen.storyboard */; };
@@ -150,9 +159,7 @@
 		558125C02643937700379A43 /* WebRTCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D5EA9258267AA00C77CAC /* WebRTCView.swift */; };
 		558125C22643937700379A43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557879B2254FFEC600F8CD95 /* AppDelegate.swift */; };
 		558125C42643937700379A43 /* FPWCSApi2Swift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; };
-		558125C52643937700379A43 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A06125E0CFE6006C1B4F /* WebRTC.framework */; };
 		558125CB2643937700379A43 /* FPWCSApi2Swift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		558125CC2643937700379A43 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A06125E0CFE6006C1B4F /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		558125EF2643944000379A43 /* ImageOverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558125E82643943F00379A43 /* ImageOverlayViewController.swift */; };
 		558125FA264396A200379A43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 558125F42643945C00379A43 /* LaunchScreen.storyboard */; };
 		558125FB264396A200379A43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 558125F22643945C00379A43 /* Main.storyboard */; };
@@ -163,9 +170,7 @@
 		559B40B926A7E9330065534E /* WebRTCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D5EA9258267AA00C77CAC /* WebRTCView.swift */; };
 		559B40BA26A7E9330065534E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557879B2254FFEC600F8CD95 /* AppDelegate.swift */; };
 		559B40BE26A7E9330065534E /* FPWCSApi2Swift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; };
-		559B40BF26A7E9330065534E /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A06125E0CFE6006C1B4F /* WebRTC.framework */; };
 		559B40C526A7E9330065534E /* FPWCSApi2Swift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		559B40C626A7E9330065534E /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A06125E0CFE6006C1B4F /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		559B40D626A9038B0065534E /* CameraVideoCapturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559B40CF26A9038B0065534E /* CameraVideoCapturer.swift */; };
 		559B40D726A9038B0065534E /* GPUImageDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559B40D026A9038B0065534E /* GPUImageDemoViewController.swift */; };
 		559B40DB26A9039F0065534E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 559B40D126A9038B0065534E /* LaunchScreen.storyboard */; };
@@ -202,9 +207,7 @@
 		55BD73821E0FF59E003E0517 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BD73581E0FF4D1003E0517 /* ViewController.m */; };
 		55C1CCB527B521AD00F6F5B9 /* WebRTCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D5EA9258267AA00C77CAC /* WebRTCView.swift */; };
 		55C1CCB927B521AD00F6F5B9 /* FPWCSApi2Swift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; };
-		55C1CCBA27B521AD00F6F5B9 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A06125E0CFE6006C1B4F /* WebRTC.framework */; };
 		55C1CCC227B521AD00F6F5B9 /* FPWCSApi2Swift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		55C1CCC327B521AD00F6F5B9 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A06125E0CFE6006C1B4F /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55C1CCEE27BB527B00F6F5B9 /* CallKitDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1CCE327BB527A00F6F5B9 /* CallKitDemoViewController.swift */; };
 		55C1CD0127BB534900F6F5B9 /* CallKitIntentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 55C1CCF827BB534900F6F5B9 /* CallKitIntentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		55C1CD0527BB5D9000F6F5B9 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1CCEA27BB527B00F6F5B9 /* IntentHandler.swift */; };
@@ -274,10 +277,6 @@
 		55E2A01A25DF8299006C1B4F /* FPWCSApi2Swift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55E2A01B25DF82A9006C1B4F /* FPWCSApi2Swift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; };
 		55E2A01C25DF82A9006C1B4F /* FPWCSApi2Swift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		55E2A06225E0CFE6006C1B4F /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A06125E0CFE6006C1B4F /* WebRTC.framework */; };
-		55E2A06325E0CFE6006C1B4F /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A06125E0CFE6006C1B4F /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		55E2A06825E0D240006C1B4F /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A06125E0CFE6006C1B4F /* WebRTC.framework */; };
-		55E2A06925E0D240006C1B4F /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A06125E0CFE6006C1B4F /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55EC5EC11DF52C9000CEFD12 /* WCSViews.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534441DDADA3800D7DF80 /* WCSViews.m */; };
 		55F8AEE41DE55944002F5DFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F8AEDD1DE55895002F5DFC /* ViewController.m */; };
 		55F8AEE51DE55944002F5DFC /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
@@ -423,8 +422,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				556E0F102849E09000D27636 /* WebRTC.xcframework in Embed Frameworks */,
 				5512027226818AF400A0E6DD /* FPWCSApi2Swift.xcframework in Embed Frameworks */,
-				5512027326818AF400A0E6DD /* WebRTC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,7 +445,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				551202ED268D8C5C00A0E6DD /* WebRTC.framework in Embed Frameworks */,
+				556E0F122849E0B300D27636 /* WebRTC.xcframework in Embed Frameworks */,
 				551202F1268D8EEE00A0E6DD /* FPWCSApi2Swift.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -458,8 +457,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				556E0F0A2849DF2B00D27636 /* WebRTC.xcframework in Embed Frameworks */,
 				55E2A01C25DF82A9006C1B4F /* FPWCSApi2Swift.xcframework in Embed Frameworks */,
-				55E2A06925E0D240006C1B4F /* WebRTC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,8 +469,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				556E0F062849DEC600D27636 /* WebRTC.xcframework in Embed Frameworks */,
 				551F8B7E25C3FC3200653B11 /* FPWCSApi2.framework in Embed Frameworks */,
-				551F8B3D25C3FA4700653B11 /* WebRTC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,8 +481,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				556E0F042849DE1000D27636 /* WebRTC.xcframework in Embed Frameworks */,
 				551F8B7D25C3FC2D00653B11 /* FPWCSApi2.framework in Embed Frameworks */,
-				551F8B4025C3FA5700653B11 /* WebRTC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,8 +493,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				556E0F022849DDFF00D27636 /* WebRTC.xcframework in Embed Frameworks */,
 				551F8B7C25C3FC2800653B11 /* FPWCSApi2.framework in Embed Frameworks */,
-				551F8B4325C3FA8100653B11 /* WebRTC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,8 +505,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				556E0F002849DD6700D27636 /* WebRTC.xcframework in Embed Frameworks */,
 				551F8B7B25C3FC2400653B11 /* FPWCSApi2.framework in Embed Frameworks */,
-				551F8B4625C3FA8A00653B11 /* WebRTC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,8 +517,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				556E0EFE2849DCE500D27636 /* WebRTC.xcframework in Embed Frameworks */,
 				551F8B7A25C3FC1F00653B11 /* FPWCSApi2.framework in Embed Frameworks */,
-				551F8B4925C3FA9500653B11 /* WebRTC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,8 +529,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				556E0EFC2849DC3600D27636 /* WebRTC.xcframework in Embed Frameworks */,
 				551F8B7925C3FC0300653B11 /* FPWCSApi2.framework in Embed Frameworks */,
-				551F8B4C25C3FAA200653B11 /* WebRTC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -542,8 +541,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				556E0EFA2849DB8C00D27636 /* WebRTC.xcframework in Embed Frameworks */,
 				551F8B7825C3FBF800653B11 /* FPWCSApi2.framework in Embed Frameworks */,
-				551F8B4F25C3FAAF00653B11 /* WebRTC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -554,8 +553,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				556E0EF82849DB2F00D27636 /* WebRTC.xcframework in Embed Frameworks */,
 				551F8B7725C3FBED00653B11 /* FPWCSApi2.framework in Embed Frameworks */,
-				551F8B5225C3FAB800653B11 /* WebRTC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,8 +565,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				556E0EF62849D7E900D27636 /* WebRTC.xcframework in Embed Frameworks */,
 				551F8B7625C3FBE300653B11 /* FPWCSApi2.framework in Embed Frameworks */,
-				551F8B5525C3FAC000653B11 /* WebRTC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -578,8 +577,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				556E0EF42849D76B00D27636 /* WebRTC.xcframework in Embed Frameworks */,
 				551F8B7325C3FBC500653B11 /* FPWCSApi2.framework in Embed Frameworks */,
-				551F8B5825C3FACA00653B11 /* WebRTC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,8 +589,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				556E0EF22849D74B00D27636 /* WebRTC.xcframework in Embed Frameworks */,
 				551F8B7525C3FBD800653B11 /* FPWCSApi2.framework in Embed Frameworks */,
-				551F8B5D25C3FAD200653B11 /* WebRTC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,8 +601,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				556E0EF02849D51A00D27636 /* WebRTC.xcframework in Embed Frameworks */,
 				551F8B7425C3FBCD00653B11 /* FPWCSApi2.framework in Embed Frameworks */,
-				551F8B6025C3FADF00653B11 /* WebRTC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -614,8 +613,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				556E0F0C2849DFDD00D27636 /* WebRTC.xcframework in Embed Frameworks */,
 				5581217F2639471000379A43 /* FPWCSApi2Swift.xcframework in Embed Frameworks */,
-				558121802639471000379A43 /* WebRTC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -626,8 +625,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				556E0F0E2849E00100D27636 /* WebRTC.xcframework in Embed Frameworks */,
 				558125CB2643937700379A43 /* FPWCSApi2Swift.xcframework in Embed Frameworks */,
-				558125CC2643937700379A43 /* WebRTC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -639,8 +638,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				559B40C526A7E9330065534E /* FPWCSApi2Swift.xcframework in Embed Frameworks */,
-				559B40C626A7E9330065534E /* WebRTC.framework in Embed Frameworks */,
 				55AB53B526B1079F00E3F721 /* GPUImage.framework in Embed Frameworks */,
+				556E0F142849E0EE00D27636 /* WebRTC.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -662,8 +661,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				556E0F162849E12F00D27636 /* WebRTC.xcframework in Embed Frameworks */,
 				55C1CCC227B521AD00F6F5B9 /* FPWCSApi2Swift.xcframework in Embed Frameworks */,
-				55C1CCC327B521AD00F6F5B9 /* WebRTC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -674,8 +673,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				556E0F082849DF2000D27636 /* WebRTC.xcframework in Embed Frameworks */,
 				55E2A01A25DF8299006C1B4F /* FPWCSApi2Swift.xcframework in Embed Frameworks */,
-				55E2A06325E0CFE6006C1B4F /* WebRTC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -718,13 +717,13 @@
 		5512B6AD256560A800E207B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MediaDevices/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5512B6AF256560A800E207B5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MediaDevices/Info.plist; sourceTree = "<group>"; };
 		5512B6B0256560A800E207B5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = MediaDevices/ViewController.swift; sourceTree = "<group>"; };
-		551F8B3B25C3FA4700653B11 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = FPWCSApi2.framework/Frameworks/WebRTC.framework; sourceTree = "<group>"; };
 		554527FD1E25F9C900DD2F52 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ClickToCall/AppDelegate.h; sourceTree = "<group>"; };
 		554527FE1E25F9C900DD2F52 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ClickToCall/AppDelegate.m; sourceTree = "<group>"; };
 		554527FF1E25F9C900DD2F52 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ClickToCall/Info.plist; sourceTree = "<group>"; };
 		554528001E25F9C900DD2F52 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ClickToCall/ViewController.h; sourceTree = "<group>"; };
 		554528011E25F9C900DD2F52 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ClickToCall/ViewController.m; sourceTree = "<group>"; };
 		554528261E25FA6100DD2F52 /* ClickToCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickToCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		556E0EEE2849D51A00D27636 /* WebRTC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WebRTC.xcframework; path = Frameworks/WebRTC.xcframework; sourceTree = "<group>"; };
 		5570EAC62519EB4E0031E44C /* GPUImageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPUImageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5570EAFB2519EBE70031E44C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = GPUImageDemo/ViewController.h; sourceTree = "<group>"; };
 		5570EAFC2519EBE70031E44C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = GPUImageDemo/AppDelegate.m; sourceTree = "<group>"; };
@@ -808,8 +807,7 @@
 		55E1EC371DFCFBA0005AEE73 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = VideoChat/ViewController.h; sourceTree = "<group>"; };
 		55E1EC381DFCFBA0005AEE73 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = VideoChat/ViewController.m; sourceTree = "<group>"; };
 		55E1EC5D1DFCFBAA005AEE73 /* VideoChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FPWCSApi2Swift.xcframework; sourceTree = "<group>"; };
-		55E2A06125E0CFE6006C1B4F /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = "FPWCSApi2Swift.xcframework/ios-arm64_armv7/FPWCSApi2Swift.framework/Frameworks/WebRTC.framework"; sourceTree = "<group>"; };
+		55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FPWCSApi2Swift.xcframework; path = Frameworks/FPWCSApi2Swift.xcframework; sourceTree = "<group>"; };
 		55F8AED91DE55895002F5DFC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Streamer/AppDelegate.h; sourceTree = "<group>"; };
 		55F8AEDA1DE55895002F5DFC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Streamer/AppDelegate.m; sourceTree = "<group>"; };
 		55F8AEDB1DE55895002F5DFC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Streamer/Info.plist; sourceTree = "<group>"; };
@@ -890,7 +888,7 @@
 		CE29B5B01DC038AE0081CD37 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = TwoWayStreaming/ViewController.h; sourceTree = "<group>"; };
 		CE29B5B11DC038AE0081CD37 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = TwoWayStreaming/AppDelegate.m; sourceTree = "<group>"; };
 		CE29B5B21DC038AE0081CD37 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TwoWayStreaming/AppDelegate.h; sourceTree = "<group>"; };
-		CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPWCSApi2.framework; sourceTree = "<group>"; };
+		CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FPWCSApi2.framework; path = Frameworks/FPWCSApi2.framework; sourceTree = "<group>"; };
 		CE7534341DD9708400D7DF80 /* WCSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCSUtil.h; path = common/WCSUtil.h; sourceTree = "<group>"; };
 		CE7534351DD9713600D7DF80 /* WCSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCSUtil.m; path = common/WCSUtil.m; sourceTree = "<group>"; };
 		CE7534431DDAD95200D7DF80 /* WCSViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCSViews.h; path = common/WCSViews.h; sourceTree = "<group>"; };
@@ -927,10 +925,10 @@
 				5503A8291DEEE96C003A50AF /* libicucore.tbd in Frameworks */,
 				5503A82B1DEEE96C003A50AF /* libstdc++.tbd in Frameworks */,
 				5503A82C1DEEE96C003A50AF /* libc.tbd in Frameworks */,
-				551F8B4B25C3FAA200653B11 /* WebRTC.framework in Frameworks */,
 				5503A82D1DEEE96C003A50AF /* libsqlite3.tbd in Frameworks */,
 				5503A82E1DEEE96C003A50AF /* Foundation.framework in Frameworks */,
 				5503A82F1DEEE96C003A50AF /* AVFoundation.framework in Frameworks */,
+				556E0EFB2849DC3600D27636 /* WebRTC.xcframework in Frameworks */,
 				5503A8301DEEE96C003A50AF /* UIKit.framework in Frameworks */,
 				5503A8311DEEE96C003A50AF /* GLKit.framework in Frameworks */,
 				5503A8321DEEE96C003A50AF /* CoreMedia.framework in Frameworks */,
@@ -945,8 +943,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556E0F0F2849E09000D27636 /* WebRTC.xcframework in Frameworks */,
 				5512026B26818AF400A0E6DD /* FPWCSApi2Swift.xcframework in Frameworks */,
-				5512026C26818AF400A0E6DD /* WebRTC.framework in Frameworks */,
 				57BB4CC05B3AAE392427BE22 /* (null) in Frameworks */,
 				F92A91BCA135E60DD238C4B0 /* Pods_ScreenCapturerSwift.framework in Frameworks */,
 			);
@@ -956,9 +954,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556E0F112849E0B300D27636 /* WebRTC.xcframework in Frameworks */,
 				551202E1268C757E00A0E6DD /* ReplayKit.framework in Frameworks */,
 				551202F0268D8EEE00A0E6DD /* FPWCSApi2Swift.xcframework in Frameworks */,
-				551202EC268D8C5C00A0E6DD /* WebRTC.framework in Frameworks */,
 				F8AE4A7898FAD099EBB2A917 /* Pods_ScreenCapturerExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -967,8 +965,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556E0F092849DF2B00D27636 /* WebRTC.xcframework in Frameworks */,
 				55E2A01B25DF82A9006C1B4F /* FPWCSApi2Swift.xcframework in Frameworks */,
-				55E2A06825E0D240006C1B4F /* WebRTC.framework in Frameworks */,
 				A718D7F631BF58F7D83DE9D9 /* (null) in Frameworks */,
 				ADE49FDDD3F913A301FC5B0B /* Pods_MediaDevicesSwift.framework in Frameworks */,
 			);
@@ -981,10 +979,10 @@
 				5545280E1E25FA6100DD2F52 /* libicucore.tbd in Frameworks */,
 				554528101E25FA6100DD2F52 /* libstdc++.tbd in Frameworks */,
 				554528111E25FA6100DD2F52 /* libc.tbd in Frameworks */,
-				551F8B3F25C3FA5700653B11 /* WebRTC.framework in Frameworks */,
 				554528121E25FA6100DD2F52 /* libsqlite3.tbd in Frameworks */,
 				554528131E25FA6100DD2F52 /* Foundation.framework in Frameworks */,
 				554528141E25FA6100DD2F52 /* AVFoundation.framework in Frameworks */,
+				556E0F032849DE1000D27636 /* WebRTC.xcframework in Frameworks */,
 				554528151E25FA6100DD2F52 /* UIKit.framework in Frameworks */,
 				554528161E25FA6100DD2F52 /* GLKit.framework in Frameworks */,
 				554528171E25FA6100DD2F52 /* CoreMedia.framework in Frameworks */,
@@ -1002,10 +1000,10 @@
 				5570EAB12519EB4E0031E44C /* libicucore.tbd in Frameworks */,
 				5570EAB22519EB4E0031E44C /* libstdc++.tbd in Frameworks */,
 				5570EAB32519EB4E0031E44C /* libc.tbd in Frameworks */,
-				551F8B3C25C3FA4700653B11 /* WebRTC.framework in Frameworks */,
 				5570EAB42519EB4E0031E44C /* libsqlite3.tbd in Frameworks */,
 				5570EAB52519EB4E0031E44C /* Foundation.framework in Frameworks */,
 				5570EAB62519EB4E0031E44C /* AVFoundation.framework in Frameworks */,
+				556E0F052849DEC600D27636 /* WebRTC.xcframework in Frameworks */,
 				5570EAB72519EB4E0031E44C /* UIKit.framework in Frameworks */,
 				5570EAB82519EB4E0031E44C /* GLKit.framework in Frameworks */,
 				5570EAB92519EB4E0031E44C /* CoreMedia.framework in Frameworks */,
@@ -1020,9 +1018,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556E0F072849DF1F00D27636 /* WebRTC.xcframework in Frameworks */,
 				2D60120E95DF0969E87948A9 /* (null) in Frameworks */,
 				55E2A01925DF8299006C1B4F /* FPWCSApi2Swift.xcframework in Frameworks */,
-				55E2A06225E0CFE6006C1B4F /* WebRTC.framework in Frameworks */,
 				8322B5860A35BA260E10C7A8 /* Pods_TwoWayStreamingSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1032,8 +1030,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				558121762639471000379A43 /* FPWCSApi2Swift.xcframework in Frameworks */,
-				558121772639471000379A43 /* WebRTC.framework in Frameworks */,
 				EBB0D5D3421BFBDDAFC2DC7E /* Pods_MCUClientSwift.framework in Frameworks */,
+				556E0F0B2849DFDD00D27636 /* WebRTC.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1041,8 +1039,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556E0F0D2849E00100D27636 /* WebRTC.xcframework in Frameworks */,
 				558125C42643937700379A43 /* FPWCSApi2Swift.xcframework in Frameworks */,
-				558125C52643937700379A43 /* WebRTC.framework in Frameworks */,
 				6C30CB3000443DDE6FF500C9 /* (null) in Frameworks */,
 				A4A3C488CA879623CF790A37 /* Pods_ImageOverlaySwift.framework in Frameworks */,
 			);
@@ -1052,9 +1050,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556E0F132849E0EE00D27636 /* WebRTC.xcframework in Frameworks */,
 				559B40BE26A7E9330065534E /* FPWCSApi2Swift.xcframework in Frameworks */,
 				55AB53B426B1079F00E3F721 /* GPUImage.framework in Frameworks */,
-				559B40BF26A7E9330065534E /* WebRTC.framework in Frameworks */,
 				864B7B86886BE3ED5D46DA56 /* Pods_GPUImageDemoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1074,10 +1072,10 @@
 				55BD73651E0FF4DF003E0517 /* libicucore.tbd in Frameworks */,
 				55BD73671E0FF4DF003E0517 /* libstdc++.tbd in Frameworks */,
 				55BD73681E0FF4DF003E0517 /* libc.tbd in Frameworks */,
-				551F8B4525C3FA8A00653B11 /* WebRTC.framework in Frameworks */,
 				55BD73691E0FF4DF003E0517 /* libsqlite3.tbd in Frameworks */,
 				55BD736A1E0FF4DF003E0517 /* Foundation.framework in Frameworks */,
 				55BD736B1E0FF4DF003E0517 /* AVFoundation.framework in Frameworks */,
+				556E0EFF2849DD6700D27636 /* WebRTC.xcframework in Frameworks */,
 				55BD736C1E0FF4DF003E0517 /* UIKit.framework in Frameworks */,
 				55BD736D1E0FF4DF003E0517 /* GLKit.framework in Frameworks */,
 				55BD736E1E0FF4DF003E0517 /* CoreMedia.framework in Frameworks */,
@@ -1093,8 +1091,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				55C1CCB927B521AD00F6F5B9 /* FPWCSApi2Swift.xcframework in Frameworks */,
-				55C1CCBA27B521AD00F6F5B9 /* WebRTC.framework in Frameworks */,
 				C2D7488ACCA416B0253B0493 /* Pods_CallKitDemoSwift.framework in Frameworks */,
+				556E0F152849E12F00D27636 /* WebRTC.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1112,10 +1110,10 @@
 				55C3EEB61DDD6B240004F538 /* libicucore.tbd in Frameworks */,
 				55C3EEB81DDD6B240004F538 /* libstdc++.tbd in Frameworks */,
 				55C3EEB91DDD6B240004F538 /* libc.tbd in Frameworks */,
-				551F8B5725C3FACA00653B11 /* WebRTC.framework in Frameworks */,
 				55C3EEBA1DDD6B240004F538 /* libsqlite3.tbd in Frameworks */,
 				55C3EEBB1DDD6B240004F538 /* Foundation.framework in Frameworks */,
 				55C3EEBC1DDD6B240004F538 /* AVFoundation.framework in Frameworks */,
+				556E0EF32849D76A00D27636 /* WebRTC.xcframework in Frameworks */,
 				55C3EEBD1DDD6B240004F538 /* UIKit.framework in Frameworks */,
 				55C3EEBE1DDD6B240004F538 /* GLKit.framework in Frameworks */,
 				55C3EEBF1DDD6B240004F538 /* CoreMedia.framework in Frameworks */,
@@ -1133,10 +1131,10 @@
 				55C3EEEA1DE29F220004F538 /* libicucore.tbd in Frameworks */,
 				55C3EEEC1DE29F220004F538 /* libstdc++.tbd in Frameworks */,
 				55C3EEED1DE29F220004F538 /* libc.tbd in Frameworks */,
-				551F8B5425C3FAC000653B11 /* WebRTC.framework in Frameworks */,
 				55C3EEEE1DE29F220004F538 /* libsqlite3.tbd in Frameworks */,
 				55C3EEEF1DE29F220004F538 /* Foundation.framework in Frameworks */,
 				55C3EEF01DE29F220004F538 /* AVFoundation.framework in Frameworks */,
+				556E0EF52849D7E900D27636 /* WebRTC.xcframework in Frameworks */,
 				55C3EEF11DE29F220004F538 /* UIKit.framework in Frameworks */,
 				55C3EEF21DE29F220004F538 /* GLKit.framework in Frameworks */,
 				55C3EEF31DE29F220004F538 /* CoreMedia.framework in Frameworks */,
@@ -1154,10 +1152,10 @@
 				55E1EC451DFCFBAA005AEE73 /* libicucore.tbd in Frameworks */,
 				55E1EC471DFCFBAA005AEE73 /* libstdc++.tbd in Frameworks */,
 				55E1EC481DFCFBAA005AEE73 /* libc.tbd in Frameworks */,
-				551F8B4825C3FA9500653B11 /* WebRTC.framework in Frameworks */,
 				55E1EC491DFCFBAA005AEE73 /* libsqlite3.tbd in Frameworks */,
 				55E1EC4A1DFCFBAA005AEE73 /* Foundation.framework in Frameworks */,
 				55E1EC4B1DFCFBAA005AEE73 /* AVFoundation.framework in Frameworks */,
+				556E0EFD2849DCE500D27636 /* WebRTC.xcframework in Frameworks */,
 				55E1EC4C1DFCFBAA005AEE73 /* UIKit.framework in Frameworks */,
 				55E1EC4D1DFCFBAA005AEE73 /* GLKit.framework in Frameworks */,
 				55E1EC4E1DFCFBAA005AEE73 /* CoreMedia.framework in Frameworks */,
@@ -1175,10 +1173,10 @@
 				55F8AEEB1DE55944002F5DFC /* libicucore.tbd in Frameworks */,
 				55F8AEED1DE55944002F5DFC /* libstdc++.tbd in Frameworks */,
 				55F8AEEE1DE55944002F5DFC /* libc.tbd in Frameworks */,
-				551F8B5125C3FAB800653B11 /* WebRTC.framework in Frameworks */,
 				55F8AEEF1DE55944002F5DFC /* libsqlite3.tbd in Frameworks */,
 				55F8AEF01DE55944002F5DFC /* Foundation.framework in Frameworks */,
 				55F8AEF11DE55944002F5DFC /* AVFoundation.framework in Frameworks */,
+				556E0EF72849DB2E00D27636 /* WebRTC.xcframework in Frameworks */,
 				55F8AEF21DE55944002F5DFC /* UIKit.framework in Frameworks */,
 				55F8AEF31DE55944002F5DFC /* GLKit.framework in Frameworks */,
 				55F8AEF41DE55944002F5DFC /* CoreMedia.framework in Frameworks */,
@@ -1201,7 +1199,7 @@
 				55F8AF201DE7FD3F002F5DFC /* AVFoundation.framework in Frameworks */,
 				55F8AF211DE7FD3F002F5DFC /* UIKit.framework in Frameworks */,
 				55F8AF221DE7FD3F002F5DFC /* GLKit.framework in Frameworks */,
-				551F8B4E25C3FAAF00653B11 /* WebRTC.framework in Frameworks */,
+				556E0EF92849DB8B00D27636 /* WebRTC.xcframework in Frameworks */,
 				55F8AF231DE7FD3F002F5DFC /* CoreMedia.framework in Frameworks */,
 				55F8AF241DE7FD3F002F5DFC /* CoreGraphics.framework in Frameworks */,
 				55F8AF251DE7FD3F002F5DFC /* VideoToolbox.framework in Frameworks */,
@@ -1218,10 +1216,10 @@
 				55F98A441E1D28BD00B70D94 /* libicucore.tbd in Frameworks */,
 				55F98A461E1D28BD00B70D94 /* libstdc++.tbd in Frameworks */,
 				55F98A471E1D28BD00B70D94 /* libc.tbd in Frameworks */,
-				551F8B4225C3FA8100653B11 /* WebRTC.framework in Frameworks */,
 				55F98A481E1D28BD00B70D94 /* libsqlite3.tbd in Frameworks */,
 				55F98A491E1D28BD00B70D94 /* Foundation.framework in Frameworks */,
 				55F98A4A1E1D28BD00B70D94 /* AVFoundation.framework in Frameworks */,
+				556E0F012849DDFF00D27636 /* WebRTC.xcframework in Frameworks */,
 				55F98A4B1E1D28BD00B70D94 /* UIKit.framework in Frameworks */,
 				55F98A4C1E1D28BD00B70D94 /* GLKit.framework in Frameworks */,
 				55F98A4D1E1D28BD00B70D94 /* CoreMedia.framework in Frameworks */,
@@ -1239,10 +1237,10 @@
 				CE29B5961DC036AE0081CD37 /* libicucore.tbd in Frameworks */,
 				CE29B5981DC036AE0081CD37 /* libstdc++.tbd in Frameworks */,
 				CE29B5991DC036AE0081CD37 /* libc.tbd in Frameworks */,
-				551F8B5F25C3FADF00653B11 /* WebRTC.framework in Frameworks */,
 				CE29B59A1DC036AE0081CD37 /* libsqlite3.tbd in Frameworks */,
 				CE29B59B1DC036AE0081CD37 /* Foundation.framework in Frameworks */,
 				CE29B59C1DC036AE0081CD37 /* AVFoundation.framework in Frameworks */,
+				556E0EEF2849D51A00D27636 /* WebRTC.xcframework in Frameworks */,
 				CE29B59D1DC036AE0081CD37 /* UIKit.framework in Frameworks */,
 				CE29B59E1DC036AE0081CD37 /* GLKit.framework in Frameworks */,
 				CE29B59F1DC036AE0081CD37 /* CoreMedia.framework in Frameworks */,
@@ -1260,10 +1258,10 @@
 				CE988A261DD5534400742423 /* libicucore.tbd in Frameworks */,
 				CE988A281DD5534400742423 /* libstdc++.tbd in Frameworks */,
 				CE988A291DD5534400742423 /* libc.tbd in Frameworks */,
-				551F8B5C25C3FAD200653B11 /* WebRTC.framework in Frameworks */,
 				CE988A2A1DD5534400742423 /* libsqlite3.tbd in Frameworks */,
 				CE988A2B1DD5534400742423 /* Foundation.framework in Frameworks */,
 				CE988A2C1DD5534400742423 /* AVFoundation.framework in Frameworks */,
+				556E0EF12849D74B00D27636 /* WebRTC.xcframework in Frameworks */,
 				CE988A2D1DD5534400742423 /* UIKit.framework in Frameworks */,
 				CE988A2E1DD5534400742423 /* GLKit.framework in Frameworks */,
 				CE988A2F1DD5534400742423 /* CoreMedia.framework in Frameworks */,
@@ -1609,10 +1607,9 @@
 		CE1BE62D1C0D8BA400A4970E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				556E0EEE2849D51A00D27636 /* WebRTC.xcframework */,
 				559B40E226A914E00065534E /* GPUImage.framework */,
-				55E2A06125E0CFE6006C1B4F /* WebRTC.framework */,
 				55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */,
-				551F8B3B25C3FA4700653B11 /* WebRTC.framework */,
 				CE30E69B1DB75E330098CE93 /* FPWCSApi2.framework */,
 				CE133F041C0D93E800EAEC55 /* libicucore.tbd */,
 				CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */,
@@ -1786,7 +1783,7 @@
 				5503A8371DEEE96C003A50AF /* Resources */,
 				5503A83C1DEEE96C003A50AF /* [CP] Embed Pods Frameworks */,
 				551F8B4D25C3FAA200653B11 /* Embed Frameworks */,
-				551F8B3025C3F97800653B11 /* ShellScript */,
+				550675DC2851A284000836E5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1807,7 +1804,6 @@
 				5512026E26818AF400A0E6DD /* Resources */,
 				551202A1268AF81700A0E6DD /* Embed App Extensions */,
 				5512027126818AF400A0E6DD /* Embed Frameworks */,
-				5512027526818AF400A0E6DD /* ShellScript */,
 				E27FDA908179282058715476 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -1829,7 +1825,6 @@
 				551202DD268C757E00A0E6DD /* Frameworks */,
 				551202DE268C757E00A0E6DD /* Resources */,
 				551202EE268D8C5C00A0E6DD /* Embed Frameworks */,
-				551202EF268D8E2700A0E6DD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1850,7 +1845,6 @@
 				5512B68D25655FD900E207B5 /* Resources */,
 				5512B69125655FD900E207B5 /* Embed Frameworks */,
 				5512B69325655FD900E207B5 /* [CP] Embed Pods Frameworks */,
-				5512B69425655FD900E207B5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1871,7 +1865,7 @@
 				5545281C1E25FA6100DD2F52 /* Resources */,
 				554528211E25FA6100DD2F52 /* [CP] Embed Pods Frameworks */,
 				551F8B4125C3FA5700653B11 /* Embed Frameworks */,
-				551F8B3425C3F98D00653B11 /* ShellScript */,
+				550675E02851A29A000836E5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1892,7 +1886,7 @@
 				5570EABE2519EB4E0031E44C /* Resources */,
 				5570EAC22519EB4E0031E44C /* [CP] Embed Pods Frameworks */,
 				551F8B3E25C3FA4700653B11 /* Embed Frameworks */,
-				551F8B3525C3F99300653B11 /* ShellScript */,
+				550675E12851A2A0000836E5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1913,7 +1907,6 @@
 				55787936254FFE0700F8CD95 /* Resources */,
 				55F2CCFA2553A725005A6681 /* Embed Frameworks */,
 				A193B5447DA3F124BB1223FE /* [CP] Embed Pods Frameworks */,
-				55F3D409255D611000082650 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1934,7 +1927,6 @@
 				558121782639471000379A43 /* Resources */,
 				5581217E2639471000379A43 /* Embed Frameworks */,
 				558121812639471000379A43 /* [CP] Embed Pods Frameworks */,
-				558121822639471000379A43 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1955,7 +1947,6 @@
 				558125C72643937700379A43 /* Resources */,
 				558125CA2643937700379A43 /* Embed Frameworks */,
 				558125CD2643937700379A43 /* [CP] Embed Pods Frameworks */,
-				558125CE2643937700379A43 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1976,7 +1967,6 @@
 				559B40C126A7E9330065534E /* Resources */,
 				559B40C426A7E9330065534E /* Embed Frameworks */,
 				559B40C726A7E9330065534E /* [CP] Embed Pods Frameworks */,
-				559B40C826A7E9330065534E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1995,7 +1985,6 @@
 				559F74FC2665F049006A5231 /* Sources */,
 				559F75012665F049006A5231 /* Frameworks */,
 				559F75052665F049006A5231 /* Resources */,
-				559F750D2665F049006A5231 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -2016,7 +2005,7 @@
 				55BD73731E0FF4DF003E0517 /* Resources */,
 				55BD737A1E0FF4DF003E0517 /* [CP] Embed Pods Frameworks */,
 				551F8B4725C3FA8A00653B11 /* Embed Frameworks */,
-				551F8B3225C3F98300653B11 /* ShellScript */,
+				550675DE2851A28F000836E5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -2037,7 +2026,6 @@
 				55C1CCBC27B521AD00F6F5B9 /* Resources */,
 				55C1CCBF27B521AD00F6F5B9 /* Embed App Extensions */,
 				55C1CCC127B521AD00F6F5B9 /* Embed Frameworks */,
-				55C1CCC427B521AD00F6F5B9 /* ShellScript */,
 				55C1CCC527B521AD00F6F5B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -2077,7 +2065,7 @@
 				55C3EEC41DDD6B240004F538 /* Resources */,
 				551F8B5925C3FACA00653B11 /* Embed Frameworks */,
 				55C3EECA1DDD6B240004F538 /* [CP] Embed Pods Frameworks */,
-				551F8B2C25C3F96000653B11 /* ShellScript */,
+				550675D82851A26B000836E5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -2098,7 +2086,7 @@
 				55C3EEF81DE29F220004F538 /* Resources */,
 				55C3EEFD1DE29F220004F538 /* [CP] Embed Pods Frameworks */,
 				551F8B5625C3FAC000653B11 /* Embed Frameworks */,
-				551F8B2D25C3F96600653B11 /* ShellScript */,
+				550675D92851A272000836E5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -2119,7 +2107,7 @@
 				55E1EC531DFCFBAA005AEE73 /* Resources */,
 				55E1EC581DFCFBAA005AEE73 /* [CP] Embed Pods Frameworks */,
 				551F8B4A25C3FA9500653B11 /* Embed Frameworks */,
-				551F8B3125C3F97D00653B11 /* ShellScript */,
+				550675DD2851A289000836E5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -2140,7 +2128,7 @@
 				55F8AEF91DE55944002F5DFC /* Resources */,
 				55F8AF001DE55944002F5DFC /* [CP] Embed Pods Frameworks */,
 				551F8B5325C3FAB800653B11 /* Embed Frameworks */,
-				551F8B2E25C3F96B00653B11 /* ShellScript */,
+				550675DA2851A278000836E5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -2161,7 +2149,7 @@
 				55F8AF281DE7FD3F002F5DFC /* Resources */,
 				55F8AF2D1DE7FD3F002F5DFC /* [CP] Embed Pods Frameworks */,
 				551F8B5025C3FAAF00653B11 /* Embed Frameworks */,
-				551F8B2F25C3F97100653B11 /* ShellScript */,
+				550675DB2851A27E000836E5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -2182,7 +2170,7 @@
 				55F98A521E1D28BD00B70D94 /* Resources */,
 				55F98A571E1D28BD00B70D94 /* [CP] Embed Pods Frameworks */,
 				551F8B4425C3FA8200653B11 /* Embed Frameworks */,
-				551F8B3325C3F98800653B11 /* ShellScript */,
+				550675DF2851A295000836E5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -2203,7 +2191,7 @@
 				CE29B5A21DC036AE0081CD37 /* Resources */,
 				2EF5402938E13FA3BB9BB8E8 /* [CP] Embed Pods Frameworks */,
 				551F8B6125C3FAE000653B11 /* Embed Frameworks */,
-				551F8B2925C3F92D00653B11 /* ShellScript */,
+				550675D62851A24D000836E5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -2224,7 +2212,7 @@
 				CE988A341DD5534400742423 /* Resources */,
 				5C4D4FF7694FE2B75D457075 /* [CP] Embed Pods Frameworks */,
 				551F8B5E25C3FAD200653B11 /* Embed Frameworks */,
-				551F8B2A25C3F94E00653B11 /* ShellScript */,
+				550675D72851A265000836E5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -2631,6 +2619,210 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Conference/Pods-Conference-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		550675D62851A24D000836E5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
+		};
+		550675D72851A265000836E5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
+		};
+		550675D82851A26B000836E5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
+		};
+		550675D92851A272000836E5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
+		};
+		550675DA2851A278000836E5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
+		};
+		550675DB2851A27E000836E5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
+		};
+		550675DC2851A284000836E5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
+		};
+		550675DD2851A289000836E5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
+		};
+		550675DE2851A28F000836E5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
+		};
+		550675DF2851A295000836E5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
+		};
+		550675E02851A29A000836E5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
+		};
+		550675E12851A2A0000836E5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
+		};
 		5512026426818AF400A0E6DD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2652,40 +2844,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		5512027526818AF400A0E6DD /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\n    FRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\n    FRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\n    echo \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\n    EXTRACTED_ARCHS=()\n\n    for ARCH in $ARCHS\n    do\n        echo \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\n        lipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\n        EXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\n    done\n\n    echo \"Merging extracted architectures: ${ARCHS}\"\n    lipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\n    rm \"${EXTRACTED_ARCHS[@]}\"\n\n    echo \"Replacing original executable with thinned version\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
-		};
-		551202EF268D8E2700A0E6DD /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\n    FRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\n    FRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\n    echo \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\n    EXTRACTED_ARCHS=()\n\n    for ARCH in $ARCHS\n    do\n        echo \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\n        lipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\n        EXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\n    done\n\n    echo \"Merging extracted architectures: ${ARCHS}\"\n    lipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\n    rm \"${EXTRACTED_ARCHS[@]}\"\n\n    echo \"Replacing original executable with thinned version\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
 		};
 		5512B68625655FD900E207B5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2728,227 +2886,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MediaDevicesSwift/Pods-MediaDevicesSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		5512B69425655FD900E207B5 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\n    FRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\n    FRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\n    echo \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\n    EXTRACTED_ARCHS=()\n\n    for ARCH in $ARCHS\n    do\n        echo \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\n        lipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\n        EXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\n    done\n\n    echo \"Merging extracted architectures: ${ARCHS}\"\n    lipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\n    rm \"${EXTRACTED_ARCHS[@]}\"\n\n    echo \"Replacing original executable with thinned version\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
-		};
-		551F8B2925C3F92D00653B11 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
-		};
-		551F8B2A25C3F94E00653B11 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
-		};
-		551F8B2C25C3F96000653B11 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
-		};
-		551F8B2D25C3F96600653B11 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
-		};
-		551F8B2E25C3F96B00653B11 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
-		};
-		551F8B2F25C3F97100653B11 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
-		};
-		551F8B3025C3F97800653B11 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
-		};
-		551F8B3125C3F97D00653B11 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
-		};
-		551F8B3225C3F98300653B11 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
-		};
-		551F8B3325C3F98800653B11 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
-		};
-		551F8B3425C3F98D00653B11 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
-		};
-		551F8B3525C3F99300653B11 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\n    echo \"No need to remove archs\"\n    ;;\n*)\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"i386 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    if $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\n    lipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    echo \"x86_64 architecture removed\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n    fi\n    ;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\ndone\n";
 		};
 		554528061E25FA6100DD2F52 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3070,23 +3007,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MCUClientSwift/Pods-MCUClientSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		558121822639471000379A43 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\n    FRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\n    FRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\n    echo \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\n    EXTRACTED_ARCHS=()\n\n    for ARCH in $ARCHS\n    do\n        echo \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\n        lipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\n        EXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\n    done\n\n    echo \"Merging extracted architectures: ${ARCHS}\"\n    lipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\n    rm \"${EXTRACTED_ARCHS[@]}\"\n\n    echo \"Replacing original executable with thinned version\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
-		};
 		558125BC2643937700379A43 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -3128,23 +3048,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImageOverlaySwift/Pods-ImageOverlaySwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		558125CE2643937700379A43 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\n    FRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\n    FRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\n    echo \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\n    EXTRACTED_ARCHS=()\n\n    for ARCH in $ARCHS\n    do\n        echo \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\n        lipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\n        EXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\n    done\n\n    echo \"Merging extracted architectures: ${ARCHS}\"\n    lipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\n    rm \"${EXTRACTED_ARCHS[@]}\"\n\n    echo \"Replacing original executable with thinned version\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
 		};
 		559B40B726A7E9330065534E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3188,23 +3091,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GPUImageDemoSwift/Pods-GPUImageDemoSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		559B40C826A7E9330065534E /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\n    FRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\n    FRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\n    echo \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\n    EXTRACTED_ARCHS=()\n\n    for ARCH in $ARCHS\n    do\n        echo \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\n        lipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\n        EXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\n    done\n\n    echo \"Merging extracted architectures: ${ARCHS}\"\n    lipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\n    rm \"${EXTRACTED_ARCHS[@]}\"\n\n    echo \"Replacing original executable with thinned version\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
-		};
 		559F74FB2665F049006A5231 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -3226,23 +3112,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		559F750D2665F049006A5231 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\n    FRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\n    FRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\n    echo \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\n    EXTRACTED_ARCHS=()\n\n    for ARCH in $ARCHS\n    do\n        echo \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\n        lipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\n        EXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\n    done\n\n    echo \"Merging extracted architectures: ${ARCHS}\"\n    lipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\n    rm \"${EXTRACTED_ARCHS[@]}\"\n\n    echo \"Replacing original executable with thinned version\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
 		};
 		55BD735D1E0FF4DF003E0517 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3303,23 +3172,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		55C1CCC427B521AD00F6F5B9 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\n    FRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\n    FRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\n    echo \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\n    EXTRACTED_ARCHS=()\n\n    for ARCH in $ARCHS\n    do\n        echo \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\n        lipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\n        EXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\n    done\n\n    echo \"Merging extracted architectures: ${ARCHS}\"\n    lipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\n    rm \"${EXTRACTED_ARCHS[@]}\"\n\n    echo \"Replacing original executable with thinned version\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
 		};
 		55C1CCC527B521AD00F6F5B9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3454,23 +3306,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VideoChat/Pods-VideoChat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		55F3D409255D611000082650 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\n    FRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\n    FRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\n    echo \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\n    EXTRACTED_ARCHS=()\n\n    for ARCH in $ARCHS\n    do\n        echo \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\n        lipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\n        EXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\n    done\n\n    echo \"Merging extracted architectures: ${ARCHS}\"\n    lipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\n    rm \"${EXTRACTED_ARCHS[@]}\"\n\n    echo \"Replacing original executable with thinned version\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
 		};
 		55F8AEE21DE55944002F5DFC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3802,7 +3637,6 @@
 			files = (
 				557879B3254FFEC600F8CD95 /* AppDelegate.swift in Sources */,
 				558D5EAA258267AA00C77CAC /* WebRTCView.swift in Sources */,
-				55812167263946FC00379A43 /* MCUViewController.swift in Sources */,
 				5589534725A6F804003C4B38 /* TwoWayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -4165,11 +3999,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/Conference/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -4194,11 +4027,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/Conference/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -4241,11 +4073,10 @@
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.framework/Frameworks",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.xcframework/ios-arm64_armv7/FPWCSApi2Swift.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/ScreenCapturer/Info.plist;
@@ -4294,11 +4125,10 @@
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.framework/Frameworks",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.xcframework/ios-arm64_armv7/FPWCSApi2Swift.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/ScreenCapturer/Info.plist;
@@ -4341,9 +4171,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.xcframework/ios-arm64_armv7/FPWCSApi2Swift.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/ScreenCapturer/ScreenCapturerExtension/Info.plist;
@@ -4389,9 +4220,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.xcframework/ios-arm64_armv7/FPWCSApi2Swift.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/ScreenCapturer/ScreenCapturerExtension/Info.plist;
@@ -4439,11 +4271,10 @@
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.framework/Frameworks",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.xcframework/ios-arm64_armv7/FPWCSApi2Swift.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/MediaDevices/Info.plist;
@@ -4490,11 +4321,10 @@
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.framework/Frameworks",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.xcframework/ios-arm64_armv7/FPWCSApi2Swift.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/MediaDevices/Info.plist;
@@ -4524,10 +4354,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/ClickToCall/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -4553,10 +4383,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/ClickToCall/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -4582,11 +4412,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/GPUImageDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -4612,11 +4441,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/GPUImageDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -4658,10 +4486,10 @@
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/**",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.xcframework/ios-arm64_armv7/FPWCSApi2Swift.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/TwoWayStreaming/Info.plist;
@@ -4709,10 +4537,10 @@
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/**",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.xcframework/ios-arm64_armv7/FPWCSApi2Swift.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/TwoWayStreaming/Info.plist;
@@ -4758,11 +4586,10 @@
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.framework/Frameworks",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.xcframework/ios-arm64_armv7/FPWCSApi2Swift.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/MCUClient/Info.plist;
@@ -4809,11 +4636,10 @@
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.framework/Frameworks",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.xcframework/ios-arm64_armv7/FPWCSApi2Swift.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/MCUClient/Info.plist;
@@ -4859,11 +4685,10 @@
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.framework/Frameworks",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.xcframework/ios-arm64_armv7/FPWCSApi2Swift.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/ImageOverlay/Info.plist;
@@ -4910,11 +4735,10 @@
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.framework/Frameworks",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.xcframework/ios-arm64_armv7/FPWCSApi2Swift.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/ImageOverlay/Info.plist;
@@ -4960,11 +4784,10 @@
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.framework/Frameworks",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.xcframework/ios-arm64_armv7/FPWCSApi2Swift.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 					"$(PROJECT_DIR)/Swift/GPUImageDemo",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5012,11 +4835,10 @@
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.framework/Frameworks",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.xcframework/ios-arm64_armv7/FPWCSApi2Swift.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 					"$(PROJECT_DIR)/Swift/GPUImageDemo",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5064,10 +4886,10 @@
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/**",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.xcframework/ios-arm64_armv7/FPWCSApi2Swift.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/WebView/Info.plist;
@@ -5115,10 +4937,10 @@
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/**",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.xcframework/ios-arm64_armv7/FPWCSApi2Swift.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/WebView/Info.plist;
@@ -5148,10 +4970,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/PhoneMinVideo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -5177,10 +4999,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/PhoneMinVideo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -5223,11 +5045,10 @@
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.framework/Frameworks",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.xcframework/ios-arm64_armv7/FPWCSApi2Swift.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/CallKitDemo/Info.plist;
@@ -5276,11 +5097,10 @@
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.framework/Frameworks",
-					"$(PROJECT_DIR)/FPWCSApi2Swift.xcframework/ios-arm64_armv7/FPWCSApi2Swift.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/CallKitDemo/Info.plist;
@@ -5321,6 +5141,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
+				EXCLUDED_ARCHS = armv7;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Swift/CallKitDemo/CallKitIntentExtension/Info.plist;
@@ -5367,6 +5188,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
+				EXCLUDED_ARCHS = armv7;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Swift/CallKitDemo/CallKitIntentExtension/Info.plist;
@@ -5400,11 +5222,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/Player/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -5428,11 +5249,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/Player/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -5457,11 +5277,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/TwoPlayers/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -5486,11 +5305,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/TwoPlayers/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -5515,11 +5333,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/VideoChat/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -5544,11 +5361,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/VideoChat/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -5573,10 +5389,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/Streamer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -5602,10 +5418,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/Streamer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -5629,11 +5445,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/StreamRecording/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -5657,11 +5472,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/StreamRecording/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -5686,10 +5500,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/PhoneMin/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -5715,10 +5529,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/PhoneMin/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -5833,10 +5647,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/TwoWayStreaming/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -5865,10 +5680,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/TwoWayStreaming/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -5893,11 +5709,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/MediaDevices/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -5922,11 +5738,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXWV5Z47NK;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-					"$(PROJECT_DIR)/FPWCSApi2.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/MediaDevices/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;

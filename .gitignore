@@ -1,6 +1,7 @@
 out-build
 Pods
 sdk
-FPWCSApi2.framework
-FPWCSApi2Swift.framework
+Frameworks
+.idea
+
 .DS_Store
