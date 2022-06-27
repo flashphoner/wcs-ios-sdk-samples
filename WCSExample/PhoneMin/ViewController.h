@@ -9,7 +9,6 @@
 #import "WCSViews.h"
 #import <UIKit/UIKit.h>
 #import <WebRTC/RTCEAGLVideoView.h>
-#import <JSONModel/JSONModel.h>
 
 @interface ViewController : UIViewController<UITextFieldDelegate>
 

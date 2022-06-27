@@ -10,7 +10,7 @@
 		007FCEA027937F1705D714B2 /* Pods_TwoWayStreaming.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657FE6304944E7B0E86B981B /* Pods_TwoWayStreaming.framework */; };
 		061B4A6262F2BD8EE560DC97 /* Pods_StreamRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA37E8F9999876F4BDE5240 /* Pods_StreamRecording.framework */; };
 		2C9EA6B7826D4E9D53C22823 /* Pods_Player.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8745492A7BF846C9479B539C /* Pods_Player.framework */; };
-		2D60120E95DF0969E87948A9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		2D60120E95DF0969E87948A9 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
 		347EAE752A00A7D6410BD50A /* Pods_GPUImageDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67583FC82A75C6CC4844C24B /* Pods_GPUImageDemo.framework */; };
 		3F2A9FFC5A5A59E6CFD7FE70 /* Pods_TwoPlayers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31005716A70F1B337799F1 /* Pods_TwoPlayers.framework */; };
 		4CECE292C777F06FCE1291B5 /* Pods_Streamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C845B85743847299215C220 /* Pods_Streamer.framework */; };
@@ -338,8 +338,8 @@
 		55F98A5F1E1D28DC00B70D94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F98A371E1D286100B70D94 /* ViewController.m */; };
 		55F9BB35251DAA5500F39D69 /* GPUImageVideoCapturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9BB26251DA9E100F39D69 /* GPUImageVideoCapturer.m */; };
 		55FCD3CE252B0437008C54E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
-		57BB4CC05B3AAE392427BE22 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
-		6C30CB3000443DDE6FF500C9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		57BB4CC05B3AAE392427BE22 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		6C30CB3000443DDE6FF500C9 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
 		8322B5860A35BA260E10C7A8 /* Pods_TwoWayStreamingSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0822EC5EBC09EC0DEA7E0CF /* Pods_TwoWayStreamingSwift.framework */; };
 		85458A1A4E20148A6AA67C8F /* Pods_MediaDevices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A58904727550EF62D7BF75 /* Pods_MediaDevices.framework */; };
 		860B894766550601C22FB1F7 /* Pods_WebViewSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9E1D6D79359A9C141FD1DB5 /* Pods_WebViewSwift.framework */; };
@@ -348,8 +348,8 @@
 		8845F0DD6AEEA05D2C8C4CB9 /* Pods_VideoChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5BB64A1ECEAAAAE4BA4D58 /* Pods_VideoChat.framework */; };
 		96E97847B0DD3DD368A0655D /* Pods_ClickToCall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6092F5076645DB535DAF8F5F /* Pods_ClickToCall.framework */; };
 		A4A3C488CA879623CF790A37 /* Pods_ImageOverlaySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96744C2065E6FA8F4F239FFB /* Pods_ImageOverlaySwift.framework */; };
-		A718D7F631BF58F7D83DE9D9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
-		AB70810F411954F98ECB0E4E /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		A718D7F631BF58F7D83DE9D9 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		AB70810F411954F98ECB0E4E /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
 		ADE49FDDD3F913A301FC5B0B /* Pods_MediaDevicesSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B321C1597A2D603CFB8EB1 /* Pods_MediaDevicesSwift.framework */; };
 		BF0C53CD5C35C2C303C8BBCD /* Pods_PhoneMinVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1B888B5E77A104987F94EC /* Pods_PhoneMinVideo.framework */; };
 		C2D7488ACCA416B0253B0493 /* Pods_CallKitDemoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0646D30C249F237B971D5E40 /* Pods_CallKitDemoSwift.framework */; };
@@ -945,7 +945,7 @@
 			files = (
 				556E0F0F2849E09000D27636 /* WebRTC.xcframework in Frameworks */,
 				5512026B26818AF400A0E6DD /* FPWCSApi2Swift.xcframework in Frameworks */,
-				57BB4CC05B3AAE392427BE22 /* (null) in Frameworks */,
+				57BB4CC05B3AAE392427BE22 /* BuildFile in Frameworks */,
 				F92A91BCA135E60DD238C4B0 /* Pods_ScreenCapturerSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -967,7 +967,7 @@
 			files = (
 				556E0F092849DF2B00D27636 /* WebRTC.xcframework in Frameworks */,
 				55E2A01B25DF82A9006C1B4F /* FPWCSApi2Swift.xcframework in Frameworks */,
-				A718D7F631BF58F7D83DE9D9 /* (null) in Frameworks */,
+				A718D7F631BF58F7D83DE9D9 /* BuildFile in Frameworks */,
 				ADE49FDDD3F913A301FC5B0B /* Pods_MediaDevicesSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1019,7 +1019,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				556E0F072849DF1F00D27636 /* WebRTC.xcframework in Frameworks */,
-				2D60120E95DF0969E87948A9 /* (null) in Frameworks */,
+				2D60120E95DF0969E87948A9 /* BuildFile in Frameworks */,
 				55E2A01925DF8299006C1B4F /* FPWCSApi2Swift.xcframework in Frameworks */,
 				8322B5860A35BA260E10C7A8 /* Pods_TwoWayStreamingSwift.framework in Frameworks */,
 			);
@@ -1041,7 +1041,7 @@
 			files = (
 				556E0F0D2849E00100D27636 /* WebRTC.xcframework in Frameworks */,
 				558125C42643937700379A43 /* FPWCSApi2Swift.xcframework in Frameworks */,
-				6C30CB3000443DDE6FF500C9 /* (null) in Frameworks */,
+				6C30CB3000443DDE6FF500C9 /* BuildFile in Frameworks */,
 				A4A3C488CA879623CF790A37 /* Pods_ImageOverlaySwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1204,7 +1204,7 @@
 				55F8AF241DE7FD3F002F5DFC /* CoreGraphics.framework in Frameworks */,
 				55F8AF251DE7FD3F002F5DFC /* VideoToolbox.framework in Frameworks */,
 				55F8AF261DE7FD3F002F5DFC /* FPWCSApi2.framework in Frameworks */,
-				AB70810F411954F98ECB0E4E /* (null) in Frameworks */,
+				AB70810F411954F98ECB0E4E /* BuildFile in Frameworks */,
 				061B4A6262F2BD8EE560DC97 /* Pods_StreamRecording.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2568,12 +2568,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TwoWayStreaming/Pods-TwoWayStreaming-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2606,12 +2604,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Conference/Pods-Conference-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2874,12 +2870,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MediaDevicesSwift/Pods-MediaDevicesSwift-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2912,12 +2906,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ClickToCall/Pods-ClickToCall-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2950,13 +2942,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GPUImageDemo/Pods-GPUImageDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
 			);
@@ -2994,12 +2984,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MCUClientSwift/Pods-MCUClientSwift-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3036,12 +3024,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ImageOverlaySwift/Pods-ImageOverlaySwift-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3078,12 +3064,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GPUImageDemoSwift/Pods-GPUImageDemoSwift-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3138,12 +3122,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PhoneMinVideo/Pods-PhoneMinVideo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3180,12 +3162,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CallKitDemoSwift/Pods-CallKitDemoSwift-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3218,12 +3198,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Player/Pods-Player-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3256,12 +3234,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TwoPlayers/Pods-TwoPlayers-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3294,12 +3270,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-VideoChat/Pods-VideoChat-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3332,12 +3306,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Streamer/Pods-Streamer-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3370,12 +3342,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-StreamRecording/Pods-StreamRecording-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3408,12 +3378,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PhoneMin/Pods-PhoneMin-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3428,12 +3396,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MediaDevices/Pods-MediaDevices-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3484,12 +3450,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TwoWayStreamingSwift/Pods-TwoWayStreamingSwift-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3526,12 +3490,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ScreenCapturerSwift/Pods-ScreenCapturerSwift-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
