@@ -2,86 +2,105 @@ platform :ios, '9.1'
 use_frameworks!
 
 target 'TwoWayStreaming' do
-  pod 'SocketRocket'
+  pod 'FPWCSApi2'
+  pod 'FPWebRTC'
 end
 
 target 'MediaDevices' do
-  pod 'SocketRocket'
+  pod 'FPWCSApi2'
+  pod 'FPWebRTC'
 end
 
 target 'Player' do
-  pod 'SocketRocket'
+  pod 'FPWCSApi2'
+  pod 'FPWebRTC'
 end
 
 target 'TwoPlayers' do
-    pod 'SocketRocket'
+    pod 'FPWCSApi2'
+    pod 'FPWebRTC'
 end
 
 target 'Streamer' do
-    pod 'SocketRocket'
+    pod 'FPWCSApi2'
+    pod 'FPWebRTC'
 end
 
 target 'StreamRecording' do
-    pod 'SocketRocket'
+    pod 'FPWCSApi2'
+    pod 'FPWebRTC'
 end
 
 target 'Conference' do
-    pod 'SocketRocket'
+    pod 'FPWCSApi2'
+    pod 'FPWebRTC'
 end
 
 target 'VideoChat' do
-    pod 'SocketRocket'
+    pod 'FPWCSApi2'
+    pod 'FPWebRTC'
 end
 
 target 'PhoneMinVideo' do
-    pod 'SocketRocket'
+    pod 'FPWCSApi2'
+    pod 'FPWebRTC'
 end
 
 target 'PhoneMin' do
-    pod 'SocketRocket'
+    pod 'FPWCSApi2'
+    pod 'FPWebRTC'
 end
 
 target 'ClickToCall' do
-    pod 'SocketRocket'
+    pod 'FPWCSApi2'
+    pod 'FPWebRTC'
 end
 
 target 'GPUImageDemo' do
-    pod 'SocketRocket'
     pod 'GPUImage'
+    pod 'FPWCSApi2'
+    pod 'FPWebRTC'
 end
 
 target 'TwoWayStreamingSwift' do
-    pod 'SocketRocket'
+    pod 'FPWCSApi2Swift'
+    pod 'FPWebRTC'
 end
 
 target 'MediaDevicesSwift' do
-    pod 'SocketRocket'
+    pod 'FPWCSApi2Swift'
+    pod 'FPWebRTC'
 end
 
 target 'MCUClientSwift' do
-    pod 'SocketRocket'
+    pod 'FPWCSApi2Swift'
+    pod 'FPWebRTC'
 end
 
 target 'ImageOverlaySwift' do
-    pod 'SocketRocket'
+    pod 'FPWCSApi2Swift'
+    pod 'FPWebRTC'
 end
 
 target 'ScreenCapturerSwift' do
-    pod 'SocketRocket'
+    pod 'FPWCSApi2Swift'
+    pod 'FPWebRTC'
 end
 
 target 'ScreenCapturerExtension' do
-    pod 'SocketRocket'
+    pod 'FPWCSApi2Swift'
+    pod 'FPWebRTC'
 end
 
 target 'WebViewSwift' do
 end
 
 target 'GPUImageDemoSwift' do
-    pod 'SocketRocket'
+    pod 'FPWCSApi2Swift'
+    pod 'FPWebRTC'
 end
 
 target 'CallKitDemoSwift' do
-    pod 'SocketRocket'
+    pod 'FPWCSApi2Swift'
+    pod 'FPWebRTC'
 end
-

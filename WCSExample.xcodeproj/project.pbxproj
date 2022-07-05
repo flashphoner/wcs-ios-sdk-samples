@@ -3,14 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		007FCEA027937F1705D714B2 /* Pods_TwoWayStreaming.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657FE6304944E7B0E86B981B /* Pods_TwoWayStreaming.framework */; };
 		061B4A6262F2BD8EE560DC97 /* Pods_StreamRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA37E8F9999876F4BDE5240 /* Pods_StreamRecording.framework */; };
 		2C9EA6B7826D4E9D53C22823 /* Pods_Player.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8745492A7BF846C9479B539C /* Pods_Player.framework */; };
-		2D60120E95DF0969E87948A9 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		2D60120E95DF0969E87948A9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		347EAE752A00A7D6410BD50A /* Pods_GPUImageDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67583FC82A75C6CC4844C24B /* Pods_GPUImageDemo.framework */; };
 		3F2A9FFC5A5A59E6CFD7FE70 /* Pods_TwoPlayers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31005716A70F1B337799F1 /* Pods_TwoPlayers.framework */; };
 		4CECE292C777F06FCE1291B5 /* Pods_Streamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C845B85743847299215C220 /* Pods_Streamer.framework */; };
@@ -32,42 +32,14 @@
 		5503A83B1DEEE96C003A50AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB681C75ABA4002FDF16 /* LaunchScreen.storyboard */; };
 		5503A8431DEEE9E6003A50AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503A81A1DEEE961003A50AF /* AppDelegate.m */; };
 		5503A8441DEEE9E6003A50AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503A81D1DEEE961003A50AF /* ViewController.m */; };
-		55049B5F2865645900E14174 /* FPWCSApi2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55049B5E2865645900E14174 /* FPWCSApi2.xcframework */; };
-		55049B602865645900E14174 /* FPWCSApi2.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55049B5E2865645900E14174 /* FPWCSApi2.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		55049B61286564EC00E14174 /* FPWCSApi2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55049B5E2865645900E14174 /* FPWCSApi2.xcframework */; };
-		55049B62286564EC00E14174 /* FPWCSApi2.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55049B5E2865645900E14174 /* FPWCSApi2.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		55049B63286564F300E14174 /* FPWCSApi2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55049B5E2865645900E14174 /* FPWCSApi2.xcframework */; };
-		55049B64286564F300E14174 /* FPWCSApi2.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55049B5E2865645900E14174 /* FPWCSApi2.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		55049B65286564F800E14174 /* FPWCSApi2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55049B5E2865645900E14174 /* FPWCSApi2.xcframework */; };
-		55049B66286564F800E14174 /* FPWCSApi2.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55049B5E2865645900E14174 /* FPWCSApi2.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		55049B67286564FF00E14174 /* FPWCSApi2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55049B5E2865645900E14174 /* FPWCSApi2.xcframework */; };
-		55049B68286564FF00E14174 /* FPWCSApi2.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55049B5E2865645900E14174 /* FPWCSApi2.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		55049B692865650700E14174 /* FPWCSApi2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55049B5E2865645900E14174 /* FPWCSApi2.xcframework */; };
-		55049B6A2865650700E14174 /* FPWCSApi2.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55049B5E2865645900E14174 /* FPWCSApi2.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		55049B6B2865650D00E14174 /* FPWCSApi2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55049B5E2865645900E14174 /* FPWCSApi2.xcframework */; };
-		55049B6C2865650D00E14174 /* FPWCSApi2.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55049B5E2865645900E14174 /* FPWCSApi2.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		55049B6D2865651400E14174 /* FPWCSApi2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55049B5E2865645900E14174 /* FPWCSApi2.xcframework */; };
-		55049B6E2865651400E14174 /* FPWCSApi2.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55049B5E2865645900E14174 /* FPWCSApi2.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		55049B6F2865651B00E14174 /* FPWCSApi2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55049B5E2865645900E14174 /* FPWCSApi2.xcframework */; };
-		55049B702865651B00E14174 /* FPWCSApi2.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55049B5E2865645900E14174 /* FPWCSApi2.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		55049B712865652000E14174 /* FPWCSApi2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55049B5E2865645900E14174 /* FPWCSApi2.xcframework */; };
-		55049B722865652000E14174 /* FPWCSApi2.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55049B5E2865645900E14174 /* FPWCSApi2.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		55049B732865652500E14174 /* FPWCSApi2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55049B5E2865645900E14174 /* FPWCSApi2.xcframework */; };
-		55049B742865652500E14174 /* FPWCSApi2.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55049B5E2865645900E14174 /* FPWCSApi2.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		55049B752865652F00E14174 /* FPWCSApi2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55049B5E2865645900E14174 /* FPWCSApi2.xcframework */; };
-		55049B762865652F00E14174 /* FPWCSApi2.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55049B5E2865645900E14174 /* FPWCSApi2.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5512026626818AF400A0E6DD /* WebRTCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D5EA9258267AA00C77CAC /* WebRTCView.swift */; };
 		5512026726818AF400A0E6DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557879B2254FFEC600F8CD95 /* AppDelegate.swift */; };
-		5512026B26818AF400A0E6DD /* FPWCSApi2Swift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; };
-		5512027226818AF400A0E6DD /* FPWCSApi2Swift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5512028226818B2300A0E6DD /* ScreenCapturerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5512027B26818B2300A0E6DD /* ScreenCapturerViewController.swift */; };
 		5512028726818B7400A0E6DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5512027C26818B2300A0E6DD /* LaunchScreen.storyboard */; };
 		5512028826818B7400A0E6DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5512027E26818B2300A0E6DD /* Main.storyboard */; };
 		551202E1268C757E00A0E6DD /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5512028E268AF81700A0E6DD /* ReplayKit.framework */; };
 		551202E4268C757E00A0E6DD /* ScreenCapturerExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551202E3268C757E00A0E6DD /* ScreenCapturerExtensionHandler.swift */; };
 		551202E8268C757E00A0E6DD /* ScreenCapturerExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 551202E0268C757E00A0E6DD /* ScreenCapturerExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		551202F0268D8EEE00A0E6DD /* FPWCSApi2Swift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; };
-		551202F1268D8EEE00A0E6DD /* FPWCSApi2Swift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5512B68825655FD900E207B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557879B2254FFEC600F8CD95 /* AppDelegate.swift */; };
 		5512B6B5256560A800E207B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5512B6B0256560A800E207B5 /* ViewController.swift */; };
 		5517B1871E1D2CE400B39B15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F98A341E1D286100B70D94 /* AppDelegate.m */; };
@@ -93,46 +65,6 @@
 		555260911DE418FA00AED0F1 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		555260921DE45C6B00AED0F1 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		555260931DE45CAD00AED0F1 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
-		556E0EEF2849D51A00D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
-		556E0EF02849D51A00D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		556E0EF12849D74B00D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
-		556E0EF22849D74B00D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		556E0EF32849D76A00D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
-		556E0EF42849D76B00D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		556E0EF52849D7E900D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
-		556E0EF62849D7E900D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		556E0EF72849DB2E00D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
-		556E0EF82849DB2F00D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		556E0EF92849DB8B00D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
-		556E0EFA2849DB8C00D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		556E0EFB2849DC3600D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
-		556E0EFC2849DC3600D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		556E0EFD2849DCE500D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
-		556E0EFE2849DCE500D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		556E0EFF2849DD6700D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
-		556E0F002849DD6700D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		556E0F012849DDFF00D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
-		556E0F022849DDFF00D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		556E0F032849DE1000D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
-		556E0F042849DE1000D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		556E0F052849DEC600D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
-		556E0F062849DEC600D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		556E0F072849DF1F00D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
-		556E0F082849DF2000D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		556E0F092849DF2B00D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
-		556E0F0A2849DF2B00D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		556E0F0B2849DFDD00D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
-		556E0F0C2849DFDD00D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		556E0F0D2849E00100D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
-		556E0F0E2849E00100D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		556E0F0F2849E09000D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
-		556E0F102849E09000D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		556E0F112849E0B300D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
-		556E0F122849E0B300D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		556E0F132849E0EE00D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
-		556E0F142849E0EE00D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		556E0F152849E12F00D27636 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; };
-		556E0F162849E12F00D27636 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 556E0EEE2849D51A00D27636 /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5570EAAE2519EB4E0031E44C /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		5570EAAF2519EB4E0031E44C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
 		5570EAB12519EB4E0031E44C /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
@@ -157,18 +89,14 @@
 		558121702639471000379A43 /* MCUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55812161263946FC00379A43 /* MCUViewController.swift */; };
 		558121712639471000379A43 /* WebRTCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D5EA9258267AA00C77CAC /* WebRTCView.swift */; };
 		558121732639471000379A43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557879B2254FFEC600F8CD95 /* AppDelegate.swift */; };
-		558121762639471000379A43 /* FPWCSApi2Swift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; };
 		5581217A2639471000379A43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5512B6AA256560A700E207B5 /* LaunchScreen.storyboard */; };
 		5581217D2639471000379A43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5581215F263946FC00379A43 /* Main.storyboard */; };
-		5581217F2639471000379A43 /* FPWCSApi2Swift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		558125002640FAB000379A43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5512B6AA256560A700E207B5 /* LaunchScreen.storyboard */; };
 		558125012640FAB000379A43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5512B6AC256560A800E207B5 /* Main.storyboard */; };
 		558125142640FAE600379A43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5578799D254FFEA600F8CD95 /* LaunchScreen.storyboard */; };
 		558125152640FAE600379A43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5578799F254FFEA600F8CD95 /* Main.storyboard */; };
 		558125C02643937700379A43 /* WebRTCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D5EA9258267AA00C77CAC /* WebRTCView.swift */; };
 		558125C22643937700379A43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557879B2254FFEC600F8CD95 /* AppDelegate.swift */; };
-		558125C42643937700379A43 /* FPWCSApi2Swift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; };
-		558125CB2643937700379A43 /* FPWCSApi2Swift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		558125EF2643944000379A43 /* ImageOverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558125E82643943F00379A43 /* ImageOverlayViewController.swift */; };
 		558125FA264396A200379A43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 558125F42643945C00379A43 /* LaunchScreen.storyboard */; };
 		558125FB264396A200379A43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 558125F22643945C00379A43 /* Main.storyboard */; };
@@ -178,8 +106,6 @@
 		558D5EB82582685900C77CAC /* WebRTCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D5EA9258267AA00C77CAC /* WebRTCView.swift */; };
 		559B40B926A7E9330065534E /* WebRTCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D5EA9258267AA00C77CAC /* WebRTCView.swift */; };
 		559B40BA26A7E9330065534E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557879B2254FFEC600F8CD95 /* AppDelegate.swift */; };
-		559B40BE26A7E9330065534E /* FPWCSApi2Swift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; };
-		559B40C526A7E9330065534E /* FPWCSApi2Swift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		559B40D626A9038B0065534E /* CameraVideoCapturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559B40CF26A9038B0065534E /* CameraVideoCapturer.swift */; };
 		559B40D726A9038B0065534E /* GPUImageDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559B40D026A9038B0065534E /* GPUImageDemoViewController.swift */; };
 		559B40DB26A9039F0065534E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 559B40D126A9038B0065534E /* LaunchScreen.storyboard */; };
@@ -214,8 +140,6 @@
 		55BD73811E0FF59E003E0517 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BD73551E0FF4D1003E0517 /* AppDelegate.m */; };
 		55BD73821E0FF59E003E0517 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BD73581E0FF4D1003E0517 /* ViewController.m */; };
 		55C1CCB527B521AD00F6F5B9 /* WebRTCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D5EA9258267AA00C77CAC /* WebRTCView.swift */; };
-		55C1CCB927B521AD00F6F5B9 /* FPWCSApi2Swift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; };
-		55C1CCC227B521AD00F6F5B9 /* FPWCSApi2Swift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55C1CCEE27BB527B00F6F5B9 /* CallKitDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1CCE327BB527A00F6F5B9 /* CallKitDemoViewController.swift */; };
 		55C1CD0127BB534900F6F5B9 /* CallKitIntentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 55C1CCF827BB534900F6F5B9 /* CallKitIntentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		55C1CD0527BB5D9000F6F5B9 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1CCEA27BB527B00F6F5B9 /* IntentHandler.swift */; };
@@ -278,10 +202,6 @@
 		55E1EC551DFCFBAA005AEE73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2310681C0D718100918455 /* Assets.xcassets */; };
 		55E1EC561DFCFBAA005AEE73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB6A1C75ABA4002FDF16 /* Main.storyboard */; };
 		55E1EC571DFCFBAA005AEE73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF3EB681C75ABA4002FDF16 /* LaunchScreen.storyboard */; };
-		55E2A01925DF8299006C1B4F /* FPWCSApi2Swift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; };
-		55E2A01A25DF8299006C1B4F /* FPWCSApi2Swift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		55E2A01B25DF82A9006C1B4F /* FPWCSApi2Swift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; };
-		55E2A01C25DF82A9006C1B4F /* FPWCSApi2Swift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55EC5EC11DF52C9000CEFD12 /* WCSViews.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534441DDADA3800D7DF80 /* WCSViews.m */; };
 		55F8AEE41DE55944002F5DFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F8AEDD1DE55895002F5DFC /* ViewController.m */; };
 		55F8AEE51DE55944002F5DFC /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
@@ -340,8 +260,8 @@
 		55F98A5F1E1D28DC00B70D94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F98A371E1D286100B70D94 /* ViewController.m */; };
 		55F9BB35251DAA5500F39D69 /* GPUImageVideoCapturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9BB26251DA9E100F39D69 /* GPUImageVideoCapturer.m */; };
 		55FCD3CE252B0437008C54E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
-		57BB4CC05B3AAE392427BE22 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
-		6C30CB3000443DDE6FF500C9 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		57BB4CC05B3AAE392427BE22 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		6C30CB3000443DDE6FF500C9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		8322B5860A35BA260E10C7A8 /* Pods_TwoWayStreamingSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0822EC5EBC09EC0DEA7E0CF /* Pods_TwoWayStreamingSwift.framework */; };
 		85458A1A4E20148A6AA67C8F /* Pods_MediaDevices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A58904727550EF62D7BF75 /* Pods_MediaDevices.framework */; };
 		860B894766550601C22FB1F7 /* Pods_WebViewSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9E1D6D79359A9C141FD1DB5 /* Pods_WebViewSwift.framework */; };
@@ -350,8 +270,8 @@
 		8845F0DD6AEEA05D2C8C4CB9 /* Pods_VideoChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5BB64A1ECEAAAAE4BA4D58 /* Pods_VideoChat.framework */; };
 		96E97847B0DD3DD368A0655D /* Pods_ClickToCall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6092F5076645DB535DAF8F5F /* Pods_ClickToCall.framework */; };
 		A4A3C488CA879623CF790A37 /* Pods_ImageOverlaySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96744C2065E6FA8F4F239FFB /* Pods_ImageOverlaySwift.framework */; };
-		A718D7F631BF58F7D83DE9D9 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
-		AB70810F411954F98ECB0E4E /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		A718D7F631BF58F7D83DE9D9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		AB70810F411954F98ECB0E4E /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		ADE49FDDD3F913A301FC5B0B /* Pods_MediaDevicesSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B321C1597A2D603CFB8EB1 /* Pods_MediaDevicesSwift.framework */; };
 		BF0C53CD5C35C2C303C8BBCD /* Pods_PhoneMinVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1B888B5E77A104987F94EC /* Pods_PhoneMinVideo.framework */; };
 		C2D7488ACCA416B0253B0493 /* Pods_CallKitDemoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0646D30C249F237B971D5E40 /* Pods_CallKitDemoSwift.framework */; };
@@ -422,8 +342,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				556E0F102849E09000D27636 /* WebRTC.xcframework in Embed Frameworks */,
-				5512027226818AF400A0E6DD /* FPWCSApi2Swift.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,8 +363,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				556E0F122849E0B300D27636 /* WebRTC.xcframework in Embed Frameworks */,
-				551202F1268D8EEE00A0E6DD /* FPWCSApi2Swift.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,8 +373,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				556E0F0A2849DF2B00D27636 /* WebRTC.xcframework in Embed Frameworks */,
-				55E2A01C25DF82A9006C1B4F /* FPWCSApi2Swift.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,8 +383,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				556E0F062849DEC600D27636 /* WebRTC.xcframework in Embed Frameworks */,
-				55049B762865652F00E14174 /* FPWCSApi2.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,8 +393,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				556E0F042849DE1000D27636 /* WebRTC.xcframework in Embed Frameworks */,
-				55049B742865652500E14174 /* FPWCSApi2.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,8 +403,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				556E0F022849DDFF00D27636 /* WebRTC.xcframework in Embed Frameworks */,
-				55049B722865652000E14174 /* FPWCSApi2.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,8 +413,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				556E0F002849DD6700D27636 /* WebRTC.xcframework in Embed Frameworks */,
-				55049B702865651B00E14174 /* FPWCSApi2.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,8 +423,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				556E0EFE2849DCE500D27636 /* WebRTC.xcframework in Embed Frameworks */,
-				55049B6E2865651400E14174 /* FPWCSApi2.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -529,8 +433,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				556E0EFC2849DC3600D27636 /* WebRTC.xcframework in Embed Frameworks */,
-				55049B6C2865650D00E14174 /* FPWCSApi2.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,8 +443,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				556E0EFA2849DB8C00D27636 /* WebRTC.xcframework in Embed Frameworks */,
-				55049B6A2865650700E14174 /* FPWCSApi2.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -553,8 +453,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				556E0EF82849DB2F00D27636 /* WebRTC.xcframework in Embed Frameworks */,
-				55049B68286564FF00E14174 /* FPWCSApi2.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -565,8 +463,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				556E0EF62849D7E900D27636 /* WebRTC.xcframework in Embed Frameworks */,
-				55049B66286564F800E14174 /* FPWCSApi2.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,8 +473,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				556E0EF42849D76B00D27636 /* WebRTC.xcframework in Embed Frameworks */,
-				55049B64286564F300E14174 /* FPWCSApi2.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -589,8 +483,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				556E0EF22849D74B00D27636 /* WebRTC.xcframework in Embed Frameworks */,
-				55049B62286564EC00E14174 /* FPWCSApi2.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -601,8 +493,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				556E0EF02849D51A00D27636 /* WebRTC.xcframework in Embed Frameworks */,
-				55049B602865645900E14174 /* FPWCSApi2.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -613,8 +503,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				556E0F0C2849DFDD00D27636 /* WebRTC.xcframework in Embed Frameworks */,
-				5581217F2639471000379A43 /* FPWCSApi2Swift.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -625,8 +513,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				556E0F0E2849E00100D27636 /* WebRTC.xcframework in Embed Frameworks */,
-				558125CB2643937700379A43 /* FPWCSApi2Swift.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -637,9 +523,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				559B40C526A7E9330065534E /* FPWCSApi2Swift.xcframework in Embed Frameworks */,
 				55AB53B526B1079F00E3F721 /* GPUImage.framework in Embed Frameworks */,
-				556E0F142849E0EE00D27636 /* WebRTC.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -661,8 +545,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				556E0F162849E12F00D27636 /* WebRTC.xcframework in Embed Frameworks */,
-				55C1CCC227B521AD00F6F5B9 /* FPWCSApi2Swift.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -673,8 +555,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				556E0F082849DF2000D27636 /* WebRTC.xcframework in Embed Frameworks */,
-				55E2A01A25DF8299006C1B4F /* FPWCSApi2Swift.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -703,7 +583,6 @@
 		5503A81C1DEEE961003A50AF /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Conference/ViewController.h; sourceTree = "<group>"; };
 		5503A81D1DEEE961003A50AF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Conference/ViewController.m; sourceTree = "<group>"; };
 		5503A8411DEEE96C003A50AF /* Conference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Conference.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		55049B5E2865645900E14174 /* FPWCSApi2.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FPWCSApi2.xcframework; path = Frameworks/FPWCSApi2.xcframework; sourceTree = "<group>"; };
 		5512027926818AF400A0E6DD /* ScreenCapturerSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenCapturerSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5512027B26818B2300A0E6DD /* ScreenCapturerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenCapturerViewController.swift; sourceTree = "<group>"; };
 		5512027D26818B2300A0E6DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -724,7 +603,6 @@
 		554528001E25F9C900DD2F52 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ClickToCall/ViewController.h; sourceTree = "<group>"; };
 		554528011E25F9C900DD2F52 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ClickToCall/ViewController.m; sourceTree = "<group>"; };
 		554528261E25FA6100DD2F52 /* ClickToCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickToCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		556E0EEE2849D51A00D27636 /* WebRTC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WebRTC.xcframework; path = Frameworks/WebRTC.xcframework; sourceTree = "<group>"; };
 		5570EAC62519EB4E0031E44C /* GPUImageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPUImageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5570EAFB2519EBE70031E44C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = GPUImageDemo/ViewController.h; sourceTree = "<group>"; };
 		5570EAFC2519EBE70031E44C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = GPUImageDemo/AppDelegate.m; sourceTree = "<group>"; };
@@ -808,7 +686,6 @@
 		55E1EC371DFCFBA0005AEE73 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = VideoChat/ViewController.h; sourceTree = "<group>"; };
 		55E1EC381DFCFBA0005AEE73 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = VideoChat/ViewController.m; sourceTree = "<group>"; };
 		55E1EC5D1DFCFBAA005AEE73 /* VideoChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FPWCSApi2Swift.xcframework; path = Frameworks/FPWCSApi2Swift.xcframework; sourceTree = "<group>"; };
 		55F8AED91DE55895002F5DFC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Streamer/AppDelegate.h; sourceTree = "<group>"; };
 		55F8AEDA1DE55895002F5DFC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Streamer/AppDelegate.m; sourceTree = "<group>"; };
 		55F8AEDB1DE55895002F5DFC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Streamer/Info.plist; sourceTree = "<group>"; };
@@ -927,9 +804,7 @@
 				5503A82C1DEEE96C003A50AF /* libc.tbd in Frameworks */,
 				5503A82D1DEEE96C003A50AF /* libsqlite3.tbd in Frameworks */,
 				5503A82E1DEEE96C003A50AF /* Foundation.framework in Frameworks */,
-				55049B6B2865650D00E14174 /* FPWCSApi2.xcframework in Frameworks */,
 				5503A82F1DEEE96C003A50AF /* AVFoundation.framework in Frameworks */,
-				556E0EFB2849DC3600D27636 /* WebRTC.xcframework in Frameworks */,
 				5503A8301DEEE96C003A50AF /* UIKit.framework in Frameworks */,
 				5503A8311DEEE96C003A50AF /* GLKit.framework in Frameworks */,
 				5503A8321DEEE96C003A50AF /* CoreMedia.framework in Frameworks */,
@@ -943,9 +818,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				556E0F0F2849E09000D27636 /* WebRTC.xcframework in Frameworks */,
-				5512026B26818AF400A0E6DD /* FPWCSApi2Swift.xcframework in Frameworks */,
-				57BB4CC05B3AAE392427BE22 /* BuildFile in Frameworks */,
+				57BB4CC05B3AAE392427BE22 /* (null) in Frameworks */,
 				F92A91BCA135E60DD238C4B0 /* Pods_ScreenCapturerSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -954,9 +827,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				556E0F112849E0B300D27636 /* WebRTC.xcframework in Frameworks */,
 				551202E1268C757E00A0E6DD /* ReplayKit.framework in Frameworks */,
-				551202F0268D8EEE00A0E6DD /* FPWCSApi2Swift.xcframework in Frameworks */,
 				F8AE4A7898FAD099EBB2A917 /* Pods_ScreenCapturerExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -965,9 +836,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				556E0F092849DF2B00D27636 /* WebRTC.xcframework in Frameworks */,
-				55E2A01B25DF82A9006C1B4F /* FPWCSApi2Swift.xcframework in Frameworks */,
-				A718D7F631BF58F7D83DE9D9 /* BuildFile in Frameworks */,
+				A718D7F631BF58F7D83DE9D9 /* (null) in Frameworks */,
 				ADE49FDDD3F913A301FC5B0B /* Pods_MediaDevicesSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -981,9 +850,7 @@
 				554528111E25FA6100DD2F52 /* libc.tbd in Frameworks */,
 				554528121E25FA6100DD2F52 /* libsqlite3.tbd in Frameworks */,
 				554528131E25FA6100DD2F52 /* Foundation.framework in Frameworks */,
-				55049B732865652500E14174 /* FPWCSApi2.xcframework in Frameworks */,
 				554528141E25FA6100DD2F52 /* AVFoundation.framework in Frameworks */,
-				556E0F032849DE1000D27636 /* WebRTC.xcframework in Frameworks */,
 				554528151E25FA6100DD2F52 /* UIKit.framework in Frameworks */,
 				554528161E25FA6100DD2F52 /* GLKit.framework in Frameworks */,
 				554528171E25FA6100DD2F52 /* CoreMedia.framework in Frameworks */,
@@ -1002,9 +869,7 @@
 				5570EAB32519EB4E0031E44C /* libc.tbd in Frameworks */,
 				5570EAB42519EB4E0031E44C /* libsqlite3.tbd in Frameworks */,
 				5570EAB52519EB4E0031E44C /* Foundation.framework in Frameworks */,
-				55049B752865652F00E14174 /* FPWCSApi2.xcframework in Frameworks */,
 				5570EAB62519EB4E0031E44C /* AVFoundation.framework in Frameworks */,
-				556E0F052849DEC600D27636 /* WebRTC.xcframework in Frameworks */,
 				5570EAB72519EB4E0031E44C /* UIKit.framework in Frameworks */,
 				5570EAB82519EB4E0031E44C /* GLKit.framework in Frameworks */,
 				5570EAB92519EB4E0031E44C /* CoreMedia.framework in Frameworks */,
@@ -1018,9 +883,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				556E0F072849DF1F00D27636 /* WebRTC.xcframework in Frameworks */,
-				2D60120E95DF0969E87948A9 /* BuildFile in Frameworks */,
-				55E2A01925DF8299006C1B4F /* FPWCSApi2Swift.xcframework in Frameworks */,
+				2D60120E95DF0969E87948A9 /* (null) in Frameworks */,
 				8322B5860A35BA260E10C7A8 /* Pods_TwoWayStreamingSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1029,9 +892,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				558121762639471000379A43 /* FPWCSApi2Swift.xcframework in Frameworks */,
 				EBB0D5D3421BFBDDAFC2DC7E /* Pods_MCUClientSwift.framework in Frameworks */,
-				556E0F0B2849DFDD00D27636 /* WebRTC.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1039,9 +900,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				556E0F0D2849E00100D27636 /* WebRTC.xcframework in Frameworks */,
-				558125C42643937700379A43 /* FPWCSApi2Swift.xcframework in Frameworks */,
-				6C30CB3000443DDE6FF500C9 /* BuildFile in Frameworks */,
+				6C30CB3000443DDE6FF500C9 /* (null) in Frameworks */,
 				A4A3C488CA879623CF790A37 /* Pods_ImageOverlaySwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1050,8 +909,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				556E0F132849E0EE00D27636 /* WebRTC.xcframework in Frameworks */,
-				559B40BE26A7E9330065534E /* FPWCSApi2Swift.xcframework in Frameworks */,
 				55AB53B426B1079F00E3F721 /* GPUImage.framework in Frameworks */,
 				864B7B86886BE3ED5D46DA56 /* Pods_GPUImageDemoSwift.framework in Frameworks */,
 			);
@@ -1074,9 +931,7 @@
 				55BD73681E0FF4DF003E0517 /* libc.tbd in Frameworks */,
 				55BD73691E0FF4DF003E0517 /* libsqlite3.tbd in Frameworks */,
 				55BD736A1E0FF4DF003E0517 /* Foundation.framework in Frameworks */,
-				55049B6F2865651B00E14174 /* FPWCSApi2.xcframework in Frameworks */,
 				55BD736B1E0FF4DF003E0517 /* AVFoundation.framework in Frameworks */,
-				556E0EFF2849DD6700D27636 /* WebRTC.xcframework in Frameworks */,
 				55BD736C1E0FF4DF003E0517 /* UIKit.framework in Frameworks */,
 				55BD736D1E0FF4DF003E0517 /* GLKit.framework in Frameworks */,
 				55BD736E1E0FF4DF003E0517 /* CoreMedia.framework in Frameworks */,
@@ -1090,9 +945,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55C1CCB927B521AD00F6F5B9 /* FPWCSApi2Swift.xcframework in Frameworks */,
 				C2D7488ACCA416B0253B0493 /* Pods_CallKitDemoSwift.framework in Frameworks */,
-				556E0F152849E12F00D27636 /* WebRTC.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1112,9 +965,7 @@
 				55C3EEB91DDD6B240004F538 /* libc.tbd in Frameworks */,
 				55C3EEBA1DDD6B240004F538 /* libsqlite3.tbd in Frameworks */,
 				55C3EEBB1DDD6B240004F538 /* Foundation.framework in Frameworks */,
-				55049B63286564F300E14174 /* FPWCSApi2.xcframework in Frameworks */,
 				55C3EEBC1DDD6B240004F538 /* AVFoundation.framework in Frameworks */,
-				556E0EF32849D76A00D27636 /* WebRTC.xcframework in Frameworks */,
 				55C3EEBD1DDD6B240004F538 /* UIKit.framework in Frameworks */,
 				55C3EEBE1DDD6B240004F538 /* GLKit.framework in Frameworks */,
 				55C3EEBF1DDD6B240004F538 /* CoreMedia.framework in Frameworks */,
@@ -1133,9 +984,7 @@
 				55C3EEED1DE29F220004F538 /* libc.tbd in Frameworks */,
 				55C3EEEE1DE29F220004F538 /* libsqlite3.tbd in Frameworks */,
 				55C3EEEF1DE29F220004F538 /* Foundation.framework in Frameworks */,
-				55049B65286564F800E14174 /* FPWCSApi2.xcframework in Frameworks */,
 				55C3EEF01DE29F220004F538 /* AVFoundation.framework in Frameworks */,
-				556E0EF52849D7E900D27636 /* WebRTC.xcframework in Frameworks */,
 				55C3EEF11DE29F220004F538 /* UIKit.framework in Frameworks */,
 				55C3EEF21DE29F220004F538 /* GLKit.framework in Frameworks */,
 				55C3EEF31DE29F220004F538 /* CoreMedia.framework in Frameworks */,
@@ -1154,9 +1003,7 @@
 				55E1EC481DFCFBAA005AEE73 /* libc.tbd in Frameworks */,
 				55E1EC491DFCFBAA005AEE73 /* libsqlite3.tbd in Frameworks */,
 				55E1EC4A1DFCFBAA005AEE73 /* Foundation.framework in Frameworks */,
-				55049B6D2865651400E14174 /* FPWCSApi2.xcframework in Frameworks */,
 				55E1EC4B1DFCFBAA005AEE73 /* AVFoundation.framework in Frameworks */,
-				556E0EFD2849DCE500D27636 /* WebRTC.xcframework in Frameworks */,
 				55E1EC4C1DFCFBAA005AEE73 /* UIKit.framework in Frameworks */,
 				55E1EC4D1DFCFBAA005AEE73 /* GLKit.framework in Frameworks */,
 				55E1EC4E1DFCFBAA005AEE73 /* CoreMedia.framework in Frameworks */,
@@ -1175,9 +1022,7 @@
 				55F8AEEE1DE55944002F5DFC /* libc.tbd in Frameworks */,
 				55F8AEEF1DE55944002F5DFC /* libsqlite3.tbd in Frameworks */,
 				55F8AEF01DE55944002F5DFC /* Foundation.framework in Frameworks */,
-				55049B67286564FF00E14174 /* FPWCSApi2.xcframework in Frameworks */,
 				55F8AEF11DE55944002F5DFC /* AVFoundation.framework in Frameworks */,
-				556E0EF72849DB2E00D27636 /* WebRTC.xcframework in Frameworks */,
 				55F8AEF21DE55944002F5DFC /* UIKit.framework in Frameworks */,
 				55F8AEF31DE55944002F5DFC /* GLKit.framework in Frameworks */,
 				55F8AEF41DE55944002F5DFC /* CoreMedia.framework in Frameworks */,
@@ -1199,13 +1044,11 @@
 				55F8AF201DE7FD3F002F5DFC /* AVFoundation.framework in Frameworks */,
 				55F8AF211DE7FD3F002F5DFC /* UIKit.framework in Frameworks */,
 				55F8AF221DE7FD3F002F5DFC /* GLKit.framework in Frameworks */,
-				556E0EF92849DB8B00D27636 /* WebRTC.xcframework in Frameworks */,
 				55F8AF231DE7FD3F002F5DFC /* CoreMedia.framework in Frameworks */,
 				55F8AF241DE7FD3F002F5DFC /* CoreGraphics.framework in Frameworks */,
 				55F8AF251DE7FD3F002F5DFC /* VideoToolbox.framework in Frameworks */,
-				AB70810F411954F98ECB0E4E /* BuildFile in Frameworks */,
+				AB70810F411954F98ECB0E4E /* (null) in Frameworks */,
 				061B4A6262F2BD8EE560DC97 /* Pods_StreamRecording.framework in Frameworks */,
-				55049B692865650700E14174 /* FPWCSApi2.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1218,9 +1061,7 @@
 				55F98A471E1D28BD00B70D94 /* libc.tbd in Frameworks */,
 				55F98A481E1D28BD00B70D94 /* libsqlite3.tbd in Frameworks */,
 				55F98A491E1D28BD00B70D94 /* Foundation.framework in Frameworks */,
-				55049B712865652000E14174 /* FPWCSApi2.xcframework in Frameworks */,
 				55F98A4A1E1D28BD00B70D94 /* AVFoundation.framework in Frameworks */,
-				556E0F012849DDFF00D27636 /* WebRTC.xcframework in Frameworks */,
 				55F98A4B1E1D28BD00B70D94 /* UIKit.framework in Frameworks */,
 				55F98A4C1E1D28BD00B70D94 /* GLKit.framework in Frameworks */,
 				55F98A4D1E1D28BD00B70D94 /* CoreMedia.framework in Frameworks */,
@@ -1239,9 +1080,7 @@
 				CE29B5991DC036AE0081CD37 /* libc.tbd in Frameworks */,
 				CE29B59A1DC036AE0081CD37 /* libsqlite3.tbd in Frameworks */,
 				CE29B59B1DC036AE0081CD37 /* Foundation.framework in Frameworks */,
-				55049B5F2865645900E14174 /* FPWCSApi2.xcframework in Frameworks */,
 				CE29B59C1DC036AE0081CD37 /* AVFoundation.framework in Frameworks */,
-				556E0EEF2849D51A00D27636 /* WebRTC.xcframework in Frameworks */,
 				CE29B59D1DC036AE0081CD37 /* UIKit.framework in Frameworks */,
 				CE29B59E1DC036AE0081CD37 /* GLKit.framework in Frameworks */,
 				CE29B59F1DC036AE0081CD37 /* CoreMedia.framework in Frameworks */,
@@ -1260,9 +1099,7 @@
 				CE988A291DD5534400742423 /* libc.tbd in Frameworks */,
 				CE988A2A1DD5534400742423 /* libsqlite3.tbd in Frameworks */,
 				CE988A2B1DD5534400742423 /* Foundation.framework in Frameworks */,
-				55049B61286564EC00E14174 /* FPWCSApi2.xcframework in Frameworks */,
 				CE988A2C1DD5534400742423 /* AVFoundation.framework in Frameworks */,
-				556E0EF12849D74B00D27636 /* WebRTC.xcframework in Frameworks */,
 				CE988A2D1DD5534400742423 /* UIKit.framework in Frameworks */,
 				CE988A2E1DD5534400742423 /* GLKit.framework in Frameworks */,
 				CE988A2F1DD5534400742423 /* CoreMedia.framework in Frameworks */,
@@ -1607,10 +1444,7 @@
 		CE1BE62D1C0D8BA400A4970E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				55049B5E2865645900E14174 /* FPWCSApi2.xcframework */,
-				556E0EEE2849D51A00D27636 /* WebRTC.xcframework */,
 				559B40E226A914E00065534E /* GPUImage.framework */,
-				55E2A01825DF8298006C1B4F /* FPWCSApi2Swift.xcframework */,
 				CE133F041C0D93E800EAEC55 /* libicucore.tbd */,
 				CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */,
 				CE133EFE1C0D93C300EAEC55 /* libc.tbd */,
@@ -2225,8 +2059,14 @@
 						DevelopmentTeam = SXWV5Z47NK;
 						ProvisioningStyle = Automatic;
 					};
+					5512026326818AF400A0E6DD = {
+						DevelopmentTeam = SXWV5Z47NK;
+						ProvisioningStyle = Automatic;
+					};
 					551202DF268C757E00A0E6DD = {
 						CreatedOnToolsVersion = 12.5;
+						DevelopmentTeam = SXWV5Z47NK;
+						ProvisioningStyle = Automatic;
 					};
 					5512B68525655FD900E207B5 = {
 						DevelopmentTeam = SXWV5Z47NK;
@@ -2242,21 +2082,40 @@
 					};
 					55787937254FFE0700F8CD95 = {
 						CreatedOnToolsVersion = 12.1;
+						DevelopmentTeam = SXWV5Z47NK;
 						LastSwiftMigration = 1210;
 						ProvisioningStyle = Automatic;
 					};
+					5581216B2639471000379A43 = {
+						DevelopmentTeam = SXWV5Z47NK;
+						ProvisioningStyle = Automatic;
+					};
 					558125BB2643937700379A43 = {
+						DevelopmentTeam = SXWV5Z47NK;
 						LastSwiftMigration = 1240;
+						ProvisioningStyle = Automatic;
+					};
+					559B40B626A7E9330065534E = {
+						DevelopmentTeam = SXWV5Z47NK;
+						ProvisioningStyle = Automatic;
+					};
+					559F74FA2665F049006A5231 = {
+						DevelopmentTeam = SXWV5Z47NK;
+						ProvisioningStyle = Automatic;
 					};
 					55BD735C1E0FF4DF003E0517 = {
 						DevelopmentTeam = SXWV5Z47NK;
 						ProvisioningStyle = Automatic;
 					};
 					55C1CCB027B521AD00F6F5B9 = {
+						DevelopmentTeam = SXWV5Z47NK;
 						LastSwiftMigration = 1320;
+						ProvisioningStyle = Automatic;
 					};
 					55C1CCF727BB534900F6F5B9 = {
 						CreatedOnToolsVersion = 13.2.1;
+						DevelopmentTeam = SXWV5Z47NK;
+						ProvisioningStyle = Automatic;
 					};
 					55C3EEAB1DDD6B240004F538 = {
 						DevelopmentTeam = SXWV5Z47NK;
@@ -2283,6 +2142,7 @@
 						ProvisioningStyle = Automatic;
 					};
 					CE29B5881DC036AE0081CD37 = {
+						DevelopmentTeam = SXWV5Z47NK;
 						LastSwiftMigration = 1230;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -2557,10 +2417,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TwoWayStreaming/Pods-TwoWayStreaming-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2/FPWCSApi2.framework/FPWCSApi2",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FPWCSApi2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2593,10 +2457,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Conference/Pods-Conference-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2/FPWCSApi2.framework/FPWCSApi2",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FPWCSApi2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2655,10 +2523,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MediaDevicesSwift/Pods-MediaDevicesSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2Swift/FPWCSApi2Swift.framework/FPWCSApi2Swift",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FPWCSApi2Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2691,10 +2563,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ClickToCall/Pods-ClickToCall-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2/FPWCSApi2.framework/FPWCSApi2",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FPWCSApi2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2728,11 +2604,15 @@
 				"${PODS_ROOT}/Target Support Files/Pods-GPUImageDemo/Pods-GPUImageDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2/FPWCSApi2.framework/FPWCSApi2",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FPWCSApi2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2769,10 +2649,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MCUClientSwift/Pods-MCUClientSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2Swift/FPWCSApi2Swift.framework/FPWCSApi2Swift",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FPWCSApi2Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2809,10 +2693,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ImageOverlaySwift/Pods-ImageOverlaySwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2Swift/FPWCSApi2Swift.framework/FPWCSApi2Swift",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FPWCSApi2Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2849,10 +2737,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GPUImageDemoSwift/Pods-GPUImageDemoSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2Swift/FPWCSApi2Swift.framework/FPWCSApi2Swift",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FPWCSApi2Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2907,10 +2799,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PhoneMinVideo/Pods-PhoneMinVideo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2/FPWCSApi2.framework/FPWCSApi2",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FPWCSApi2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2947,10 +2843,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CallKitDemoSwift/Pods-CallKitDemoSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2Swift/FPWCSApi2Swift.framework/FPWCSApi2Swift",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FPWCSApi2Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2983,10 +2883,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Player/Pods-Player-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2/FPWCSApi2.framework/FPWCSApi2",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FPWCSApi2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -3019,10 +2923,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TwoPlayers/Pods-TwoPlayers-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2/FPWCSApi2.framework/FPWCSApi2",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FPWCSApi2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -3055,10 +2963,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-VideoChat/Pods-VideoChat-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2/FPWCSApi2.framework/FPWCSApi2",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FPWCSApi2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -3091,10 +3003,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Streamer/Pods-Streamer-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2/FPWCSApi2.framework/FPWCSApi2",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FPWCSApi2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -3127,10 +3043,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-StreamRecording/Pods-StreamRecording-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2/FPWCSApi2.framework/FPWCSApi2",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FPWCSApi2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -3163,10 +3083,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PhoneMin/Pods-PhoneMin-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2/FPWCSApi2.framework/FPWCSApi2",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FPWCSApi2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -3181,10 +3105,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MediaDevices/Pods-MediaDevices-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2/FPWCSApi2.framework/FPWCSApi2",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FPWCSApi2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -3235,10 +3163,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TwoWayStreamingSwift/Pods-TwoWayStreamingSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2Swift/FPWCSApi2Swift.framework/FPWCSApi2Swift",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FPWCSApi2Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -3275,10 +3207,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ScreenCapturerSwift/Pods-ScreenCapturerSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2Swift/FPWCSApi2Swift.framework/FPWCSApi2Swift",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FPWCSApi2Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -3752,10 +3688,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/Conference/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.Conference;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3780,10 +3713,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/Conference/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.Conference;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3827,10 +3757,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/ScreenCapturer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.ScreenCapturer;
@@ -3879,15 +3806,11 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/ScreenCapturer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.ScreenCapturer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_WORKSPACE = YES;
@@ -3925,11 +3848,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/ScreenCapturer/ScreenCapturerExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.ScreenCapturer.ScreenCapturerExtension;
@@ -3974,17 +3893,12 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/ScreenCapturer/ScreenCapturerExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.ScreenCapturer.ScreenCapturerExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_WORKSPACE = YES;
@@ -4025,10 +3939,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/MediaDevices/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.MediaDevicesSwift;
@@ -4075,15 +3986,11 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/MediaDevices/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.MediaDevicesSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_WORKSPACE = YES;
@@ -4107,10 +4014,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/ClickToCall/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.ClickToCall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -4136,10 +4040,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/ClickToCall/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.ClickToCall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -4165,10 +4066,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/GPUImageDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.GPUImageDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -4194,10 +4092,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/GPUImageDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.GPUImageDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -4240,10 +4135,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/TwoWayStreaming/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.TwoWayStreamingSwift;
@@ -4291,15 +4183,11 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/TwoWayStreaming/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.TwoWayStreamingSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_WORKSPACE = YES;
@@ -4340,10 +4228,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/MCUClient/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.MCUClientSwift;
@@ -4390,15 +4275,11 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/MCUClient/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.MCUClientSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_WORKSPACE = YES;
@@ -4439,10 +4320,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/ImageOverlay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.ImageOverlaySwift;
@@ -4489,15 +4367,11 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/ImageOverlay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.ImageOverlaySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_WORKSPACE = YES;
@@ -4539,10 +4413,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/GPUImageDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.GPUImageDemoSwift;
@@ -4590,15 +4461,11 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/GPUImageDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.GPUImageDemoSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_WORKSPACE = YES;
@@ -4640,10 +4507,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/WebView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.WebViewSwift;
@@ -4691,15 +4555,11 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/WebView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.WebViewSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_WORKSPACE = YES;
@@ -4723,10 +4583,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/PhoneMinVideo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.PhoneMinVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -4752,10 +4609,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/PhoneMinVideo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.PhoneMinVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -4799,10 +4653,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/CallKitDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.CallKitDemoSwift;
@@ -4851,15 +4702,11 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Swift/CallKitDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.CallKitDemoSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_WORKSPACE = YES;
@@ -4894,11 +4741,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = IntentsExtension;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 flashphoner. All rights reserved.";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -4941,19 +4784,14 @@
 				INFOPLIST_KEY_CFBundleDisplayName = IntentsExtension;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 flashphoner. All rights reserved.";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MARKETING_VERSION = 1.0;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.CallKitDemoSwift.CallKitIntentExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -4975,10 +4813,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/Player/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.Player;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -5002,10 +4837,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/Player/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.Player;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -5030,10 +4862,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/TwoPlayers/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.TwoPlayers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -5058,10 +4887,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/TwoPlayers/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.TwoPlayers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -5086,10 +4912,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/VideoChat/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.VideoChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -5114,10 +4937,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/VideoChat/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.VideoChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -5142,10 +4962,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/Streamer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.Streamer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -5171,10 +4988,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/Streamer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.Streamer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -5198,10 +5012,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/StreamRecording/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.StreamRecording;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -5225,10 +5036,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/StreamRecording/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.StreamRecording;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -5253,10 +5061,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/PhoneMin/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.PhoneMin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -5282,10 +5087,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/PhoneMin/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.PhoneMin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -5401,10 +5203,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/TwoWayStreaming/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.TwoWayStreaming;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -5434,10 +5233,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/TwoWayStreaming/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.TwoWayStreaming;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -5463,10 +5259,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/MediaDevices/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.MediaDevices;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -5492,10 +5285,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WCSExample/MediaDevices/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.MediaDevices;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
