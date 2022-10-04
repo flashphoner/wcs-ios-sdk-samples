@@ -3,8 +3,10 @@ import Foundation
 import WebRTC
 import AVFoundation
 import GPUImage
+import FPWCSApi2Swift
 
-class CameraVideoCapturer: RTCVideoCapturer {
+class CameraVideoCapturer: RTCVideoCapturer , FPWCSVideoCapturer {
+    
     let kNanosecondsPerSecond = 1000000000
 
     var camera:Camera?
@@ -33,16 +35,22 @@ class CameraVideoCapturer: RTCVideoCapturer {
         }
         
     }
+    
+    func startCapture(with device: AVCaptureDevice!, format: AVCaptureDevice.Format!, fps: Int) {
+        if (self.camera != nil && self.camera?.inputCamera.localizedName != device.localizedName) {
+            stopCapture()
+            camera = nil;
+        }
         
-    func startCapture() {
         if (self.camera == nil) {
             do {
-                let camera = try Camera(sessionPreset:.vga640x480, orientation: .portrait, captureAsYUV: false)
+                let camera = try Camera(sessionPreset:.vga640x480, cameraDevice: device, orientation: .portrait, captureAsYUV: false)
                 self.camera = camera
             } catch {
                 fatalError("Could not initialize rendering pipeline: \(error)")
             }
         }
+        
         self.capturing = true
         
         applyFilter(self.filter)
@@ -50,7 +58,16 @@ class CameraVideoCapturer: RTCVideoCapturer {
         self.camera?.startCapture()
     }
     
+    func lockCameraOrientation() {
+    }
+    
+    func unlockCameraOrientation() {
+    }
+    
     func stopCapture() {
+        camera?.removeAllTargets()
+        self.gpuImageConsumer.removeSourceAtIndex(0)
+        
         camera?.stopCapture()
         self.capturing = false
     }

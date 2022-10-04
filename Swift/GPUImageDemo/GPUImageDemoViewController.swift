@@ -41,6 +41,7 @@ class GPUImageDemoViewController: UIViewController, UIImagePickerControllerDeleg
     @IBOutlet weak var publishName: UITextField!
     @IBOutlet weak var publishStatus: UILabel!
     @IBOutlet weak var publishButton: UIButton!
+    @IBOutlet weak var switchCameraButton: UIButton!
     @IBOutlet weak var applyFilterButton: UIButton!
 
     @IBOutlet weak var playName: UITextField!
@@ -168,6 +169,10 @@ class GPUImageDemoViewController: UIViewController, UIImagePickerControllerDeleg
         }
     }
     
+    @IBAction func switchCameraPressed(_ sender: Any) {
+        publishStream?.switchCamera()
+    }
+    
     @IBAction func publishPressed(_ sender: Any) {
         changeViewState(publishButton,false)
         if (publishButton.title(for: .normal) == "PUBLISH") {
@@ -197,7 +202,6 @@ class GPUImageDemoViewController: UIViewController, UIImagePickerControllerDeleg
             });
             do {
                 try publishStream?.publish()
-                capturer.startCapture()
             } catch {
                 print(error);
             }
@@ -329,6 +333,7 @@ class GPUImageDemoViewController: UIViewController, UIImagePickerControllerDeleg
     fileprivate func onPublishing(_ stream:FPWCSApi2Stream) {
         publishButton.setTitle("STOP", for:.normal)
         changeViewState(publishButton, true)
+        changeViewState(switchCameraButton, true)
     }
 
     fileprivate func onUnpublished() {
@@ -340,6 +345,7 @@ class GPUImageDemoViewController: UIViewController, UIImagePickerControllerDeleg
             changeViewState(publishButton, false)
             changeViewState(publishName, false)
         }
+        changeViewState(switchCameraButton, false)
         capturer.stopCapture()
     }
 
