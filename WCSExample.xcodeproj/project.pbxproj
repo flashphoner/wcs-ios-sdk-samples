@@ -10,7 +10,7 @@
 		007FCEA027937F1705D714B2 /* Pods_TwoWayStreaming.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657FE6304944E7B0E86B981B /* Pods_TwoWayStreaming.framework */; };
 		061B4A6262F2BD8EE560DC97 /* Pods_StreamRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA37E8F9999876F4BDE5240 /* Pods_StreamRecording.framework */; };
 		2C9EA6B7826D4E9D53C22823 /* Pods_Player.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8745492A7BF846C9479B539C /* Pods_Player.framework */; };
-		2D60120E95DF0969E87948A9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		2D60120E95DF0969E87948A9 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
 		347EAE752A00A7D6410BD50A /* Pods_GPUImageDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67583FC82A75C6CC4844C24B /* Pods_GPUImageDemo.framework */; };
 		3F2A9FFC5A5A59E6CFD7FE70 /* Pods_TwoPlayers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31005716A70F1B337799F1 /* Pods_TwoPlayers.framework */; };
 		4CECE292C777F06FCE1291B5 /* Pods_Streamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C845B85743847299215C220 /* Pods_Streamer.framework */; };
@@ -260,8 +260,8 @@
 		55F98A5F1E1D28DC00B70D94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F98A371E1D286100B70D94 /* ViewController.m */; };
 		55F9BB35251DAA5500F39D69 /* GPUImageVideoCapturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9BB26251DA9E100F39D69 /* GPUImageVideoCapturer.m */; };
 		55FCD3CE252B0437008C54E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
-		57BB4CC05B3AAE392427BE22 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
-		6C30CB3000443DDE6FF500C9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		57BB4CC05B3AAE392427BE22 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		6C30CB3000443DDE6FF500C9 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
 		8322B5860A35BA260E10C7A8 /* Pods_TwoWayStreamingSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0822EC5EBC09EC0DEA7E0CF /* Pods_TwoWayStreamingSwift.framework */; };
 		85458A1A4E20148A6AA67C8F /* Pods_MediaDevices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A58904727550EF62D7BF75 /* Pods_MediaDevices.framework */; };
 		860B894766550601C22FB1F7 /* Pods_WebViewSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9E1D6D79359A9C141FD1DB5 /* Pods_WebViewSwift.framework */; };
@@ -270,8 +270,8 @@
 		8845F0DD6AEEA05D2C8C4CB9 /* Pods_VideoChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5BB64A1ECEAAAAE4BA4D58 /* Pods_VideoChat.framework */; };
 		96E97847B0DD3DD368A0655D /* Pods_ClickToCall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6092F5076645DB535DAF8F5F /* Pods_ClickToCall.framework */; };
 		A4A3C488CA879623CF790A37 /* Pods_ImageOverlaySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96744C2065E6FA8F4F239FFB /* Pods_ImageOverlaySwift.framework */; };
-		A718D7F631BF58F7D83DE9D9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
-		AB70810F411954F98ECB0E4E /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		A718D7F631BF58F7D83DE9D9 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		AB70810F411954F98ECB0E4E /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
 		ADE49FDDD3F913A301FC5B0B /* Pods_MediaDevicesSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B321C1597A2D603CFB8EB1 /* Pods_MediaDevicesSwift.framework */; };
 		BF0C53CD5C35C2C303C8BBCD /* Pods_PhoneMinVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1B888B5E77A104987F94EC /* Pods_PhoneMinVideo.framework */; };
 		C2D7488ACCA416B0253B0493 /* Pods_CallKitDemoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0646D30C249F237B971D5E40 /* Pods_CallKitDemoSwift.framework */; };
@@ -647,6 +647,8 @@
 		559F751A2665F16A006A5231 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		559F751B2665F16A006A5231 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55AB53B226B1075600E3F721 /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPUImage.framework; sourceTree = "<group>"; };
+		55B68C7728DA1FE2004C35E6 /* FPWCSApi2Swift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FPWCSApi2Swift.xcframework; path = Frameworks/FPWCSApi2Swift.xcframework; sourceTree = "<group>"; };
+		55B68C7828DA1FE3004C35E6 /* WebRTC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WebRTC.xcframework; path = Frameworks/WebRTC.xcframework; sourceTree = "<group>"; };
 		55BD73541E0FF4D1003E0517 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = PhoneMinVideo/AppDelegate.h; sourceTree = "<group>"; };
 		55BD73551E0FF4D1003E0517 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = PhoneMinVideo/AppDelegate.m; sourceTree = "<group>"; };
 		55BD73561E0FF4D1003E0517 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PhoneMinVideo/Info.plist; sourceTree = "<group>"; };
@@ -818,7 +820,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57BB4CC05B3AAE392427BE22 /* (null) in Frameworks */,
+				57BB4CC05B3AAE392427BE22 /* BuildFile in Frameworks */,
 				F92A91BCA135E60DD238C4B0 /* Pods_ScreenCapturerSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -836,7 +838,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A718D7F631BF58F7D83DE9D9 /* (null) in Frameworks */,
+				A718D7F631BF58F7D83DE9D9 /* BuildFile in Frameworks */,
 				ADE49FDDD3F913A301FC5B0B /* Pods_MediaDevicesSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -883,7 +885,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D60120E95DF0969E87948A9 /* (null) in Frameworks */,
+				2D60120E95DF0969E87948A9 /* BuildFile in Frameworks */,
 				8322B5860A35BA260E10C7A8 /* Pods_TwoWayStreamingSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -900,7 +902,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C30CB3000443DDE6FF500C9 /* (null) in Frameworks */,
+				6C30CB3000443DDE6FF500C9 /* BuildFile in Frameworks */,
 				A4A3C488CA879623CF790A37 /* Pods_ImageOverlaySwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1047,7 +1049,7 @@
 				55F8AF231DE7FD3F002F5DFC /* CoreMedia.framework in Frameworks */,
 				55F8AF241DE7FD3F002F5DFC /* CoreGraphics.framework in Frameworks */,
 				55F8AF251DE7FD3F002F5DFC /* VideoToolbox.framework in Frameworks */,
-				AB70810F411954F98ECB0E4E /* (null) in Frameworks */,
+				AB70810F411954F98ECB0E4E /* BuildFile in Frameworks */,
 				061B4A6262F2BD8EE560DC97 /* Pods_StreamRecording.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1444,6 +1446,8 @@
 		CE1BE62D1C0D8BA400A4970E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				55B68C7728DA1FE2004C35E6 /* FPWCSApi2Swift.xcframework */,
+				55B68C7828DA1FE3004C35E6 /* WebRTC.xcframework */,
 				559B40E226A914E00065534E /* GPUImage.framework */,
 				CE133F041C0D93E800EAEC55 /* libicucore.tbd */,
 				CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */,
@@ -2418,7 +2422,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-TwoWayStreaming/Pods-TwoWayStreaming-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2/FPWCSApi2.framework/FPWCSApi2",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -2458,7 +2462,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-Conference/Pods-Conference-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2/FPWCSApi2.framework/FPWCSApi2",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -2523,7 +2527,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MediaDevicesSwift/Pods-MediaDevicesSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWebRTC/WebRTC.framework/WebRTC",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2Swift/FPWCSApi2Swift.framework/FPWCSApi2Swift",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -2564,7 +2568,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-ClickToCall/Pods-ClickToCall-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2/FPWCSApi2.framework/FPWCSApi2",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -2605,7 +2609,7 @@
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2/FPWCSApi2.framework/FPWCSApi2",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -2649,7 +2653,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MCUClientSwift/Pods-MCUClientSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWebRTC/WebRTC.framework/WebRTC",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2Swift/FPWCSApi2Swift.framework/FPWCSApi2Swift",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -2693,7 +2697,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ImageOverlaySwift/Pods-ImageOverlaySwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWebRTC/WebRTC.framework/WebRTC",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2Swift/FPWCSApi2Swift.framework/FPWCSApi2Swift",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -2737,7 +2741,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GPUImageDemoSwift/Pods-GPUImageDemoSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWebRTC/WebRTC.framework/WebRTC",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2Swift/FPWCSApi2Swift.framework/FPWCSApi2Swift",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -2800,7 +2804,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-PhoneMinVideo/Pods-PhoneMinVideo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2/FPWCSApi2.framework/FPWCSApi2",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -2843,7 +2847,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CallKitDemoSwift/Pods-CallKitDemoSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWebRTC/WebRTC.framework/WebRTC",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2Swift/FPWCSApi2Swift.framework/FPWCSApi2Swift",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -2884,7 +2888,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-Player/Pods-Player-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2/FPWCSApi2.framework/FPWCSApi2",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -2924,7 +2928,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-TwoPlayers/Pods-TwoPlayers-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2/FPWCSApi2.framework/FPWCSApi2",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -2964,7 +2968,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-VideoChat/Pods-VideoChat-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2/FPWCSApi2.framework/FPWCSApi2",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -3004,7 +3008,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-Streamer/Pods-Streamer-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2/FPWCSApi2.framework/FPWCSApi2",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -3044,7 +3048,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-StreamRecording/Pods-StreamRecording-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2/FPWCSApi2.framework/FPWCSApi2",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -3084,7 +3088,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-PhoneMin/Pods-PhoneMin-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2/FPWCSApi2.framework/FPWCSApi2",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -3106,7 +3110,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-MediaDevices/Pods-MediaDevices-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2/FPWCSApi2.framework/FPWCSApi2",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -3163,7 +3167,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TwoWayStreamingSwift/Pods-TwoWayStreamingSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWebRTC/WebRTC.framework/WebRTC",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2Swift/FPWCSApi2Swift.framework/FPWCSApi2Swift",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -3207,7 +3211,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ScreenCapturerSwift/Pods-ScreenCapturerSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWebRTC/WebRTC.framework/WebRTC",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2Swift/FPWCSApi2Swift.framework/FPWCSApi2Swift",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -4407,7 +4411,6 @@
 				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
 					"$(PROJECT_DIR)/Swift/GPUImageDemo",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -4455,7 +4458,6 @@
 				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
 					"$(PROJECT_DIR)/Swift/GPUImageDemo",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;

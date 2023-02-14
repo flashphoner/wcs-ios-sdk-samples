@@ -40,11 +40,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var publishName: UITextField!
     @IBOutlet weak var publishStatus: UILabel!
     @IBOutlet weak var publishButton: UIButton!
-
+    @IBOutlet weak var publishQuality: UILabel!
+    
     @IBOutlet weak var playName: UITextField!
     @IBOutlet weak var playStatus: UILabel!
     @IBOutlet weak var playButton: UIButton!
-
+    @IBOutlet weak var playQuality: UILabel!
+    
     @IBOutlet weak var localDisplay: WebRTCView!
     @IBOutlet weak var remoteDisplay: WebRTCView!
     
@@ -217,6 +219,11 @@ class ViewController: UIViewController {
                 print(error);
             }
             
+            publishStream?.enableConnectionQualityCalculation(true);
+            publishStream?.onConnectionQualityCallback({currentQuality, clientFiltered, serverFiltered in
+                self.updateQualityStatus(currentQuality, view: self.publishQuality);
+            });
+            
             publishStream?.on(.fpwcsStreamStatusPublishing, {rStream in
                 self.changeStreamStatus(rStream!)
                 self.onPublishing(rStream!);
@@ -231,6 +238,7 @@ class ViewController: UIViewController {
                 self.changeStreamStatus(rStream!)
                 self.onUnpublished()
             });
+
             do {
                 try publishStream?.publish()
             } catch {
@@ -260,6 +268,12 @@ class ViewController: UIViewController {
             } catch {
                 print(error);
             }
+            
+            playStream?.enableConnectionQualityCalculation(true);
+            playStream?.onConnectionQualityCallback({currentQuality, clientFiltered, serverFiltered in
+                self.updateQualityStatus(currentQuality, view: self.playQuality);
+            });
+            
             playStream?.on(.fpwcsStreamStatusPlaying, {rStream in
                 self.changeStreamStatus(rStream!)
                 self.onPlaying(rStream!);
@@ -307,6 +321,26 @@ class ViewController: UIViewController {
         }
     }
     
+    fileprivate func updateQualityStatus(_ quality:kFPWCSConnectionQuality, view: UILabel) {
+        switch (quality) {
+        case .fpwcsConnectionQualityBad:
+            view.text = "BAD";
+            view.textColor = .red;
+            break;
+        case .fpwcsConnectionQualityGood:
+            view.text = "GOOD";
+            view.textColor = .yellow;
+            break;
+        case .fpwcsConnectionQualityPerfect:
+            view.text = "PEFRECT";
+            view.textColor = .green;
+            break;
+        case .fpwcsConnectionQualityUnknown:
+            view.text = "UNKNOWN";
+            view.textColor = .darkText;
+        }
+    }
+    
     fileprivate func changeConnectionStatus(status: kFPWCSSessionStatus) {
         connectStatus.text = FPWCSApi2Model.sessionStatus(toString: status);
         switch (status) {
@@ -321,10 +355,13 @@ class ViewController: UIViewController {
     
     fileprivate func changeStreamStatus(_ stream:FPWCSApi2Stream) {
         var view:UILabel;
+        var quality:UILabel;
         if (stream.isPublished()) {
             view = publishStatus;
+            quality = publishQuality;
         } else {
             view = playStatus;
+            quality = playQuality;
         }
         view.text = FPWCSApi2Model.streamStatus(toString: stream.getStatus());
         switch (stream.getStatus()) {
@@ -354,10 +391,15 @@ class ViewController: UIViewController {
                     default:
                         view.text = "Unknown Error";
                 }
+                
+                quality.text = "UNKNOWN";
+                quality.textColor = .darkText;
             case .fpwcsStreamStatusPlaying, .fpwcsStreamStatusPublishing:
                 view.textColor = .green;
                 break;
             default:
+                quality.text = "UNKNOWN";
+                quality.textColor = .darkText;
                 view.textColor = .darkText;
                 break;
         }
