@@ -1,5 +1,6 @@
 platform :ios, '9.1'
 use_frameworks!
+project 'WCSExample.xcodeproj'
 
 target 'TwoWayStreaming' do
   pod 'FPWCSApi2'

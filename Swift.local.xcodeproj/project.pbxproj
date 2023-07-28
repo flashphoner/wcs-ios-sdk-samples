@@ -1,0 +1,1390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D60120E95DF0969E87948A9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		5512B68825655FD900E207B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557879B2254FFEC600F8CD95 /* AppDelegate.swift */; };
+		5512B6B5256560A800E207B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5512B6B0256560A800E207B5 /* ViewController.swift */; };
+		557879A4254FFEA600F8CD95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557879A1254FFEA600F8CD95 /* Assets.xcassets */; };
+		557879B3254FFEC600F8CD95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557879B2254FFEC600F8CD95 /* AppDelegate.swift */; };
+		558121702639471000379A43 /* MCUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55812161263946FC00379A43 /* MCUViewController.swift */; };
+		558121712639471000379A43 /* WebRTCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D5EA9258267AA00C77CAC /* WebRTCView.swift */; };
+		558121732639471000379A43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557879B2254FFEC600F8CD95 /* AppDelegate.swift */; };
+		5581217A2639471000379A43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5512B6AA256560A700E207B5 /* LaunchScreen.storyboard */; };
+		5581217D2639471000379A43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5581215F263946FC00379A43 /* Main.storyboard */; };
+		558125002640FAB000379A43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5512B6AA256560A700E207B5 /* LaunchScreen.storyboard */; };
+		558125012640FAB000379A43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5512B6AC256560A800E207B5 /* Main.storyboard */; };
+		558125142640FAE600379A43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5578799D254FFEA600F8CD95 /* LaunchScreen.storyboard */; };
+		558125152640FAE600379A43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5578799F254FFEA600F8CD95 /* Main.storyboard */; };
+		558125C02643937700379A43 /* WebRTCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D5EA9258267AA00C77CAC /* WebRTCView.swift */; };
+		558125C22643937700379A43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557879B2254FFEC600F8CD95 /* AppDelegate.swift */; };
+		558125EF2643944000379A43 /* ImageOverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558125E82643943F00379A43 /* ImageOverlayViewController.swift */; };
+		558125FA264396A200379A43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 558125F42643945C00379A43 /* LaunchScreen.storyboard */; };
+		558125FB264396A200379A43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 558125F22643945C00379A43 /* Main.storyboard */; };
+		5581261326439FA700379A43 /* CameraVideoCapturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5581261226439FA700379A43 /* CameraVideoCapturer.swift */; };
+		5589534725A6F804003C4B38 /* TwoWayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5589534625A6F803003C4B38 /* TwoWayViewController.swift */; };
+		558D5EAA258267AA00C77CAC /* WebRTCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D5EA9258267AA00C77CAC /* WebRTCView.swift */; };
+		558D5EB82582685900C77CAC /* WebRTCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D5EA9258267AA00C77CAC /* WebRTCView.swift */; };
+		559ECC5B2593040600C3FA89 /* RemoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559ECC5A2593040600C3FA89 /* RemoteViewController.swift */; };
+		559F74FD2665F049006A5231 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557879B2254FFEC600F8CD95 /* AppDelegate.swift */; };
+		559F751F2665F16A006A5231 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559F751A2665F16A006A5231 /* WebViewController.swift */; };
+		559F75212665F18F006A5231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 559F75152665F16A006A5231 /* Assets.xcassets */; };
+		559F75222665F18F006A5231 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 559F75162665F16A006A5231 /* LaunchScreen.storyboard */; };
+		559F75232665F18F006A5231 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 559F75182665F16A006A5231 /* Main.storyboard */; };
+		55C204D925909707004AC832 /* LocalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C204BF259096A7004AC832 /* LocalViewController.swift */; };
+		6C30CB3000443DDE6FF500C9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		7B70B7802A580DC60032A444 /* SocketRocket in Frameworks */ = {isa = PBXBuildFile; productRef = 7B70B77F2A580DC60032A444 /* SocketRocket */; };
+		7B70B7812A580DD40032A444 /* FPWCSApi2Swift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B70B7682A580D340032A444 /* FPWCSApi2Swift.xcframework */; };
+		7B70B7822A580DD40032A444 /* FPWCSApi2Swift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B70B7682A580D340032A444 /* FPWCSApi2Swift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7B70B7832A580DD60032A444 /* SocketRocket in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 7B70B77F2A580DC60032A444 /* SocketRocket */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		7B70B7942A5B935B0032A444 /* FPWCSApi2Swift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B70B7682A580D340032A444 /* FPWCSApi2Swift.xcframework */; };
+		7B70B7952A5B935B0032A444 /* FPWCSApi2Swift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B70B7682A580D340032A444 /* FPWCSApi2Swift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7B70B7992A5B93660032A444 /* SocketRocket in Frameworks */ = {isa = PBXBuildFile; productRef = 7B70B7982A5B93660032A444 /* SocketRocket */; };
+		7B70B79A2A5B93660032A444 /* SocketRocket in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 7B70B7982A5B93660032A444 /* SocketRocket */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		7B70B79C2A5B93D90032A444 /* SocketRocket in Frameworks */ = {isa = PBXBuildFile; productRef = 7B70B79B2A5B93D90032A444 /* SocketRocket */; };
+		7B70B79D2A5B93D90032A444 /* SocketRocket in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 7B70B79B2A5B93D90032A444 /* SocketRocket */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		7B70B79E2A5B93DD0032A444 /* FPWCSApi2Swift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B70B7682A580D340032A444 /* FPWCSApi2Swift.xcframework */; };
+		7B70B79F2A5B93DD0032A444 /* FPWCSApi2Swift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B70B7682A580D340032A444 /* FPWCSApi2Swift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7B70B7A22A5B94870032A444 /* FPWCSApi2Swift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B70B7682A580D340032A444 /* FPWCSApi2Swift.xcframework */; };
+		7B70B7A32A5B94870032A444 /* FPWCSApi2Swift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B70B7682A580D340032A444 /* FPWCSApi2Swift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7B70B7A72A5B94920032A444 /* SocketRocket in Frameworks */ = {isa = PBXBuildFile; productRef = 7B70B7A62A5B94920032A444 /* SocketRocket */; };
+		7B70B7A82A5B94920032A444 /* SocketRocket in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 7B70B7A62A5B94920032A444 /* SocketRocket */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		7B7E677E2A5BBACB0073521D /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B7E67792A5BBAB70073521D /* WebRTC.xcframework */; };
+		7B7E677F2A5BBACB0073521D /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B7E67792A5BBAB70073521D /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7B7E67802A5BBAD30073521D /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B7E67792A5BBAB70073521D /* WebRTC.xcframework */; };
+		7B7E67812A5BBAD30073521D /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B7E67792A5BBAB70073521D /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7B7E67822A5BBAD90073521D /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B7E67792A5BBAB70073521D /* WebRTC.xcframework */; };
+		7B7E67832A5BBAD90073521D /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B7E67792A5BBAB70073521D /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7B7E67842A5BBADF0073521D /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B7E67792A5BBAB70073521D /* WebRTC.xcframework */; };
+		7B7E67852A5BBADF0073521D /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B7E67792A5BBAB70073521D /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A718D7F631BF58F7D83DE9D9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5512B69125655FD900E207B5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7B70B79D2A5B93D90032A444 /* SocketRocket in Embed Frameworks */,
+				7B70B79F2A5B93DD0032A444 /* FPWCSApi2Swift.xcframework in Embed Frameworks */,
+				7B7E67812A5BBAD30073521D /* WebRTC.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5581217E2639471000379A43 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7B70B79A2A5B93660032A444 /* SocketRocket in Embed Frameworks */,
+				7B70B7952A5B935B0032A444 /* FPWCSApi2Swift.xcframework in Embed Frameworks */,
+				7B7E67832A5BBAD90073521D /* WebRTC.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		558125CA2643937700379A43 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7B70B7A82A5B94920032A444 /* SocketRocket in Embed Frameworks */,
+				7B70B7A32A5B94870032A444 /* FPWCSApi2Swift.xcframework in Embed Frameworks */,
+				7B7E67852A5BBADF0073521D /* WebRTC.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55F2CCFA2553A725005A6681 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7B70B7822A580DD40032A444 /* FPWCSApi2Swift.xcframework in Embed Frameworks */,
+				7B70B7832A580DD60032A444 /* SocketRocket in Embed Frameworks */,
+				7B7E677F2A5BBACB0073521D /* WebRTC.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5512028E268AF81700A0E6DD /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		5512B69825655FD900E207B5 /* MediaDevicesSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaDevicesSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5512B6AB256560A700E207B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MediaDevices/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5512B6AD256560A800E207B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MediaDevices/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5512B6AF256560A800E207B5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MediaDevices/Info.plist; sourceTree = "<group>"; };
+		5512B6B0256560A800E207B5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = MediaDevices/ViewController.swift; sourceTree = "<group>"; };
+		55787938254FFE0700F8CD95 /* TwoWayStreamingSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoWayStreamingSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5578798D254FFE7400F8CD95 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5578799E254FFEA600F8CD95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		557879A0254FFEA600F8CD95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		557879A1254FFEA600F8CD95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		557879B2254FFEC600F8CD95 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5581215E263946FC00379A43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		55812160263946FC00379A43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		55812161263946FC00379A43 /* MCUViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCUViewController.swift; sourceTree = "<group>"; };
+		55812162263946FC00379A43 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		558121862639471000379A43 /* MCUClientSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCUClientSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		558125D22643937700379A43 /* ImageOverlaySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageOverlaySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		558125E72643943F00379A43 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		558125E82643943F00379A43 /* ImageOverlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageOverlayViewController.swift; sourceTree = "<group>"; };
+		558125F32643945C00379A43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		558125F52643945C00379A43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5581261226439FA700379A43 /* CameraVideoCapturer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVideoCapturer.swift; sourceTree = "<group>"; };
+		5589534625A6F803003C4B38 /* TwoWayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoWayViewController.swift; sourceTree = "<group>"; };
+		558D5EA9258267AA00C77CAC /* WebRTCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCView.swift; sourceTree = "<group>"; };
+		559ECC5A2593040600C3FA89 /* RemoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RemoteViewController.swift; path = MediaDevices/RemoteViewController.swift; sourceTree = "<group>"; };
+		559F75112665F049006A5231 /* WebViewSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		559F75152665F16A006A5231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		559F75172665F16A006A5231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		559F75192665F16A006A5231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		559F751A2665F16A006A5231 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		559F751B2665F16A006A5231 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55C1CCF927BB534900F6F5B9 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		55C204BF259096A7004AC832 /* LocalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocalViewController.swift; path = MediaDevices/LocalViewController.swift; sourceTree = "<group>"; };
+		7B70B7662A580CCB0032A444 /* FPWCSApi2Swift */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FPWCSApi2Swift; path = sdk/fp_wcs_api2/Pods/FPWCSApi2Swift; sourceTree = "<group>"; };
+		7B70B7682A580D340032A444 /* FPWCSApi2Swift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FPWCSApi2Swift.xcframework; path = sdk/fp_wcs_api2/Pods/FPWCSApi2Swift/FPWCSApi2Swift.xcframework; sourceTree = "<group>"; };
+		7B7E67782A5BBA940073521D /* FPWebRTC */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FPWebRTC; path = sdk/fp_wcs_api2/Pods/FPWebRTC; sourceTree = "<group>"; };
+		7B7E67792A5BBAB70073521D /* WebRTC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WebRTC.xcframework; path = sdk/fp_wcs_api2/Pods/FPWebRTC/WebRTC.xcframework; sourceTree = "<group>"; };
+		CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE133EF21C0D938100EAEC55 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		CE133EF41C0D939000EAEC55 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		CE133EF61C0D939800EAEC55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CE133EF81C0D93A200EAEC55 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CE133EFA1C0D93AC00EAEC55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE133EFC1C0D93BC00EAEC55 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		CE133EFE1C0D93C300EAEC55 /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
+		CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		CE133F041C0D93E800EAEC55 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5512B68A25655FD900E207B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B7E67802A5BBAD30073521D /* WebRTC.xcframework in Frameworks */,
+				A718D7F631BF58F7D83DE9D9 /* (null) in Frameworks */,
+				7B70B79E2A5B93DD0032A444 /* FPWCSApi2Swift.xcframework in Frameworks */,
+				7B70B79C2A5B93D90032A444 /* SocketRocket in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55787935254FFE0700F8CD95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B7E677E2A5BBACB0073521D /* WebRTC.xcframework in Frameworks */,
+				2D60120E95DF0969E87948A9 /* (null) in Frameworks */,
+				7B70B7812A580DD40032A444 /* FPWCSApi2Swift.xcframework in Frameworks */,
+				7B70B7802A580DC60032A444 /* SocketRocket in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		558121742639471000379A43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B70B7992A5B93660032A444 /* SocketRocket in Frameworks */,
+				7B70B7942A5B935B0032A444 /* FPWCSApi2Swift.xcframework in Frameworks */,
+				7B7E67822A5BBAD90073521D /* WebRTC.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		558125C32643937700379A43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B7E67842A5BBADF0073521D /* WebRTC.xcframework in Frameworks */,
+				7B70B7A22A5B94870032A444 /* FPWCSApi2Swift.xcframework in Frameworks */,
+				7B70B7A72A5B94920032A444 /* SocketRocket in Frameworks */,
+				6C30CB3000443DDE6FF500C9 /* (null) in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559F75012665F049006A5231 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5512B6A92565608700E207B5 /* MediaDevices */ = {
+			isa = PBXGroup;
+			children = (
+				5512B6AF256560A800E207B5 /* Info.plist */,
+				5512B6AA256560A700E207B5 /* LaunchScreen.storyboard */,
+				5512B6AC256560A800E207B5 /* Main.storyboard */,
+				5512B6B0256560A800E207B5 /* ViewController.swift */,
+				55C204BF259096A7004AC832 /* LocalViewController.swift */,
+				559ECC5A2593040600C3FA89 /* RemoteViewController.swift */,
+			);
+			name = MediaDevices;
+			sourceTree = "<group>";
+		};
+		5578781C254DAC3400F8CD95 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				559F75142665F16A006A5231 /* WebView */,
+				558125BA264392AD00379A43 /* ImageOverlay */,
+				5581215C263946FC00379A43 /* MCUClient */,
+				558D5EB72582684B00C77CAC /* Common */,
+				5512B6A92565608700E207B5 /* MediaDevices */,
+				557879B2254FFEC600F8CD95 /* AppDelegate.swift */,
+				5578781D254DAC5600F8CD95 /* TwoWayStreaming */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		5578781D254DAC5600F8CD95 /* TwoWayStreaming */ = {
+			isa = PBXGroup;
+			children = (
+				5589534625A6F803003C4B38 /* TwoWayViewController.swift */,
+				557879A1254FFEA600F8CD95 /* Assets.xcassets */,
+				5578799D254FFEA600F8CD95 /* LaunchScreen.storyboard */,
+				5578799F254FFEA600F8CD95 /* Main.storyboard */,
+				5578798D254FFE7400F8CD95 /* Info.plist */,
+			);
+			path = TwoWayStreaming;
+			sourceTree = "<group>";
+		};
+		5581215C263946FC00379A43 /* MCUClient */ = {
+			isa = PBXGroup;
+			children = (
+				5581215D263946FC00379A43 /* LaunchScreen.storyboard */,
+				5581215F263946FC00379A43 /* Main.storyboard */,
+				55812161263946FC00379A43 /* MCUViewController.swift */,
+				55812162263946FC00379A43 /* Info.plist */,
+			);
+			path = MCUClient;
+			sourceTree = "<group>";
+		};
+		558125BA264392AD00379A43 /* ImageOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				558125F42643945C00379A43 /* LaunchScreen.storyboard */,
+				558125F22643945C00379A43 /* Main.storyboard */,
+				558125E82643943F00379A43 /* ImageOverlayViewController.swift */,
+				558125E72643943F00379A43 /* Info.plist */,
+				5581261226439FA700379A43 /* CameraVideoCapturer.swift */,
+			);
+			path = ImageOverlay;
+			sourceTree = "<group>";
+		};
+		558D5EB72582684B00C77CAC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				558D5EA9258267AA00C77CAC /* WebRTCView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		559F75142665F16A006A5231 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				559F75152665F16A006A5231 /* Assets.xcassets */,
+				559F75162665F16A006A5231 /* LaunchScreen.storyboard */,
+				559F75182665F16A006A5231 /* Main.storyboard */,
+				559F751A2665F16A006A5231 /* WebViewController.swift */,
+				559F751B2665F16A006A5231 /* Info.plist */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		7B70B7652A580CCB0032A444 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				7B70B7662A580CCB0032A444 /* FPWCSApi2Swift */,
+				7B7E67782A5BBA940073521D /* FPWebRTC */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		CE1BE62D1C0D8BA400A4970E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B7E67792A5BBAB70073521D /* WebRTC.xcframework */,
+				7B70B7682A580D340032A444 /* FPWCSApi2Swift.xcframework */,
+				CE133F041C0D93E800EAEC55 /* libicucore.tbd */,
+				CE133F001C0D93CF00EAEC55 /* libstdc++.tbd */,
+				CE133EFE1C0D93C300EAEC55 /* libc.tbd */,
+				CE133EFC1C0D93BC00EAEC55 /* libsqlite3.tbd */,
+				CE133EFA1C0D93AC00EAEC55 /* Foundation.framework */,
+				CE133EF81C0D93A200EAEC55 /* AVFoundation.framework */,
+				CE133EF61C0D939800EAEC55 /* UIKit.framework */,
+				CE133EF41C0D939000EAEC55 /* GLKit.framework */,
+				CE133EF21C0D938100EAEC55 /* CoreMedia.framework */,
+				CE133EF01C0D937600EAEC55 /* CoreGraphics.framework */,
+				CE133EEE1C0D936800EAEC55 /* VideoToolbox.framework */,
+				5512028E268AF81700A0E6DD /* ReplayKit.framework */,
+				55C1CCF927BB534900F6F5B9 /* Intents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE2310501C0D718100918455 = {
+			isa = PBXGroup;
+			children = (
+				7B70B7652A580CCB0032A444 /* Packages */,
+				5578781C254DAC3400F8CD95 /* Swift */,
+				CE1BE62D1C0D8BA400A4970E /* Frameworks */,
+				CE23105A1C0D718100918455 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE23105A1C0D718100918455 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55787938254FFE0700F8CD95 /* TwoWayStreamingSwift.app */,
+				5512B69825655FD900E207B5 /* MediaDevicesSwift.app */,
+				558121862639471000379A43 /* MCUClientSwift.app */,
+				558125D22643937700379A43 /* ImageOverlaySwift.app */,
+				559F75112665F049006A5231 /* WebViewSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5512B68525655FD900E207B5 /* MediaDevicesSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5512B69525655FD900E207B5 /* Build configuration list for PBXNativeTarget "MediaDevicesSwift" */;
+			buildPhases = (
+				5512B68725655FD900E207B5 /* Sources */,
+				5512B68A25655FD900E207B5 /* Frameworks */,
+				5512B68D25655FD900E207B5 /* Resources */,
+				5512B69125655FD900E207B5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MediaDevicesSwift;
+			packageProductDependencies = (
+				7B70B79B2A5B93D90032A444 /* SocketRocket */,
+			);
+			productName = TwoWayStreamingSwift;
+			productReference = 5512B69825655FD900E207B5 /* MediaDevicesSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		55787937254FFE0700F8CD95 /* TwoWayStreamingSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5578795A254FFE0800F8CD95 /* Build configuration list for PBXNativeTarget "TwoWayStreamingSwift" */;
+			buildPhases = (
+				55787934254FFE0700F8CD95 /* Sources */,
+				55787935254FFE0700F8CD95 /* Frameworks */,
+				55787936254FFE0700F8CD95 /* Resources */,
+				55F2CCFA2553A725005A6681 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwoWayStreamingSwift;
+			packageProductDependencies = (
+				7B70B77F2A580DC60032A444 /* SocketRocket */,
+			);
+			productName = TwoWayStreamingSwift;
+			productReference = 55787938254FFE0700F8CD95 /* TwoWayStreamingSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5581216B2639471000379A43 /* MCUClientSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 558121832639471000379A43 /* Build configuration list for PBXNativeTarget "MCUClientSwift" */;
+			buildPhases = (
+				5581216D2639471000379A43 /* Sources */,
+				558121742639471000379A43 /* Frameworks */,
+				558121782639471000379A43 /* Resources */,
+				5581217E2639471000379A43 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MCUClientSwift;
+			packageProductDependencies = (
+				7B70B7982A5B93660032A444 /* SocketRocket */,
+			);
+			productName = TwoWayStreamingSwift;
+			productReference = 558121862639471000379A43 /* MCUClientSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		558125BB2643937700379A43 /* ImageOverlaySwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 558125CF2643937700379A43 /* Build configuration list for PBXNativeTarget "ImageOverlaySwift" */;
+			buildPhases = (
+				558125BD2643937700379A43 /* Sources */,
+				558125C32643937700379A43 /* Frameworks */,
+				558125C72643937700379A43 /* Resources */,
+				558125CA2643937700379A43 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageOverlaySwift;
+			packageProductDependencies = (
+				7B70B7A62A5B94920032A444 /* SocketRocket */,
+			);
+			productName = TwoWayStreamingSwift;
+			productReference = 558125D22643937700379A43 /* ImageOverlaySwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		559F74FA2665F049006A5231 /* WebViewSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 559F750E2665F049006A5231 /* Build configuration list for PBXNativeTarget "WebViewSwift" */;
+			buildPhases = (
+				559F74FC2665F049006A5231 /* Sources */,
+				559F75012665F049006A5231 /* Frameworks */,
+				559F75052665F049006A5231 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebViewSwift;
+			productName = TwoWayStreamingSwift;
+			productReference = 559F75112665F049006A5231 /* WebViewSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE2310511C0D718100918455 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = flashphoner;
+				TargetAttributes = {
+					5512B68525655FD900E207B5 = {
+						DevelopmentTeam = SXWV5Z47NK;
+						ProvisioningStyle = Automatic;
+					};
+					55787937254FFE0700F8CD95 = {
+						CreatedOnToolsVersion = 12.1;
+						DevelopmentTeam = SXWV5Z47NK;
+						LastSwiftMigration = 1210;
+						ProvisioningStyle = Automatic;
+					};
+					5581216B2639471000379A43 = {
+						DevelopmentTeam = SXWV5Z47NK;
+						ProvisioningStyle = Automatic;
+					};
+					558125BB2643937700379A43 = {
+						DevelopmentTeam = SXWV5Z47NK;
+						LastSwiftMigration = 1240;
+						ProvisioningStyle = Automatic;
+					};
+					559F74FA2665F049006A5231 = {
+						DevelopmentTeam = SXWV5Z47NK;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CE2310541C0D718100918455 /* Build configuration list for PBXProject "Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = CE2310501C0D718100918455;
+			packageReferences = (
+				7B70B77E2A580DC60032A444 /* XCRemoteSwiftPackageReference "SocketRocketSPM" */,
+			);
+			productRefGroup = CE23105A1C0D718100918455 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55787937254FFE0700F8CD95 /* TwoWayStreamingSwift */,
+				5512B68525655FD900E207B5 /* MediaDevicesSwift */,
+				5581216B2639471000379A43 /* MCUClientSwift */,
+				558125BB2643937700379A43 /* ImageOverlaySwift */,
+				559F74FA2665F049006A5231 /* WebViewSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5512B68D25655FD900E207B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				558125002640FAB000379A43 /* LaunchScreen.storyboard in Resources */,
+				558125012640FAB000379A43 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55787936254FFE0700F8CD95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				558125142640FAE600379A43 /* LaunchScreen.storyboard in Resources */,
+				558125152640FAE600379A43 /* Main.storyboard in Resources */,
+				557879A4254FFEA600F8CD95 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		558121782639471000379A43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5581217A2639471000379A43 /* LaunchScreen.storyboard in Resources */,
+				5581217D2639471000379A43 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		558125C72643937700379A43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				558125FA264396A200379A43 /* LaunchScreen.storyboard in Resources */,
+				558125FB264396A200379A43 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559F75052665F049006A5231 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559F75212665F18F006A5231 /* Assets.xcassets in Resources */,
+				559F75222665F18F006A5231 /* LaunchScreen.storyboard in Resources */,
+				559F75232665F18F006A5231 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5512B68725655FD900E207B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5512B6B5256560A800E207B5 /* ViewController.swift in Sources */,
+				559ECC5B2593040600C3FA89 /* RemoteViewController.swift in Sources */,
+				558D5EB82582685900C77CAC /* WebRTCView.swift in Sources */,
+				55C204D925909707004AC832 /* LocalViewController.swift in Sources */,
+				5512B68825655FD900E207B5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55787934254FFE0700F8CD95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				557879B3254FFEC600F8CD95 /* AppDelegate.swift in Sources */,
+				558D5EAA258267AA00C77CAC /* WebRTCView.swift in Sources */,
+				5589534725A6F804003C4B38 /* TwoWayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5581216D2639471000379A43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				558121702639471000379A43 /* MCUViewController.swift in Sources */,
+				558121712639471000379A43 /* WebRTCView.swift in Sources */,
+				558121732639471000379A43 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		558125BD2643937700379A43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				558125C02643937700379A43 /* WebRTCView.swift in Sources */,
+				558125C22643937700379A43 /* AppDelegate.swift in Sources */,
+				558125EF2643944000379A43 /* ImageOverlayViewController.swift in Sources */,
+				5581261326439FA700379A43 /* CameraVideoCapturer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559F74FC2665F049006A5231 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559F74FD2665F049006A5231 /* AppDelegate.swift in Sources */,
+				559F751F2665F16A006A5231 /* WebViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5512B6AA256560A700E207B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5512B6AB256560A700E207B5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5512B6AC256560A800E207B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5512B6AD256560A800E207B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5578799D254FFEA600F8CD95 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5578799E254FFEA600F8CD95 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5578799F254FFEA600F8CD95 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				557879A0254FFEA600F8CD95 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5581215D263946FC00379A43 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5581215E263946FC00379A43 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5581215F263946FC00379A43 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55812160263946FC00379A43 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		558125F22643945C00379A43 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				558125F32643945C00379A43 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		558125F42643945C00379A43 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				558125F52643945C00379A43 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		559F75162665F16A006A5231 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				559F75172665F16A006A5231 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		559F75182665F16A006A5231 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				559F75192665F16A006A5231 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5512B69625655FD900E207B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = SXWV5Z47NK;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Swift/MediaDevices/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.MediaDevicesSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Debug;
+		};
+		5512B69725655FD900E207B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = SXWV5Z47NK;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Swift/MediaDevices/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.MediaDevicesSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Release;
+		};
+		5578795B254FFE0800F8CD95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = TwoWayStreamingIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = SXWV5Z47NK;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Swift/TwoWayStreaming/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.TwoWayStreamingSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Debug;
+		};
+		5578795C254FFE0800F8CD95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = TwoWayStreamingIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = SXWV5Z47NK;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Swift/TwoWayStreaming/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.TwoWayStreamingSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Release;
+		};
+		558121842639471000379A43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = SXWV5Z47NK;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Swift/MCUClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.MCUClientSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Debug;
+		};
+		558121852639471000379A43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = SXWV5Z47NK;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Swift/MCUClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.MCUClientSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Release;
+		};
+		558125D02643937700379A43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = SXWV5Z47NK;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Swift/ImageOverlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.ImageOverlaySwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Debug;
+		};
+		558125D12643937700379A43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = SXWV5Z47NK;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Swift/ImageOverlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.ImageOverlaySwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Release;
+		};
+		559F750F2665F049006A5231 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = SXWV5Z47NK;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Swift/WebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.WebViewSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Debug;
+		};
+		559F75102665F049006A5231 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = SXWV5Z47NK;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Swift/WebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.WebViewSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Release;
+		};
+		CE23106E1C0D718100918455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE23106F1C0D718100918455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5512B69525655FD900E207B5 /* Build configuration list for PBXNativeTarget "MediaDevicesSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5512B69625655FD900E207B5 /* Debug */,
+				5512B69725655FD900E207B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5578795A254FFE0800F8CD95 /* Build configuration list for PBXNativeTarget "TwoWayStreamingSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5578795B254FFE0800F8CD95 /* Debug */,
+				5578795C254FFE0800F8CD95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		558121832639471000379A43 /* Build configuration list for PBXNativeTarget "MCUClientSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				558121842639471000379A43 /* Debug */,
+				558121852639471000379A43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		558125CF2643937700379A43 /* Build configuration list for PBXNativeTarget "ImageOverlaySwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				558125D02643937700379A43 /* Debug */,
+				558125D12643937700379A43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		559F750E2665F049006A5231 /* Build configuration list for PBXNativeTarget "WebViewSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				559F750F2665F049006A5231 /* Debug */,
+				559F75102665F049006A5231 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE2310541C0D718100918455 /* Build configuration list for PBXProject "Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE23106E1C0D718100918455 /* Debug */,
+				CE23106F1C0D718100918455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7B70B77E2A580DC60032A444 /* XCRemoteSwiftPackageReference "SocketRocketSPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/flashphoner/SocketRocketSPM.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7B70B77F2A580DC60032A444 /* SocketRocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B70B77E2A580DC60032A444 /* XCRemoteSwiftPackageReference "SocketRocketSPM" */;
+			productName = SocketRocket;
+		};
+		7B70B7982A5B93660032A444 /* SocketRocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B70B77E2A580DC60032A444 /* XCRemoteSwiftPackageReference "SocketRocketSPM" */;
+			productName = SocketRocket;
+		};
+		7B70B79B2A5B93D90032A444 /* SocketRocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B70B77E2A580DC60032A444 /* XCRemoteSwiftPackageReference "SocketRocketSPM" */;
+			productName = SocketRocket;
+		};
+		7B70B7A62A5B94920032A444 /* SocketRocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B70B77E2A580DC60032A444 /* XCRemoteSwiftPackageReference "SocketRocketSPM" */;
+			productName = SocketRocket;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CE2310511C0D718100918455 /* Project object */;
+}
