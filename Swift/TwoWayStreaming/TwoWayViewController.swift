@@ -279,8 +279,8 @@ class TwoWayViewController: UIViewController {
         options.name = playName.text;
         options.display = remoteDisplay.videoView;
         do {
-            playStream = try session!.createStream(options)
-            playStream?.available({ (available, info) in
+            let playStream = try session!.createStream(options)
+            playStream.available({ (available, info) in
                 self.changeViewState(self.availableButton, true)
                 if (available) {
                     self.playStatus.text = "AVAILABLE"

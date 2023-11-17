@@ -22,12 +22,8 @@ class ViewController: UIViewController {
     var playStream:WCSStream?
     
     var localViewController:LocalViewController?
-    var localMediaConstrains:FPWCSApi2MediaConstraints
-    var localStripCodecs:String?
 
     var remoteViewController:RemoteViewController?
-    var remoteMediaConstrains:FPWCSApi2MediaConstraints
-    var remoteStripCodecs:String?
 
     @IBOutlet weak var lockCamera: UISwitch!
     @IBOutlet weak var loudSpeaker: UISwitch!
@@ -53,8 +49,6 @@ class ViewController: UIViewController {
     var activeTextField : UITextField? = nil
 
     required init(coder: NSCoder) {
-        self.localMediaConstrains = FPWCSApi2MediaConstraints(audio: true, video: true)
-        self.remoteMediaConstrains = FPWCSApi2MediaConstraints(audio: true, video: true)
         super.init(coder: coder)!
     }
     
@@ -210,8 +204,8 @@ class ViewController: UIViewController {
             let options = FPWCSApi2StreamOptions()
             options.name = publishName.text
             options.display = localDisplay.videoView
-            options.constraints = localMediaConstrains;
-            options.stripCodecs = localStripCodecs?.split(separator: ",")
+            options.constraints = localViewController?.mediaConstrains;
+            options.stripCodecs = localViewController?.stripCodecsString?.split(separator: ",")
             options.transport = tcpTransport.isOn ? kFPWCSTransport.fpwcsTransportTCP : kFPWCSTransport.fpwcsTransportUDP;
             do {
                 try publishStream = session!.createStream(options)
@@ -260,8 +254,8 @@ class ViewController: UIViewController {
             let options = FPWCSApi2StreamOptions()
             options.name = playName.text;
             options.display = remoteDisplay.videoView;
-            options.constraints = remoteMediaConstrains;
-            options.stripCodecs = remoteStripCodecs?.split(separator: ",")
+            options.constraints = remoteViewController?.mediaConstrains;
+            options.stripCodecs = remoteViewController?.stripCodecsString?.split(separator: ",")
             options.transport = tcpTransport.isOn ? kFPWCSTransport.fpwcsTransportTCP : kFPWCSTransport.fpwcsTransportUDP;
             do {
             playStream = try session!.createStream(options)

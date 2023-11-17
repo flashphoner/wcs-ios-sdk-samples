@@ -14,10 +14,13 @@
 
 
 @interface ViewController ()
-
 @end
 
-@implementation ViewController
+@implementation ViewController {
+    FPWCSApi2Session *session;
+    FPWCSApi2Stream *localStream;
+    FPWCSApi2Stream *remoteStream;
+}
 
 - (void)viewDidLoad {
     [WCSViewUtil updateBackgroundColor:self];
@@ -34,7 +37,7 @@
     options.urlServer = _connectUrl.text;
     options.appKey = @"defaultApp";
     NSError *error;
-    FPWCSApi2Session *session = [FPWCSApi2 createSession:options error:&error];
+    session = [FPWCSApi2 createSession:options error:&error];
     if (!session) {
         UIAlertController * alert = [UIAlertController
                                      alertControllerWithTitle:@"Failed to connect"
@@ -271,20 +274,13 @@
     [self changeViewState:button enabled:NO];
     if ([button.titleLabel.text isEqualToString:@"STOP"]) {
         if ([FPWCSApi2 getSessions].count) {
-            FPWCSApi2Stream *stream;
-            for (FPWCSApi2Stream *s in [[FPWCSApi2 getSessions][0] getStreams]) {
-                if ([[s getName] isEqualToString:_localStreamName.text] && s.isPublished) {
-                    stream = s;
-                    break;
-                }
-            }
-            if (!stream) {
+            if (!localStream) {
                 NSLog(@"Stop publishing, nothing to stop");
                 [self onUnpublished];
                 return;
             }
             NSError *error;
-            [stream stop:&error];
+            [localStream stop:&error];
         } else {
             NSLog(@"Stop publishing, no session");
             [self onUnpublished];
@@ -292,7 +288,7 @@
     } else {
         if ([FPWCSApi2 getSessions].count) {
             [self changeViewState:_localStreamName enabled:NO];
-            [self publishStream];
+            localStream = [self publishStream];
         } else {
             NSLog(@"Start publishing, no session");
             [self onUnpublished];
@@ -330,7 +326,6 @@
         } else {
             _remoteStreamStatus.text = info;
             _remoteStreamStatus.textColor = [UIColor redColor];
-
         }
     }];
 }
@@ -339,20 +334,13 @@
     [self changeViewState:button enabled:NO];
     if ([button.titleLabel.text isEqualToString:@"STOP"]) {
         if ([FPWCSApi2 getSessions].count) {
-            FPWCSApi2Stream *stream;
-            for (FPWCSApi2Stream *s in [[FPWCSApi2 getSessions][0] getStreams]) {
-                if ([[s getName] isEqualToString:_remoteStreamName.text] && !s.isPublished) {
-                    stream = s;
-                    break;
-                }
-            }
-            if (!stream) {
+            if (!remoteStream) {
                 NSLog(@"Stop playing, nothing to stop");
                 [self onStopped];
                 return;
             }
             NSError *error;
-            [stream stop:&error];
+            [remoteStream stop:&error];
         } else {
             NSLog(@"Stop playing, no session");
             [self onStopped];
@@ -360,7 +348,7 @@
     } else {
         if ([FPWCSApi2 getSessions].count) {
             [self changeViewState:_remoteStreamName enabled:NO];
-            [self playStream];
+            remoteStream = [self playStream];
         } else {
             NSLog(@"Start playing, no session");
             [self onStopped];

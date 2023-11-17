@@ -14,21 +14,6 @@ extension LocalViewController : UITextFieldDelegate {
   }
 }
 
-extension LocalViewController: UINavigationControllerDelegate {
-    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
-        if let controller = viewController as? ViewController {
-            controller.localMediaConstrains = self.toMediaConstraints()
-            controller.localStripCodecs = self.stripCodecs.text
-        }
-    }
-    
-    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        if let controller = viewController as? ViewController {
-            self.viewController = controller;
-        }
-    }
-}
-
 class LocalViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     @IBOutlet weak var audioSend: UISwitch!
@@ -55,9 +40,17 @@ class LocalViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     
     var activeTextField : UITextField? = nil
     
+    var mediaConstrains:FPWCSApi2MediaConstraints
+    var stripCodecsString:String?
+    
+    required init?(coder: NSCoder) {
+        self.mediaConstrains = FPWCSApi2MediaConstraints(audio: true, video: true)
+        super.init(coder: coder)!
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         localDevices = WCSApi2.getMediaDevices()
         if (localDevices?.audio?.count ?? 0 > 0) {
             microphone.text = (localDevices?.audio[0] as AnyObject).label
@@ -65,7 +58,6 @@ class LocalViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         if (localDevices?.video?.count ?? 0 > 0) {
             camera.text = (localDevices?.video[0] as AnyObject).label
         }
-        navigationController!.delegate = self
 
         setupTextFields()
         
@@ -141,6 +133,14 @@ class LocalViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     
     @objc func doneButtonTapped() {
         view.endEditing(true)
+    }
+    
+    override func willMove(toParent parent: UIViewController?) {
+        super.willMove(toParent: parent)
+        if parent == nil {
+            self.mediaConstrains = toMediaConstraints();
+            self.stripCodecsString = stripCodecs.text;
+        }
     }
     
     func toMediaConstraints() -> FPWCSApi2MediaConstraints {

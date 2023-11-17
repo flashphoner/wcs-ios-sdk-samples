@@ -14,16 +14,6 @@ extension RemoteViewController : UITextFieldDelegate {
   }
 }
 
-extension RemoteViewController: UINavigationControllerDelegate {
-    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
-        if let controller = viewController as? ViewController {
-            controller.remoteMediaConstrains = self.toMediaConstraints()
-            controller.remoteStripCodecs = self.stripCodecs.text
-        }
-
-    }
-}
-
 class RemoteViewController: UIViewController {
     
     var activeTextField : UITextField? = nil
@@ -39,11 +29,20 @@ class RemoteViewController: UIViewController {
     
     var currentAudioMuted = false;
     var currentVideoMuted = false;
+    
+    var mediaConstrains:FPWCSApi2MediaConstraints
+    var stripCodecsString:String?
+
+    required init?(coder: NSCoder) {
+        self.mediaConstrains = FPWCSApi2MediaConstraints(audio: true, video: true)
+        super.init(coder: coder)!
+
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController!.delegate = self
-        
+        self.mediaConstrains = FPWCSApi2MediaConstraints(audio: true, video: true)
+
         onAudioMute(currentAudioMuted)
         onVideoMute(currentVideoMuted)
         
@@ -122,6 +121,14 @@ class RemoteViewController: UIViewController {
             videoMuted.text = "Video Muted: " + (muted ? "true": "false");
         } else {
             currentVideoMuted = muted;
+        }
+    }
+    
+    override func willMove(toParent parent: UIViewController?) {
+        super.willMove(toParent: parent)
+        if parent == nil {
+            self.mediaConstrains = toMediaConstraints();
+            self.stripCodecsString = stripCodecs.text;
         }
     }
 
