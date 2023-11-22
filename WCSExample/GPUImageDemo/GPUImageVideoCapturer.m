@@ -20,14 +20,22 @@
   dispatch_queue_t _frameQueue;
 }
 
-- (void)startCapture {
-  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-  });
+- (void)startCaptureWithDevice:(AVCaptureDevice *)device
+                        format:(AVCaptureDeviceFormat *)format
+                           fps:(NSInteger)fps {
 }
 
 - (void)stopCapture {
   _capturerStopped = YES;
 }
+
+- (void)lockCameraOrientation { 
+}
+
+
+- (void)unlockCameraOrientation { 
+}
+
 
 - (void)processNewFrame:(GPUImageRawDataOutput*) rawDataOutput {
     CVPixelBufferRef sourcePixelBuffer = [self convertImage:rawDataOutput];
