@@ -12,7 +12,7 @@
 #import <FPWCSApi2/FPWCSApi2.h>
 
 @interface ParticipantView : NSObject
-@property RTCEAGLVideoView *display;
+@property RTCMTLVideoView *display;
 @property UILabel *login;
 @end
 @implementation ParticipantView
@@ -377,7 +377,7 @@ NSMutableDictionary *busyViews;
     
     _player1Container = [[UIView alloc] init];
     _player1Container.translatesAutoresizingMaskIntoConstraints = NO;
-    _player1Display = [[RTCEAGLVideoView alloc] init];
+    _player1Display = [[RTCMTLVideoView alloc] init];
     _player1Display.delegate = self;
     _player1Display.translatesAutoresizingMaskIntoConstraints = NO;
     _player1Login = [WCSViewUtil createLabelView];
@@ -386,7 +386,7 @@ NSMutableDictionary *busyViews;
     
     _player2Container = [[UIView alloc] init];
     _player2Container.translatesAutoresizingMaskIntoConstraints = NO;
-    _player2Display = [[RTCEAGLVideoView alloc] init];
+    _player2Display = [[RTCMTLVideoView alloc] init];
     _player2Display.delegate = self;
     _player2Display.translatesAutoresizingMaskIntoConstraints = NO;
     _player2Login = [WCSViewUtil createLabelView];
@@ -395,7 +395,7 @@ NSMutableDictionary *busyViews;
     
     _localVideoContainer = [[UIView alloc] init];
     _localVideoContainer.translatesAutoresizingMaskIntoConstraints = NO;
-    _localDisplay = [[RTCEAGLVideoView alloc] init];
+    _localDisplay = [[RTCMTLVideoView alloc] init];
     _localDisplay.delegate = self;
     _localDisplay.translatesAutoresizingMaskIntoConstraints = NO;
     _localStatus = [WCSViewUtil createLabelView];
@@ -594,9 +594,9 @@ NSMutableDictionary *busyViews;
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - RTCEAGLVideoViewDelegate
+#pragma mark - RTCMTLVideoViewDelegate
 
-- (void)videoView:(RTCEAGLVideoView*)videoView didChangeVideoSize:(CGSize)size {
+- (void)videoView:(RTCMTLVideoView*)videoView didChangeVideoSize:(CGSize)size {
     if (videoView == _player1Display) {
         NSLog(@"Size of local video %fx%f", size.width, size.height);
     } else {

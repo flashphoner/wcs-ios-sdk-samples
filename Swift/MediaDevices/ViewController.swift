@@ -20,7 +20,9 @@ class ViewController: UIViewController {
     var session:WCSSession?
     var publishStream:WCSStream?
     var playStream:WCSStream?
-    
+    var recorder:AVAudioRecorder?
+    var levelTimer:Timer?
+    var statTimer:Timer?
     var localViewController:LocalViewController?
 
     var remoteViewController:RemoteViewController?
@@ -28,6 +30,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var lockCamera: UISwitch!
     @IBOutlet weak var loudSpeaker: UISwitch!
     @IBOutlet weak var tcpTransport: UISwitch!
+    @IBOutlet weak var micLevel: UILabel!
     @IBOutlet weak var testButton: UIButton!
     @IBOutlet weak var urlField: UITextField!
     @IBOutlet weak var connectStatus: UILabel!
@@ -37,6 +40,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var publishStatus: UILabel!
     @IBOutlet weak var publishButton: UIButton!
     @IBOutlet weak var publishQuality: UILabel!
+    @IBOutlet weak var publishCurrentBps: UILabel!
+    @IBOutlet weak var publishAvailableBitrate: UILabel!
     
     @IBOutlet weak var playName: UITextField!
     @IBOutlet weak var playStatus: UILabel!
@@ -143,18 +148,42 @@ class ViewController: UIViewController {
         }
     }
     
+    @objc func handleEverySecond() {
+        recorder?.updateMeters();
+        let peek = recorder?.peakPower(forChannel: 0)
+        let peakPowerForChannel = pow(10, (0.05 * (peek ?? 0)))
+        
+        micLevel.text = String(format:"Mic Level: %d", Int(peakPowerForChannel * 100));
+    }
+    
     @IBAction func testPressed(_ sender: Any) {
         if (testButton.title(for: .normal) == "TEST") {
-            let constraints = FPWCSApi2MediaConstraints(audio: true, video: true)!
-            do {
-                try WCSApi2.getMediaAccess(constraints, localDisplay.videoView)
-            } catch {
-                print(error)
-            }
             testButton.setTitle("RELEASE", for: .normal)
+            
+            try? WCSApi2.getMediaAccess(localViewController!.mediaConstrains, localDisplay.videoView)
+            
+            let session: AVAudioSession = AVAudioSession.sharedInstance()
+            try? session.setCategory(.record)
+            try? session.setActive(true)
+
+            let url = URL(fileURLWithPath: "/dev/null")
+            
+            let settings = [AVSampleRateKey: NSNumber.init(floatLiteral: 44100.0), 
+                              AVFormatIDKey: NSNumber.init(integerLiteral: Int(kAudioFormatAppleLossless)),
+                      AVNumberOfChannelsKey:NSNumber.init(integerLiteral: 1),
+                   AVEncoderAudioQualityKey:NSNumber.init(integerLiteral: AVAudioQuality.max.rawValue)]
+            
+            try? recorder = AVAudioRecorder(url: url, settings: settings)
+            recorder?.prepareToRecord()
+            recorder?.isMeteringEnabled = true;
+            recorder?.record();
+            levelTimer = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(handleEverySecond), userInfo: nil, repeats: true)
         } else {
             WCSApi2.releaseLocalMedia(display: localDisplay.videoView);
             testButton.setTitle("TEST", for: .normal)
+            
+            levelTimer?.invalidate();
+            recorder?.stop();
         }
     }
     
@@ -225,7 +254,7 @@ class ViewController: UIViewController {
             
             publishStream?.on(.fpwcsStreamStatusUnpublished, {rStream in
                 self.changeStreamStatus(rStream!)
-                self.onUnpublished();
+                self.onUnpublished()
             });
             
             publishStream?.on(.fpwcsStreamStatusFailed, {rStream in
@@ -246,6 +275,17 @@ class ViewController: UIViewController {
             }
         }
         
+    }
+    
+    @objc func requestStat() {
+        publishStream?.getStats({stats in
+            if let s = stats {
+                DispatchQueue.main.async {
+                    self.publishCurrentBps.text = String(s.currentVideoBitrate);
+                    self.publishAvailableBitrate.text = String(s.availableOutgoingBitrate);
+                }
+            }
+        })
     }
     
     @IBAction func playPressed(_ sender: Any) {
@@ -386,13 +426,13 @@ class ViewController: UIViewController {
                         view.text = "Unknown Error";
                 }
                 
-                quality.text = "UNKNOWN";
+                quality.text = "-";
                 quality.textColor = .darkText;
             case .fpwcsStreamStatusPlaying, .fpwcsStreamStatusPublishing:
                 view.textColor = .green;
                 break;
             default:
-                quality.text = "UNKNOWN";
+                quality.text = "-";
                 quality.textColor = .darkText;
                 view.textColor = .darkText;
                 break;
@@ -419,9 +459,14 @@ class ViewController: UIViewController {
         publishButton.setTitle("STOP", for:.normal);
         changeViewState(lockCamera, true);
         changeViewState(publishButton, true);
+        if (statTimer == nil) {
+            statTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(requestStat), userInfo: nil, repeats: true)
+        }
     }
 
     fileprivate func onUnpublished() {
+        statTimer?.invalidate()
+        statTimer = nil
         publishButton.setTitle("PUBLISH", for:.normal);
         if (session?.getStatus() == kFPWCSSessionStatus.fpwcsSessionStatusEstablished) {
             changeViewState(publishName, true)

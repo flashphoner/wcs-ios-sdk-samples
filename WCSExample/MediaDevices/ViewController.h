@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <WebRTC/RTCEAGLVideoView.h>
+#import <WebRTC/RTCMTLVideoView.h>
 #import <CoreAudio/CoreAudioTypes.h>
 #import <AVFoundation/AVFoundation.h>
 #import "WCSViews.h"

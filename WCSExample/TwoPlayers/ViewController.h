@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <WebRTC/RTCEAGLVideoView.h>
+#import <WebRTC/RTCMTLVideoView.h>
 
 @interface ViewController : UIViewController<UITextFieldDelegate, RTCVideoViewDelegate>
 
@@ -29,8 +29,8 @@
 @property UIButton *player2Button;
 
 @property UIView *videoContainer;
-@property(nonatomic) RTCEAGLVideoView *player1Display;
-@property(nonatomic) RTCEAGLVideoView *player2Display;
+@property(nonatomic) RTCMTLVideoView *player1Display;
+@property(nonatomic) RTCMTLVideoView *player2Display;
 
 @property NSMutableArray *player1DisplayConstraints;
 @property NSMutableArray *player2DisplayConstraints;

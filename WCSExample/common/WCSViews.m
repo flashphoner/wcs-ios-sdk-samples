@@ -339,8 +339,8 @@
         localConstraints = [[NSMutableArray alloc] init];
         remoteConstraints = [[NSMutableArray alloc] init];
         self.translatesAutoresizingMaskIntoConstraints = NO;
-        _local = [[RTCEAGLVideoView alloc] init];
-        _remote = [[RTCEAGLVideoView alloc] init];
+        _local = [[RTCMTLVideoView alloc] init];
+        _remote = [[RTCMTLVideoView alloc] init];
         _local.translatesAutoresizingMaskIntoConstraints = NO;
         _remote.translatesAutoresizingMaskIntoConstraints = NO;
         _localLabel = [WCSViewUtil createLabelView];
@@ -414,7 +414,7 @@
     return YES;
 }
 
-- (void)videoView:(RTCEAGLVideoView*)videoView didChangeVideoSize:(CGSize)size {
+- (void)videoView:(RTCMTLVideoView*)videoView didChangeVideoSize:(CGSize)size {
     if (videoView == _local) {
         _localLabel.text = [NSString stringWithFormat:@"%fx%f", size.width, size.height];
         [_local removeConstraints:localConstraints];

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <WebRTC/RTCEAGLVideoView.h>
+#import <WebRTC/RTCMTLVideoView.h>
 @import AVFoundation;
 @import AVKit;
 
@@ -23,7 +23,7 @@
 @property UITextView *recordLink;
 
 @property UIView *videoContainer;
-@property(nonatomic) RTCEAGLVideoView *remoteDisplay;
+@property(nonatomic) RTCMTLVideoView *remoteDisplay;
 
 @property NSMutableArray *remoteDisplayConstraints;
 

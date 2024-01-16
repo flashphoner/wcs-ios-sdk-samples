@@ -384,11 +384,11 @@ FPWCSApi2Stream *player2Stream;
     _player2Container = [[UIView alloc] init];
     _player2Container.translatesAutoresizingMaskIntoConstraints = NO;
     
-    _player1Display = [[RTCEAGLVideoView alloc] init];
+    _player1Display = [[RTCMTLVideoView alloc] init];
     _player1Display.delegate = self;
     _player1Display.translatesAutoresizingMaskIntoConstraints = NO;
     
-    _player2Display = [[RTCEAGLVideoView alloc] init];
+    _player2Display = [[RTCMTLVideoView alloc] init];
     _player2Display.delegate = self;
     _player2Display.translatesAutoresizingMaskIntoConstraints = NO;
     
@@ -561,9 +561,9 @@ FPWCSApi2Stream *player2Stream;
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - RTCEAGLVideoViewDelegate
+#pragma mark - RTCMTLVideoViewDelegate
 
-- (void)videoView:(RTCEAGLVideoView*)videoView didChangeVideoSize:(CGSize)size {
+- (void)videoView:(RTCMTLVideoView*)videoView didChangeVideoSize:(CGSize)size {
     if (videoView == _player1Display) {
         NSLog(@"Size of local video %fx%f", size.width, size.height);
     } else {

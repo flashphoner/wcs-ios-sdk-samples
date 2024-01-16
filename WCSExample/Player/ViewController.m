@@ -296,7 +296,7 @@ float currentVolume;
     }
 #endif
     if (!_remoteDisplay) {
-        RTCEAGLVideoView *remoteView = [[RTCEAGLVideoView alloc] init];
+        RTCMTLVideoView *remoteView = [[RTCMTLVideoView alloc] init];
         remoteView.delegate = self;
         _remoteDisplay = remoteView;
     }
@@ -415,9 +415,9 @@ float currentVolume;
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - RTCEAGLVideoViewDelegate
+#pragma mark - RTCMTLVideoViewDelegate
 
-- (void)videoView:(RTCEAGLVideoView*)videoView didChangeVideoSize:(CGSize)size {
+- (void)videoView:(RTCMTLVideoView*)videoView didChangeVideoSize:(CGSize)size {
     
     NSLog(@"Size of remote video %fx%f", size.width, size.height);
     [_remoteDisplay removeConstraints:_remoteDisplayConstraints];

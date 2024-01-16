@@ -461,7 +461,7 @@
     }
 #endif
     if (!localDevice) {
-        RTCEAGLVideoView *localView = [[RTCEAGLVideoView alloc] init];
+        RTCMTLVideoView *localView = [[RTCMTLVideoView alloc] init];
         localView.delegate = self;
         _localDisplay = localView;
     }
@@ -477,7 +477,7 @@
     }
 #endif
     if (!remoteDevice) {
-        RTCEAGLVideoView *remoteView = [[RTCEAGLVideoView alloc] init];
+        RTCMTLVideoView *remoteView = [[RTCMTLVideoView alloc] init];
         remoteView.delegate = self;
         _remoteDisplay = remoteView;
     }

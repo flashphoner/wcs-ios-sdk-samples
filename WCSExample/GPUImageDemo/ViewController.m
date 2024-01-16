@@ -478,7 +478,7 @@
         localView.delegate = self;
     _localNativeDisplay = localView;
     #else
-        RTCEAGLVideoView *localView = [[RTCEAGLVideoView alloc] init];
+        RTCMTLVideoView *localView = [[RTCMTLVideoView alloc] init];
         localView.delegate = self;
         _localNativeDisplay = localView;
     #endif
@@ -489,7 +489,7 @@
         remoteView.delegate = self;
         _remoteDisplay = remoteView;
     #else
-        RTCEAGLVideoView *remoteView = [[RTCEAGLVideoView alloc] init];
+        RTCMTLVideoView *remoteView = [[RTCMTLVideoView alloc] init];
         remoteView.delegate = self;
         _remoteDisplay = remoteView;
     #endif

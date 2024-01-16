@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <WebRTC/RTCEAGLVideoView.h>
+#import <WebRTC/RTCMTLVideoView.h>
 #import "WCSViews.h"
 
 @interface ViewController : UIViewController<UITextFieldDelegate, RTCVideoViewDelegate>
@@ -25,12 +25,12 @@
 @property UIButton *joinButton;
 
 @property UIView *player1Container;
-@property(nonatomic) RTCEAGLVideoView *player1Display;
+@property(nonatomic) RTCMTLVideoView *player1Display;
 @property NSMutableArray *player1DisplayConstraints;
 @property UILabel *player1Login;
 
 @property UIView *localVideoContainer;
-@property(nonatomic) RTCEAGLVideoView *localDisplay;
+@property(nonatomic) RTCMTLVideoView *localDisplay;
 @property NSMutableArray *localDisplayConstraints;
 @property UILabel *localStatus;
 @property WCSSwitchView *muteAudio;

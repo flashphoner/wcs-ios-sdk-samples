@@ -251,7 +251,7 @@ NSString *recordName;
     _videoContainer = [[UIView alloc] init];
     _videoContainer.translatesAutoresizingMaskIntoConstraints = NO;
     
-    _remoteDisplay = [[RTCEAGLVideoView alloc] init];
+    _remoteDisplay = [[RTCMTLVideoView alloc] init];
     _remoteDisplay.delegate = self;
     _remoteDisplay.translatesAutoresizingMaskIntoConstraints = NO;
     
@@ -370,9 +370,9 @@ NSString *recordName;
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - RTCEAGLVideoViewDelegate
+#pragma mark - RTCMTLVideoViewDelegate
 
-- (void)videoView:(RTCEAGLVideoView*)videoView didChangeVideoSize:(CGSize)size {
+- (void)videoView:(RTCMTLVideoView*)videoView didChangeVideoSize:(CGSize)size {
     
     NSLog(@"Size of remote video %fx%f", size.width, size.height);
     [_remoteDisplay removeConstraints:_remoteDisplayConstraints];

@@ -3,7 +3,7 @@ import WebRTC
 
 
 final class WebRTCView: UIView, RTCVideoViewDelegate {
-    let videoView = RTCEAGLVideoView(frame: .zero)
+    let videoView = RTCMTLVideoView(frame: .zero)
     var videoSize = CGSize.zero
 
     override init(frame: CGRect) {

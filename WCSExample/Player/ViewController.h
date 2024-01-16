@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <WebRTC/RTCEAGLVideoView.h>
 #import <WebRTC/RTCMTLVideoView.h>
 
 @interface ViewController : UIViewController<UITextFieldDelegate, RTCVideoViewDelegate>
