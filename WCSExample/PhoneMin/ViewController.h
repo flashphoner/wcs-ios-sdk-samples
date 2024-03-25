@@ -34,5 +34,6 @@
 @property UIButton *holdButton;
 @property WCSTextInputView *dtmf;
 @property UIButton *dtmfButton;
+@property WCSSwitchView *useLoudSpeaker;
 @end
 

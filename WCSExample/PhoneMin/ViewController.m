@@ -145,12 +145,15 @@ UIAlertController *alert;
         
         [call on:kFPWCSCallStatusEstablished callback:^(FPWCSApi2Call *call){
             [self changeCallStatus:call];
+            _useLoudSpeaker.control.userInteractionEnabled = YES;
             [self toHangupState];
             [self changeViewState:_holdButton enabled:YES];
         }];
         
         [call on:kFPWCSCallStatusFinish callback:^(FPWCSApi2Call *call){
             [self changeCallStatus:call];
+            _useLoudSpeaker.control.userInteractionEnabled = NO;
+            [_useLoudSpeaker.control setOn: NO animated:YES];
             [self toCallState];
             [self dismissViewControllerAnimated:YES completion:nil];
         }];
@@ -243,12 +246,16 @@ UIAlertController *alert;
     
     [call on:kFPWCSCallStatusEstablished callback:^(FPWCSApi2Call *call){
         [self changeCallStatus:call];
+        _useLoudSpeaker.control.userInteractionEnabled = YES;
         [self toHangupState];
         [self changeViewState:_holdButton enabled:YES];
     }];
     
     [call on:kFPWCSCallStatusFinish callback:^(FPWCSApi2Call *call){
         [self changeCallStatus:call];
+        _useLoudSpeaker.control.userInteractionEnabled = NO;
+        [_useLoudSpeaker.control setOn: NO animated:YES];
+
         [self toCallState];
     }];
     
@@ -375,6 +382,12 @@ UIAlertController *alert;
     }
 }
 
+- (void)useLoudSpeakerValueChanged:(id)sender {
+    if (call) {
+        [call setLoudspeakerStatus:_useLoudSpeaker.control.isOn withError:nil];
+    }
+}
+
 
 //status handlers
 - (void)changeConnectionStatus:(kFPWCSSessionStatus)status {
@@ -468,6 +481,9 @@ UIAlertController *alert;
     [_callButton addTarget:self action:@selector(callButton:) forControlEvents:UIControlEventTouchUpInside];
     _holdButton = [WCSViewUtil createButton:@"HOLD"];
     [_holdButton addTarget:self action:@selector(holdButton:) forControlEvents:UIControlEventTouchUpInside];
+    _useLoudSpeaker = [[WCSSwitchView alloc] initWithLabelText:@"Use Loud Speaker"];
+    _useLoudSpeaker.control.userInteractionEnabled = NO;
+    [_useLoudSpeaker.control addTarget:self action:@selector(useLoudSpeakerValueChanged:) forControlEvents:UIControlEventValueChanged];
     _dtmf = [[WCSTextInputView alloc] init];
     _dtmf.label.text = @"DTMF";
     _dtmfButton = [WCSViewUtil createButton:@"DTMF"];
@@ -491,6 +507,7 @@ UIAlertController *alert;
     [self.contentView addSubview:_callee];
     [self.contentView addSubview:_callStatus];
     [self.contentView addSubview:_callButton];
+    [self.contentView addSubview:_useLoudSpeaker];
     [self.contentView addSubview:_holdButton];
     [self.contentView addSubview:_dtmf];
     [self.contentView addSubview:_dtmfButton];
@@ -530,6 +547,7 @@ UIAlertController *alert;
                             @"inviteParameters":_inviteParameters,
                             @"callStatus":_callStatus,
                             @"callButton":_callButton,
+                            @"useLoudSpeaker": _useLoudSpeaker,
                             @"holdButton":_holdButton,
                             @"dtmf":_dtmf,
                             @"dtmfButton":_dtmfButton,
@@ -570,7 +588,6 @@ UIAlertController *alert;
     setConstraint(_connectUrl, @"V:[connectUrl(inputFieldHeight)]", 0);
     setConstraint(_connectionStatus, @"V:[connectionStatus(statusHeight)]", 0);
     setConstraint(_connectButton, @"V:[connectButton(buttonHeight)]", 0);
-    
     //set width related to super view
     setConstraint(_contentView, @"H:|-hSpacing-[connectUrl]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[sipLogin]-hSpacing-|",0);
@@ -589,10 +606,11 @@ UIAlertController *alert;
     setConstraint(_contentView, @"H:|-hSpacing-[callStatus]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[callButton]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[holdButton]-hSpacing-|",0);
+    setConstraint(_contentView, @"H:|-hSpacing-[useLoudSpeaker]-hSpacing-|", 0);
     setConstraint(_contentView, @"H:|-hSpacing-[dtmf]-hSpacing-|",0);
     setConstraint(_contentView, @"H:|-hSpacing-[dtmfButton]-hSpacing-|",0);
 
-    setConstraint(self.contentView, @"V:|-50-[connectUrl]-vSpacing-[sipLogin]-vSpacing-[sipAuthName]-vSpacing-[sipPassword]-vSpacing-[sipDomain]-vSpacing-[sipOutboundProxy]-vSpacing-[sipPort]-vSpacing-[sipRegRequired]-vSpacing-[connectButton]-vSpacing-[authToken]-vSpacing-[connectTokenButton]-vSpacing-[connectionStatus]-vSpacing-[inviteParameters]-vSpacing-[callee]-vSpacing-[callStatus]-vSpacing-[callButton]-vSpacing-[holdButton]-vSpacing-[dtmf]-vSpacing-[dtmfButton]-vSpacing-|", 0);
+    setConstraint(self.contentView, @"V:|-50-[connectUrl]-vSpacing-[sipLogin]-vSpacing-[sipAuthName]-vSpacing-[sipPassword]-vSpacing-[sipDomain]-vSpacing-[sipOutboundProxy]-vSpacing-[sipPort]-vSpacing-[sipRegRequired]-vSpacing-[connectButton]-vSpacing-[authToken]-vSpacing-[connectTokenButton]-vSpacing-[connectionStatus]-vSpacing-[inviteParameters]-vSpacing-[callee]-vSpacing-[callStatus]-vSpacing-[callButton]-vSpacing-[holdButton]-vSpacing-[useLoudSpeaker]-vSpacing-[dtmf]-vSpacing-[dtmfButton]-vSpacing-|", 0);
     
     //content view width
     setConstraintWithItem(self.view, _contentView, self.view, NSLayoutAttributeWidth, NSLayoutRelationEqual, NSLayoutAttributeWidth, 1.0, 0);
