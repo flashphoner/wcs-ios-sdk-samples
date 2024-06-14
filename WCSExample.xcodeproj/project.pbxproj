@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		007FCEA027937F1705D714B2 /* Pods_TwoWayStreaming.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657FE6304944E7B0E86B981B /* Pods_TwoWayStreaming.framework */; };
 		061B4A6262F2BD8EE560DC97 /* Pods_StreamRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA37E8F9999876F4BDE5240 /* Pods_StreamRecording.framework */; };
+		0AEB43AE837F182906C43FD0 /* Pods_MultiPlayerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB07C720BA785B9E1FCD4435 /* Pods_MultiPlayerSwift.framework */; };
 		2C9EA6B7826D4E9D53C22823 /* Pods_Player.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8745492A7BF846C9479B539C /* Pods_Player.framework */; };
-		2D60120E95DF0969E87948A9 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		2D60120E95DF0969E87948A9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		347EAE752A00A7D6410BD50A /* Pods_GPUImageDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67583FC82A75C6CC4844C24B /* Pods_GPUImageDemo.framework */; };
 		3F2A9FFC5A5A59E6CFD7FE70 /* Pods_TwoPlayers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31005716A70F1B337799F1 /* Pods_TwoPlayers.framework */; };
 		4CECE292C777F06FCE1291B5 /* Pods_Streamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C845B85743847299215C220 /* Pods_Streamer.framework */; };
@@ -65,6 +66,11 @@
 		555260911DE418FA00AED0F1 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		555260921DE45C6B00AED0F1 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		555260931DE45CAD00AED0F1 /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
+		556BB13A2BFEF45E00A66D44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557879B2254FFEC600F8CD95 /* AppDelegate.swift */; };
+		556BB13B2BFEF45E00A66D44 /* WebRTCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D5EA9258267AA00C77CAC /* WebRTCView.swift */; };
+		556BB1532BFEF49200A66D44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 556BB14C2BFEF49100A66D44 /* Main.storyboard */; };
+		556BB1552BFEF49200A66D44 /* MultiPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556BB14F2BFEF49200A66D44 /* MultiPlayerController.swift */; };
+		556BB1562BFEF49200A66D44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 556BB1502BFEF49200A66D44 /* LaunchScreen.storyboard */; };
 		5570EAAE2519EB4E0031E44C /* WCSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7534351DD9713600D7DF80 /* WCSUtil.m */; };
 		5570EAAF2519EB4E0031E44C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
 		5570EAB12519EB4E0031E44C /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
@@ -260,9 +266,9 @@
 		55F98A5F1E1D28DC00B70D94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F98A371E1D286100B70D94 /* ViewController.m */; };
 		55F9BB35251DAA5500F39D69 /* GPUImageVideoCapturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9BB26251DA9E100F39D69 /* GPUImageVideoCapturer.m */; };
 		55FCD3CE252B0437008C54E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23105D1C0D718100918455 /* main.m */; };
-		57BB4CC05B3AAE392427BE22 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
-		6C30CB3000443DDE6FF500C9 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
-		8322B5860A35BA260E10C7A8 /* Pods_TwoWayStreamingSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0822EC5EBC09EC0DEA7E0CF /* Pods_TwoWayStreamingSwift.framework */; };
+		57BB4CC05B3AAE392427BE22 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		6C30CB3000443DDE6FF500C9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		8322B5860A35BA260E10C7A8 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		85458A1A4E20148A6AA67C8F /* Pods_MediaDevices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A58904727550EF62D7BF75 /* Pods_MediaDevices.framework */; };
 		860B894766550601C22FB1F7 /* Pods_WebViewSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9E1D6D79359A9C141FD1DB5 /* Pods_WebViewSwift.framework */; };
 		864B7B86886BE3ED5D46DA56 /* Pods_GPUImageDemoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC7E3C47EE6422DDE29B6D6 /* Pods_GPUImageDemoSwift.framework */; };
@@ -270,9 +276,10 @@
 		8845F0DD6AEEA05D2C8C4CB9 /* Pods_VideoChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5BB64A1ECEAAAAE4BA4D58 /* Pods_VideoChat.framework */; };
 		96E97847B0DD3DD368A0655D /* Pods_ClickToCall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6092F5076645DB535DAF8F5F /* Pods_ClickToCall.framework */; };
 		A4A3C488CA879623CF790A37 /* Pods_ImageOverlaySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96744C2065E6FA8F4F239FFB /* Pods_ImageOverlaySwift.framework */; };
-		A718D7F631BF58F7D83DE9D9 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
-		AB70810F411954F98ECB0E4E /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		A718D7F631BF58F7D83DE9D9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		AB70810F411954F98ECB0E4E /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		ADE49FDDD3F913A301FC5B0B /* Pods_MediaDevicesSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B321C1597A2D603CFB8EB1 /* Pods_MediaDevicesSwift.framework */; };
+		B06439ADB30B97F67B571F66 /* Pods_TwoWayStreamingSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59399CF9336374B6F55254A5 /* Pods_TwoWayStreamingSwift.framework */; };
 		BF0C53CD5C35C2C303C8BBCD /* Pods_PhoneMinVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1B888B5E77A104987F94EC /* Pods_PhoneMinVideo.framework */; };
 		C2D7488ACCA416B0253B0493 /* Pods_CallKitDemoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0646D30C249F237B971D5E40 /* Pods_CallKitDemoSwift.framework */; };
 		CE29B5961DC036AE0081CD37 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE133F041C0D93E800EAEC55 /* libicucore.tbd */; };
@@ -497,6 +504,16 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		556BB1442BFEF45E00A66D44 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5581217E2639471000379A43 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -575,6 +592,7 @@
 		351C7C8EFEA3BF6F067F632E /* Pods-VideoChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoChat/Pods-VideoChat.release.xcconfig"; sourceTree = "<group>"; };
 		358C2829D083677F8B45BD0F /* Pods-CallKitDemoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallKitDemoSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-CallKitDemoSwift/Pods-CallKitDemoSwift.release.xcconfig"; sourceTree = "<group>"; };
 		3ABEC31B526C7D14691F80ED /* Pods_ScreenCapturerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenCapturerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B1B40FC421CC40E08CAE3E7 /* Pods-MultiPlayerSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiPlayerSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-MultiPlayerSwift/Pods-MultiPlayerSwift.release.xcconfig"; sourceTree = "<group>"; };
 		48C0A73AFC463662768767E3 /* Pods-WebViewSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebViewSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebViewSwift/Pods-WebViewSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		5502F08E27D88A170026DB8A /* CallKitDemoSwift.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = CallKitDemoSwift.entitlements; sourceTree = "<group>"; };
 		5503A8191DEEE961003A50AF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Conference/AppDelegate.h; sourceTree = "<group>"; };
@@ -603,6 +621,11 @@
 		554528001E25F9C900DD2F52 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ClickToCall/ViewController.h; sourceTree = "<group>"; };
 		554528011E25F9C900DD2F52 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ClickToCall/ViewController.m; sourceTree = "<group>"; };
 		554528261E25FA6100DD2F52 /* ClickToCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickToCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		556BB1492BFEF45E00A66D44 /* MultiPlayerSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiPlayerSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		556BB14B2BFEF49100A66D44 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		556BB14D2BFEF49100A66D44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		556BB14F2BFEF49200A66D44 /* MultiPlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiPlayerController.swift; sourceTree = "<group>"; };
+		556BB1512BFEF49200A66D44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5570EAC62519EB4E0031E44C /* GPUImageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPUImageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5570EAFB2519EBE70031E44C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = GPUImageDemo/ViewController.h; sourceTree = "<group>"; };
 		5570EAFC2519EBE70031E44C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = GPUImageDemo/AppDelegate.m; sourceTree = "<group>"; };
@@ -709,6 +732,7 @@
 		55F9BB26251DA9E100F39D69 /* GPUImageVideoCapturer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GPUImageVideoCapturer.m; path = GPUImageDemo/GPUImageVideoCapturer.m; sourceTree = "<group>"; };
 		55F9BB34251DA9FC00F39D69 /* GPUImageVideoCapturer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GPUImageVideoCapturer.h; path = GPUImageDemo/GPUImageVideoCapturer.h; sourceTree = "<group>"; };
 		57542EC4EF50035543633226 /* Pods-TwoWayStreamingSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoWayStreamingSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwoWayStreamingSwift/Pods-TwoWayStreamingSwift.release.xcconfig"; sourceTree = "<group>"; };
+		59399CF9336374B6F55254A5 /* Pods_TwoWayStreamingSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwoWayStreamingSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8F2CB9B54362118F8B9C3A /* Pods-StreamRecording.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamRecording.release.xcconfig"; path = "Pods/Target Support Files/Pods-StreamRecording/Pods-StreamRecording.release.xcconfig"; sourceTree = "<group>"; };
 		5CF6DE645907FA76F1C0D839 /* Pods-GPUImageDemoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUImageDemoSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GPUImageDemoSwift/Pods-GPUImageDemoSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		5EF73068B49AD2F4A1CCED3C /* Pods-PhoneMin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneMin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneMin/Pods-PhoneMin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -729,12 +753,14 @@
 		8E7E73AA99093585A497CEBD /* Pods-MediaDevicesSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaDevicesSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-MediaDevicesSwift/Pods-MediaDevicesSwift.release.xcconfig"; sourceTree = "<group>"; };
 		94BBE279B9BE1739DE92D6A7 /* Pods-MediaDevicesSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaDevicesSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MediaDevicesSwift/Pods-MediaDevicesSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		96744C2065E6FA8F4F239FFB /* Pods_ImageOverlaySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageOverlaySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9829A26F1B04CB983A0BF459 /* Pods-MultiPlayerSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiPlayerSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MultiPlayerSwift/Pods-MultiPlayerSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		9B1B888B5E77A104987F94EC /* Pods_PhoneMinVideo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneMinVideo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE75AB247F8E5C824B9E42F /* Pods_Conference.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Conference.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5BB64A1ECEAAAAE4BA4D58 /* Pods_VideoChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0063D10D113946F372D9269 /* Pods-Player.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Player.release.xcconfig"; path = "Pods/Target Support Files/Pods-Player/Pods-Player.release.xcconfig"; sourceTree = "<group>"; };
 		A2E17542E1DE12F0286A5CB0 /* Pods-TwoPlayers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoPlayers.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwoPlayers/Pods-TwoPlayers.release.xcconfig"; sourceTree = "<group>"; };
 		A4E7F3FF1ED3C85F7E330E36 /* Pods-ClickToCall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickToCall.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClickToCall/Pods-ClickToCall.debug.xcconfig"; sourceTree = "<group>"; };
+		AB07C720BA785B9E1FCD4435 /* Pods_MultiPlayerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiPlayerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB9EF3E96A197A886FE5113E /* Pods-PhoneMin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneMin.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneMin/Pods-PhoneMin.release.xcconfig"; sourceTree = "<group>"; };
 		AC6BC5C6C2CD8191ECF6B3F2 /* Pods-GPUImageDemoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUImageDemoSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-GPUImageDemoSwift/Pods-GPUImageDemoSwift.release.xcconfig"; sourceTree = "<group>"; };
 		AD864E8C9C2E475CA1B05FC4 /* Pods-ImageOverlaySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageOverlaySwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageOverlaySwift/Pods-ImageOverlaySwift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -790,7 +816,6 @@
 		DCB73F0D95AC5C28060A24E5 /* Pods-TwoWayStreaming.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoWayStreaming.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwoWayStreaming/Pods-TwoWayStreaming.release.xcconfig"; sourceTree = "<group>"; };
 		E09018DB4496D32FF344EAE3 /* Pods-TwoWayStreaming.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoWayStreaming.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwoWayStreaming/Pods-TwoWayStreaming.debug.xcconfig"; sourceTree = "<group>"; };
 		F07C0BCE60CE3D040E8B886E /* Pods-ScreenCapturerSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenCapturerSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScreenCapturerSwift/Pods-ScreenCapturerSwift.debug.xcconfig"; sourceTree = "<group>"; };
-		F0822EC5EBC09EC0DEA7E0CF /* Pods_TwoWayStreamingSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwoWayStreamingSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8923D117764EE08F498B30A /* Pods-StreamRecording.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamRecording.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StreamRecording/Pods-StreamRecording.debug.xcconfig"; sourceTree = "<group>"; };
 		FA2746768B91B1FC7D438ACE /* Pods-Streamer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Streamer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Streamer/Pods-Streamer.debug.xcconfig"; sourceTree = "<group>"; };
 		FF5E138E2D0E3601FD6BBBFD /* Pods-CallKitDemoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallKitDemoSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CallKitDemoSwift/Pods-CallKitDemoSwift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -820,7 +845,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57BB4CC05B3AAE392427BE22 /* BuildFile in Frameworks */,
+				57BB4CC05B3AAE392427BE22 /* (null) in Frameworks */,
 				F92A91BCA135E60DD238C4B0 /* Pods_ScreenCapturerSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -838,7 +863,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A718D7F631BF58F7D83DE9D9 /* BuildFile in Frameworks */,
+				A718D7F631BF58F7D83DE9D9 /* (null) in Frameworks */,
 				ADE49FDDD3F913A301FC5B0B /* Pods_MediaDevicesSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -859,6 +884,14 @@
 				554528181E25FA6100DD2F52 /* CoreGraphics.framework in Frameworks */,
 				554528191E25FA6100DD2F52 /* VideoToolbox.framework in Frameworks */,
 				96E97847B0DD3DD368A0655D /* Pods_ClickToCall.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		556BB13D2BFEF45E00A66D44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AEB43AE837F182906C43FD0 /* Pods_MultiPlayerSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -885,8 +918,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D60120E95DF0969E87948A9 /* BuildFile in Frameworks */,
-				8322B5860A35BA260E10C7A8 /* Pods_TwoWayStreamingSwift.framework in Frameworks */,
+				2D60120E95DF0969E87948A9 /* (null) in Frameworks */,
+				8322B5860A35BA260E10C7A8 /* (null) in Frameworks */,
+				B06439ADB30B97F67B571F66 /* Pods_TwoWayStreamingSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -902,7 +936,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C30CB3000443DDE6FF500C9 /* BuildFile in Frameworks */,
+				6C30CB3000443DDE6FF500C9 /* (null) in Frameworks */,
 				A4A3C488CA879623CF790A37 /* Pods_ImageOverlaySwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1049,7 +1083,7 @@
 				55F8AF231DE7FD3F002F5DFC /* CoreMedia.framework in Frameworks */,
 				55F8AF241DE7FD3F002F5DFC /* CoreGraphics.framework in Frameworks */,
 				55F8AF251DE7FD3F002F5DFC /* VideoToolbox.framework in Frameworks */,
-				AB70810F411954F98ECB0E4E /* BuildFile in Frameworks */,
+				AB70810F411954F98ECB0E4E /* (null) in Frameworks */,
 				061B4A6262F2BD8EE560DC97 /* Pods_StreamRecording.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1159,6 +1193,8 @@
 				AC6BC5C6C2CD8191ECF6B3F2 /* Pods-GPUImageDemoSwift.release.xcconfig */,
 				FF5E138E2D0E3601FD6BBBFD /* Pods-CallKitDemoSwift.debug.xcconfig */,
 				358C2829D083677F8B45BD0F /* Pods-CallKitDemoSwift.release.xcconfig */,
+				9829A26F1B04CB983A0BF459 /* Pods-MultiPlayerSwift.debug.xcconfig */,
+				3B1B40FC421CC40E08CAE3E7 /* Pods-MultiPlayerSwift.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1235,6 +1271,17 @@
 			name = PhoneMin;
 			sourceTree = "<group>";
 		};
+		556BB1362BFEF29C00A66D44 /* MultiPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				556BB14F2BFEF49200A66D44 /* MultiPlayerController.swift */,
+				556BB1502BFEF49200A66D44 /* LaunchScreen.storyboard */,
+				556BB14C2BFEF49100A66D44 /* Main.storyboard */,
+				556BB14B2BFEF49100A66D44 /* Info.plist */,
+			);
+			path = MultiPlayer;
+			sourceTree = "<group>";
+		};
 		5570EA9D2519EB180031E44C /* GPUImageDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1254,6 +1301,7 @@
 		5578781C254DAC3400F8CD95 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				556BB1362BFEF29C00A66D44 /* MultiPlayer */,
 				55C1CCCB27B521BC00F6F5B9 /* CallKitDemo */,
 				559B40CE26A9038B0065534E /* GPUImageDemo */,
 				55120262268188DE00A0E6DD /* ScreenCapturer */,
@@ -1476,13 +1524,14 @@
 				19B321C1597A2D603CFB8EB1 /* Pods_MediaDevicesSwift.framework */,
 				D9E1D6D79359A9C141FD1DB5 /* Pods_WebViewSwift.framework */,
 				5512028E268AF81700A0E6DD /* ReplayKit.framework */,
-				F0822EC5EBC09EC0DEA7E0CF /* Pods_TwoWayStreamingSwift.framework */,
 				722EA80A2A65EC73554558BD /* Pods_ScreenCapturerExtension.framework */,
 				ADC7E3C47EE6422DDE29B6D6 /* Pods_GPUImageDemoSwift.framework */,
 				96744C2065E6FA8F4F239FFB /* Pods_ImageOverlaySwift.framework */,
 				55C1CCF927BB534900F6F5B9 /* Intents.framework */,
 				0646D30C249F237B971D5E40 /* Pods_CallKitDemoSwift.framework */,
 				3ABEC31B526C7D14691F80ED /* Pods_ScreenCapturerSwift.framework */,
+				AB07C720BA785B9E1FCD4435 /* Pods_MultiPlayerSwift.framework */,
+				59399CF9336374B6F55254A5 /* Pods_TwoWayStreamingSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1523,6 +1572,7 @@
 				559B40CC26A7E9330065534E /* GPUImageDemoSwift.app */,
 				55C1CCC927B521AD00F6F5B9 /* CallKitDemoSwift.app */,
 				55C1CCF827BB534900F6F5B9 /* CallKitIntentExtension.appex */,
+				556BB1492BFEF45E00A66D44 /* MultiPlayerSwift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1710,6 +1760,26 @@
 			name = ClickToCall;
 			productName = WCSExample;
 			productReference = 554528261E25FA6100DD2F52 /* ClickToCall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		556BB1372BFEF45E00A66D44 /* MultiPlayerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 556BB1462BFEF45E00A66D44 /* Build configuration list for PBXNativeTarget "MultiPlayerSwift" */;
+			buildPhases = (
+				556BB1382BFEF45E00A66D44 /* [CP] Check Pods Manifest.lock */,
+				556BB1392BFEF45E00A66D44 /* Sources */,
+				556BB13D2BFEF45E00A66D44 /* Frameworks */,
+				556BB1402BFEF45E00A66D44 /* Resources */,
+				556BB1442BFEF45E00A66D44 /* Embed Frameworks */,
+				556BB1452BFEF45E00A66D44 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultiPlayerSwift;
+			productName = TwoWayStreamingSwift;
+			productReference = 556BB1492BFEF45E00A66D44 /* MultiPlayerSwift.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5570EAA92519EB4E0031E44C /* GPUImageDemo */ = {
@@ -2080,6 +2150,10 @@
 						DevelopmentTeam = SXWV5Z47NK;
 						ProvisioningStyle = Automatic;
 					};
+					556BB1372BFEF45E00A66D44 = {
+						DevelopmentTeam = SXWV5Z47NK;
+						ProvisioningStyle = Automatic;
+					};
 					5570EAA92519EB4E0031E44C = {
 						DevelopmentTeam = SXWV5Z47NK;
 						ProvisioningStyle = Automatic;
@@ -2197,6 +2271,7 @@
 				559B40B626A7E9330065534E /* GPUImageDemoSwift */,
 				55C1CCB027B521AD00F6F5B9 /* CallKitDemoSwift */,
 				55C1CCF727BB534900F6F5B9 /* CallKitIntentExtension */,
+				556BB1372BFEF45E00A66D44 /* MultiPlayerSwift */,
 			);
 		};
 /* End PBXProject section */
@@ -2244,6 +2319,15 @@
 				5545281E1E25FA6100DD2F52 /* LaunchScreen.storyboard in Resources */,
 				5545281F1E25FA6100DD2F52 /* Assets.xcassets in Resources */,
 				554528201E25FA6100DD2F52 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		556BB1402BFEF45E00A66D44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556BB1532BFEF49200A66D44 /* Main.storyboard in Resources */,
+				556BB1562BFEF49200A66D44 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2579,6 +2663,50 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ClickToCall/Pods-ClickToCall-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		556BB1382BFEF45E00A66D44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MultiPlayerSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		556BB1452BFEF45E00A66D44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MultiPlayerSwift/Pods-MultiPlayerSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWebRTC/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FPWCSApi2Swift/FPWCSApi2Swift.framework/FPWCSApi2Swift",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FPWCSApi2Swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MultiPlayerSwift/Pods-MultiPlayerSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5570EAAA2519EB4E0031E44C /* [CP] Check Pods Manifest.lock */ = {
@@ -3304,6 +3432,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		556BB1392BFEF45E00A66D44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556BB13A2BFEF45E00A66D44 /* AppDelegate.swift in Sources */,
+				556BB13B2BFEF45E00A66D44 /* WebRTCView.swift in Sources */,
+				556BB1552BFEF49200A66D44 /* MultiPlayerController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5570EAAB2519EB4E0031E44C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3542,6 +3680,22 @@
 				5512B6AD256560A800E207B5 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		556BB14C2BFEF49100A66D44 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				556BB14D2BFEF49100A66D44 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		556BB1502BFEF49200A66D44 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				556BB1512BFEF49200A66D44 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 		5578799D254FFEA600F8CD95 /* LaunchScreen.storyboard */ = {
@@ -4048,6 +4202,100 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.ClickToCall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Release;
+		};
+		556BB1472BFEF45E00A66D44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9829A26F1B04CB983A0BF459 /* Pods-MultiPlayerSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = SXWV5Z47NK;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Swift/MultiPlayer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MultiPlyer;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.MultiPlayerSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Debug;
+		};
+		556BB1482BFEF45E00A66D44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B1B40FC421CC40E08CAE3E7 /* Pods-MultiPlayerSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = SXWV5Z47NK;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Swift/MultiPlayer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MultiPlyer;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashphoner.ios.MultiPlayerSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
@@ -5339,6 +5587,15 @@
 			buildConfigurations = (
 				554528241E25FA6100DD2F52 /* Debug */,
 				554528251E25FA6100DD2F52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		556BB1462BFEF45E00A66D44 /* Build configuration list for PBXNativeTarget "MultiPlayerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				556BB1472BFEF45E00A66D44 /* Debug */,
+				556BB1482BFEF45E00A66D44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

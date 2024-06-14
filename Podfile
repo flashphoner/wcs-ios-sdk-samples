@@ -105,3 +105,8 @@ target 'CallKitDemoSwift' do
     pod 'FPWCSApi2Swift'
     pod 'FPWebRTC'
 end
+
+target 'MultiPlayerSwift' do
+    pod 'FPWCSApi2Swift'
+    pod 'FPWebRTC'
+end

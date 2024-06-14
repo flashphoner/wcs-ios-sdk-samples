@@ -117,3 +117,8 @@ target 'CallKitDemoSwift' do
     pod 'FPWCSApi2Swift', :path => 'sdk/fp_wcs_api2/Pods/FPWCSApi2Swift/'
     pod 'FPWebRTC', :path => 'sdk/fp_wcs_api2/Pods/FPWebRTC/'
 end
+
+target 'MultiPlayerSwift' do
+    pod 'FPWCSApi2Swift', :path => 'sdk/fp_wcs_api2/Pods/FPWCSApi2Swift/'
+    pod 'FPWebRTC', :path => 'sdk/fp_wcs_api2/Pods/FPWebRTC/'
+end

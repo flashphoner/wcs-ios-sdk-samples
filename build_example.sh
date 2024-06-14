@@ -71,6 +71,8 @@ cat << EOF > Info_ipa.plist
                <string>AdHoc CallKitDemo</string>
                <key>com.flashphoner.ios.CallKitDemoSwift.CallKitIntentExtension</key>
                <string>AdHoc CallKitIntentExtension</string>
+               <key>com.flashphoner.ios.MultiPlayerSwift</key>
+               <string>$2</string>
         </dict>
 </dict>
 </plist>
@@ -142,6 +144,9 @@ xcodebuild -exportArchive -exportOptionsPlist Info_ipa.plist -archivePath out-bu
 
 xcodebuild CODE_SIGN_STYLE=Automatic -workspace 'WCSExample.xcworkspace' -scheme "CallKitDemoSwift" -configuration="Release" clean archive OBJROOT=$(PWD)/out-build/CallKitDemoSwift -archivePath out-build/CallKitDemoSwift
 xcodebuild -exportArchive -exportOptionsPlist Info_ipa.plist -archivePath out-build/CallKitDemoSwift.xcarchive -exportPath out-build
+
+xcodebuild CODE_SIGN_STYLE=Automatic -workspace 'WCSExample.xcworkspace' -scheme "MultiPlayerSwift" -configuration="Release" clean archive OBJROOT=$(PWD)/out-build/MultiPlayerSwift -archivePath out-build/MultiPlayerSwift
+xcodebuild -exportArchive -exportOptionsPlist Info_ipa.plist -archivePath out-build/MultiPlayerSwift.xcarchive -exportPath out-build
 
 # Remove plist
 rm -rf Info_ipa.plist
