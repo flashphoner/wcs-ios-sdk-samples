@@ -25,6 +25,7 @@
 @property WCSSwitchView *lockCameraOrientation;
 @property WCSSwitchView *useLoudSpeaker;
 @property WCSSwitchView *useTCPTransport;
+@property WCSSwitchView *disableSSLValidation;
 @property UIView *settingsButtonContainer;
 @property UIButton *localSettingsButton;
 @property UIButton *remoteSettingsButton;

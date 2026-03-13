@@ -39,6 +39,7 @@
         FPWCSApi2SessionOptions *options = [[FPWCSApi2SessionOptions alloc] init];
         options.urlServer = _urlInput.text;
         options.appKey = @"defaultApp";
+        options.disableSSLValidation = _disableSSLValidation.control.on;
         NSError *error;
         _session = [FPWCSApi2 createSession:options error:&error];
         if (!_session) {
@@ -418,6 +419,8 @@
     
     _useTCPTransport = [[WCSSwitchView alloc] initWithLabelText:@"Use TCP Transport"];
     
+    _disableSSLValidation = [[WCSSwitchView alloc] initWithLabelText:@"Disable SSL Validation"];
+    
     _localSettingsButton = [WCSViewUtil createButton:@"Local settings"];
     [_localSettingsButton addTarget:self action:@selector(localSettingsButton:) forControlEvents:UIControlEventTouchUpInside];
     _remoteSettingsButton = [WCSViewUtil createButton:@"Remote settings"];
@@ -444,6 +447,7 @@
     [_settingsButtonContainer addSubview:_localSettingsButton];
     [_settingsButtonContainer addSubview:_remoteSettingsButton];
     [_contentView addSubview:_settingsButtonContainer];
+    [_contentView addSubview:_disableSSLValidation];
     [_contentView addSubview:_urlInput];
     [_contentView addSubview:_connectStatus];
     [_contentView addSubview:_micLevel];
@@ -465,6 +469,7 @@
                             @"localSettings": _localSettingsButton,
                             @"remoteSettings": _remoteSettingsButton,
                             @"settings": _settingsButtonContainer,
+                            @"disableSSLValidation": _disableSSLValidation,
                             @"urlInput": _urlInput,
                             @"connectStatus": _connectStatus,
                             @"micLevel":_micLevel,
@@ -532,6 +537,8 @@
     setConstraint(_settingsButtonContainer, @"V:|[remoteSettings]|", 0);
     setConstraint(_settingsButtonContainer, @"V:[settings(height)]", 0);
     setConstraint(_contentView, @"H:|[settings]|", 0);
+    setConstraint(_disableSSLValidation, @"V:[disableSSLValidation(height)]", 0);
+    setConstraint(_contentView, @"H:|[disableSSLValidation]|", 0);
     setConstraint(_urlInput, @"V:[urlInput(height)]", 0);
     setConstraint(_contentView, @"H:|[urlInput]|", 0);
     setConstraint(_contentView, @"H:|[connectStatus]|", 0);
@@ -539,7 +546,7 @@
     setConstraint(_contentView, @"H:|[videoView]|", 0);
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:_videoView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationGreaterThanOrEqual toItem:self.view attribute:NSLayoutAttributeHeight multiplier:0.5 constant:0]];
     
-    setConstraint(_contentView, @"V:|[videoView]-[settings]-vSpacing-[lockOrientation]-vSpacing-[useLoudSpeaker]-vSpacing-[useTCPTransport]-vSpacing-[urlInput]-vSpacing-[connectStatus]-vSpacing-[micLevel]-vSpacing-[test]-vSpacing-[start]|", 0);
+    setConstraint(_contentView, @"V:|[videoView]-[settings]-vSpacing-[lockOrientation]-vSpacing-[useLoudSpeaker]-vSpacing-[useTCPTransport]-vSpacing-[disableSSLValidation]-vSpacing-[urlInput]-vSpacing-[connectStatus]-vSpacing-[micLevel]-vSpacing-[test]-vSpacing-[start]|", 0);
     setConstraint(_scrollView, @"V:|[content]|", 0);
     setConstraint(self.view, @"H:|[scroll]|", 0);
     setConstraint(self.view, @"H:|-hSpacing-[content]-hSpacing-|", 0);

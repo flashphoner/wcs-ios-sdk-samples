@@ -32,6 +32,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tcpTransport: UISwitch!
     @IBOutlet weak var micLevel: UILabel!
     @IBOutlet weak var testButton: UIButton!
+    @IBOutlet weak var disableSSLValidation: UISwitch!
     @IBOutlet weak var urlField: UITextField!
     @IBOutlet weak var connectStatus: UILabel!
     @IBOutlet weak var connectButton: UIButton!
@@ -194,6 +195,7 @@ class ViewController: UIViewController {
                 let options = FPWCSApi2SessionOptions()
                 options.urlServer = urlField.text
                 options.appKey = "defaultApp"
+                options.disableSSLValidation = disableSSLValidation.isOn;
                 do {
                 session = try WCSSession(options)
                 } catch {
